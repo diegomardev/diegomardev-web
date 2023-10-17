@@ -1,0 +1,31 @@
+.tetris {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #333;
+}
+
+.game-board-tetris {
+  display: grid;
+  grid-template-rows: repeat(20, 30px);
+  grid-gap: 2px;
+  background-color: #111;
+  border: 2px solid #777;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #777;
+}
+
+.cell.filled {
+  background-color: #a51515;
+}

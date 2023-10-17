@@ -1,0 +1,90 @@
+/* Pixel_Art.css */
+.read-the-docs {
+  text-align: center;
+}
+
+.color-palette {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.color-option:hover{
+  transform: scale(1.15);
+}
+
+.color-option.selected {
+  border: 3px solid #fff;
+  transform: scale(1.25);
+}
+
+.pixel-grid {
+  display: flex;
+  grid-template-columns: repeat(16, 20px);
+  gap: 0px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.pixel-row {
+  display: flex;
+  /* gap: 0px; */
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+.pixel {
+  position: relative;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  background-color: transparent;
+  gap: 0px;
+}
+.hovered-player-name {
+  position: absolute;
+  top: -25px;
+  left: -10px;
+  background-color: #333;
+  padding: 2px 4px;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  font-size: 12px;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.5;
+  transition:0,5s opacity 1;
+}
+html.light .pixel{
+  border: 1px solid #333;
+}
+html.light .color-option.selected {
+  border: 3px solid #333;
+}
+html.light .color-option {
+  border: 2px solid #aaa;
+}
+html.dark .pixel{
+  border: 1px solid #333;
+}
+html.dark .color-option.selected {
+  border: 3px solid #fff;
+}
+html.dark .color-option {
+  border: 2px solid #aaa;
+}
+/* Agrega este estilo para asegurar que cada pixel tenga un color de fondo */
+.pixel.active {
+  background-color: transparent; /* Fondo negro por defecto */
+}

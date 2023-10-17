@@ -1,0 +1,26 @@
+.compass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.compass-circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid black;
+  overflow: hidden; /* Para ocultar la flecha fuera del círculo */
+}
+
+.compass-arrow {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 4px;
+  height: 100px;
+  background-color: red;
+  transform-origin: 50% 100%;
+  transform: translate(-50%, -100%);
+}

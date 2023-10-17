@@ -1,0 +1,73 @@
+.avatar_image{
+  border-radius: 50%;
+  cursor: pointer;
+  /* display: flex; */
+}
+.avatar_image:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .avatar_image {/*lo hacemos girar*/
+    animation: logo-spin1 infinite 20s linear;/*Le decimo que tarde en hacer la vuelta completa 20segundos*/
+  }
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/*Declaramos la direcion de giro a derecha*/
+@keyframes logo-spin1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*Declaramos la direcion de giro a izquierda*/
+@keyframes logo-spin2 {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(1) .logo {/*El primer elemento llamado por <a> con la propiedad .logo lo hacemos girar*/
+    animation: logo-spin1 infinite 20s linear;/*Le decimo que tarde en hacer la vuelta completa 20segundos*/
+  }
+  a:nth-of-type(2) .logo {
+    animation: logo-spin2 infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.botones{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.botones:hover {
+  filter: drop-shadow(0 0 1em #646cffaa);
+}
+.click_text{
+  cursor: pointer;
+}

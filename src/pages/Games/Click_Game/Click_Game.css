@@ -1,0 +1,73 @@
+.game-board {
+  width: 380px;
+  height: 380px;
+  position: relative;
+  display: flex;
+  border: 3px solid black;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto; /* Con esto se centra al medio */
+}
+.game-over {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  user-select: none;
+}
+.game-over-restart {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  user-select: none;
+}
+.game-info {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  width: 340px;
+  position: center;
+  display: inline-flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.game-player {
+  position: relative;
+  font-size: 20px;
+  cursor: pointer;
+}
+.hover-text {
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  left: -24px;
+  background-color: #1a1a1a;
+  padding: 7px;
+  border: 1px solid #213547;
+  border-radius: 13px;
+  font-size: 10pt;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+.game-player:hover .hover-text {
+  opacity: 1; /* Mostrar el texto al hacer hover */
+}
+.botones_juegos_start{
+  margin: 5px;
+  font-size: 18pt;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  padding: 0.4em 1.2em;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.5s;
+  min-width: 140px;
+}
+.botones_juegos_start:hover {
+  filter: drop-shadow(0 0 1em #646cffaa);
+}
+.tables-container {
+  line-height: 1;
+}

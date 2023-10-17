@@ -1,0 +1,28 @@
+.channelname {
+  font-size: 40px;
+  cursor: pointer;
+}
+.message_channel_color{
+  color: violet;
+}
+.chat_threads {
+	padding: 2em;
+	padding-top: 2px;
+	max-width: 470px;
+	display: inline-table;
+	align-items: center;
+}
+.message{
+  text-align: left;
+}
+.botones_twitch{
+  margin-top: 5px;
+}
+.alinear{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input_twitch{
+  height: 20px;
+}
