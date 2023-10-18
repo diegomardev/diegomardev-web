@@ -13,4 +13,5 @@ margin-bottom: auto;
 }
 .scaled-image {
   width: 75%;
+  border-radius: 10px;
 }
