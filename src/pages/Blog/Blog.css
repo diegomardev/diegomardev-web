@@ -18,6 +18,7 @@ margin-bottom: auto;
 }
 .article-text{
   text-align: left;
+  margin-bottom: 0px;
 }
 .scaled-image {
   width: 75%;

@@ -107,12 +107,12 @@ footer {
 .presentation_impar {
 	font-size: 45px;
 	text-align: left;
-	margin-left: 90px;
+	margin-left: 30px;
 }
 .presentation_par {
 	font-size: 45px;
 	text-align: right;
-	margin-right: 90px;
+	margin-right: 30px;
 }
 .heartbeat {
 	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
