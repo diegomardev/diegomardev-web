@@ -103,6 +103,8 @@ footer {
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 60px);
+  margin: auto;
+  max-width: 1200px;
 }
 .presentation_impar {
 	font-size: 45px;

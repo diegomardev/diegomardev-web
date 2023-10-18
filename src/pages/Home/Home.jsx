@@ -87,10 +87,11 @@ function Home() {
     setCount((count) => count + 1);
   }
   return (
-    <div className="page-container">
+    <>
       <div>
         <Navbar/>
       </div>
+      <div className="page-container">
       {isMobile ? (
         <div>
           <h1 className="read-the-docs" style={{ display: 'flex', justifyContent: 'center'}}>
@@ -173,6 +174,7 @@ function Home() {
         </div>
         )}
     </div>
+    </>
   );
 }
 
