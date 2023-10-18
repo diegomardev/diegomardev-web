@@ -1,15 +1,23 @@
 .blog-container {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 980px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .article-title{
 font-size: 50px;
 margin-top: auto;
 margin-bottom: auto;
+}
+.article-subtitle{
+  margin-bottom: 0px;
+}
+.article-text{
+  text-align: left;
 }
 .scaled-image {
   width: 75%;
