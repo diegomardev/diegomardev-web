@@ -1,6 +1,8 @@
 .channelname {
-  font-size: 40px;
-  cursor: pointer;
+	font-size: 40px;
+	cursor: pointer;
+	max-width: max-content;
+	margin: auto;
 }
 .message_channel_color{
   color: violet;
@@ -40,6 +42,11 @@
 .twitch-image{
   border-radius: 10px;
   cursor: pointer;
+  border: 1px solid #646cff77;
+}
+.twitch-image:hover {
+  filter: drop-shadow(0 0 1em #646cffaa);
+  border-color: #646cffaa;
 }
 @media(max-width: 768px){
   .chat { 

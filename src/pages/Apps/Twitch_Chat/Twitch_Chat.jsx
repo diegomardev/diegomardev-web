@@ -38,9 +38,9 @@ function handleAuthorization(data) {
 function Twitch_Chat() {
   const [count, setCount] = useState(0);
   const [confettiCount, setConfettiCount] = useState(0);
-  const [url, setUrl] = useState('https://www.twitch.tv/kidi');
-  const [channelName, setChannelName] = useState('kidi');
-  const [cambiochannelName, setCambiochannelName] = useState('kidi');
+  const [url, setUrl] = useState('https://www.twitch.tv/ibai');
+  const [channelName, setChannelName] = useState('ibai');
+  const [cambiochannelName, setCambiochannelName] = useState('ibai');
   const [colormessagechannel, setColormessagechannel] = useState('red');
   const [messages, setMessages] = useState(['','','','','','','','','','']);
   const [viewers, setViewers] = useState(0);
@@ -72,6 +72,7 @@ function Twitch_Chat() {
         const image_direct = data.data[0].thumbnail_url.replace("{width}", width).replace("{height}", height);
         //thumbnail_url: "https://static-cdn.jtvnw.net/previews-ttv/live_user_el_yuste-{width}x{height}.jpg"
         //Creando este unique id que va cambiando cada vez que se actualice la imagen, se evita que se vuelva a cargar la misma imagen.
+        //Esta imagen twitch la actualiza cada 5 minutos
         const uniqueQuery = new Date().getTime();
         setImageDirect(`${image_direct}?t=${uniqueQuery}`);
       } else {
