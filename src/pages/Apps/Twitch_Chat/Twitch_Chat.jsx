@@ -64,14 +64,16 @@ function Twitch_Chat() {
       if (data.data.length > 0) {
         //console.log(data.data[0]);
         const viewers = data.data[0].viewer_count;
+        setViewers(viewers);
+        //console.log(sitio+" "+viewers+" espectadores")
         const width = 300;
         const height = 169;
         //const image_direct=data.data[0].thumbnail_url
         const image_direct = data.data[0].thumbnail_url.replace("{width}", width).replace("{height}", height);
         //thumbnail_url: "https://static-cdn.jtvnw.net/previews-ttv/live_user_el_yuste-{width}x{height}.jpg"
-        setViewers(viewers);
-        setImageDirect(image_direct);
-        //console.log(sitio+" "+viewers+" espectadores")
+        //Creando este unique id que va cambiando cada vez que se actualice la imagen, se evita que se vuelva a cargar la misma imagen.
+        const uniqueQuery = new Date().getTime();
+        setImageDirect(`${image_direct}?t=${uniqueQuery}`);
       } else {
         setViewers("No directo");//No está en directo
         //console.log(sitio+" No directo 0 espectadores")
@@ -207,7 +209,11 @@ function Twitch_Chat() {
         <button className="botones botones_twitch button_normal" onClick={changeChannel}>Change Channel</button>
       </div>
       {viewers !== "No directo" ? (
-        <img className='twitch-image' src={imageDirect} alt="Thumbnail" onClick={() => window.open(url, '_blank')}/>
+        <img
+          className='twitch-image'
+          src={imageDirect}
+          onClick={() => window.open(url, '_blank')}
+        />
       ) : null}
       <div className="channelname alinear" onClick={() => window.open(url, '_blank')}>
         {mayusPrimeraLetra(channelName)} Chat ({viewers})
