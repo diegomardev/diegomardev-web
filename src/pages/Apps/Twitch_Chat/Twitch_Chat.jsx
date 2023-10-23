@@ -178,6 +178,9 @@ function Twitch_Chat() {
     };
   }, []);
 
+  useEffect(() => {
+    document.title = `[${viewers}] Twitch Chat`;
+  }, [viewers]);
   return (
     <>
       <div>
