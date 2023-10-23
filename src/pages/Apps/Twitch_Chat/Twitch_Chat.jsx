@@ -60,9 +60,9 @@ function Twitch_Chat() {
     const response = await fetch(endpoint, {headers});
     if (response.ok) {
       const data = await response.json();
-      console.log(data);
+      //console.log(data);
       if (data.data.length > 0) {
-        console.log(data.data[0]);
+        //console.log(data.data[0]);
         const viewers = data.data[0].viewer_count;
         const width = 300;
         const height = 169;
