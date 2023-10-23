@@ -37,6 +37,9 @@
   font-family: inherit;
   width: 270px;
 }
+.twitch-image{
+  border-radius: 10px;
+}
 @media(max-width: 768px){
   .chat { 
     width: 90%;
@@ -44,5 +47,9 @@
   }
   .input_twitch{
     max-width: 240px;
+  }
+  .twitch-tittle{
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }

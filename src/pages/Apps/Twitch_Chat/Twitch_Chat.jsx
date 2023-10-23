@@ -8,6 +8,12 @@ import TOKENS from '../../../../data/constants';
 const clinetId     = TOKENS.TWITCH.CLIENTID;
 const clinetSecret = TOKENS.TWITCH.CLIENTSECRET;
 const access_token = TOKENS.TWITCH.ACCESS_TOKEN;
+////COMANDO PARA ACTUALIZAR ACCESS TOKEN DE TWITCH PONERLO EN CONSOLA DE LINUX
+/*
+curl -X POST 'https://id.twitch.tv/oauth2/token' \
+-H 'Content-Type: application/x-www-form-urlencoded' \
+-d 'client_id=aka4k24mhpcytuvvmayu24mvi7bxfs&client_secret=gvag9nognolg07bswj3659lonqg4fz&grant_type=client_credentials'
+*/
 
 function mayusPrimeraLetra(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
@@ -38,6 +44,7 @@ function Twitch_Chat() {
   const [colormessagechannel, setColormessagechannel] = useState('red');
   const [messages, setMessages] = useState(['','','','','','','','','','']);
   const [viewers, setViewers] = useState(0);
+  const [imageDirect, setImageDirect] = useState('');
   
   async function getStreams(sitio,canal) {
     const endpoint = "https://api.twitch.tv/helix/streams?user_login="+canal;
@@ -53,10 +60,17 @@ function Twitch_Chat() {
     const response = await fetch(endpoint, {headers});
     if (response.ok) {
       const data = await response.json();
+      console.log(data);
       if (data.data.length > 0) {
-        //console.log(data.data[0]);
+        console.log(data.data[0]);
         const viewers = data.data[0].viewer_count;
+        const width = 300;
+        const height = 169;
+        //const image_direct=data.data[0].thumbnail_url
+        const image_direct = data.data[0].thumbnail_url.replace("{width}", width).replace("{height}", height);
+        //thumbnail_url: "https://static-cdn.jtvnw.net/previews-ttv/live_user_el_yuste-{width}x{height}.jpg"
         setViewers(viewers);
+        setImageDirect(image_direct);
         //console.log(sitio+" "+viewers+" espectadores")
       } else {
         setViewers("No directo");//No está en directo
@@ -167,7 +181,7 @@ function Twitch_Chat() {
       <div>
         <Navbar />
       </div>
-      <h1 className="read-the-docs">Twitch Chat</h1>
+      <h1 className="read-the-docs twitch-tittle">Twitch Chat</h1>
       <div className='alinear'>
         {/* <label style={{ marginRight: '5px' }} htmlFor="urlInput">URL de Twitch </label> */}
         <input
@@ -178,7 +192,7 @@ function Twitch_Chat() {
           onChange={(e) => setUrl(e.target.value)}
           onKeyDown={(e) => handleKeyPress(e, changeURL)}
         />
-        <button className="botones botones_twitch button_normal" onClick={changeURL}>Cambiar URL</button>
+        <button className="botones botones_twitch button_normal" onClick={changeURL}>Change URL</button>
       </div>
       <div className='alinear'>
         {/* <label style={{ marginRight: '5px' }} htmlFor="channelInput">Canal de Twitch </label> */}
@@ -190,9 +204,14 @@ function Twitch_Chat() {
           onChange={(e) => setCambiochannelName(e.target.value)}
           onKeyDown={(e) => handleKeyPress(e, changeChannel)}
         />
-        <button className="botones botones_twitch button_normal" onClick={changeChannel}>Cambiar Canal</button>
+        <button className="botones botones_twitch button_normal" onClick={changeChannel}>Change Channel</button>
       </div>
-      <div className="channelname alinear" onClick={() => window.open(url, '_blank')}>{mayusPrimeraLetra(channelName)} Chat ({viewers})</div>
+      {viewers !== "No directo" ? (
+        <img className='twitch-image' src={imageDirect} alt="Thumbnail" onClick={() => window.open(url, '_blank')}/>
+      ) : null}
+      <div className="channelname alinear" onClick={() => window.open(url, '_blank')}>
+        {mayusPrimeraLetra(channelName)} Chat ({viewers})
+      </div>
       <div className="chat">
         {messages.map((message, index) => (
           <p key={index} className="message">
