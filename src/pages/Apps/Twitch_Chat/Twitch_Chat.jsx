@@ -197,6 +197,7 @@ function Twitch_Chat() {
           value={url}
           onChange={(e) => setUrl(e.target.value)}
           onKeyDown={(e) => handleKeyPress(e, changeURL)}
+          tabIndex={1}
         />
         <button className="botones botones_twitch button_normal" onClick={changeURL}>Change URL</button>
       </div>
@@ -209,8 +210,9 @@ function Twitch_Chat() {
           value={cambiochannelName}
           onChange={(e) => setCambiochannelName(e.target.value)}
           onKeyDown={(e) => handleKeyPress(e, changeChannel)}
+          tabIndex={2}
         />
-        <button className="botones botones_twitch button_normal" onClick={changeChannel}>Change Channel</button>
+        <button className="botones botones_twitch button_normal" onClick={changeChannel} tabIndex={3}>Change Channel</button>
       </div>
       {viewers !== "No directo" ? (
         <img

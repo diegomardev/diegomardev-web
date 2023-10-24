@@ -95,12 +95,6 @@ html.light .button_normal {
   color: #213547;
 }
 
-html.light input {
-  background-color: #f9f9f9;
-  color: #213547;
-  font-size: 1em;
-}
-
 html.light .hover-text{
   opacity: 0;
   position: absolute;
@@ -123,11 +117,6 @@ html.dark {
 
 html.dark .button_normal {
   /* background-color: #1a1a1a; */
-  color: #f9f9f9;
-}
-
-html.dark input {
-  background-color: #1a1a1a;
   color: #f9f9f9;
 }
 
