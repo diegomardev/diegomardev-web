@@ -118,6 +118,7 @@ function Apps() {
         </div>
         
       </form>
+      <div className="rectangle" style={{ width: `${pixelsWidthInput/10}px`, height: `${pixelsHeigthInput/10}px` }}></div>
     </div>
     </>
   )

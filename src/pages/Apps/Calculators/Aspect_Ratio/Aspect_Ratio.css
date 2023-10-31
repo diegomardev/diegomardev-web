@@ -79,3 +79,11 @@ html.light .select-calculator{
 html.light .select-calculator:focus-visible{
   outline: 1.5px;
 }
+
+.rectangle {
+  background-color: #3c7e93;
+  border: 5px solid #b5b2b2;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: inline-flex;
+}
