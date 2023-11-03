@@ -105,7 +105,7 @@ function Apps() {
                 type="number"
                 name="latitude"
                 autoComplete="off"
-                className="input-calculator"
+                className="input-calculator-coordinate"
                 value={latitude}
                 onChange={(e) => handleLatitudeChange(e)}
               />
@@ -117,7 +117,7 @@ function Apps() {
                 type="number"
                 name="longitude"
                 autoComplete="off"
-                className="input-calculator input-calculator"
+                className="input-calculator-coordinate"
                 value={longitude}
                 onChange={(e) => handleLongitudeChange(e)}
               />
@@ -161,7 +161,9 @@ function Apps() {
                 onChange={(e) => handleDMSChange('latSeconds', e)}
               />
               <label className="user-label-calculator">Lat "</label>
+              </div>
             </div>
+            <div>
             <div className="input-group-calculator">
               <input
                 required
