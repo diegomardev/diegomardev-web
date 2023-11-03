@@ -17,6 +17,7 @@ import Chronometer from './pages/Apps/Chronometer/Chronometer'
 import Timer from './pages/Apps/Timer/Timer'
 import Calculators from './pages/Apps/Calculators/Calculators'
 import Aspect_Ratio from './pages/Apps/Calculators/Aspect_Ratio/Aspect_Ratio'
+import Coordinate_Converter from './pages/Apps/Calculators/Coordinate_Converter/Coordinate_Converter'
 import Contact from './pages/Contact/Contact'
 import Blog from './pages/Blog/Blog'
 import About from './pages/About/About'
@@ -45,6 +46,7 @@ function App() {
         <Route path="/apps/timer" element={<Timer />} />
         <Route path="/apps/calculators" element={<Calculators />} />
         <Route path="/apps/calculators/aspect_ratio" element={<Aspect_Ratio />} />
+        <Route path="/apps/calculators/coordinate_converter" element={<Coordinate_Converter />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
