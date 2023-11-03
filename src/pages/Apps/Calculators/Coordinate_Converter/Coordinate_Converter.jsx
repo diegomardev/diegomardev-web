@@ -103,6 +103,7 @@ function Apps() {
               <input
                 required
                 type="number"
+                step="any"
                 name="latitude"
                 autoComplete="off"
                 className="input-calculator-coordinate"
@@ -115,6 +116,7 @@ function Apps() {
               <input
                 required
                 type="number"
+                step="any"
                 name="longitude"
                 autoComplete="off"
                 className="input-calculator-coordinate"
@@ -130,6 +132,7 @@ function Apps() {
               <input
                 required
                 type="number"
+                step="any"
                 name="latDegrees"
                 autoComplete="off"
                 className="input-calculator degrees"
@@ -142,6 +145,7 @@ function Apps() {
               <input
                 required
                 type="number"
+                step="any"
                 name="latMinutes"
                 autoComplete="off"
                 className="input-calculator minutes"
@@ -154,6 +158,7 @@ function Apps() {
               <input
                 required
                 type="number"
+                step="any"
                 name="latSeconds"
                 autoComplete="off"
                 className="input-calculator seconds"
@@ -168,6 +173,7 @@ function Apps() {
               <input
                 required
                 type="number"
+                step="any"
                 name="lonDegrees"
                 autoComplete="off"
                 className="input-calculator degrees"
@@ -180,6 +186,7 @@ function Apps() {
               <input
                 required
                 type="number"
+                step="any"
                 name="lonMinutes"
                 autoComplete="off"
                 className="input-calculator minutes"
@@ -192,6 +199,7 @@ function Apps() {
               <input
                 required
                 type="number"
+                step="any"
                 name="lonSeconds"
                 autoComplete="off"
                 className="input-calculator seconds"
