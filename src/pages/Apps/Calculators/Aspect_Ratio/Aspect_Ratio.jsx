@@ -9,22 +9,33 @@ function Apps() {
   const [ratioHeigthInput, setRatioHeigthInput] = useState(9);
   const [pixelsWidthInput, setPixelsWidthInput] = useState(1920);
   const [pixelsHeigthInput, setPixelsHeigthInput] = useState(1080);
+  const [ratioWidth, setRatioWidth] = useState(200);
+  const [ratioHeigth, setRatioHeigth] = useState(112.5);
 
   const handleAspectRatioChange = (e) => {
     const selectedAspectRatio = e.target.value.split('/');
-    
     setRatioWidthInput(selectedAspectRatio[0]);
     setRatioHeigthInput(selectedAspectRatio[1]);
+    setRatioHeigth(200*selectedAspectRatio[1]/selectedAspectRatio[0]);
     setPixelsHeigthInput((pixelsWidthInput * selectedAspectRatio[1]) / selectedAspectRatio[0]);
+
   }
 
   const handle_ratioWidthInput = (e) => {
     setRatioWidthInput(e.target.value);
+    const ratioheigth = 200 * ratioHeigthInput / e.target.value;
+    console.log("ratioheight1 "+ratioheigth);
+    if(ratioheigth<400){setRatioHeigth(ratioheigth);}
+    else{setRatioHeigth(400);}
     setPixelsHeigthInput(pixelsWidthInput * ratioHeigthInput / e.target.value);
   }
 
   const handle_ratioHeigthInput = (e) => {
     setRatioHeigthInput(e.target.value);
+    const ratioheigth = 200 * e.target.value / ratioWidthInput;
+    console.log("ratioheight2 "+ratioheigth);
+    if(ratioheigth<400){setRatioHeigth(ratioheigth);}
+    else{setRatioHeigth(400);}
     setPixelsHeigthInput(pixelsWidthInput * e.target.value / ratioWidthInput);
   }
   
@@ -42,13 +53,12 @@ function Apps() {
     <div>
       <Navbar/>
     </div>
-    <h1 className="read-the-docs">
-      Aspect Ratio Calculator
+    <h1 className="read-the-docs aspect-ratio-tittle">
+      Aspect Ratio
     </h1>
     <div>
       <form>
         <div>
-          <span className="span-calculator">Aspect Ratio</span>
           <select
             name="aspect_ratio"
             id="ratio"
@@ -118,7 +128,7 @@ function Apps() {
         </div>
         
       </form>
-      <div className="rectangle" style={{ width: `${pixelsWidthInput/10}px`, height: `${pixelsHeigthInput/10}px` }}></div>
+      <div className="rectangle" style={{ width: `${ratioWidth}px`, height: `${ratioHeigth}px` }}></div>
     </div>
     </>
   )
