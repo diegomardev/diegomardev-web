@@ -80,3 +80,9 @@ html.light .input-calculator-coordinate{
   margin-top: 20px;
   display: inline-flex;
 }
+
+.map{
+  filter:  invert(92%) contrast(83%);
+  border: 0;
+  border-radius: 1rem;
+}
