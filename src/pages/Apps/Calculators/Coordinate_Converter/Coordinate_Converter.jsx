@@ -302,7 +302,7 @@ function Apps() {
           </div>
         </form>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2901.894633584818!2d-8.1979672322785!3d42.33739387279807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7ca83cbedb05%3A0xbe81693f9040032d!2zR2Fsw6FuLCAzNiwgMTUwMDkgQSBDb3J1w7FhLCBMYSBDb3J1w7Fh!5e0!3m2!1ses!2ses!4v1699289414569!5m2!1ses!2ses"
+          src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100000.0!2d${longitude}!3d${latitude}!!!!!!!!!!!!!`}
           width="360"
           height="360"
           className='map'

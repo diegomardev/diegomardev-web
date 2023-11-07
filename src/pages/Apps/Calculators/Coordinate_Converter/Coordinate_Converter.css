@@ -70,7 +70,6 @@ html.light .input-calculator-coordinate{
     margin-top: 0;
     margin-bottom: 0;
   }
-
 }
 
 .rectangle {
@@ -81,8 +80,12 @@ html.light .input-calculator-coordinate{
   display: inline-flex;
 }
 
-.map{
+html.dark .map{
   filter:  invert(92%) contrast(83%);
+  border: 0;
+  border-radius: 1rem;
+}
+html.light .map{
   border: 0;
   border-radius: 1rem;
 }
