@@ -1,11 +1,12 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Coordinate_Converter.css';
 import Navbar from '../../../../components/Navbar/Navbar';
-
+import gk from 'gauss-krueger'
 function Apps() {
   // Variables para coordenadas decimales
   const [latitude, setLatitude] = useState(52.517265);
   const [longitude, setLongitude] = useState(13.389244);
+  const [altitude, setAltitude] = useState(100000.0);
 
   // Variables para coordenadas en grados, minutos y segundos
   const [latitudeDegrees, setLatitudeDegrees] = useState(52);
@@ -87,6 +88,7 @@ function Apps() {
 
       setLatitude(newLat);
       setLongitude(newLon);
+      DecimaltoGaussKreuger(newLat, newLon);
       setLatitudeDegrees(newLatDegrees);
       setLatitudeMinutes(newLatMinutes);
       setLatitudeSeconds(newLatSeconds);
@@ -95,19 +97,12 @@ function Apps() {
       setLongitudeSeconds(newLonSeconds);
     }
   };
-  const handleZoneChange = (e) => {
-    const value = parseInt(e.target.value, 10);
-    if (!isNaN(value)) {
-      setZone(value);
-      updateDecimalFromGaussKreuger(value, r, h);
-    }
-  };
   
   const handleRChange = (e) => {
     const value = parseFloat(e.target.value);
     if (!isNaN(value)) {
       setR(value);
-      updateDecimalFromGaussKreuger(zone, value, h);
+      GaussKreugertoDecimal(value, h);
     }
   };
   
@@ -115,28 +110,56 @@ function Apps() {
     const value = parseFloat(e.target.value);
     if (!isNaN(value)) {
       setH(value);
-      updateDecimalFromGaussKreuger(zone, r, value);
+      GaussKreugertoDecimal(r, value);
     }
   };
   
-  const updateDecimalFromGaussKreuger = (zone, r, h) => {
-    const rho = 57.29577951; // 180/PI
-    const e2 = 0.006719219;
-    const b1 = r / 10000855.7646;
-    const b2 = b1 * b1;
-    const bf = (325632.08677 * b1 * (
-      ((((0.00000562025 * b2 - 0.0000436398) * b2 + 0.00022976983) * b2 - 0.00113566119) * b2 + 0.00424914906) * b2 - 0.00831729565) * b2 + 1) / 3600 / rho;
-    const fa = (zone * 1000000 - 500000) / (6398786.849 / Math.sqrt(1 + Math.pow(Math.cos(bf), 2) * e2));
-    const LAT_Formula = (bf - (Math.pow(fa, 2) * (Math.sin(bf) / Math.cos(bf)) * (1 + Math.pow(Math.cos(bf), 2) * e2) / 2) + (Math.pow(fa, 4) * (Math.sin(bf) / Math.cos(bf)) * (5 + 3 * Math.pow(Math.sin(bf) / Math.cos(bf), 2) + 6 * Math.pow(Math.cos(bf), 2) * e2 - 6 * Math.pow(Math.cos(bf), 2) * e2 * Math.pow(Math.sin(bf) / Math.cos(bf), 2)) / 24)) * rho;
-    const LON_Formula = (fa - (Math.pow(fa, 3) * (1 + 2 * Math.pow(Math.sin(bf) / Math.cos(bf), 2) + Math.pow(Math.cos(bf), 2) * e2) / 6 + (Math.pow(fa, 5) * (1 + 28 * Math.pow(Math.sin(bf) / Math.cos(bf), 2) + 24 * Math.pow(Math.sin(bf) / Math.cos(bf), 4)) / 120)) * rho / Math.cos(bf));
-  
-    // Actualiza las coordenadas decimales
-    setLatitude(LAT_Formula);
-    setLongitude(LON_Formula);
-    updateDMSFromDecimal(LAT_Formula, LON_Formula);
+  const GaussKreugertoDecimal = (r, h) => {
+    let wgs84 = gk.toWGS({x: r, y: h});
+    setLatitude(wgs84.latitude);
+    setLongitude(wgs84.longitude);
+  };
+  const DecimaltoGaussKreuger = (lon, lat) => {
+    lat = lat*1; //multiplicamos *1 para que pasen de string a number
+    lon = lon*1; //multiplicamos *1 para que pasen de string a number
+    try{
+      let gk2 = gk.toGK({longitude: lon, latitude: lat})
+      console.log(gk2)
+      setR(gk2.x);
+      setH(gk2.y);
+      let zona = parseInt(gk2.x.toString()[0]);
+      setZone(zona);
+    }
+    catch(e){
+      setR(0);
+      setH(0);
+      setZone(0);
+    }
   };
   
-  
+  useEffect(() => {
+    document.title = `Coordinate Converter`;
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', `Coordinate Converter`);
+    }
+    const metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (metaKeywords) {
+      metaKeywords.setAttribute('content', `coordinate, conventer, latitude, longitude`);
+    }
+ 
+    
+    //console.log(wgs84)
+    let gk2 = gk.toGK({longitude: 13.389244, latitude: 52.517265}, 4)
+    console.log(gk2)
+    // The script guesses the GK zone based on the input coordinate longitude.
+    // You can also supply a zone directly via the zone parameter:
+    let gk5 = gk.toGK({longitude: 13.4, latitude: 52.5}, 5) // {x: 5391482.283752493, y: 5819737.58836849}
+    console.log(gk5)
+  }, []);
+  useEffect(()=>{
+    DecimaltoGaussKreuger(longitude, latitude);
+  },[latitude, longitude])
 
   return (
     <>
@@ -175,7 +198,7 @@ function Apps() {
               <label className="user-label-calculator">Longitude</label>
             </div>
           </div>
-          <span>Degrees Minutes</span>
+          <span>Degrees Minutes Seconds</span>
           <div>
             <div className="input-group-calculator">
               <input
@@ -258,7 +281,7 @@ function Apps() {
               <label className="user-label-calculator">Lon "</label>
             </div>
           </div>
-          <span>Gauß-Krüger</span>
+          <span>Gauß-Krüger (only zones: 2,3,4,5)</span>
           <div>
             <div className="input-group-calculator input-group-calculator-gaus">
               <input
@@ -269,7 +292,6 @@ function Apps() {
                 autoComplete="off"
                 className="input-calculator-coordinate zone"
                 value={zone}
-                onChange={(e) => handleZoneChange(e)}
               />
               <label className="user-label-calculator user-label-zone">Zone</label>
             </div>
@@ -302,7 +324,7 @@ function Apps() {
           </div>
         </form>
         <iframe
-          src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100000.0!2d${longitude}!3d${latitude}!!!!!!!!!!!!!`}
+          src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d${altitude}!2d${longitude}!3d${latitude}!!!!!!!!!!!!!`}
           width="360"
           height="360"
           className='map'

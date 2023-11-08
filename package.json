@@ -19,6 +19,8 @@
     "@tabler/icons-react": "^2.32.0",
     "atropos": "^2.0.2",
     "framer-motion": "^10.16.4",
+    "gauss-krueger": "1.0.1",
+    "proj4": "2.4.4",
     "react": "^18.2.0",
     "react-chrome-dino": "^0.1.3",
     "react-device-detect": "^2.2.3",
