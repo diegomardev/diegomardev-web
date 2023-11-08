@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import './Coordinate_Converter.css';
 import Navbar from '../../../../components/Navbar/Navbar';
-import gk from 'gauss-krueger'
+import gk from 'gauss-krueger';
+//import utm from 'utm';
+
 function Apps() {
   // Variables para coordenadas decimales
   const [latitude, setLatitude] = useState(52.517265);
@@ -100,7 +102,7 @@ function Apps() {
   const handleZoneChange = (e) => {
   }
   const handleRChange = (e) => {
-    const value = parseFloat(e.target.value);
+    let value = parseFloat(e.target.value);
     if (!isNaN(value)) {
       setR(value);
       GaussKreugertoDecimal(value, h);
@@ -108,15 +110,16 @@ function Apps() {
   };
   
   const handleHChange = (e) => {
-    const value = parseFloat(e.target.value);
+    let value = parseFloat(e.target.value);
     if (!isNaN(value)) {
       setH(value);
-      //console.log(value)
       GaussKreugertoDecimal(r, value);
     }
   };
   
   const GaussKreugertoDecimal = (r, h) => {
+    r = r*1;
+    h = h*1;
     let wgs84 = gk.toWGS({x: r, y: h});
     setLatitude(wgs84.latitude);
     setLongitude(wgs84.longitude);
