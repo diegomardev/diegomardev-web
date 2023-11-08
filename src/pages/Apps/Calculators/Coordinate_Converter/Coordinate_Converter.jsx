@@ -97,7 +97,8 @@ function Apps() {
       setLongitudeSeconds(newLonSeconds);
     }
   };
-  
+  const handleZoneChange = (e) => {
+  }
   const handleRChange = (e) => {
     const value = parseFloat(e.target.value);
     if (!isNaN(value)) {
@@ -110,6 +111,7 @@ function Apps() {
     const value = parseFloat(e.target.value);
     if (!isNaN(value)) {
       setH(value);
+      //console.log(value)
       GaussKreugertoDecimal(r, value);
     }
   };
@@ -124,9 +126,9 @@ function Apps() {
     lon = lon*1; //multiplicamos *1 para que pasen de string a number
     try{
       let gk2 = gk.toGK({longitude: lon, latitude: lat})
-      console.log(gk2)
-      setR(gk2.x);
-      setH(gk2.y);
+      //console.log(gk2)
+      setR(gk2.x.toFixed(3));
+      setH(gk2.y.toFixed(3));
       let zona = parseInt(gk2.x.toString()[0]);
       setZone(zona);
     }
@@ -145,17 +147,8 @@ function Apps() {
     }
     const metaKeywords = document.querySelector('meta[name="keywords"]');
     if (metaKeywords) {
-      metaKeywords.setAttribute('content', `coordinate, conventer, latitude, longitude`);
+      metaKeywords.setAttribute('content', `coordinate, conventer, latitude, longitude, gauss ,kruger`);
     }
- 
-    
-    //console.log(wgs84)
-    let gk2 = gk.toGK({longitude: 13.389244, latitude: 52.517265}, 4)
-    console.log(gk2)
-    // The script guesses the GK zone based on the input coordinate longitude.
-    // You can also supply a zone directly via the zone parameter:
-    let gk5 = gk.toGK({longitude: 13.4, latitude: 52.5}, 5) // {x: 5391482.283752493, y: 5819737.58836849}
-    console.log(gk5)
   }, []);
   useEffect(()=>{
     DecimaltoGaussKreuger(longitude, latitude);
@@ -292,6 +285,7 @@ function Apps() {
                 autoComplete="off"
                 className="input-calculator-coordinate zone"
                 value={zone}
+                onChange={(e) => handleDMSChange('lonSeconds', e)}
               />
               <label className="user-label-calculator user-label-zone">Zone</label>
             </div>
