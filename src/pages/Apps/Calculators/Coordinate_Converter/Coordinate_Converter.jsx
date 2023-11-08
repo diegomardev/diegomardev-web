@@ -300,7 +300,7 @@ function Apps() {
                 value={r}
                 onChange={(e) => handleRChange(e)}
               />
-              <label className="user-label-calculator">Rechtswert (N)</label>
+              <label className="user-label-calculator">Rechtswert (E)</label>
             </div>
             <div className="input-group-calculator input-group-calculator-gaus">
               <input
@@ -313,7 +313,7 @@ function Apps() {
                 value={h}
                 onChange={(e) => handleHChange(e)}
               />
-              <label className="user-label-calculator">Hochwert (E)</label>
+              <label className="user-label-calculator">Hochwert (N)</label>
             </div>
           </div>
         </form>
