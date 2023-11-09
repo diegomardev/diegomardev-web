@@ -19,14 +19,14 @@ function Apps() {
   const [longitudeSeconds, setLongitudeSeconds] = useState(21.2784);
 
   // Variables para coordenadas Gauß-Krüger
-  const [zone, setZone] = useState(4); // Ejemplo, debes establecer la zona correcta
+  const [zone, setZone] = useState(4);
   const [r, setR] = useState(4594410.412);
   const [h, setH] = useState(5821363.617);
 
   // Variables para coordenadas UTM
   const [easting, setEasting] = useState(395733.419);
   const [northing, setNorthing] = useState(6042268.877);
-  const [zoneNum, setZoneNum] = useState(33); // Ejemplo, debes establecer la zona correcta
+  const [zoneNum, setZoneNum] = useState(33);
   const [zoneLetter, setZoneLetter] = useState('U');
 
   const updateDecimalDegrees = (lat, lon) => {
@@ -196,7 +196,7 @@ function Apps() {
     }
     const metaKeywords = document.querySelector('meta[name="keywords"]');
     if (metaKeywords) {
-      metaKeywords.setAttribute('content', `coordinate, conventer, latitude, longitude, gauss ,kruger`);
+      metaKeywords.setAttribute('content', `coordinate, conventer, latitude, longitude, gauss ,kruger, UTM, WGS84`);
     }
   }, []);
   useEffect(()=>{

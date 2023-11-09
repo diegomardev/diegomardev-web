@@ -22,8 +22,8 @@ function Apps() {
     </h1>
     <div>
       <div >
-      <button className="botones_juegos my-button twitch_text" onClick={app1}>📱Aspect Ratio📱</button>
-      <button className="botones_juegos my-button twitch_text" onClick={app2}>📱Coordinate Converter📱</button>
+      <button className="botones_juegos my-button " onClick={app1}>🖥️ Aspect Ratio 🖥️</button>
+      <button className="botones_juegos my-button " onClick={app2}>🗺️ Coordinate Converter 🗺️</button>
       </div>
     </div>
     </>

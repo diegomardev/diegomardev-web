@@ -25,11 +25,11 @@ function Apps() {
       <div >
       <button className="botones_juegos my-button twitch_text" onClick={app1}>Twitch Chat</button>
       {/* <button className="botones_juegos" onClick={app2}>Threads API</button> */}
-      <button className="botones_juegos my-button chronometer_text" onClick={app5}>Chronometer ⏱️</button>
-      <button className="botones_juegos my-button timer_text" onClick={app6}>Timer ⏲️</button>
-      <button className="botones_juegos my-button vibration_text" onClick={app3}>Vibration 📳</button>
-      <button className="botones_juegos my-button sensor_text" onClick={app4}>Mobile Sensor</button>
-      <button className="botones_juegos my-button unit_converter_text" onClick={app7}>🖩Calculators🖩</button>
+      <button className="botones_juegos my-button chronometer_text" onClick={app5}>⏱️ Chronometer ⏱️</button>
+      <button className="botones_juegos my-button timer_text" onClick={app6}>⏲️ Timer ⏲️</button>
+      <button className="botones_juegos my-button vibration_text" onClick={app3}>📳 Vibration 📳</button>
+      <button className="botones_juegos my-button sensor_text" onClick={app4}>📱 Mobile Sensor 📱</button>
+      <button className="botones_juegos my-button unit_converter_text" onClick={app7}>📟 Calculators 📟</button>
       </div>
     </div>
     </>
