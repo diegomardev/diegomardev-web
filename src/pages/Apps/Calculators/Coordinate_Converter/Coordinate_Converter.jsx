@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './Coordinate_Converter.css';
 import Navbar from '../../../../components/Navbar/Navbar';
 import gk from 'gauss-krueger';
-//import utm from 'utm';
+import { fromLatLon, toLatLon } from "utm-projection";
 
 function Apps() {
   // Variables para coordenadas decimales
@@ -22,6 +22,12 @@ function Apps() {
   const [zone, setZone] = useState(4); // Ejemplo, debes establecer la zona correcta
   const [r, setR] = useState(4594410.412);
   const [h, setH] = useState(5821363.617);
+
+  // Variables para coordenadas UTM
+  const [easting, setEasting] = useState(395733.419);
+  const [northing, setNorthing] = useState(6042268.877);
+  const [zoneNum, setZoneNum] = useState(33); // Ejemplo, debes establecer la zona correcta
+  const [zoneLetter, setZoneLetter] = useState('U');
 
   const updateDecimalDegrees = (lat, lon) => {
     setLatitude(lat);
@@ -46,7 +52,7 @@ function Apps() {
   };
 
   const handleLatitudeChange = (e) => {
-    const value = e.target.value;
+    let value = e.target.value;
     if (!isNaN(value)) {
       updateDecimalDegrees(value, longitude);
       updateDMSFromDecimal(value, longitude);
@@ -142,6 +148,46 @@ function Apps() {
     }
   };
   
+  const handleEastingChange = (e) => {
+    let value = parseFloat(e.target.value);
+    if (!isNaN(value)) {
+      setEasting(value);
+      UTMtoDecimal(value, northing, zoneNum);
+    }
+  };
+  const handleNorthingChange = (e) => {
+    let value = parseFloat(e.target.value);
+    if (!isNaN(value)) {
+      setEasting(value);
+      UTMtoDecimal(easting, value, zoneNum);
+    }
+  };
+  const handleZoneNumChange = (e) => {
+    let value = parseFloat(e.target.value);
+    console.log(value);
+    if (!isNaN(value)) {
+      setEasting(value);
+      UTMtoDecimal(easting, northing, value);
+    }
+  };
+  const DecimaltoUTM = () => {
+    let lat =latitude*1;
+    let lon = longitude*1;
+    if(lat > 84){lat = 84;}
+    if(lat < -84){lat = -84;}
+    if(lon > 180){lon = 180;}
+    if(lon < -180){lon = -180;}
+    const res = fromLatLon(lat, lon);
+    setEasting(res.easting.toFixed(3));
+    setNorthing(res.northing.toFixed(3));
+    setZoneNum(res.zoneNum);
+    setZoneLetter(res.zoneLetter);
+  };
+  const UTMtoDecimal = (eas,nor,zon) => {
+    const res = toLatLon(eas, nor, zon);
+    setLatitude(res.latitude);
+    setLongitude(res.longitude);
+  };
   useEffect(() => {
     document.title = `Coordinate Converter`;
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -155,6 +201,7 @@ function Apps() {
   }, []);
   useEffect(()=>{
     DecimaltoGaussKreuger(longitude, latitude);
+    DecimaltoUTM();
   },[latitude, longitude])
 
   return (
@@ -171,6 +218,8 @@ function Apps() {
               <input
                 required
                 type="number"
+                min="-80"
+                max="84"
                 step="any"
                 name="latitude"
                 autoComplete="off"
@@ -184,6 +233,8 @@ function Apps() {
               <input
                 required
                 type="number"
+                min="-180"
+                max="180"
                 step="any"
                 name="longitude"
                 autoComplete="off"
@@ -200,6 +251,8 @@ function Apps() {
               <input
                 required
                 type="number"
+                min="-80"
+                max="84"
                 step="any"
                 name="latDegrees"
                 autoComplete="off"
@@ -241,6 +294,8 @@ function Apps() {
               <input
                 required
                 type="number"
+                min="-180"
+                max="180"
                 step="any"
                 name="lonDegrees"
                 autoComplete="off"
@@ -275,6 +330,48 @@ function Apps() {
                 onChange={(e) => handleDMSChange('lonSeconds', e)}
               />
               <label className="user-label-calculator">Lon "</label>
+            </div>
+          </div>
+          <span>UTM (WGS84)</span>
+          <div>
+            <div className="input-group-calculator input-group-calculator-gaus">
+              <input
+                required
+                type="string"
+                step="any"
+                name="zoneNum"
+                autoComplete="off"
+                className="input-calculator-coordinate zone"
+                value={zoneNum+zoneLetter}
+                onChange={(e) => handleZoneNumChange(e)}
+              />
+              <label className="user-label-calculator user-label-zone">Zone</label>
+            </div>
+            <div className="input-group-calculator input-group-calculator-gaus">
+              <input
+                required
+                type="number"
+                step="any"
+                name="easting"
+                autoComplete="off"
+                className="input-calculator-coordinate seconds"
+                value={easting}
+                onChange={(e) => handleEastingChange(e)}
+              />
+              <label className="user-label-calculator">Easting (E)</label>
+            </div>
+            <div className="input-group-calculator input-group-calculator-gaus">
+              <input
+                required
+                type="number"
+                step="any"
+                name="northing"
+                autoComplete="off"
+                className="input-calculator-coordinate seconds"
+                value={northing}
+                onChange={(e) => handleNorthingChange(e)}
+              />
+              <label className="user-label-calculator">Northing (N)</label>
             </div>
           </div>
           <span>Gauß-Krüger (only zones: 2,3,4,5)</span>
