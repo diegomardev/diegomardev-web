@@ -56,8 +56,22 @@
 .read-the-docs {
   color: #888;
 }
-.footer_home{
+.footer_home {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.options-home{
   margin-top: 60px;
+}
+@media(min-width: 768px){
+  .options-home{
+    margin-top: 300px;
+  }
 }
 .botones{
   margin-left: 5px;
@@ -80,7 +94,7 @@
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.5s;
-  min-width: 140px;
+  min-width: 150px;
   width: 260px;
   height: 170px;
   margin-bottom: 40px;
@@ -110,6 +124,7 @@ footer {
 	font-size: 45px;
 	text-align: left;
 	margin-left: 30px;
+  height: 150px;
 }
 .presentation_par {
 	font-size: 45px;
@@ -263,28 +278,32 @@ footer {
   }
 }
 
-
-.olivetti {
-	font-family: monospace;
-	color: white;
-	width: 21ch;
-	animation: olivetti 5s steps(20), pampalluga 0.5s step-end infinite alternate;
-	white-space: nowrap;
-	overflow: hidden;
-	border-right: 2px solid white;
-}
-html.light .olivetti {
-  color: #213547;
-  border-right: 2px solid rgba(27, 25, 25, 0.349);
-}
-@keyframes olivetti {
-	from {
-		width: 0;
-	}
-}
-
 @keyframes pampalluga {
 	50% {
 		border-color: transparent;
 	}
+}
+.Typewriter__wrapper .Typewriter__cursor{
+  font-size: 60px;
+}
+@media(max-width: 768px){
+  .Typewriter__wrapper .Typewriter__cursor{
+    font-size: 25px;
+  }
+  .home_big_button {
+    margin: 10px;
+    font-size: 11pt;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.349);
+    padding: 0.4em 1.2em;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.5s;
+    min-width: 150px;
+    width: 150px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
 }

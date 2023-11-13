@@ -7,18 +7,13 @@ import Navbar from '../../components/Navbar/Navbar'
 import confetti_logo from '../../assets/images/confetti.svg'
 import { IconHeart, IconHeartFilled, IconBrush, IconHeartCode, IconGhost3, IconHome, IconStar } from '@tabler/icons-react';
 import { isMobile } from "react-device-detect";
-
-//import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-
+import Typewriter from 'typewriter-effect';
+import GraphemeSplitter from 'grapheme-splitter';
 
 let x = 0;
 let clickX = 0; // Coordenada x relativa al ancho de la ventana
 let clickY = 0;// Coordenada y relativa al alto de la ventana
+
 function fireworks(){
   var duration = 5 * 1000; //5 segundos de duracion
   var animationEnd = Date.now() + duration;
@@ -86,6 +81,10 @@ function Home() {
     fireworks();
     setCount((count) => count + 1);
   }
+  const stringSplitter = string => {
+    const splitter = new GraphemeSplitter();
+    return splitter.splitGraphemes(string);
+  };
   return (
     <>
       <div>
@@ -102,32 +101,42 @@ function Home() {
               {active ? <IconHeart className="heartbeat" size={60} color='red' fill='red'/> : <IconStar className='shake-bottom' size={60} color='#888'/>}
             </a>
           </h1>
-          <p>
-            Hello 👋, I'am Diego, <br />
-            Welcome to my website.
-          </p>
-          <div>
-            <a onClick={handleClick2}>
-              <img src={viteLogo} className="logo" alt="Vite logo" />
-            </a>
-            <a onClick={handleClick2}>
-              <img src={reactLogo} className="logo react" alt="React logo" />
-            </a>
+          <div className='presentation_impar'>
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                .typeString('Hello 👋,')
+                .pauseFor(2500)
+                .typeString('  Welcome to my WebSite!')
+                .pauseFor(2500)
+                .deleteChars(22)
+                .typeString('I am Diego, visit all the menu.')
+                .pauseFor(2500)
+                .deleteAll()
+                .start();
+              }}
+              options={{
+                autoStart: true,
+                loop: true,
+                stringSplitter
+              }}
+            />
           </div>
-          <div>
-            <a onClick={handleClick2}>
-              <img src={confetti_logo} className='logo_confetti'/>
-            </a>
+          <div className='options-home'>
+          <button className='home_big_button' onClick={() => handleClickUrl('games')}>
+          🎮 GAMES 🎮
+          </button>
+          <button className='home_big_button' onClick={() => handleClickUrl('apps')}>
+          🎊 APPS 🎊
+          </button>
+          <button className='home_big_button' onClick={() => handleClickUrl('contact')}>
+          🎟️ CONTACT 🎟️
+          </button>            
+          <button className='home_big_button' onClick={() => handleClickUrl('login')}>
+          💻 LOGIN 💻
+          </button>
           </div>
-          
-          <div className="card">
-            <div >
-              <button className="botones button_normal" onClick={handleClick}>let: {x}</button>
-              <button className="botones button_normal" onClick={handleClick2}>🎉 {confetti_count}</button>
-              <button className="botones button_normal" onClick={handleClick3}>🎊 {count}</button>
-            </div>
-          </div>
-          <footer className="read-the-docs"style={{ display: 'flex', justifyContent: 'center'}}>
+          <footer className="read-the-docs footer_home">
             <IconGhost3/>&nbsp;
             Make with &nbsp; <IconHeartCode fill='red'/> &nbsp; by &nbsp;
             <a href="https://www.linkedin.com/in/diegomarbar/" target="_blank">diegomardev</a> &nbsp;
@@ -144,14 +153,28 @@ function Home() {
               {active ? <IconHeart className="heartbeat" size={60} color='red' fill='red'/> : <IconStar className='shake-bottom' size={60} color='#888'/>}
             </a>
           </h1>
-          <p className='presentation_impar olivetti'>
-            Hello 👋, I'am Diego,
-          </p>
-          <p className='presentation_par'>
-            You can see all the menu <br />
-            and play the games and register.
-          </p>
-          <div style={{ marginTop: "200px" }}>
+          <div className='presentation_impar'>
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString('Hello 👋,')
+                  .pauseFor(2500)
+                  .typeString('  Welcome to my WebSite!')
+                  .pauseFor(2500)
+                  .deleteChars(22)
+                  .typeString('I am Diego, visit all the menu.')
+                  .pauseFor(2500)
+                  .deleteAll()
+                  .start();
+              }}
+              options={{
+                autoStart: true,
+                loop: true,
+                stringSplitter
+              }}
+            />
+          </div>
+          <div className='options-home'>
           <button className='home_big_button' onClick={() => handleClickUrl('games')}>
           🎮 GAMES 🎮
           </button>
@@ -165,7 +188,7 @@ function Home() {
           💻 LOGIN 💻
           </button>
           </div>
-          <footer className="read-the-docs footer_home"style={{ display: 'flex', justifyContent: 'center'}}>
+          <footer className="read-the-docs footer_home">
             <IconGhost3/>&nbsp;
             Make with &nbsp; <IconHeartCode fill='red'/> &nbsp; by &nbsp;
             <a href="https://www.linkedin.com/in/diegomarbar/" target="_blank">diegomardev</a> &nbsp;
