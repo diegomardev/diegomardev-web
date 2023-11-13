@@ -12,6 +12,8 @@ function Apps() {
   function app5() {window.location.href = "apps/chronometer";}
   function app6() {window.location.href = "apps/timer";}
   function app7() {window.location.href = "apps/calculators";}
+  function app8() {window.location.href = "apps/map";}
+  
   
   return (
     <>
@@ -30,6 +32,7 @@ function Apps() {
       <button className="botones_juegos my-button vibration_text" onClick={app3}>📳 Vibration 📳</button>
       <button className="botones_juegos my-button sensor_text" onClick={app4}>📱 Mobile Sensor 📱</button>
       <button className="botones_juegos my-button unit_converter_text" onClick={app7}>📟 Calculators 📟</button>
+      <button className="botones_juegos my-button map_text" onClick={app8}>🗺️ Map 🗺️</button>
       </div>
     </div>
     </>
