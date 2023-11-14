@@ -28,13 +28,13 @@ function App() {
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={markerPosition} >
+        <Marker position={markerPosition} iconUrl= 'marker-icon.png'>
           <Popup>Your point is here</Popup>
           <img
             src="./../marker-icon.png"
             alt="Custom Marker"
             style={{marginLeft: '-12px' , marginTop: '-41px' , width: '25px', height: '41px' ,zIndex: '1000'}}
-          />          
+          />
         </Marker>
         <ClickHandler setMarkerPosition={setMarkerPosition} />
       </MapContainer>
