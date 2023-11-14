@@ -3,6 +3,7 @@ import './Coordinate_Converter.css';
 import Navbar from '../../../../components/Navbar/Navbar';
 import gk from 'gauss-krueger';
 import { fromLatLon, toLatLon } from "utm-projection";
+import Map from '../../../../components/Map/Map'
 
 function Apps() {
   // Variables para coordenadas decimales
@@ -49,6 +50,11 @@ function Apps() {
     setLongitudeDegrees(lonDegree);
     setLongitudeMinutes(lonMinute);
     setLongitudeSeconds(lonSecond);
+  };
+
+  const handleMapClick = (position) => {
+    setLatitude(position[0]);
+    setLongitude(position[1]);
   };
 
   const handleLatitudeChange = (e) => {
@@ -202,6 +208,7 @@ function Apps() {
   useEffect(()=>{
     DecimaltoGaussKreuger(longitude, latitude);
     DecimaltoUTM();
+    updateDMSFromDecimal(latitude, longitude);
   },[latitude, longitude])
 
   return (
@@ -417,16 +424,9 @@ function Apps() {
             </div>
           </div>
         </form>
-        <iframe
-          src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d${altitude}!2d${longitude}!3d${latitude}!!!!!!!!!!!!!`}
-          width="360"
-          height="360"
-          className='map'
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Google Maps"
-        />
+        <div className='map'>
+          <Map Latitude={latitude} Longitude={longitude} size_width="360px" size_height="360px" border_radius="20px" onMapClick={handleMapClick}></Map>
+        </div>
       </div>
     </>
   );

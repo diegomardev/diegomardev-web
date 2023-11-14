@@ -1,40 +1,34 @@
-import React, { useState } from 'react';
-import { MapContainer, TileLayer, Marker, useMapEvents, Popup } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
+import { useState, useEffect } from 'react';
 import './Map.css';
+import Navbar from '../../../components/Navbar/Navbar';
+import gk from 'gauss-krueger';
+import { fromLatLon, toLatLon } from "utm-projection";
+import Map from '../../../components/Map/Map'
 
-
-function ClickHandler({ setMarkerPosition }) {
-  const map = useMapEvents({
-    click(e) {
-      const { lat, lng } = e.latlng;
-      setMarkerPosition([lat, lng]);  // Actualiza la posición del marcador
-    },
-  });
-
-  return null;
-}
-
-function App() {
-  const [markerPosition, setMarkerPosition] = useState([43.3607804, -8.41120]);
-
+function Apps() {
+  const [latitude, setLatitude] = useState(52.517265);
+  const [longitude, setLongitude] = useState(13.389244);
+  const handleMapClick = (position) => {
+    setLatitude(position[0].toFixed(6));
+    setLongitude(position[1].toFixed(6));
+  };
   return (
-    <div>
-      <MapContainer
-        attributionControl={false}
-        center={markerPosition}
-        zoom={13}
-      >
-        <TileLayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <Marker position={markerPosition} iconUrl= 'marker-icon.png'>
-          <Popup>Your point is here</Popup>
-        </Marker>
-        <ClickHandler setMarkerPosition={setMarkerPosition} />
-      </MapContainer>
-    </div>
+    <>
+      <div>
+        <Navbar />
+      </div>
+      <h1 className="read-the-docs">Open Map</h1>
+      <div>
+        <div className='map'>
+          <Map Latitude={latitude} Longitude={longitude} size_width="360px" size_height="360px" border_radius="20px" onMapClick={handleMapClick}></Map>
+        </div>
+        <div className='info'>
+          <p>Latitude: {latitude}</p>
+          <p>Longitude: {longitude}</p>
+        </div>
+      </div>
+    </>
   );
 }
 
-export default App;
+export default Apps;

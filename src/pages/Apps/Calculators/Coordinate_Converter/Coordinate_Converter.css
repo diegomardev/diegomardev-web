@@ -80,7 +80,11 @@ html.light .input-calculator-coordinate{
   margin-top: 20px;
   display: inline-flex;
 }
-
+.map{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
 html.dark .map{
   filter:  invert(92%) contrast(83%);
   border: 0;
