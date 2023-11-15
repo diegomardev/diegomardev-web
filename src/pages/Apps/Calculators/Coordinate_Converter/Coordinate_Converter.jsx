@@ -10,6 +10,7 @@ function Apps() {
   const [latitude, setLatitude] = useState(52.517265);
   const [longitude, setLongitude] = useState(13.389244);
   const [altitude, setAltitude] = useState(100000.0);
+  const [zoom, setZoom] = useState(13);
 
   // Variables para coordenadas en grados, minutos y segundos
   const [latitudeDegrees, setLatitudeDegrees] = useState(52);
@@ -29,6 +30,9 @@ function Apps() {
   const [northing, setNorthing] = useState(6042268.877);
   const [zoneNum, setZoneNum] = useState(33);
   const [zoneLetter, setZoneLetter] = useState('U');
+
+  // Añade una clave única que cambiará cuando cambien las coordenadas
+  const [mapKey, setMapKey] = useState(0);
 
   const updateDecimalDegrees = (lat, lon) => {
     setLatitude(lat);
@@ -55,6 +59,10 @@ function Apps() {
   const handleMapClick = (position) => {
     setLatitude(position[0]);
     setLongitude(position[1]);
+    setZoom(position[2]);
+  };
+  const handleUpdateZoom = (position) => {
+    setZoom(position[0]);
   };
 
   const handleLatitudeChange = (e) => {
@@ -62,6 +70,7 @@ function Apps() {
     if (!isNaN(value)) {
       updateDecimalDegrees(value, longitude);
       updateDMSFromDecimal(value, longitude);
+      setMapKey((prevKey) => prevKey + 1);
     }
   };
 
@@ -70,6 +79,7 @@ function Apps() {
     if (!isNaN(value)) {
       updateDecimalDegrees(latitude, value);
       updateDMSFromDecimal(latitude, value);
+      setMapKey((prevKey) => prevKey + 1);
     }
   };
 
@@ -109,6 +119,7 @@ function Apps() {
       setLongitudeDegrees(newLonDegrees);
       setLongitudeMinutes(newLonMinutes);
       setLongitudeSeconds(newLonSeconds);
+      setMapKey((prevKey) => prevKey + 1);
     }
   };
   const handleZoneChange = (e) => {
@@ -118,6 +129,7 @@ function Apps() {
     if (!isNaN(value)) {
       setR(value);
       GaussKreugertoDecimal(value, h);
+      setMapKey((prevKey) => prevKey + 1);
     }
   };
   
@@ -126,6 +138,7 @@ function Apps() {
     if (!isNaN(value)) {
       setH(value);
       GaussKreugertoDecimal(r, value);
+      setMapKey((prevKey) => prevKey + 1);
     }
   };
   
@@ -159,6 +172,7 @@ function Apps() {
     if (!isNaN(value)) {
       setEasting(value);
       UTMtoDecimal(value, northing, zoneNum);
+      setMapKey((prevKey) => prevKey + 1);
     }
   };
   const handleNorthingChange = (e) => {
@@ -166,6 +180,7 @@ function Apps() {
     if (!isNaN(value)) {
       setEasting(value);
       UTMtoDecimal(easting, value, zoneNum);
+      setMapKey((prevKey) => prevKey + 1);
     }
   };
   const handleZoneNumChange = (e) => {
@@ -174,6 +189,7 @@ function Apps() {
     if (!isNaN(value)) {
       setEasting(value);
       UTMtoDecimal(easting, northing, value);
+      setMapKey((prevKey) => prevKey + 1);
     }
   };
   const DecimaltoUTM = () => {
@@ -425,7 +441,7 @@ function Apps() {
           </div>
         </form>
         <div className='map'>
-          <Map Latitude={latitude} Longitude={longitude} size_width="360px" size_height="360px" border_radius="20px" onMapClick={handleMapClick}></Map>
+          <Map key={mapKey} Latitude={latitude} Longitude={longitude} size_width="360px" size_height="360px" border_radius="20px" zoom={zoom} onMapClick={handleMapClick} updateZoom={handleUpdateZoom}></Map>
         </div>
       </div>
     </>

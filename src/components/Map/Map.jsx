@@ -13,22 +13,25 @@ import 'leaflet/dist/leaflet.css';
 import markermap from     '../../assets/images/marker-icon.png';
 import markershadow from  '../../assets/images/marker-shadow.png';
 
+
 function ClickHandler({ setMarkerPosition, onMapClick }) {
+  
   const map = useMapEvents({
     click(e) {
       const { lat, lng } = e.latlng;
       setMarkerPosition([lat, lng]);
       // Llama a la función proporcionada por el componente principal solo si está definida
-      onMapClick && onMapClick([lat, lng]);
+      const zoom = map.getZoom();
+      onMapClick && onMapClick([lat, lng, zoom]);
     },
   });
   return null;
 }
-function Map({ size_width, size_height, Latitude, Longitude, onMapClick}) {
+function Map({ size_width, size_height, Latitude, Longitude, zoom, onMapClick}) {
   const [markerPosition, setMarkerPosition] = useState([Latitude, Longitude]);
   // Función para manejar la posición del mapa cuando se hace clic
   const handleMapClick = (position) => {
-    onMapClick && onMapClick(position);
+    onMapClick && onMapClick(position)
   };
 
   let markerIcon = L.icon({
@@ -52,7 +55,7 @@ function Map({ size_width, size_height, Latitude, Longitude, onMapClick}) {
       <MapContainer
         attributionControl={false}
         center={markerPosition}
-        zoom={13}
+        zoom={zoom}
         style={{ ...mapContainerStyle}}
         className="leaflet-container"
       >

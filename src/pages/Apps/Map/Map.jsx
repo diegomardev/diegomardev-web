@@ -8,6 +8,7 @@ import Map from '../../../components/Map/Map'
 function Apps() {
   const [latitude, setLatitude] = useState(52.517265);
   const [longitude, setLongitude] = useState(13.389244);
+  const [zoom, setZoom] = useState(13);
   const handleMapClick = (position) => {
     setLatitude(position[0].toFixed(6));
     setLongitude(position[1].toFixed(6));
@@ -20,7 +21,7 @@ function Apps() {
       <h1 className="read-the-docs">Open Map</h1>
       <div>
         <div className='map'>
-          <Map Latitude={latitude} Longitude={longitude} size_width="360px" size_height="360px" border_radius="20px" onMapClick={handleMapClick}></Map>
+          <Map Latitude={latitude} Longitude={longitude} size_width="80vw" size_height="60vh" border_radius="20px" zoom={zoom} onMapClick={handleMapClick}></Map>
         </div>
         <div className='info'>
           <p>Latitude: {latitude}</p>
