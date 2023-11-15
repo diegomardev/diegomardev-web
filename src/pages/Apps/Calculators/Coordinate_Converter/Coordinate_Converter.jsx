@@ -34,6 +34,9 @@ function Apps() {
   // Añade una clave única que cambiará cuando cambien las coordenadas
   const [mapKey, setMapKey] = useState(0);
 
+  const [width, setWidth] = useState("360px");
+  const [height, setHeight] = useState("360px");
+
   const updateDecimalDegrees = (lat, lon) => {
     setLatitude(lat);
     setLongitude(lon);
@@ -225,15 +228,27 @@ function Apps() {
     DecimaltoGaussKreuger(longitude, latitude);
     DecimaltoUTM();
     updateDMSFromDecimal(latitude, longitude);
+    handleResize();
   },[latitude, longitude])
 
+  const handleResize = () => {
+    if(window.innerWidth>400){
+      setWidth("480px");
+      setHeight("480px");
+    }
+    console.log(window.innerWidth);
+    setTimeout(() => {}, 1000);
+    setMapKey((prevKey) => prevKey + 1);
+  };
+  
   return (
     <>
       <div>
         <Navbar />
       </div>
       <h1 className="read-the-docs aspect-ratio-tittle">Coordinate Converter</h1>
-      <div>
+      <div className='distribution'>
+      <div className='distribution-margin'>
         <form>
           <span>Decimal Degrees</span>
           <div>
@@ -440,9 +455,12 @@ function Apps() {
             </div>
           </div>
         </form>
-        <div className='map'>
-          <Map key={mapKey} Latitude={latitude} Longitude={longitude} size_width="360px" size_height="360px" border_radius="20px" zoom={zoom} onMapClick={handleMapClick} updateZoom={handleUpdateZoom}></Map>
         </div>
+        <div className='distribution-margin-map'>
+        <div className='map'>
+          <Map key={mapKey} Latitude={latitude} Longitude={longitude} size_width={width} size_height={height} border_radius="20px" zoom={zoom} onMapClick={handleMapClick} updateZoom={handleUpdateZoom}></Map>
+        </div>
+      </div>
       </div>
     </>
   );

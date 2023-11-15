@@ -71,6 +71,10 @@ html.light .input-calculator-coordinate{
     margin-top: 0;
     margin-bottom: 0;
   }
+  .map{
+    width: 360px;
+    height: 360px;
+  }
 }
 
 .rectangle {
@@ -94,3 +98,16 @@ html.light .map{
   border: 0;
   border-radius: 1rem;
 }
+.distribution{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.distribution-margin{
+  margin: 20px;
+}
+.distribution-margin-map{
+  margin: 30px 20px 20px 20px;
+}
+
