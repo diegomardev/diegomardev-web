@@ -87,7 +87,7 @@ html.light .input-calculator-coordinate{
 .map{
   display: flex;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
 }
 html.dark .map{
   filter:  invert(92%) contrast(83%);
@@ -108,6 +108,6 @@ html.light .map{
   margin: 20px;
 }
 .distribution-margin-map{
-  margin: 30px 20px 20px 20px;
+  margin: 30px 20px 0px 20px;
 }
 

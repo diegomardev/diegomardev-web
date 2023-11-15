@@ -223,18 +223,18 @@ function Apps() {
     if (metaKeywords) {
       metaKeywords.setAttribute('content', `coordinate, conventer, latitude, longitude, gauss ,kruger, UTM, WGS84`);
     }
+    handleResize();
   }, []);
   useEffect(()=>{
     DecimaltoGaussKreuger(longitude, latitude);
     DecimaltoUTM();
     updateDMSFromDecimal(latitude, longitude);
-    handleResize();
   },[latitude, longitude])
 
   const handleResize = () => {
-    if(window.innerWidth>400){
-      setWidth("480px");
-      setHeight("480px");
+    if(window.innerWidth>870){
+      setWidth("462px");
+      setHeight("462px");
     }
     console.log(window.innerWidth);
     setTimeout(() => {}, 1000);
