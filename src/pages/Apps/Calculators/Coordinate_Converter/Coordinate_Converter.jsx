@@ -188,7 +188,7 @@ function Apps() {
   };
   const handleZoneNumChange = (e) => {
     let value = parseFloat(e.target.value);
-    console.log(value);
+    //console.log(value);
     if (!isNaN(value)) {
       setEasting(value);
       UTMtoDecimal(easting, northing, value);
@@ -236,6 +236,7 @@ function Apps() {
       setWidth("462px");
       setHeight("462px");
     }
+    else if(window.innerWidth>767 && window.innerWidth<=870){setHeight("462px")}
     console.log(window.innerWidth);
     setTimeout(() => {}, 1000);
     setMapKey((prevKey) => prevKey + 1);
