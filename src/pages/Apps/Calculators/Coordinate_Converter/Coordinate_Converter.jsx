@@ -237,7 +237,7 @@ function Apps() {
       setHeight("462px");
     }
     else if(window.innerWidth>767 && window.innerWidth<=870){setHeight("462px")}
-    console.log(window.innerWidth);
+    //console.log(window.innerWidth);
     setTimeout(() => {}, 1000);
     setMapKey((prevKey) => prevKey + 1);
   };
