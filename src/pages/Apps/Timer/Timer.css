@@ -1,10 +1,57 @@
-.chronometer__time input{
+.chronometer-time {
+  font-size: 40pt;
+  font-family: 'Roboto Mono', monospace;
+}
+html.light .chronometer-time input{
   font-size: 40pt;
   font-family: 'Roboto Mono', monospace;
   max-width: 80px;
   text-align: center;
   border-radius: 20px;
+  border: 2px solid rgba(27, 25, 25, 0.349);
+  background-color: #f9f9f9;
+  color: #1a1a1a;
+  padding: 0px;
 }
-input[type=number]::-webkit-inner-spin-button {
+html.dark .chronometer-time input{
+  font-size: 40pt;
+  font-family: 'Roboto Mono', monospace;
+  max-width: 80px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #1a1a1a;
+  color: #f9f9f9;
+  border: 2px solid rgba(129, 113, 113, 0.349);
+  padding: 0px;
+}
+.chronometer-time input[type=number]::-webkit-inner-spin-button {
   opacity: 0.5
+}
+
+.button-timer {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.5s;
+  margin: 15px;
+  border: 1px solid #81717159;
+}
+html.light .button-timer {
+  background-color: #f9f9f9;
+  color: #213547;
+}
+html.dark .button-timer {
+  background-color: #1a1a1a;
+  color: #f9f9f9;
+}
+.button-timer:hover {
+  border-color: #646cff;
+}
+.button-timer:focus,
+.button-timer:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }

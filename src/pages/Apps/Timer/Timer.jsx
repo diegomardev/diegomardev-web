@@ -45,7 +45,6 @@ function Timer() {
       centiseconds: 0,
     });
   };
-
   const updateCountdown = () => {
     setCountdownTime(prevTime => {
       const newTime = { ...prevTime };
@@ -67,7 +66,6 @@ function Timer() {
       } else {
         newTime.centiseconds -= 1;
       }
-
       return newTime;
     });
   };
@@ -94,17 +92,19 @@ function Timer() {
       </div>
       <h1 className="read-the-docs">Timer</h1>
       <div className="chronometer">
-        <div className="chronometer__time">
+        <div className="chronometer-time">
           <input
             type="number"
-            value={countdownTime.minutes}
+            value={countdownTime.minutes < 10 ? `0${countdownTime.minutes}` : countdownTime.minutes}
             onChange={handleMinutesChange}
             min="0"
+            inputMode="numeric"
+            pattern="[0-9]*"
           />
           <span>:</span>
           <input
             type="number"
-            value={countdownTime.seconds}
+            value={countdownTime.seconds < 10 ? `0${countdownTime.seconds}` : countdownTime.seconds}
             onChange={handleSecondsChange}
             min="0"
             max="59"
@@ -112,16 +112,16 @@ function Timer() {
           <span>:</span>
           <input
             type="number"
-            value={countdownTime.centiseconds}
+            value={countdownTime.centiseconds < 10 ? `0${countdownTime.centiseconds}` : countdownTime.centiseconds}
             onChange={handleCentisecondsChange}
             min="0"
             max="99"
           />
         </div>
-        <div className="countdown-timer__buttons">
-          <button className='button_normal' onClick={startCountdown}>Start</button>
-          <button className='button_normal' onClick={pauseCountdown}>Pause</button>
-          <button className='button_normal' onClick={resetCountdown}>Reset</button>
+        <div>
+          <button className='button-timer' onClick={startCountdown}>Start</button>
+          <button className='button-timer' onClick={pauseCountdown}>Pause</button>
+          <button className='button-timer' onClick={resetCountdown}>Reset</button>
         </div>
       </div>      
       <p className="read-the-docs">

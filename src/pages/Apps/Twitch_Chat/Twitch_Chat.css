@@ -32,7 +32,20 @@
   align-items: center;
   justify-content: center;
 }
-.input_twitch{
+html.light .input_twitch{
+  background-color: #f9f9f9;
+  color: black;
+  border-radius: 8px;
+  border: 1px solid #81717159;
+  padding: 0.6em 0.5em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  width: 270px;
+}
+html.dark .input_twitch{
+  background-color: #3b3b3b;
+  color: #f9f9f9;
   border-radius: 8px;
   border: 1.5px solid #f5f5f579;
   padding: 0.6em 0.5em;

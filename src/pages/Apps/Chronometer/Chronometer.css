@@ -2,3 +2,7 @@
   font-size: 40pt;
   font-family: 'Roboto Mono', monospace;
 }
+.button_normal{
+  margin: 10px;
+  border: 1px solid #81717159;
+}
