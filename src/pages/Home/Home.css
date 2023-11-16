@@ -108,6 +108,11 @@ html.light .home_big_button {
   color: #213547;
   border: 1px solid rgba(27, 25, 25, 0.349);
 }
+html.dark .home_big_button {
+  background-color: #1a1a1a;
+  color: #f9f9f9;
+  border: 1px solid rgba(129, 113, 113, 0.349);
+}
 footer {
   margin-top: auto;
   margin-bottom: 10px;

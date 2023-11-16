@@ -156,6 +156,11 @@
     color: #213547;
     border: 1px solid rgba(27, 25, 25, 0.349);
   }
+  html.dark .botones_juegos_start {
+    background-color: #1a1a1a;
+    color: #f9f9f9;
+    border: 1px solid rgba(129, 113, 113, 0.349);
+  }
   .botones_juegos_direcion{
     margin: 5px;
     font-size: 18pt;
@@ -176,6 +181,11 @@
     background-color: #f9f9f9;
     color: #213547;
     border: 1px solid rgba(27, 25, 25, 0.349);
+  }
+  html.dark .botones_juegos_direcion {
+    background-color: #1a1a1a;
+    color: #f9f9f9;
+    border: 1px solid rgba(129, 113, 113, 0.349);
   }
   @media(max-width: 768px){
     .snake-h1{
@@ -205,26 +215,5 @@
     }
     .tables-container {
       line-height: 1;
-    }
-  }
-  @media (prefers-color-scheme: light) {
-    :root {
-      color: #213547;
-      background-color: #ffffff;
-    }
-    a:hover {
-      color: #747bff;
-    }
-    .botones_juegos_start{
-      background-color: rgb(232,240,254);
-    }
-    button {
-      background-color: #f9f9f9;
-    }
-    .botones_juegos{
-      background-color: #f9f9f9;
-    }
-    .botones_juegos_direcion{
-      background-color: rgb(254, 232, 232);
     }
   }

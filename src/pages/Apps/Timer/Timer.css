@@ -8,9 +8,3 @@
 input[type=number]::-webkit-inner-spin-button {
   opacity: 0.5
 }
-button {
-  margin-top: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 5px;
-}

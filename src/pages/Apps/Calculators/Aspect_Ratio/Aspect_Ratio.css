@@ -58,7 +58,10 @@ html.light .select-calculator{
   background-color: #ffffff;
   color: #213547;
 }
-
+html.dark .select-calculator{
+  background-color: #242424;
+  color: #f9f9f9;
+}
 @media(max-width: 400px){
   .span-calculator{
     margin-left: 0px;
