@@ -102,7 +102,7 @@ html.light .map{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 .distribution-margin{
   margin: 20px;

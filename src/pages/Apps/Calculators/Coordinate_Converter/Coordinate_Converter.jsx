@@ -248,6 +248,11 @@ function Apps() {
       </div>
       <h1 className="read-the-docs aspect-ratio-tittle">Coordinate Converter</h1>
       <div className='distribution'>
+      <div className='distribution-margin-map'>
+        <div className='map'>
+          <Map key={mapKey} Latitude={latitude} Longitude={longitude} size_width={width} size_height={height} border_radius="20px" zoom={zoom} onMapClick={handleMapClick} updateZoom={handleUpdateZoom}></Map>
+        </div>
+      </div>
       <div className='distribution-margin'>
         <form>
           <span>Decimal Degrees</span>
@@ -456,11 +461,6 @@ function Apps() {
           </div>
         </form>
         </div>
-        <div className='distribution-margin-map'>
-        <div className='map'>
-          <Map key={mapKey} Latitude={latitude} Longitude={longitude} size_width={width} size_height={height} border_radius="20px" zoom={zoom} onMapClick={handleMapClick} updateZoom={handleUpdateZoom}></Map>
-        </div>
-      </div>
       </div>
     </>
   );
