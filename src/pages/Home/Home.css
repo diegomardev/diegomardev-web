@@ -96,7 +96,7 @@
   cursor: pointer;
   transition: border-color 0.5s;
   min-width: 150px;
-  width: 260px;
+  width: 270px;
   height: 170px;
   margin-bottom: 40px;
 }
@@ -298,11 +298,11 @@ footer {
   }
   .home_big_button {
     margin: 10px;
-    font-size: 11pt;
+    font-size: 14pt;
     font-weight: bold;
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.349);
-    padding: 0.4em 1.2em;
+    padding: 0;
     font-family: inherit;
     background-color: #1a1a1a;
     cursor: pointer;
@@ -312,4 +312,8 @@ footer {
     height: 100px;
     margin-bottom: 10px;
   }
+}
+.read-the-docs a {
+  color: inherit; /* Esto hará que el color del enlace sea heredado del color del texto circundante */
+  text-decoration: underline; /* Otra propiedad opcional para agregar subrayado a los enlaces si es necesario */
 }

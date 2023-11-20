@@ -326,7 +326,7 @@ function Login() {
       )}
       <ToastContainer transition={Flip}/>
       
-      <p className="read-the-docs">login: {localStorage.getItem('user_logged')}</p>
+      {/* <p className="read-the-docs">login: {localStorage.getItem('user_logged')}</p> */}
 {/*   <p className="read-the-docs">login: {isLoggedIn.toString()}</p>
       <p className='read-the-docs'>register: {isRegister.toString()}</p> */}
     </>

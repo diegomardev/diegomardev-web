@@ -10,32 +10,9 @@ import { isMobile } from "react-device-detect";
 import Typewriter from 'typewriter-effect';
 import GraphemeSplitter from 'grapheme-splitter';
 
-let x = 0;
 let clickX = 0; // Coordenada x relativa al ancho de la ventana
 let clickY = 0;// Coordenada y relativa al alto de la ventana
 
-function fireworks(){
-  var duration = 5 * 1000; //5 segundos de duracion
-  var animationEnd = Date.now() + duration;
-  var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
-
-  function randomInRange(min, max) {
-    return Math.random() * (max - min) + min;
-  }
-
-  var interval = setInterval(function() {
-    var timeLeft = animationEnd - Date.now();
-
-    if (timeLeft <= 0) {
-      return clearInterval(interval);
-    }
-
-    var particleCount = 50 * (timeLeft / duration);
-    // since particles fall down, start a bit higher than random
-    confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.5), y: Math.random() - 0.2 } }));
-    confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.5, 0.9), y: Math.random() - 0.2 } }));
-  }, 250);
-}
 function confetti_click(){
   confetti({
       origin: {
@@ -52,34 +29,15 @@ document.addEventListener('mousemove', function(event) {
 });
 
 function Home() {
-  //const [variable, setVariable] = useState(valorInicial);
-  const [count, setCount] = useState(0)//el 0 de usestate es el valor inicial
-  const [confetti_count, setConfetti] = useState(0)
   const [active, setActive] = useState(false)
   //creamos otra variable con useState
-
-  const handleClick = () => {
-    x++;
-    console.log(x);
-  };
-  function handleClick2() {
-    //confetti();
-    confetti_click();
-    setConfetti((confetti_count) => confetti_count + 1);
-  }
   function handleClickUrl(url) {
-    //confetti();
     confetti_click();
-    setConfetti((confetti_count) => confetti_count + 1);
     setTimeout(() => {
       if (url) {
         window.location.href = url;
       }
     }, 500); // 2000 milisegundos = 2 segundos
-  }
-  function handleClick3() {
-    fireworks();
-    setCount((count) => count + 1);
   }
   const stringSplitter = string => {
     const splitter = new GraphemeSplitter();
@@ -97,8 +55,8 @@ function Home() {
             &nbsp;
             Home 
             &nbsp;
-            <a onClick={() => setActive(!active)} style={{ cursor: "pointer", marginTop: "-4px" }}>
-              {active ? <IconHeart className="heartbeat" size={60} color='red' fill='red'/> : <IconStar className='shake-bottom' size={60} color='#888'/>}
+            <a onClick={() => setActive(!active)} style={{ /* cursor: "pointer", */ marginTop: "-4px" }}>
+              {!active ? <IconHeart className="heartbeat" size={60} color='red' fill='red'/> : <IconStar className='shake-bottom' size={60} color='#888'/>}
             </a>
           </h1>
           <div className='presentation_impar'>
@@ -149,8 +107,8 @@ function Home() {
             &nbsp;
             Home 
             &nbsp;
-            <a onClick={() => setActive(!active)} style={{ cursor: "pointer", marginTop: "-4px" }}>
-              {active ? <IconHeart className="heartbeat" size={60} color='red' fill='red'/> : <IconStar className='shake-bottom' size={60} color='#888'/>}
+            <a onClick={() => setActive(!active)} style={{ /* cursor: "pointer", */ marginTop: "-4px" }}>
+              {!active ? <IconHeart className="heartbeat" size={60} color='red' fill='red'/> : <IconStar className='shake-bottom' size={60} color='#888'/>}
             </a>
           </h1>
           <div className='presentation_impar'>
