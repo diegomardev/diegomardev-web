@@ -41,8 +41,7 @@ const MyImage = ({ name, lastname, image, id}) => {
   };
 
   const imageWidth = cardWidth * 0.2; // 20% of the card width
-
-
+  
   return (
     <div className="container" ref={cardRef}>
       <Atropos className="atropos-banner" highlight={false}>

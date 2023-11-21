@@ -20,6 +20,7 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 // Initialize
 const myAtropos = Atropos({
   el: '.my-atropos',
+  shadowScale: 1.10,
   // rest of parameters
 });
 
@@ -56,7 +57,7 @@ function Login() {
     draggable: true,
     progress: undefined,
     theme: "dark",
-    });
+  });
   const notify_ok = (mensaje) => toast.success(mensaje, {
     position: "bottom-center",
     autoClose: 2000,
@@ -66,7 +67,7 @@ function Login() {
     draggable: true,
     progress: undefined,
     theme: "dark",
-    });
+  });
 
   // Función para alternar entre logueado y no logueado
   const handleLoginToggle = () => {
