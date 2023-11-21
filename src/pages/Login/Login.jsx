@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import reactLogo from '../../assets/react.svg';
 import viteLogo from '/vite.svg';
 import diegomar from '../../assets/users/diegomar.jpg';
+import userpng from '../../assets/users/user.png';
 import confetti from 'canvas-confetti';
 import './Login.css';
 import Navbar from '../../components/Navbar/Navbar';
@@ -37,6 +38,15 @@ function Login() {
   const [userInput, setUserInput] = useState('');
   const [passwordInput, setPasswordInput] = useState('');
   const [repeatPasswordInput, setRepearPasswordInput] = useState('');
+
+  //añadimos la imagen de perfil local
+  const [user, setUser] = useState({
+    id: '127',
+    name: 'Diego',
+    lastName: 'Martínez',
+    image: userpng,
+    imageSize: 90,
+  });
 
   const notify = (mensaje) => toast.warning(mensaje, {
     position: "bottom-center",
@@ -98,6 +108,16 @@ function Login() {
         }
     
         if (data) {
+          const { name, last_name, id } = data; // Obtener los datos del usuario
+          const newUser = {
+            name,
+            lastName: last_name,
+            id,
+            image: userpng, // Puedes ajustar la imagen según sea necesario
+            imageSize: 90,
+          };
+          setUser(newUser); // Almacenar los datos del usuario en el estado
+          
           setIsLoggedIn(true);
           localStorage.setItem('user_logged', userInput);
           confetti();
@@ -161,20 +181,16 @@ function Login() {
   /*
   useEffect(() => {
     leerDatos();
-  }, []);
+  }, [isLoggedIn]);
   */
+
   const handleKeyPress = (e, callback) => {
     if (e.key === "Enter") {
       e.preventDefault();
       callback(e);
     }
   };
-  //añadimos la imagen de perfil local
-  const user = {
-    name: 'Diego Martínez',
-    image: diegomar,
-    imageSize: 90,
-  };
+
 
   return (
     <>
@@ -195,7 +211,7 @@ function Login() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <MyCard />
+            <MyCard name={user.name} lastname={user.lastName} image={user.image} id={user.id}/>
           </a>
         </div>
       )}
