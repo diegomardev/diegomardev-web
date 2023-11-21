@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import reactLogo from '../../assets/react.svg';
-import viteLogo from '/vite.svg';
 import diegomar from '../../assets/users/diegomar.jpg';
 import userpng from '../../assets/users/user.png';
 import confetti from 'canvas-confetti';
@@ -46,6 +44,7 @@ function Login() {
     lastName: 'Martínez',
     image: userpng,
     imageSize: 90,
+    user: 'diego',
   });
 
   const notify = (mensaje) => toast.warning(mensaje, {
@@ -86,7 +85,7 @@ function Login() {
   const handletoLogin = () => {
     if(isLoggedIn){setIsLoggedIn(false)}
     setIsRegister(false);
-    localStorage.setItem('user_logged', 0);
+    localStorage.removeItem('user_logged');
   };
   //Función para validar el usuario y la contraseña
   async function handleLogin(e) {
@@ -108,18 +107,19 @@ function Login() {
         }
     
         if (data) {
-          const { name, last_name, id } = data; // Obtener los datos del usuario
+          const { name, last_name, id, user } = data; // Obtener los datos del usuario
           const newUser = {
             name,
             lastName: last_name,
             id,
             image: userpng, // Puedes ajustar la imagen según sea necesario
             imageSize: 90,
+            user,
           };
           setUser(newUser); // Almacenar los datos del usuario en el estado
           
           setIsLoggedIn(true);
-          localStorage.setItem('user_logged', userInput);
+          localStorage.setItem('user_logged', newUser.user);
           confetti();
           notify_ok('Logged in');
         } else {
@@ -166,6 +166,38 @@ function Login() {
       }
     }
   }
+    //Función para validar el usuario y la contraseña
+    async function save_login_user(user_logged) {
+      try {
+        const tableName = 'Users';
+        const { data, error } = await supabase
+          .from(tableName)
+          .select()
+          .or(`user.eq.${user_logged},email.eq.${user_logged}`)
+          .single(); // Solo esperamos un resultado
+        if (error) {
+          notify('Please insert username and password');
+          return;
+        }
+        if (data) {
+          const { name, last_name, id } = data; // Obtener los datos del usuario
+          const newUser = {
+            name,
+            lastName: last_name,
+            id,
+            image: userpng, // Puedes ajustar la imagen según sea necesario
+            imageSize: 90,
+          };
+          setUser(newUser); // Almacenar los datos del usuario en el estado
+          setIsLoggedIn(true);
+        } else {
+          notify('Please insert username and password');
+        }
+      } catch (error) {
+        console.error('Error during login:', error.message);
+        notify('An error occurred while logging in.');
+      }
+    }
   async function leerDatos() { // Define la función para leer datos
     try {
       // Nombre de la tabla que deseas leer
@@ -191,6 +223,11 @@ function Login() {
     }
   };
 
+  useEffect(() => {
+    if(localStorage.getItem('user_logged') !== (null)){
+      save_login_user(localStorage.getItem('user_logged'));
+    }
+  }, []);
 
   return (
     <>

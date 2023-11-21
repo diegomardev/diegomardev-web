@@ -139,7 +139,7 @@ html.light .input:focus ~ label, html.light input:valid ~ label {
   width: 100%;
 }
 .atropos-banner .atropos-inner {
-  border-radius: 10px;
+  border-radius: 2vw;
 }
 .atropos-banner img {
   position: absolute;

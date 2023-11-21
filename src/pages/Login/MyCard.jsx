@@ -4,6 +4,8 @@ import "atropos/atropos.css";
 import "./Login.css";
 import diegomar from '../../assets/users/diegomar.jpg';
 import atroposbg from './atropos-bg.svg';
+import logo from '/src/assets/images/rocket.svg';
+import rocket from '../../assets/images/rocket.svg';
 
 const BackgroundPattern = () => (
 	<svg id='patternId' width='100%' height='120%' xmlns='http://www.w3.org/2000/svg' className="atropos-banner-spacer" style={{ marginTop: '-70%' }}>
@@ -49,6 +51,21 @@ const MyImage = ({ name, lastname, image, id}) => {
           src={atroposbg}
           alt=""
         />
+        <img
+          ref={imageRef}
+          src={rocket}
+          alt=""
+          style={{
+            width: '40%',
+            height: 'auto',
+            top: 'auto',
+            bottom: '5%',
+            right: '5%',
+            left: 'auto',
+            zIndex: '1',
+            opacity: '0.4',
+          }}
+        />
         <BackgroundPattern/>
         <img
           data-atropos-offset="0"
@@ -63,10 +80,10 @@ const MyImage = ({ name, lastname, image, id}) => {
           onLoad={handleImageLoad} // Call the handleImageLoad when the image is loaded
           className='img-overlay'
           style={{
-            width: '20%',
+            width: '30%',
             height: 'auto',
             top: '10%',
-            left: '40%',
+            left: '7%',
             zIndex: '1',
           }}
         />
