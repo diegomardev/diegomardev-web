@@ -54,7 +54,7 @@ const MyImage = ({ name, lastname, image, id}) => {
   */
   return (
     <div className="container" ref={cardRef}>
-      <Atropos className="atropos-banner" highlight={true} shadowScale={0.5} cardWidth={'320px'}>
+      <Atropos className="atropos-banner" highlight={true} shadowScale={0.5}>
         <img
           className="atropos-banner-spacer"
           src={atroposbg}
