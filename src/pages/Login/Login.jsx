@@ -17,13 +17,6 @@ const supabaseKey = TOKENS.SUPABASE.KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 
-// Initialize
-const myAtropos = Atropos({
-  el: '.my-atropos',
-  shadowScale: 1.10,
-  // rest of parameters
-});
-
 function Login() {
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Estado para controlar el estado de inicio de sesión
   const [isRegister, setIsRegister] = useState(false); // Estado para controlar el estado de inicio de sesión
@@ -243,15 +236,7 @@ function Login() {
       )}
 
       {isLoggedIn && (
-        <div className="my-atropos">
-          <a
-            href="https://www.linkedin.com/in/diegomarbar/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <MyCard name={user.name} lastname={user.lastName} image={user.image} id={user.id}/>
-          </a>
-        </div>
+         <MyCard name={user.name} lastname={user.lastName} image={user.image} id={user.id}/>
       )}
       {!isLoggedIn && !isRegister && (
         <form>

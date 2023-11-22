@@ -41,10 +41,20 @@ const MyImage = ({ name, lastname, image, id}) => {
   };
 
   const imageWidth = cardWidth * 0.2; // 20% of the card width
-  
+  /*
+    // Initialize
+  const myAtropos = Atropos({
+    el: '.my-atropos',
+    activeOffset: 40,
+    shadowScale: 1.05,
+    width: 320px;
+    height: 160px;
+    // rest of parameters
+  });
+  */
   return (
     <div className="container" ref={cardRef}>
-      <Atropos className="atropos-banner" highlight={false}>
+      <Atropos className="atropos-banner" highlight={true} shadowScale={0.5} cardWidth={'320px'}>
         <img
           className="atropos-banner-spacer"
           src={atroposbg}

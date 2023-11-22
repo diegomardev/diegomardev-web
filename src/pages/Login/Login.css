@@ -76,6 +76,8 @@ html.light .input:focus ~ label, html.light input:valid ~ label {
   align-items: baseline;
 }
 .my-atropos {
+  width: 320px;
+  height: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,7 +136,7 @@ html.light .input:focus ~ label, html.light input:valid ~ label {
 }
 .container {
   padding: 0px 40px;
-  max-width: 960px;
+  max-width: 720px;
   margin: 32px auto;
   display: flex;
   justify-content: space-between;
