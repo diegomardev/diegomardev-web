@@ -86,27 +86,29 @@ html.light .input:focus ~ label, html.light input:valid ~ label {
 .text-name-lastname {
   position: absolute;
   text-align: initial;
-  top: 80%;
+  top: 83%;
   left: 2%;
   z-index: -1;
   color: #fff;
-  font-size: 3vw;
+  font-size: 2.8vw;
+  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
 }
 .text-id {
   position: absolute;
   text-align: initial;
-  top: 80%;
+  top: 83%;
   right: 2%;
   z-index: -1;
   color: #fff;
-  font-size: 3vw;
+  font-size: 2.8vw;
+  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
 }
 @media (min-width: 712px) {
   .text-name-lastname {
-    font-size: 22px;
+    font-size: 20px;
   }
   .text-id {
-    font-size: 22px;
+    font-size: 20px;
   }
   .atropos-inner {
     border-radius: 20px !important;
