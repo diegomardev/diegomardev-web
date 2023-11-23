@@ -33,13 +33,14 @@ function Login() {
 
   //añadimos la imagen de perfil local
   const [user, setUser] = useState({
-    id: '127',
+    id: '2015',
     name: 'Diego',
     lastName: 'Martínez',
     image: userpng,
-    imageSize: 90,
+    imageSize: 200,
     user: 'diego',
   });
+  const [imageUrl, setImageUrl] = useState(null);
 
   const notify = (mensaje) => toast.warning(mensaje, {
     position: "bottom-center",
@@ -99,21 +100,26 @@ function Login() {
           notify('Incorrect username or password');
           return;
         }
-    
+
         if (data) {
-          const { name, last_name, id, user } = data; // Obtener los datos del usuario
-          const newUser = {
-            name,
-            lastName: last_name,
-            id,
-            image: userpng, // Puedes ajustar la imagen según sea necesario
-            imageSize: 90,
-            user,
-          };
+          localStorage.setItem('user_logged', data.user);
+          if (data.profile_image) {
+            fetchImage(data);
+          }
+          else{
+            const { name, last_name, id, user } = data; // Obtener los datos del usuario
+            console.log(id)
+            const newUser = {
+              name: name,
+              lastName: last_name,
+              id: id,
+              image: userpng,
+              imageSize: user.imageSize,
+              user: data.user,
+            };
           setUser(newUser); // Almacenar los datos del usuario en el estado
-          
+          }
           setIsLoggedIn(true);
-          localStorage.setItem('user_logged', newUser.user);
           confetti();
           notify_ok('Logged in');
         } else {
@@ -160,38 +166,90 @@ function Login() {
       }
     }
   }
-    //Función para validar el usuario y la contraseña
-    async function save_login_user(user_logged) {
-      try {
-        const tableName = 'Users';
-        const { data, error } = await supabase
-          .from(tableName)
-          .select()
-          .or(`user.eq.${user_logged},email.eq.${user_logged}`)
-          .single(); // Solo esperamos un resultado
-        if (error) {
-          notify('Please insert username and password');
-          return;
-        }
-        if (data) {
-          const { name, last_name, id } = data; // Obtener los datos del usuario
-          const newUser = {
-            name,
-            lastName: last_name,
-            id,
-            image: userpng, // Puedes ajustar la imagen según sea necesario
-            imageSize: 90,
-          };
-          setUser(newUser); // Almacenar los datos del usuario en el estado
-          setIsLoggedIn(true);
-        } else {
-          notify('Please insert username and password');
-        }
-      } catch (error) {
-        console.error('Error during login:', error.message);
-        notify('An error occurred while logging in.');
+  const fetchImage = async (datas) => {
+    try {
+      const user_logged = localStorage.getItem('user_logged');
+      const directoryPath = `${user_logged}/`;
+      console.log(directoryPath);
+  
+      // Obtener la lista de archivos en el directorio
+      const { data: filesData, error: filesError } = await supabase.storage.from('Users').list(directoryPath);
+  
+      if (filesError) {
+        console.error('Error al obtener la lista de archivos:', filesError.message);
+        return;
       }
+      console.log(filesData);
+      // Seleccionar el primer archivo de la lista (puedes ajustar esto según tus necesidades)
+      const firstFile = filesData?.[0];
+      if (firstFile) {
+        // Obtener la URL firmada para el archivo seleccionado
+        const filePath = `${directoryPath}${firstFile.name}`;
+        const { data, error } = await supabase.storage.from('Users').createSignedUrl(filePath, 60);
+        //console.log(data);
+        if (error) {
+          console.error('Error al obtener la URL firmada:', error.message);
+        } else {
+          if (datas) {
+            const { name, last_name, id } = datas; // Obtener los datos del usuario
+            console.log(id)
+            const newUser = {
+              name: name,
+              lastName: last_name,
+              id: id,
+              image: data.signedUrl,
+              imageSize: user.imageSize,
+            };
+            setUser(newUser); // Almacenar los datos del usuario en el estado
+            setIsLoggedIn(true);
+            
+          } else {
+            notify('Please insert username and password');
+          }
+        }
+      } else {
+        console.warn('No se encontraron archivos en el directorio.');
+      }
+    } catch (error) {
+      console.error('Error en fetchImage:', error.message);
     }
+  };
+  //Función para validar el usuario y la contraseña
+  async function save_login_user(user_logged) {
+    try {
+      const tableName = 'Users';
+      const { data, error } = await supabase
+        .from(tableName)
+        .select()
+        .or(`user.eq.${user_logged},email.eq.${user_logged}`)
+        .single(); // Solo esperamos un resultado
+      if (error) {
+        notify('Please insert username and password');
+        return;
+      }
+      console.log(data);
+      //si ese usuario tiene imagen llamamos a la función fetch para coger la imagen de la base de datos
+      if (data.profile_image) {
+        fetchImage(data);
+      }
+      else{
+        const { name, last_name, id } = data; // Obtener los datos del usuario
+        console.log(id)
+        const newUser = {
+          name: name,
+          lastName: last_name,
+          id: id,
+          image: userpng,
+          imageSize: user.imageSize,
+        };
+        setUser(newUser); // Almacenar los datos del usuario en el estado
+        setIsLoggedIn(true);
+      }
+    } catch (error) {
+      console.error('Error during login:', error.message);
+      notify('An error occurred while logging in.');
+    }
+  }
   async function leerDatos() { // Define la función para leer datos
     try {
       // Nombre de la tabla que deseas leer
@@ -223,6 +281,58 @@ function Login() {
     }
   }, []);
 
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    setSelectedImage(file);
+  };
+  const getFileExtension = (filename) => {
+    return filename.slice(((filename.lastIndexOf('.') - 1) >>> 0) + 2);
+  };
+  const handleUpload = async () => {
+    if (!selectedImage) {
+      alert('Selecciona una imagen antes de subirla.');
+      return;
+    }
+    const user_logged = localStorage.getItem('user_logged');
+    const filePath = `${user_logged}/profile_image`; // Define la ruta en la que quieres almacenar la imagen en Supabase Storage
+    const fileExtension = getFileExtension(selectedImage.name);
+    console.log(filePath);
+    console.log(fileExtension);
+    
+    // Sube la imagen a Supabase Storage
+    const { data, error } = await supabase.storage.from('Users').upload(`${filePath}`, selectedImage);
+    const { datas, errors } = await supabase.storage.from('Users').update(`${filePath}`, selectedImage);
+    
+    if (error) {
+      console.error('Error al subir la imagen:', error.message);
+      const { datas, errors } = await supabase.storage.from('Users').update(`${filePath}.${fileExtension}`, selectedImage);
+      if (errors) {
+        console.error('Error al subir la imagen:', errors.message);
+      } else {
+        notify_ok("Update Image to "+user_logged);
+        console.log('Imagen actualizada correctamente:', datas);
+        save_login_user(user_logged)
+      }
+    } else {
+      const tableName = 'Users';
+      const { data, error } = await supabase
+        .from(tableName)
+        .update({profile_image: true})
+        .eq('user',user_logged)
+        if (error) {
+          console.log(error)
+          throw error;
+        }
+        else{
+          notify_ok("Upload Image to "+user_logged);
+          console.log('Imagen subida correctamente:', data);
+          save_login_user(user_logged)
+        }
+    }    
+  };
+
   return (
     <>
       <div>
@@ -230,13 +340,21 @@ function Login() {
       </div>
       <h1 className="read-the-docs">{isRegister ? 'Register' : 'Login'}</h1>
       {isLoggedIn && (
-      <button className="boton-login button_normal" onClick={handletoLogin}>
-        Logout
-      </button>
-      )}
-
-      {isLoggedIn && (
-         <MyCard name={user.name} lastname={user.lastName} image={user.image} id={user.id}/>
+        <div>
+          <button className="boton-login button_normal" onClick={handletoLogin}>
+            Logout
+          </button>
+          <MyCard name={user.name} lastname={user.lastName} image={user.image} id={user.id} imageSize={user.imageSize}/>
+          <div>
+            <input 
+              type="file" 
+              onChange={handleImageChange} 
+              accept="image/*"
+              className= "button_normal"
+            />
+            <button onClick={handleUpload} className= "button_normal">Update image</button>
+          </div>
+        </div>
       )}
       {!isLoggedIn && !isRegister && (
         <form>
@@ -362,7 +480,8 @@ function Login() {
             </button>
           </div>
         </form>
-      )}
+      )}      
+      {/* <img src={imageUrl} alt="Imagen Descargada" /> */}
       <ToastContainer transition={Flip}/>
       
       {/* <p className="read-the-docs">login: {localStorage.getItem('user_logged')}</p> */}

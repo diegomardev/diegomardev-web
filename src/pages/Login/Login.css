@@ -55,7 +55,12 @@ html.light .input:focus ~ label, html.light input:valid ~ label {
   color: #2196f3;
   border-radius: 5px;
 }
-
+html.dark .input{
+  color: #f5f5f5;
+}
+html.light .input{
+  color: #213547;
+}
 .name_login {
   text-align: center;
   font-size: 50px;
@@ -86,29 +91,29 @@ html.light .input:focus ~ label, html.light input:valid ~ label {
 .text-name-lastname {
   position: absolute;
   text-align: initial;
-  top: 83%;
+  top: 88%;
   left: 2%;
   z-index: -1;
   color: #fff;
-  font-size: 2.8vw;
-  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+  font-size: 4vw;
+  font-weight: 800;
 }
 .text-id {
   position: absolute;
   text-align: initial;
-  top: 83%;
+  top: 88%;
   right: 2%;
   z-index: -1;
   color: #fff;
-  font-size: 2.8vw;
-  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+  font-size: 4vw;
+  font-weight: 800;
 }
 @media (min-width: 712px) {
   .text-name-lastname {
-    font-size: 20px;
+    font-size: 30px;
   }
   .text-id {
-    font-size: 20px;
+    font-size: 30px;
   }
   .atropos-inner {
     border-radius: 20px !important;
@@ -116,23 +121,20 @@ html.light .input:focus ~ label, html.light input:valid ~ label {
   .atropos-banner {
     border-radius: 20px;
   }
-}
-@media (max-width: 320px) {
-  .text-name-lastname {
-    font-size: 10px;
-  }
-  .text-id {
-    font-size: 10px;
+  .container .atropos-banner .img-overlay {
+    width: 217px;
+    height: 217px;
   }
 }
-.img-overlay {
+  .atropos-banner .img-overlay {
   position: absolute;
-  left: 5%;
-  top: 5%;
-  width: 30%;
+  left: 7%;
+  top: 10%;
+  width: 30vw;
+  height: 30vw;
   object-fit: contain;
   display: block;
-  z-index: -1;
+  z-index: 1;
   pointer-events: none;
   border-radius: 50%;
 }

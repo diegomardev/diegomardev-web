@@ -23,7 +23,7 @@ const BackgroundPattern = () => (
 	</svg>
 )
 
-const MyImage = ({ name, lastname, image, id}) => {
+const MyImage = ({ name, lastname, image, id, imageSize}) => {
   const cardRef = useRef(null);
   const imageRef = useRef(null);
   const [renderedImageSize, setRenderedImageSize] = useState({ width: 0, height: 0 });
@@ -41,17 +41,7 @@ const MyImage = ({ name, lastname, image, id}) => {
   };
 
   const imageWidth = cardWidth * 0.2; // 20% of the card width
-  /*
-    // Initialize
-  const myAtropos = Atropos({
-    el: '.my-atropos',
-    activeOffset: 40,
-    shadowScale: 1.05,
-    width: 320px;
-    height: 160px;
-    // rest of parameters
-  });
-  */
+
   return (
     <div className="container" ref={cardRef}>
       <Atropos className="atropos-banner" highlight={true} shadowScale={0.5}>
@@ -86,21 +76,14 @@ const MyImage = ({ name, lastname, image, id}) => {
           ref={imageRef}
           src={image}
           alt=""
-          onLoad={handleImageLoad} // Call the handleImageLoad when the image is loaded
-          className='img-overlay'
-          style={{
-            width: '30%',
-            height: 'auto',
-            top: '10%',
-            left: '7%',
-            zIndex: '1',
-          }}
+          //onLoad={handleImageLoad} // Call the handleImageLoad when the image is loaded
+          className='img-overlay img-overlay img-overlay'
         />
         <div className="text-name-lastname">
-          <h2>{name} {lastname}</h2>
+          <span>{name} {lastname}</span>
         </div>
         <div className="text-id">
-          <h2>#{id}</h2>
+          <span>#{id}</span>
         </div>
       </Atropos>
     </div>
