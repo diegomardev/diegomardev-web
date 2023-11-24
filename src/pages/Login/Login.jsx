@@ -108,7 +108,7 @@ function Login() {
           }
           else{
             const { name, last_name, id, user } = data; // Obtener los datos del usuario
-            console.log(id)
+            //console.log(id)
             const newUser = {
               name: name,
               lastName: last_name,
@@ -150,7 +150,7 @@ function Login() {
         .insert([{ name: nameInput, last_name: lastNameInput, email: emailInput, user: userInput, password: passwordInput }]);
         if (error) {throw error;}
         notify_ok(nameInput+" register ok");
-        console.log(`Se creó una nueva fila para ${nameInput}.`);
+        //console.log(`Se creó una nueva fila para ${nameInput}.`);
       }
       else if(!isEmailValid(emailInput)){notify("Invalid email");}
       else if (passwordInput !== repeatPasswordInput) {notify("Passwords don't match");}
@@ -162,7 +162,7 @@ function Login() {
       if(error.message!=null){
         if(error.message.includes("Users_email_key")){notify("This email address is already in use");}
         if(error.message.includes("Users_user_key")){notify("This User is already in use");}
-        console.error(error.message);
+        //console.error(error.message);
       }
     }
   }
@@ -170,7 +170,7 @@ function Login() {
     try {
       const user_logged = localStorage.getItem('user_logged');
       const directoryPath = `${user_logged}/`;
-      console.log(directoryPath);
+      //console.log(directoryPath);
   
       // Obtener la lista de archivos en el directorio
       const { data: filesData, error: filesError } = await supabase.storage.from('Users').list(directoryPath);
@@ -179,7 +179,7 @@ function Login() {
         console.error('Error al obtener la lista de archivos:', filesError.message);
         return;
       }
-      console.log(filesData);
+      //console.log(filesData);
       // Seleccionar el primer archivo de la lista (puedes ajustar esto según tus necesidades)
       const firstFile = filesData?.[0];
       if (firstFile) {
@@ -192,7 +192,7 @@ function Login() {
         } else {
           if (datas) {
             const { name, last_name, id } = datas; // Obtener los datos del usuario
-            console.log(id)
+            //console.log(id)
             const newUser = {
               name: name,
               lastName: last_name,
@@ -227,14 +227,14 @@ function Login() {
         notify('Please insert username and password');
         return;
       }
-      console.log(data);
+      //console.log(data);
       //si ese usuario tiene imagen llamamos a la función fetch para coger la imagen de la base de datos
       if (data.profile_image) {
         fetchImage(data);
       }
       else{
         const { name, last_name, id } = data; // Obtener los datos del usuario
-        console.log(id)
+        //console.log(id)
         const newUser = {
           name: name,
           lastName: last_name,
@@ -257,7 +257,7 @@ function Login() {
       // Realiza la consulta para obtener los datos
       const { data, error } = await supabase.from(tableName).select().order('name', { ascending: false }).limit(5);
       if (error) {throw error;}
-      console.log('Datos leídos correctamente:', data);
+      //console.log('Datos leídos correctamente:', data);
     } catch (error) {
       console.error('Error al leer datos:', error.message);
     }
@@ -298,8 +298,8 @@ function Login() {
     const user_logged = localStorage.getItem('user_logged');
     const filePath = `${user_logged}/profile_image`; // Define la ruta en la que quieres almacenar la imagen en Supabase Storage
     const fileExtension = getFileExtension(selectedImage.name);
-    console.log(filePath);
-    console.log(fileExtension);
+    //console.log(filePath);
+    //console.log(fileExtension);
     
     // Sube la imagen a Supabase Storage
     const { data, error } = await supabase.storage.from('Users').upload(`${filePath}`, selectedImage);
@@ -312,7 +312,7 @@ function Login() {
         console.error('Error al subir la imagen:', errors.message);
       } else {
         notify_ok("Update Image to "+user_logged);
-        console.log('Imagen actualizada correctamente:', datas);
+        //console.log('Imagen actualizada correctamente:', datas);
         save_login_user(user_logged)
       }
     } else {
@@ -327,7 +327,7 @@ function Login() {
         }
         else{
           notify_ok("Upload Image to "+user_logged);
-          console.log('Imagen subida correctamente:', data);
+          //console.log('Imagen subida correctamente:', data);
           save_login_user(user_logged)
         }
     }    
@@ -347,12 +347,14 @@ function Login() {
           <MyCard name={user.name} lastname={user.lastName} image={user.image} id={user.id} imageSize={user.imageSize}/>
           <div>
             <input 
-              type="file" 
+              type="file"
+              id=  'image_uploads'
+              name="image_uploads"
               onChange={handleImageChange} 
               accept="image/*"
-              className= "button_normal"
+              className= "input_image"
             />
-            <button onClick={handleUpload} className= "button_normal">Update image</button>
+            <button onClick={handleUpload} className= "button_normal">Change image</button>
           </div>
         </div>
       )}
