@@ -35,23 +35,10 @@ const BackgroundPattern = () => (
   </svg>
 );
 
-const MyImage = ({ name, lastname, image, id, imageSize}) => {
+const MyImage = ({ name, lastname, image, id, imageSize, showImageBorder, borderImageColor, showShadow, shadowColor }) => {
   const cardRef = useRef(null);
   const imageRef = useRef(null);
   const [renderedImageSize, setRenderedImageSize] = useState({ width: 0, height: 0 });
-  let cardWidth = 0;
-
-  const handleImageLoad = () => {
-    if (cardRef.current) {
-      cardWidth = cardRef.current.offsetWidth;
-    }
-    if (imageRef.current) {
-      const {width, height} = imageRef.current.getBoundingClientRect();
-      setRenderedImageSize({width, height});
-    }
-  };
-
-  const imageWidth = cardWidth * 0.2; // 20% of the card width
 
   return (
     <div className="container" ref={cardRef}>
@@ -89,6 +76,7 @@ const MyImage = ({ name, lastname, image, id, imageSize}) => {
           alt=""
           //onLoad={handleImageLoad} // Call the handleImageLoad when the image is loaded
           className='img-overlay img-overlay img-overlay'
+          style={{border: showImageBorder ? `4px solid ${borderImageColor}` : 'none', borderRadius: '50%' , filter: showShadow ? `drop-shadow(0 0 0.5em ${shadowColor})` : `drop-shadow(0 0 0em ${shadowColor})`}}
         />
         <div className="text-name-lastname">
           <span>{name} {lastname}</span>

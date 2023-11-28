@@ -31,6 +31,10 @@ function Login() {
   const [passwordInput, setPasswordInput] = useState('');
   const [repeatPasswordInput, setRepearPasswordInput] = useState('');
 
+  const [borderImageColor, setBorderImageColor] = useState('#000000');
+  const [showImageBorder, setShowImageBorder] = useState(true);
+  const [shadowColor, setShadowColor] = useState('#000000');
+  const [showShadow, setShowShadow] = useState(true);
   //añadimos la imagen de perfil local
   const [user, setUser] = useState({
     id: '2015',
@@ -166,6 +170,42 @@ function Login() {
       }
     }
   }
+  async function handleImageBorder(e) {
+    e.preventDefault();
+    const user_logged = localStorage.getItem('user_logged');
+    try {
+      const tableName = 'Users';
+        const { data, error } = await supabase
+        .from(tableName)
+        .update([{show_image_border: showImageBorder, color_image_border: borderImageColor}])
+        .eq('user', user_logged);
+        if (error) {throw error;}
+        notify_ok("updating the image border ok");
+    }
+    catch (error) {
+      console.error(error.message);
+      
+      notify("Error updating the image border");
+    }
+  }
+  async function handleImageShadow(e) {
+    e.preventDefault();
+    const user_logged = localStorage.getItem('user_logged');
+    try {
+      const tableName = 'Users';
+        const { data, error } = await supabase
+        .from(tableName)
+        .update([{show_image_shadow: showShadow, color_image_shadow: shadowColor}])
+        .eq('user', user_logged);
+        if (error) {throw error;}
+        notify_ok("updating the image shadow ok");
+    }
+    catch (error) {
+      console.error(error.message);
+      
+      notify("Error updating the image shadow");
+    }
+  }
   const fetchImage = async (datas) => {
     try {
       const user_logged = localStorage.getItem('user_logged');
@@ -191,7 +231,7 @@ function Login() {
           console.error('Error al obtener la URL firmada:', error.message);
         } else {
           if (datas) {
-            const { name, last_name, id } = datas; // Obtener los datos del usuario
+            const { name, last_name, id, show_image_border, color_image_border, show_image_shadow, color_image_shadow} = datas; // Obtener los datos del usuario
             //console.log(id)
             const newUser = {
               name: name,
@@ -201,6 +241,10 @@ function Login() {
               imageSize: user.imageSize,
             };
             setUser(newUser); // Almacenar los datos del usuario en el estado
+            setShowImageBorder(show_image_border);
+            setBorderImageColor(color_image_border);
+            setShowShadow(show_image_shadow);
+            setShadowColor(color_image_shadow); 
             setIsLoggedIn(true);
             
           } else {
@@ -216,6 +260,7 @@ function Login() {
   };
   //Función para validar el usuario y la contraseña
   async function save_login_user(user_logged) {
+    
     try {
       const tableName = 'Users';
       const { data, error } = await supabase
@@ -233,7 +278,7 @@ function Login() {
         fetchImage(data);
       }
       else{
-        const { name, last_name, id } = data; // Obtener los datos del usuario
+        const { name, last_name, id, show_image_border, color_image_border, show_image_shadow, color_image_shadow} = data; // Obtener los datos del usuario
         //console.log(id)
         const newUser = {
           name: name,
@@ -243,6 +288,10 @@ function Login() {
           imageSize: user.imageSize,
         };
         setUser(newUser); // Almacenar los datos del usuario en el estado
+        setShowImageBorder(show_image_border);
+        setBorderImageColor(color_image_border);
+        setShowShadow(show_image_shadow);
+        setColorShadow(color_image_shadow); 
         setIsLoggedIn(true);
       }
     } catch (error) {
@@ -267,7 +316,13 @@ function Login() {
     leerDatos();
   }, [isLoggedIn]);
   */
-
+  
+  const handleToggleImageBorder = () => {
+    setShowImageBorder(!showImageBorder);
+  };
+  const handleToggleShadow = () => {
+    setShowShadow(!showShadow);
+  };
   const handleKeyPress = (e, callback) => {
     if (e.key === "Enter") {
       e.preventDefault();
@@ -303,11 +358,11 @@ function Login() {
     
     // Sube la imagen a Supabase Storage
     const { data, error } = await supabase.storage.from('Users').upload(`${filePath}`, selectedImage);
-    const { datas, errors } = await supabase.storage.from('Users').update(`${filePath}`, selectedImage);
+    //const { datas, errors } = await supabase.storage.from('Users').update(`${filePath}`, selectedImage);
     
     if (error) {
       console.error('Error al subir la imagen:', error.message);
-      const { datas, errors } = await supabase.storage.from('Users').update(`${filePath}.${fileExtension}`, selectedImage);
+      const { datas, errors } = await supabase.storage.from('Users').update(`${filePath}`, selectedImage);
       if (errors) {
         console.error('Error al subir la imagen:', errors.message);
       } else {
@@ -338,40 +393,75 @@ function Login() {
       <div>
         <Navbar />
       </div>
-      <h1 className="read-the-docs">{isRegister ? 'Register' : 'Login'}</h1>
+      <h1 className="read-the-docs">{isRegister ? "Register" : "Login"}</h1>
       {isLoggedIn && (
         <div>
           <button className="boton-login button_normal" onClick={handletoLogin}>
             Logout
           </button>
-          <MyCard name={user.name} lastname={user.lastName} image={user.image} id={user.id} imageSize={user.imageSize}/>
-          <div>
-            <input 
-              type="file"
-              id=  'image_uploads'
-              name="image_uploads"
-              onChange={handleImageChange} 
-              accept="image/*"
-              className= "input_image"
-            />
-            <button onClick={handleUpload} className= "button_normal">Change image</button>
+          <MyCard
+            name={user.name}
+            lastname={user.lastName}
+            image={user.image}
+            id={user.id}
+            imageSize={user.imageSize}
+            showImageBorder={showImageBorder}
+            borderImageColor={borderImageColor}
+            showShadow={showShadow}
+            shadowColor={shadowColor}
+          />
+          <h2 style={{marginBottom:"0px"}}>Edit profile</h2>
+          <div style={{maxWidth: "390px", margin:"auto"}}>
+            <div className="center-div">
+              <input
+                type="file"
+                id="image_uploads"
+                name="image_uploads"
+                onChange={handleImageChange}
+                accept="image/*"
+                className="input_image"
+              />
+              <button onClick={handleUpload} className="button_normal" style={{width:'146px'}}>
+                Change image
+              </button>
+            </div>
+            <div className="center-div">
+              <h4 style={{marginRight: "8px"}}>Border color</h4>
+              <input
+                type="color"
+                value={borderImageColor}
+                onChange={(e) => setBorderImageColor(e.target.value)}
+              />
+              <input type="checkbox" checked={showImageBorder} onChange={handleToggleImageBorder} style={{marginRight: "17px"}} />
+              <button className="button_normal" style={{width:'146px', padding:'0.6em 0.5em'}} onClick={handleImageBorder}>Save Border Img</button>
+            </div>
+            <div className="center-div">
+              <h4 style={{marginRight: "8px"}}>Shadow color</h4>
+              <input
+                type="color"
+                value={shadowColor}
+                onChange={(e) => setShadowColor(e.target.value)}
+              />
+              <input type="checkbox" checked={showShadow} onChange={handleToggleShadow} style={{marginRight: "17px"}} />
+              <button className="button_normal" style={{width:'146px', padding:'0.6em 0.5em'}} onClick={handleImageShadow}>Save Shadow Img</button>
+            </div>
           </div>
         </div>
       )}
       {!isLoggedIn && !isRegister && (
         <form>
           <div className="input-group">
-          <input
-            required
-            type="text"
-            name="text"
-            autoComplete="off"
-            className="input"
-            value={userInput}
-            onChange={(e) => setUserInput(e.target.value)}
-            onKeyDown={(e) => handleKeyPress(e, handleLogin)}
-          />
-          <label className="user-label">User or Email</label>
+            <input
+              required
+              type="text"
+              name="text"
+              autoComplete="off"
+              className="input"
+              value={userInput}
+              onChange={(e) => setUserInput(e.target.value)}
+              onKeyDown={(e) => handleKeyPress(e, handleLogin)}
+            />
+            <label className="user-label">User or Email</label>
           </div>
           <div className="input-group">
             <input
@@ -387,16 +477,19 @@ function Login() {
             <label className="user-label">Password</label>
           </div>
           <div>
-            <button className='button_normal' onClick={handleRegisterToggle}>Go to Register</button>
-            <button className='button_normal' onClick={handleLogin}>{isLoggedIn ? 'Logout' : 'Login'}</button>
+            <button className="button_normal" onClick={handleRegisterToggle}>
+              Go to Register
+            </button>
+            <button className="button_normal" onClick={handleLogin}>
+              {isLoggedIn ? "Logout" : "Login"}
+            </button>
           </div>
-          
         </form>
       )}
       {!isLoggedIn && isRegister && (
         <form>
           <div className="input-group">
-          <input
+            <input
               required
               type="text"
               name="text"
@@ -409,7 +502,7 @@ function Login() {
             <label className="user-label">Name</label>
           </div>
           <div className="input-group">
-          <input
+            <input
               required
               type="text"
               name="text"
@@ -422,7 +515,7 @@ function Login() {
             <label className="user-label">Last Name</label>
           </div>
           <div className="input-group">
-          <input
+            <input
               required
               type="text"
               name="text"
@@ -474,20 +567,20 @@ function Login() {
             <label className="user-label">Repeat Password</label>
           </div>
           <div>
-            <button className='button_normal' onClick={handleRegisterToggle}>
-              {isLoggedIn ? 'Logout' : 'Go to Login'}
+            <button className="button_normal" onClick={handleRegisterToggle}>
+              {isLoggedIn ? "Logout" : "Go to Login"}
             </button>
-            <button className='button_normal' onClick={handleRegister}>
-              {isRegister ? 'Register' : 'Register'}
+            <button className="button_normal" onClick={handleRegister}>
+              {isRegister ? "Register" : "Register"}
             </button>
           </div>
         </form>
-      )}      
+      )}
       {/* <img src={imageUrl} alt="Imagen Descargada" /> */}
-      <ToastContainer transition={Flip}/>
-      
+      <ToastContainer transition={Flip} />
+
       {/* <p className="read-the-docs">login: {localStorage.getItem('user_logged')}</p> */}
-{/*   <p className="read-the-docs">login: {isLoggedIn.toString()}</p>
+      {/*   <p className="read-the-docs">login: {isLoggedIn.toString()}</p>
       <p className='read-the-docs'>register: {isRegister.toString()}</p> */}
     </>
   );
