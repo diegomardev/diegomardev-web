@@ -7,6 +7,7 @@ import {IconHome} from '@tabler/icons-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [userLogged, setUserLogged] = useState(localStorage.getItem('user_logged'));
   const [darkMode, setDarkMode] = useState(() => {
     const storedDarkMode = localStorage.getItem('dark-mode');
     if (storedDarkMode !== null) {
@@ -33,7 +34,12 @@ const Navbar = () => {
   const handleDarkModeChange = () => {
     setDarkMode(!darkMode);
   };
-
+  setInterval(() => {
+    if (localStorage.getItem('user_logged') !== null) {
+      setUserLogged(localStorage.getItem('user_logged'));
+    }
+    else {setUserLogged('');}
+  }, 5000);
   return (
     <div className='navbar_cabecera'>
       {/* <img src={demonlogo} className='navbar_logo' onClick={gohome} /> */}
@@ -51,7 +57,11 @@ const Navbar = () => {
         <a href='/blog'>Blog</a>
         <a href='/contact'>Contact</a>
         <a href='/about'>About</a>
-        <a href='/login'>Login</a>
+        {userLogged ? (
+          <a href='/login'>{userLogged.charAt(0).toUpperCase()+userLogged.slice(1)}</a>
+        ) : (
+          <a href='/login'>Login</a>
+        )}
       </div>
       <label className="switch_dark" id="switch_dark">
         <span className="sun">

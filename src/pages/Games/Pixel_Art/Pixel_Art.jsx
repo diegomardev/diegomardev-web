@@ -148,7 +148,7 @@ const Pixel_Art = () => {
               name="text"
               autoComplete="off"
               className="input"
-              value={playerName}
+              value={playerName.charAt(0).toUpperCase()+playerName.slice(1)}
               onChange={(e) => setPlayerName(e.target.value)}
               onKeyDown={(e) => handleKeyPress(e)}
             />

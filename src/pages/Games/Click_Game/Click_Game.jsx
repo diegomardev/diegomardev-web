@@ -27,7 +27,10 @@ const ClickGame = () => {
   //al inicio de la aplicación, se ejecuta la función para leer si hay guardado algun jugador
 
   useEffect(() => {
-    if(localStorage.getItem('playerName') !== null){
+    if(localStorage.getItem('user_logged') !== null){
+      setPlayerName(localStorage.getItem('user_logged'));
+    }
+    else if(localStorage.getItem('playerName') !== null){
       setPlayerName(localStorage.getItem('playerName'));
     }
   }, []);
@@ -213,7 +216,7 @@ const ClickGame = () => {
       <div className="game-info">
         <div>Clicks: {score}</div>
         <div className="game-player">
-          <span className="player-name" onClick={() => setShowDialog(true)}>{playerName}</span>
+          <span className="player-name" onClick={() => setShowDialog(true)}>{playerName.charAt(0).toUpperCase()+playerName.slice(1)}</span>
           <span className="hover-text">Change Player</span>
         </div>
         <div>Level: {level}</div>
