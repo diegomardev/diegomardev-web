@@ -34,12 +34,21 @@ const Navbar = () => {
   const handleDarkModeChange = () => {
     setDarkMode(!darkMode);
   };
-  setInterval(() => {
-    if (localStorage.getItem('user_logged') !== null) {
-      setUserLogged(localStorage.getItem('user_logged'));
-    }
-    else {setUserLogged('');}
-  }, 5000);
+  
+  useEffect(() => {
+    // Establecer el intervalo en el montaje del componente
+    const loginInterval = setInterval(() => {
+      if (localStorage.getItem('user_logged') !== null) {
+        setUserLogged(localStorage.getItem('user_logged'));
+      } else {
+        setUserLogged('');
+      }
+    }, 1000);
+
+    // Limpiar el intervalo cuando el componente se desmonta
+    return () => clearInterval(loginInterval);
+  }, []); // El segundo argumento de useEffect es un array de dependencias, que está vacío en este caso.
+
   return (
     <div className='navbar_cabecera'>
       {/* <img src={demonlogo} className='navbar_logo' onClick={gohome} /> */}
