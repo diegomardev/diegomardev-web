@@ -361,7 +361,6 @@ function Login() {
     //const { datas, errors } = await supabase.storage.from('Users').update(`${filePath}`, selectedImage);
     
     if (error) {
-      console.error('Error al subir la imagen:', error.message);
       const { datas, errors } = await supabase.storage.from('Users').update(`${filePath}`, selectedImage);
       if (errors) {
         console.error('Error al subir la imagen:', errors.message);

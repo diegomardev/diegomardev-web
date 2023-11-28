@@ -30,7 +30,10 @@ const Pixel_Art = () => {
   const [active, setActive] = useState(false)
 
   useEffect(() => {
-    if(localStorage.getItem('playerName') !== null){
+    if(localStorage.getItem('user_logged') !== null){
+      setPlayerName(localStorage.getItem('user_logged'));
+    }
+    else if(localStorage.getItem('playerName') !== null){
       setPlayerName(localStorage.getItem('playerName'));
     }
   }, []);
@@ -74,7 +77,7 @@ const Pixel_Art = () => {
       .from(tableName)
       .select('pixel_colors')
       if (error) {throw error;}
-      console.log('Datos leídos correctamente:', data[0].pixel_colors);
+      //console.log('Datos leídos correctamente:', data[0].pixel_colors);
       setPixels(data[0].pixel_colors);
     } catch (error) {
       console.error('Error al leer datos:', error.message);
