@@ -46,115 +46,143 @@ function Home() {
   return (
     <>
       <div>
-        <Navbar/>
+        <Navbar />
       </div>
       <div className="page-container">
-      {isMobile ? (
-        <div>
-          <h1 className="read-the-docs" style={{ display: 'flex', justifyContent: 'center'}}>
-            &nbsp;
-            Home 
-            &nbsp;
-            <a onClick={() => setActive(!active)} style={{ /* cursor: "pointer", */ marginTop: "-4px" }}>
-              {!active ? <IconHeart className="heartbeat" size={60} color='red' fill='red'/> : <IconStar className='shake-bottom' size={60} color='#888'/>}
-            </a>
-          </h1>
-          <div className='presentation_impar'>
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter
-                .typeString('Hello 👋,')
-                .pauseFor(2500)
-                .typeString('  Welcome to my WebSite!')
-                .pauseFor(2500)
-                .deleteChars(22)
-                .typeString('I am Diego, visit all the menu.')
-                .pauseFor(2500)
-                .deleteAll()
-                .start();
-              }}
-              options={{
-                autoStart: true,
-                loop: true,
-                stringSplitter
-              }}
-            />
+        {isMobile ? (
+          <div>
+            <h1
+              className="read-the-docs"
+              style={{display: "flex", justifyContent: "center"}}
+            >
+              &nbsp; Home &nbsp;
+              <a
+                onClick={() => setActive(!active)}
+                style={{/* cursor: "pointer", */ marginTop: "-4px"}}
+              >
+                {!active ? (
+                  <IconHeart className="heartbeat" size={60} color="red" fill="red" />
+                ) : (
+                  <IconStar className="shake-bottom" size={60} color="#888" />
+                )}
+              </a>
+            </h1>
+            <div className="presentation_impar">
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("Hello 👋,")
+                    .pauseFor(2500)
+                    .typeString("  Welcome to my WebSite!")
+                    .pauseFor(2500)
+                    .deleteChars(22)
+                    .typeString("I am Diego, visit all the menu.")
+                    .pauseFor(2500)
+                    .deleteAll()
+                    .start();
+                }}
+                options={{
+                  autoStart: true,
+                  loop: true,
+                  stringSplitter,
+                }}
+              />
+            </div>
+            <div className="options-home">
+              <button className="home_big_button" onClick={() => handleClickUrl("games")}>
+                🎮 GAMES 🎮
+              </button>
+              <button className="home_big_button" onClick={() => handleClickUrl("apps")}>
+                🎊 APPS 🎊
+              </button>
+              <button
+                className="home_big_button"
+                onClick={() => handleClickUrl("contact")}
+              >
+                🎟️ CONTACT 🎟️
+              </button>
+              <button className="home_big_button" onClick={() => handleClickUrl("login")}>
+                💻 LOGIN 💻
+              </button>
+            </div>
+            <footer className="read-the-docs footer_home">
+              <IconGhost3 />
+              &nbsp; Make with &nbsp; <IconHeartCode fill="red" /> &nbsp; by &nbsp;
+              <a href="https://www.linkedin.com/in/diegomarbar/" target="_blank">
+                diegomardev
+              </a>{" "}
+              &nbsp;
+              <IconGhost3 />
+            </footer>
           </div>
-          <div className='options-home'>
-          <button className='home_big_button' onClick={() => handleClickUrl('games')}>
-          🎮 GAMES 🎮
-          </button>
-          <button className='home_big_button' onClick={() => handleClickUrl('apps')}>
-          🎊 APPS 🎊
-          </button>
-          <button className='home_big_button' onClick={() => handleClickUrl('contact')}>
-          🎟️ CONTACT 🎟️
-          </button>            
-          <button className='home_big_button' onClick={() => handleClickUrl('login')}>
-          💻 LOGIN 💻
-          </button>
+        ) : (
+          <div>
+            <h1
+              className="read-the-docs"
+              style={{display: "flex", justifyContent: "center"}}
+            >
+              &nbsp; Home &nbsp;
+              <a
+                onClick={() => setActive(!active)}
+                style={{/* cursor: "pointer", */ marginTop: "-4px"}}
+              >
+                {!active ? (
+                  <IconHeart className="heartbeat" size={60} color="red" fill="red" />
+                ) : (
+                  <IconStar className="shake-bottom" size={60} color="#888" />
+                )}
+              </a>
+            </h1>
+            <div className="presentation_impar">
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("Hello 👋,")
+                    .pauseFor(2500)
+                    .typeString("  Welcome to my WebSite!")
+                    .pauseFor(2500)
+                    .deleteChars(22)
+                    .typeString("I am Diego, visit all the menu.")
+                    .pauseFor(2500)
+                    .deleteAll()
+                    .start();
+                }}
+                options={{
+                  autoStart: true,
+                  loop: true,
+                  stringSplitter,
+                }}
+              />
+            </div>
+            <div className="options-home">
+              <button className="home_big_button" onClick={() => handleClickUrl("games")}>
+                🎮 GAMES 🎮
+              </button>
+              <button className="home_big_button" onClick={() => handleClickUrl("apps")}>
+                🎊 APPS 🎊
+              </button>
+              <button
+                className="home_big_button"
+                onClick={() => handleClickUrl("contact")}
+              >
+                🎟️ CONTACT 🎟️
+              </button>
+              <button className="home_big_button" onClick={() => handleClickUrl("login")}>
+                💻 LOGIN 💻
+              </button>
+            </div>
+            <footer className="read-the-docs footer_home">
+              <IconGhost3 />
+              &nbsp; Make with &nbsp; <IconHeartCode fill="red" /> &nbsp; by &nbsp;
+              <a href="https://www.linkedin.com/in/diegomarbar/" target="_blank">
+                diegomardev
+              </a>{" "}
+              &nbsp;
+              <IconGhost3 />
+            </footer>
           </div>
-          <footer className="read-the-docs footer_home">
-            <IconGhost3/>&nbsp;
-            Make with &nbsp; <IconHeartCode fill='red'/> &nbsp; by &nbsp;
-            <a href="https://www.linkedin.com/in/diegomarbar/" target="_blank">diegomardev</a> &nbsp;
-            <IconGhost3/>
-          </footer>
-        </div>
-      ) : (
-        <div>
-          <h1 className="read-the-docs" style={{ display: 'flex', justifyContent: 'center'}}>
-            &nbsp;
-            Home 
-            &nbsp;
-            <a onClick={() => setActive(!active)} style={{ /* cursor: "pointer", */ marginTop: "-4px" }}>
-              {!active ? <IconHeart className="heartbeat" size={60} color='red' fill='red'/> : <IconStar className='shake-bottom' size={60} color='#888'/>}
-            </a>
-          </h1>
-          <div className='presentation_impar'>
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter
-                  .typeString('Hello 👋,')
-                  .pauseFor(2500)
-                  .typeString('  Welcome to my WebSite!')
-                  .pauseFor(2500)
-                  .deleteChars(22)
-                  .typeString('I am Diego, visit all the menu.')
-                  .pauseFor(2500)
-                  .deleteAll()
-                  .start();
-              }}
-              options={{
-                autoStart: true,
-                loop: true,
-                stringSplitter
-              }}
-            />
-          </div>
-          <div className='options-home'>
-          <button className='home_big_button' onClick={() => handleClickUrl('games')}>
-          🎮 GAMES 🎮
-          </button>
-          <button className='home_big_button' onClick={() => handleClickUrl('apps')}>
-          🎊 APPS 🎊
-          </button>
-          <button className='home_big_button' onClick={() => handleClickUrl('contact')}>
-          🎟️ CONTACT 🎟️
-          </button>            
-          <button className='home_big_button' onClick={() => handleClickUrl('login')}>
-          💻 LOGIN 💻
-          </button>
-          </div>
-          <footer className="read-the-docs footer_home">
-            <IconGhost3/>&nbsp;
-            Make with &nbsp; <IconHeartCode fill='red'/> &nbsp; by &nbsp;
-            <a href="https://www.linkedin.com/in/diegomarbar/" target="_blank">diegomardev</a> &nbsp;
-            <IconGhost3/>
-          </footer>
-        </div>
         )}
-    </div>
+      </div>
     </>
   );
 }

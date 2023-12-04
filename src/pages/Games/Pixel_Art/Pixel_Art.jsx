@@ -142,39 +142,39 @@ const Pixel_Art = () => {
         />
       </h1>
       <div className="input-group">
-          <input
-              required
-              type="text"
-              name="text"
-              autoComplete="off"
-              className="input"
-              value={playerName.charAt(0).toUpperCase()+playerName.slice(1)}
-              onChange={(e) => setPlayerName(e.target.value)}
-              onKeyDown={(e) => handleKeyPress(e)}
-              id="inputname"
-            />
-            <label className="user-label" for="inputname">Name - Enter to set</label>
-          </div>
-          <div className="pixel-grid">
-            {pixels.map((row, rowIndex) => (
-              <div key={rowIndex} className="pixel-row">
-                {row.map((pixelData, colIndex) => (
-                  <div
-                    key={colIndex}
-                    className="pixel"
-                    style={{ backgroundColor: pixelData[0] }} // Acceso al color
-                    onClick={() => handlePixelClick(rowIndex, colIndex)}
-                    onMouseEnter={() => setHoveredPixel({ row: rowIndex, col: colIndex })}
-                    onMouseLeave={() => setHoveredPixel({ row: -1, col: -1 })}
-                  >
-                    {hoveredPixel.row === rowIndex && hoveredPixel.col === colIndex && (
-                      <span className="hovered-player-name">{pixelData[1]}</span>
-                    )}
-                  </div>
-                ))}
+        <input
+          required
+          type="text"
+          name="text"
+          autoComplete="off"
+          className="input"
+          value={playerName.charAt(0).toUpperCase()+playerName.slice(1)}
+          onChange={(e) => setPlayerName(e.target.value)}
+          onKeyDown={(e) => handleKeyPress(e)}
+          id="input_name"
+        />
+        <label htmlFor="input_name" className="user-label">Name - Enter to set</label>
+      </div>
+      <div className="pixel-grid">
+        {pixels.map((row, rowIndex) => (
+          <div key={rowIndex} className="pixel-row">
+            {row.map((pixelData, colIndex) => (
+              <div
+                key={colIndex}
+                className="pixel"
+                style={{ backgroundColor: pixelData[0] }} // Acceso al color
+                onClick={() => handlePixelClick(rowIndex, colIndex)}
+                onMouseEnter={() => setHoveredPixel({ row: rowIndex, col: colIndex })}
+                onMouseLeave={() => setHoveredPixel({ row: -1, col: -1 })}
+              >
+                {hoveredPixel.row === rowIndex && hoveredPixel.col === colIndex && (
+                  <span className="hovered-player-name">{pixelData[1]}</span>
+                )}
               </div>
             ))}
           </div>
+        ))}
+      </div>
       <div className="color-palette">
         {colorPalette.map((color) => (
           <div

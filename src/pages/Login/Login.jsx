@@ -431,7 +431,7 @@ function Login() {
                 value={borderImageColor}
                 onChange={(e) => setBorderImageColor(e.target.value)}
               />
-              <input type="checkbox" checked={showImageBorder} onChange={handleToggleImageBorder} style={{marginRight: "17px"}} />
+              <input id='checkbox_showimageborder' type="checkbox" checked={showImageBorder} onChange={handleToggleImageBorder} style={{marginRight: "17px"}} />
               <button className="button_normal" style={{width:'146px', padding:'0.6em 0.5em'}} onClick={handleImageBorder}>Save Border Img</button>
             </div>
             <div className="center-div">
@@ -441,7 +441,7 @@ function Login() {
                 value={shadowColor}
                 onChange={(e) => setShadowColor(e.target.value)}
               />
-              <input type="checkbox" checked={showShadow} onChange={handleToggleShadow} style={{marginRight: "17px"}} />
+              <input id='checkbox_showshadow' type="checkbox" checked={showShadow} onChange={handleToggleShadow} style={{marginRight: "17px"}} />
               <button className="button_normal" style={{width:'146px', padding:'0.6em 0.5em'}} onClick={handleImageShadow}>Save Shadow Img</button>
             </div>
           </div>
@@ -451,6 +451,7 @@ function Login() {
         <form>
           <div className="input-group">
             <input
+              id='login_1'
               required
               type="text"
               name="text"
@@ -460,10 +461,11 @@ function Login() {
               onChange={(e) => setUserInput(e.target.value)}
               onKeyDown={(e) => handleKeyPress(e, handleLogin)}
             />
-            <label className="user-label">User or Email</label>
+            <label htmlFor="login_1" className="user-label">User or Email</label>
           </div>
           <div className="input-group">
             <input
+              id='login_2'
               required
               type="password"
               name="text"
@@ -473,7 +475,7 @@ function Login() {
               onChange={(e) => setPasswordInput(e.target.value)}
               onKeyDown={(e) => handleKeyPress(e, handleLogin)}
             />
-            <label className="user-label">Password</label>
+            <label htmlFor="login_2" className="user-label">Password</label>
           </div>
           <div>
             <button className="button_normal" onClick={handleRegisterToggle}>
@@ -489,6 +491,7 @@ function Login() {
         <form>
           <div className="input-group">
             <input
+              id='login_3'
               required
               type="text"
               name="text"
@@ -498,10 +501,11 @@ function Login() {
               onChange={(e) => setNameInput(e.target.value)}
               onKeyDown={(e) => handleKeyPress(e, handleRegister)}
             />
-            <label className="user-label">Name</label>
+            <label htmlFor="login_3" className="user-label">Name</label>
           </div>
           <div className="input-group">
             <input
+              id='login_4'
               required
               type="text"
               name="text"
@@ -511,10 +515,11 @@ function Login() {
               onChange={(e) => setLastNameInput(e.target.value)}
               onKeyDown={(e) => handleKeyPress(e, handleRegister)}
             />
-            <label className="user-label">Last Name</label>
+            <label htmlFor="login_4" className="user-label">Last Name</label>
           </div>
           <div className="input-group">
             <input
+              id='login_5'
               required
               type="text"
               name="text"
@@ -524,10 +529,11 @@ function Login() {
               onChange={(e) => setEmailInput(e.target.value)}
               onKeyDown={(e) => handleKeyPress(e, handleRegister)}
             />
-            <label className="user-label">Email</label>
+            <label htmlFor="login_5" className="user-label">Email</label>
           </div>
           <div className="input-group">
             <input
+              id='login_6'
               required
               type="text"
               name="text"
@@ -537,10 +543,11 @@ function Login() {
               onChange={(e) => setUserInput(e.target.value)}
               onKeyDown={(e) => handleKeyPress(e, handleRegister)}
             />
-            <label className="user-label">User</label>
+            <label htmlFor="login_6" className="user-label">User</label>
           </div>
           <div className="input-group">
             <input
+              id='login_7'
               required
               type="password"
               name="text"
@@ -550,10 +557,11 @@ function Login() {
               onChange={(e) => setPasswordInput(e.target.value)}
               onKeyDown={(e) => handleKeyPress(e, handleRegister)}
             />
-            <label className="user-label">Password</label>
+            <label htmlFor="login_7" className="user-label">Password</label>
           </div>
           <div className="input-group">
             <input
+              id='login_8'
               required
               type="password"
               name="text"
@@ -563,7 +571,7 @@ function Login() {
               onChange={(e) => setRepearPasswordInput(e.target.value)}
               onKeyDown={(e) => handleKeyPress(e, handleRegister)}
             />
-            <label className="user-label">Repeat Password</label>
+            <label htmlFor="login_8" className="user-label">Repeat Password</label>
           </div>
           <div>
             <button className="button_normal" onClick={handleRegisterToggle}>

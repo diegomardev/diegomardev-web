@@ -85,7 +85,7 @@ function Games() {
       <button className="botones_juegos" onClick={game2}>🖱️ Click 🖱️</button>
       <button className="botones_juegos" onClick={game3}>🦖 Dino 🦖</button>
       <button className="botones_juegos" onClick={game4}>🟦🟪 Pixel Art 🟩🟥</button>
-      <button className="botones_juegos" onClick={game5}>🔰 Tetris 🔰</button>
+      {/* <button className="botones_juegos" onClick={game5}>🔰 Tetris 🔰</button> */}
       </div>
     </div>
     </>
