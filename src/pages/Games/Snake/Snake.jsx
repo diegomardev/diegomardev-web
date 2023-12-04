@@ -59,7 +59,10 @@ const SnakeGame = () => {
   //al inicio de la aplicación, se ejecuta la función para leer si hay guardado algun jugador
 
   useEffect(() => {
-    if(localStorage.getItem('playerName') !== null){
+    if(localStorage.getItem('user_logged') !== null){
+      setPlayerName(localStorage.getItem('user_logged'));
+    }
+    else if(localStorage.getItem('playerName') !== null){
       setPlayerName(localStorage.getItem('playerName'));
     }
   }, []);
