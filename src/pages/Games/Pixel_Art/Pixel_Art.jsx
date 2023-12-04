@@ -151,8 +151,9 @@ const Pixel_Art = () => {
               value={playerName.charAt(0).toUpperCase()+playerName.slice(1)}
               onChange={(e) => setPlayerName(e.target.value)}
               onKeyDown={(e) => handleKeyPress(e)}
+              id="inputname"
             />
-            <label className="user-label">Name - Enter to set</label>
+            <label className="user-label" for="inputname">Name - Enter to set</label>
           </div>
           <div className="pixel-grid">
             {pixels.map((row, rowIndex) => (
