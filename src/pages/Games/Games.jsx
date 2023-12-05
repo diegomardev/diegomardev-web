@@ -70,6 +70,8 @@ function Games() {
   function game3() {window.location.href = "games/dino"};
   function game4() {window.location.href = "games/pixel_art";}
   function game5() {window.location.href = "games/tetris";}
+  function game6() {window.location.href = "games/russian_roulette";}
+  
   
   return (
     <>
@@ -86,6 +88,7 @@ function Games() {
       <button className="botones_juegos" onClick={game3}>🦖 Dino 🦖</button>
       <button className="botones_juegos" onClick={game4}>🟦🟪 Pixel Art 🟩🟥</button>
       {/* <button className="botones_juegos" onClick={game5}>🔰 Tetris 🔰</button> */}
+      <button className="botones_juegos" onClick={game6}>🔫 Russian Roulette 🔫</button>
       </div>
     </div>
     </>
