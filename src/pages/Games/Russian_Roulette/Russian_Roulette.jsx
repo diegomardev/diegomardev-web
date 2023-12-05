@@ -53,7 +53,7 @@ const Russian_Roulette = () => {
         <div className={`roulette ${isSpinning ? 'spinning' : ''}`}>
           <img src={roulette} alt="Ruleta" onClick={startSpinning}/>
         </div>
-        <button onClick={startSpinning} disabled={isSpinning} className="button_normal" style={{ position: "relative", zIndex: "1", marginTop: "100px", width:"300px", height:"75px"  }}>
+        <button onClick={startSpinning} disabled={isSpinning} className="button_normal" style={{ position: "relative", zIndex: "1", marginTop: "100px", width:"300px", height:"75px", fontSize:"1.2rem"}}>
           {isSpinning ? 'Spining...' : '🔫 Spin Russian Roulette 🔫'}
         </button>
         {/* <div>{isSpinning ? randomSpins : null}</div> */}
