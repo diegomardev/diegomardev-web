@@ -1,15 +1,15 @@
 .roulette {
   margin: 0 auto;
-  width: 350px;
-  height: 350px;
+  width: 280px;
+  height: 280px;
   overflow: hidden;
   position: relative;
   transition: transform 3s ease-out; /* Ajusta la duración de la animación según tus necesidades */
 }
 
 .roulette img {
-  width: 350px;
-  height: 350px;
+  width: 280px;
+  height: 280px;
 }
 
 .spinning {
