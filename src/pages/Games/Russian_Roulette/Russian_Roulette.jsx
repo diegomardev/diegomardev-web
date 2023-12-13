@@ -52,7 +52,7 @@ const Russian_Roulette = () => {
         audio_shot.play();
         confetti();
       }
-    }, 3000);
+    }, 3200);
   };
 
   return (
