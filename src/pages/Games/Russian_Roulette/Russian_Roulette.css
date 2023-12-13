@@ -4,7 +4,7 @@
   height: 280px;
   overflow: hidden;
   position: relative;
-  transition: transform 3.1s ease-out; /* Ajusta la duración de la animación según tus necesidades */
+  transition: transform 3.2s ease-out; /* Ajusta la duración de la animación según tus necesidades */
 }
 
 .roulette img {

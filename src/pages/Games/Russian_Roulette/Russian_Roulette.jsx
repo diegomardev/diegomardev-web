@@ -28,7 +28,7 @@ const Russian_Roulette = () => {
     let totalRotation = spins * 60;
 
     // Aplica la rotación en CSS usando la propiedad transform
-    document.querySelector('.roulette').style.transition = 'transform 3.1s ease-out';
+    document.querySelector('.roulette').style.transition = 'transform 3.2s ease-out';
     document.querySelector('.roulette').style.transform = `rotate(${totalRotation}deg)`;
 
     // Reproduce el sonido al iniciar el giro
