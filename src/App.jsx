@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from './pages/Home/Home'
+import HomeTest from './pages/HomeTest/HomeTest'
 import Games from './pages/Games/Games'
 import Snake from './pages/Games/Snake/Snake'
 import Click from './pages/Games/Click_Game/Click_Game'
@@ -33,6 +34,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/hometest" element={<HomeTest />} />
         <Route path="/games" element={<Games />} />
         <Route path="/games/snake" element={<Snake />} />
         <Route path="/games/click_game" element={<Click />} />

@@ -1,0 +1,378 @@
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 400ms;
+  cursor: pointer;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.logo_confetti {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  cursor: pointer;
+}
+.logo_confetti:hover {
+  filter: drop-shadow(0 0 2em #da0909);
+}
+/*Declaramos la direcion de giro a derecha*/
+@keyframes logo-spin1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*Declaramos la direcion de giro a izquierda*/
+@keyframes logo-spin2 {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(1) .logo {/*El primer elemento llamado por <a> con la propiedad .logo lo hacemos girar*/
+    animation: logo-spin1 infinite 20s linear;/*Le decimo que tarde en hacer la vuelta completa 20segundos*/
+  }
+  a:nth-of-type(2) .logo {
+    animation: logo-spin2 infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.footer_home {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px
+}
+.options-home{
+  margin-top: 60px;
+}
+@media(min-width: 768px){
+  .options-home{
+    margin-top: 300px;
+  }
+}
+.botones{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.botones:hover {
+  filter: drop-shadow(0 0 1em #646cffaa);
+}
+.click_text{
+  cursor: pointer;
+}
+.home_big_button {
+  margin: 10px;
+  font-size: 20pt;
+  font-weight: bold;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  padding: 0.4em 1.2em;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.5s;
+  min-width: 150px;
+  width: 270px;
+  height: 170px;
+  margin-bottom: 40px;
+}
+.home_big_button:hover {
+  filter: drop-shadow(0 0 0.5em #646cffaa);
+  scale:1.01;
+}
+html.light .home_big_button {
+  background-color: #f9f9f9;
+  color: #213547;
+  border: 1px solid rgba(27, 25, 25, 0.349);
+}
+html.dark .home_big_button {
+  background-color: #1a1a1a;
+  color: #f9f9f9;
+  border: 1px solid rgba(129, 113, 113, 0.349);
+}
+footer {
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 60px);
+  margin: auto;
+  max-width: 1200px;
+}
+.presentation_impar_test {
+	font-size: 45px;
+	text-align: left;
+	margin-left: 30px;
+  height: 85px;
+}
+.presentation_par {
+	font-size: 45px;
+	text-align: right;
+	margin-right: 30px;
+}
+.heartbeat {
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+ @-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+
+.shake-bottom {
+	-webkit-animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: shake-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+ @-webkit-keyframes shake-bottom {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+@keyframes shake-bottom {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+
+@keyframes pampalluga {
+	50% {
+		border-color: transparent;
+	}
+}
+.Typewriter__wrapper .Typewriter__cursor{
+  font-size: 60px;
+}
+@media(max-width: 768px){
+  .Typewriter__wrapper .Typewriter__cursor{
+    font-size: 25px;
+  }
+  .home_big_button {
+    margin: 10px;
+    font-size: 14pt;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.349);
+    padding: 0;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.5s;
+    min-width: 150px;
+    width: 150px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+}
+.read-the-docs a {
+  color: inherit; /* Esto hará que el color del enlace sea heredado del color del texto circundante */
+  text-decoration: underline; /* Otra propiedad opcional para agregar subrayado a los enlaces si es necesario */
+}
+
+.grid-container {
+  max-width: 1120px;
+  display: grid;
+  gap: 30px;
+  grid-template-areas: 
+  "a b c d d"
+  "e f f d d"
+  "g g h i i";
+  grid-auto-flow: row; /* Esta línea hace que los elementos hagan wrap en filas adicionales */
+  /* justify-items: center; */
+  /* justify-content: center; */
+}
+.bento{
+  width: 100%;
+}
+img:nth-child(1) {
+  grid-area: a;
+  border-radius: 10px;
+}
+
+img:nth-child(2) {
+  grid-area: b;
+  border-radius: 10px;
+}
+
+img:nth-child(3) {
+  grid-area: c;
+  border-radius: 10px;
+}
+
+img:nth-child(4) {
+  grid-area: d;
+  border-radius: 10px;
+}
+
+img:nth-child(5) {
+  grid-area: e;
+  border-radius: 10px;
+}
+
+img:nth-child(6) {
+  grid-area: f;
+  border-radius: 10px;
+}
+
+img:nth-child(7) {
+  grid-area: g;
+  border-radius: 10px;
+}
+
+img:nth-child(8) {
+  grid-area: h;
+  border-radius: 10px;
+}
+img:nth-child(9) {
+  grid-area: i;
+  border-radius: 10px;
+}
