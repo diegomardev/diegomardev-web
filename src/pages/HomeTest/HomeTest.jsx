@@ -127,7 +127,7 @@ function Home() {
           <div>
             <h1
               className="read-the-docs"
-              style={{ display: 'flex', justifyContent: 'center' }}
+              style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px', marginTop: '10px'  }}
             >
               &nbsp; Home &nbsp;
               <a
@@ -164,7 +164,7 @@ function Home() {
             </div>
 
             <section className="grid-container">
-              <img src="/home/image(0).svg" alt="Image A" />
+              <img src="/home/image(0).svg" alt="Image A" onClick={() => handleClickUrl('games')}/>
               <img src="/home/image(1).svg" alt="Image B" />
               <img src="/home/image(2).svg" alt="Image C" />
               <img src="/home/image(3).svg" alt="Image D" />

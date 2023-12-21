@@ -130,7 +130,7 @@ footer {
 	font-size: 45px;
 	text-align: left;
 	margin-left: 30px;
-  height: 85px;
+  /* height: 85px; */
 }
 .presentation_par {
 	font-size: 45px;
@@ -321,7 +321,7 @@ footer {
 .grid-container {
   max-width: 1120px;
   display: grid;
-  gap: 30px;
+  gap: min(2.3vw, 25px); /* Valor relativo al ancho del viewport, pero máximo de 25px */
   grid-template-areas: 
   "a b c d d"
   "e f f d d"
@@ -329,6 +329,18 @@ footer {
   grid-auto-flow: row; /* Esta línea hace que los elementos hagan wrap en filas adicionales */
   /* justify-items: center; */
   /* justify-content: center; */
+  margin: 0 30px;
+}
+.grid-container img {
+  width: 100%; /* Cambié esto para que las imágenes ocupen todo el ancho del contenedor */
+  height: auto; /* Esto asegura que la altura se ajuste proporcionalmente al ancho */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out; /* Agregamos una transición en la propiedad 'transform' */
+}
+
+.grid-container img:hover {
+  transform: scale(1.05); /* Cambiamos el tamaño al hacer hover, en este caso, un 10% más grande */
 }
 .bento{
   width: 100%;
