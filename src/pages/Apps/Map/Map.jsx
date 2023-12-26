@@ -5,7 +5,7 @@ import gk from 'gauss-krueger';
 import { fromLatLon, toLatLon } from "utm-projection";
 import Map from '../../../components/Map/Map'
 
-function Apps() {
+function Maps() {
   const [latitude, setLatitude] = useState(52.517265);
   const [longitude, setLongitude] = useState(13.389244);
   const [zoom, setZoom] = useState(13);
@@ -32,4 +32,4 @@ function Apps() {
   );
 }
 
-export default Apps;
+export default Maps;
