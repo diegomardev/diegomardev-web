@@ -5,7 +5,7 @@ import confetti from 'canvas-confetti';
   [
     {
         "id": 1,
-        "top": -20.75,
+        "top": -19,
         "left": 53
     },
     {
