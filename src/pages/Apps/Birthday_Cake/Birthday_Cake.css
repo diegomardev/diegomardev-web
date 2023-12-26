@@ -1,5 +1,8 @@
-
-
+.posicion_texto {
+  position: absolute;
+  top: 80vh;
+  left: 35vw;
+}
 .cake {
   position: absolute;
   width: 250px;
