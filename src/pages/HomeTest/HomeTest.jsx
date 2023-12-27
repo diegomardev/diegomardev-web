@@ -40,12 +40,7 @@ function Home() {
   const [active, setActive] = useState(false);
   //creamos otra variable con useState
   function handleClickUrl(url) {
-    confetti_click();
-    setTimeout(() => {
-      if (url) {
-        window.location.href = url;
-      }
-    }, 500); // 2000 milisegundos = 2 segundos
+    if (url) {window.location.href = url;}
   }
   const stringSplitter = (string) => {
     const splitter = new GraphemeSplitter();
@@ -164,15 +159,15 @@ function Home() {
             </div>
 
             <section className="grid-container">
-              <img src="/home/image(0).svg" alt="Image A" onClick={() => handleClickUrl('games')}/>
-              <img src="/home/image(1).svg" alt="Image B" />
-              <img src="/home/image(2).svg" alt="Image C" />
-              <img src="/home/image(3).svg" alt="Image D" />
-              <img src="/home/image(4).svg" alt="Image E" />
-              <img src="/home/image(5).svg" alt="Image F" />
-              <img src="/home/image(6).svg" alt="Image G" />
-              <img src="/home/image(7).svg" alt="Image H" />
-              <img src="/home/image(8).svg" alt="Image I" />
+              <img src="/home/image(0).svg" alt="Image A" onClick={() => handleClickUrl('apps/calculators/aspect_ratio')}/>
+              <img src="/home/image(1).svg" alt="Image B" onClick={() => handleClickUrl('games/click_game')}/>
+              <img src="/home/image(2).svg" alt="Image C" onClick={() => handleClickUrl('games/pixel_art')}/>
+              <img src="/home/image(3).svg" alt="Image D" onClick={() => handleClickUrl('apps/twitch_chat')}/>
+              <img src="/home/image(4).svg" alt="Image E" onClick={() => handleClickUrl('games/russian_roulette')}/>
+              <img src="/home/image(5).svg" alt="Image F" onClick={() => handleClickUrl('apps/calculators/coordinate_converter')}/>
+              <img src="/home/image(6).svg" alt="Image G" onClick={() => handleClickUrl('apps/birthday_cake')}/>
+              <img src="/home/image(7).svg" alt="Image H" onClick={() => handleClickUrl('contact')}/>
+              <img src="/home/image(8).svg" alt="Image I" onClick={() => handleClickUrl('login')}/>
               
               
             </section>
