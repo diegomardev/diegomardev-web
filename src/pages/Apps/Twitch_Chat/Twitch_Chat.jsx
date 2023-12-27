@@ -9,6 +9,7 @@ const clinetId     = TOKENS.TWITCH.CLIENTID;
 const clinetSecret = TOKENS.TWITCH.CLIENTSECRET;
 const access_token = TOKENS.TWITCH.ACCESS_TOKEN;
 ////COMANDO PARA ACTUALIZAR ACCESS TOKEN DE TWITCH PONERLO EN CONSOLA DE LINUX
+////PONER EL ACCESS TOKEN RESULTANTE EN EL ARCHIVO DE CONSTANTES .env.local
 /*
 curl -X POST 'https://id.twitch.tv/oauth2/token' \
 -H 'Content-Type: application/x-www-form-urlencoded' \
