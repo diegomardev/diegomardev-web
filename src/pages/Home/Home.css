@@ -66,6 +66,11 @@
   align-items: center;
   max-width: 1200px
 }
+.home_menu {
+  position: fixed;
+  bottom: 80px;
+}
+
 .options-home{
   margin-top: 60px;
 }
