@@ -14,6 +14,8 @@ function Apps() {
   function app7() {window.location.href = "apps/calculators";}
   function app8() {window.location.href = "apps/map";}
   function app9() {window.location.href = "apps/birthday_cake";}
+  function app10() {window.location.href = "apps/threejs";}
+  
   
   
   
@@ -36,6 +38,7 @@ function Apps() {
       <button className="botones_juegos my-button unit_converter_text" onClick={app7}>📟 Calculators 📟</button>
       <button className="botones_juegos my-button map_text" onClick={app8}>🗺️ Map 🗺️</button>
       <button className="botones_juegos my-button birthdaycake_text" onClick={app9}>🎂 Birthday Cake 🎂</button>
+      <button className="botones_juegos my-button threejs_text" onClick={app10}>🌐 Three.js 🌐</button>
       </div>
     </div>
     </>
