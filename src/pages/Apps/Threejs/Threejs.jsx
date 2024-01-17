@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { STLLoader } from 'three/examples/jsm/loaders/STLLoader';
+import Navbar from '../../../components/Navbar/Navbar';
 
 const ThreeJSModel = () => {
   const canvasRef = useRef();
@@ -15,12 +16,12 @@ const ThreeJSModel = () => {
     light.position.set(20, 20, 20);
     scene.add(light);
 
-    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight*1.15, 0.1, 1000);
     camera.position.z = 100;
     camera.position.y = 40;
 
     const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(window.innerWidth, window.innerHeight * 0.8);
     renderer.setClearColor(0x242424, 1);
     canvasRef.current.appendChild(renderer.domElement);
 
@@ -41,6 +42,7 @@ const ThreeJSModel = () => {
     const loadSTL = (geometry) => {
       geometry.center();
       const mesh = new THREE.Mesh(geometry, material2);
+      //mesh.position.y = 30;//cambia la altura del objeto
       scene.add(mesh);
     };
 
@@ -105,7 +107,10 @@ const ThreeJSModel = () => {
 
   return (
     <>
-      <h1>STL Viewer</h1>
+      <div>
+        <Navbar />
+      </div>
+      <h1 style={{ marginTop: '0px', marginBottom: '0px' }}>STL Viewer</h1>
       <input
         type="file"
         id="stl_uploads"
