@@ -77,38 +77,17 @@ function Home() {
                 )}
               </a>
             </h1>
-            <div className="presentation_impar_test">
-              <Typewriter
-                onInit={(typewriter) => {
-                  typewriter
-                    .typeString("Hello 👋,")
-                    .pauseFor(2500)
-                    .typeString("  Welcome to my WebSite!")
-                    .pauseFor(2500)
-                    .deleteChars(22)
-                    .typeString("I am Diego, visit all the menu.")
-                    .pauseFor(2500)
-                    .deleteAll()
-                    .start();
-                }}
-                options={{
-                  autoStart: true,
-                  loop: true,
-                  stringSplitter,
-                }}
-              />
-            </div>
 
-            <section className="grid-container home_menu">
+            <section className="grid-container2">
+              <img
+                src="/home/image(3).svg"
+                alt="Image D"
+                onClick={() => handleClickUrl("apps/twitch_chat")}
+              />
               <img
                 src="/home/image(0).svg"
                 alt="Image A"
                 onClick={() => handleClickUrl("apps/calculators/aspect_ratio")}
-              />
-              <img
-                src="/home/image(1).svg"
-                alt="Image B"
-                onClick={() => handleClickUrl("games/click_game")}
               />
               <img
                 src="/home/image(2).svg"
@@ -116,24 +95,14 @@ function Home() {
                 onClick={() => handleClickUrl("games/pixel_art")}
               />
               <img
-                src="/home/image(3).svg"
-                alt="Image D"
-                onClick={() => handleClickUrl("apps/twitch_chat")}
-              />
-              <img
-                src="/home/image(4).svg"
-                alt="Image E"
-                onClick={() => handleClickUrl("games/russian_roulette")}
-              />
-              <img
                 src="/home/image(5).svg"
                 alt="Image F"
                 onClick={() => handleClickUrl("apps/calculators/coordinate_converter")}
               />
               <img
-                src="/home/image(6).svg"
-                alt="Image G"
-                onClick={() => handleClickUrl("apps/birthday_cake")}
+                src="/home/image(1).svg"
+                alt="Image B"
+                onClick={() => handleClickUrl("games/click_game")}
               />
               <img
                 src="/home/image(7).svg"
@@ -147,7 +116,7 @@ function Home() {
               />
             </section>
 
-            <footer className="read-the-docs footer_home">
+            <footer className="read-the-docs footer_home_mobile">
               <IconGhost3 />
               &nbsp; Make with &nbsp; <IconHeartCode fill="red" /> &nbsp; by &nbsp;
               <a href="https://www.linkedin.com/in/diegomarbar/" target="_blank">

@@ -66,6 +66,14 @@
   align-items: center;
   max-width: 1200px
 }
+.footer_home_mobile {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px
+}
 .home_menu {
   position: fixed;
   bottom: 80px;
@@ -345,6 +353,82 @@ footer {
 }
 
 .grid-container img:hover {
+  transform: scale(1.05); /* Cambiamos el tamaño al hacer hover, en este caso, un 10% más grande */
+}
+.bento{
+  width: 100%;
+}
+img:nth-child(1) {
+  grid-area: a;
+  border-radius: 10px;
+}
+
+img:nth-child(2) {
+  grid-area: b;
+  border-radius: 10px;
+}
+
+img:nth-child(3) {
+  grid-area: c;
+  border-radius: 10px;
+}
+
+img:nth-child(4) {
+  grid-area: d;
+  border-radius: 10px;
+}
+
+img:nth-child(5) {
+  grid-area: e;
+  border-radius: 10px;
+}
+
+img:nth-child(6) {
+  grid-area: f;
+  border-radius: 10px;
+}
+
+img:nth-child(7) {
+  grid-area: g;
+  border-radius: 10px;
+}
+
+img:nth-child(8) {
+  grid-area: h;
+  border-radius: 10px;
+}
+img:nth-child(9) {
+  grid-area: i;
+  border-radius: 10px;
+}
+
+
+
+.grid-container2 {
+  max-width: 1120px;
+  display: grid;
+  gap: min(2.3vw, 25px); /* Valor relativo al ancho del viewport, pero máximo de 25px */
+  grid-template-areas: 
+  "a a"
+  "a a"
+  "b c"
+  "d d"
+  "e f"
+  "g g";
+  grid-auto-flow: row; /* Esta línea hace que los elementos hagan wrap en filas adicionales */
+  /* justify-items: center; */
+  /* justify-content: center; */
+  margin: 0 30px;
+}
+.grid-container2 img {
+  width: 100%; /* Cambié esto para que las imágenes ocupen todo el ancho del contenedor */
+  height: auto; /* Esto asegura que la altura se ajuste proporcionalmente al ancho */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out; /* Agregamos una transición en la propiedad 'transform' */
+}
+
+.grid-container2 img:hover {
   transform: scale(1.05); /* Cambiamos el tamaño al hacer hover, en este caso, un 10% más grande */
 }
 .bento{
