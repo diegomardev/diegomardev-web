@@ -405,9 +405,9 @@ img:nth-child(9) {
 
 
 .grid-container2 {
-  max-width: 1120px;
+  max-width: 350px;
   display: grid;
-  gap: min(2.3vw, 25px); /* Valor relativo al ancho del viewport, pero máximo de 25px */
+  gap: 20px;
   grid-template-areas: 
   "a a"
   "a a"
@@ -418,7 +418,7 @@ img:nth-child(9) {
   grid-auto-flow: row; /* Esta línea hace que los elementos hagan wrap en filas adicionales */
   /* justify-items: center; */
   /* justify-content: center; */
-  margin: 0 30px;
+  margin: 0px auto; /* minimo 30px y si es mas es auto*/
 }
 .grid-container2 img {
   width: 100%; /* Cambié esto para que las imágenes ocupen todo el ancho del contenedor */
