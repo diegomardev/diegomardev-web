@@ -340,8 +340,8 @@ footer {
   "e f f d d"
   "g g h i i";
   grid-auto-flow: row; /* Esta línea hace que los elementos hagan wrap en filas adicionales */
-  /* justify-items: center; */
-  /* justify-content: center; */
+  justify-items: center;
+  justify-content: center;
   margin: 0 30px;
 }
 .grid-container img {
