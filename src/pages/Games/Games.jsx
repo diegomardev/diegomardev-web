@@ -81,7 +81,7 @@ function Games() {
     <h1 className="read-the-docs">
         Games
     </h1>
-    <div>
+    <div style={{ maxWidth: '1400px', margin: '0 auto'}}>
       <div >
       <button className="botones_juegos" onClick={game1}>🐍 Snake 🐍</button>
       <button className="botones_juegos" onClick={game2}>🖱️ Click 🖱️</button>

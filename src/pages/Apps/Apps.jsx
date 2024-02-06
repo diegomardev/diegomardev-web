@@ -27,7 +27,7 @@ function Apps() {
     <h1 className="read-the-docs">
         Apps
     </h1>
-    <div>
+    <div style={{ maxWidth: '1400px', margin: '0 auto'}}>
       <div >
       <button className="botones_juegos my-button twitch_text" onClick={app1}>Twitch Chat</button>
       {/* <button className="botones_juegos" onClick={app2}>Threads API</button> */}
