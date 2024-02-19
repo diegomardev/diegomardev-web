@@ -3,6 +3,7 @@ import Navbar from '../../../components/Navbar/Navbar';
 import confetti from 'canvas-confetti';
 import { candles_init } from './candles';
 import './Birthday_Cake.css';
+import { IconBoxMargin } from '@tabler/icons-react';
 
 function Birthday_Cake() {
   const [candles, setCandles] = useState(candles_init);
@@ -123,9 +124,12 @@ useEffect(() => {
         ))}
       </div>
       <div className='posicion_texto'>
-        <div>
-          Years old
+        <div style={{marginBottom: "10px",}}>
+          Years old 
           <input
+            style={{
+              marginLeft: "10px",
+            }}
             type="number"
             value={candles.length}
             onChange={handleInputChange}
@@ -135,8 +139,9 @@ useEffect(() => {
         </div>
 
         <div>
-          Blown out candles: {litCandlesCount} -
+          Blown out candles: {litCandlesCount} 
           <button
+            className='button-timer'
             onMouseDown={() => {
               setBlowButtonPressed(true);
               blowCandlesSequentially(litCandlesCount);
@@ -152,7 +157,7 @@ useEffect(() => {
           </button>
         </div>
         <div>
-          <button onClick={encender_velas}>Encender velas 🕯️</button>
+          <button className='button-timer' onClick={encender_velas}>🕯️ light candles 🕯️</button>
         </div>
       </div>
     </>
