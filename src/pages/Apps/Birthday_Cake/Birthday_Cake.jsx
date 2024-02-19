@@ -125,7 +125,7 @@ useEffect(() => {
       </div>
       <div className='posicion_texto'>
         <div style={{marginBottom: "10px",}}>
-          Years old 
+          Years Old 
           <input
             style={{
               marginLeft: "10px",
@@ -139,7 +139,7 @@ useEffect(() => {
         </div>
 
         <div>
-          Blown out candles: {litCandlesCount} 
+          Blown Out Candles: {litCandlesCount} 
           <button
             className='button-timer'
             onMouseDown={() => {
@@ -153,11 +153,11 @@ useEffect(() => {
             }}
             onTouchEnd={() => setBlowButtonPressed(false)}
           >
-            Blow candles 💨 🎂
+            Blow Candles 💨 🎂
           </button>
         </div>
         <div>
-          <button className='button-timer' onClick={encender_velas}>🕯️ light candles 🕯️</button>
+          <button className='button-timer' onClick={encender_velas}>🕯️ Light Candles 🕯️</button>
         </div>
       </div>
     </>
