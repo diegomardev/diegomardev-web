@@ -1,6 +1,55 @@
 import React, { useState } from 'react';
 import Navbar from '../../../components/Navbar/Navbar';
 import confetti from 'canvas-confetti';
+let candles_init =
+[
+  {
+      "id": 1,
+      "top": -19,
+      "left": 53
+  },
+  {
+      "id": 2,
+      "top": -17.25,
+      "left": 28.199999999999996
+  },
+  {
+      "id": 3,
+      "top": -4.75,
+      "left": 6.6000000000000005
+  },
+  {
+      "id": 4,
+      "top": -16.75,
+      "left": 74.6
+  },
+  {
+      "id": 5,
+      "top": -5.75,
+      "left": 92.2
+  },
+  {
+      "id": 6,
+      "top": 7.75,
+      "left": 82.19999999999999
+  },
+  {
+      "id": 7,
+      "top": 13.75,
+      "left": 62.2
+  },
+  {
+      "id": 8,
+      "top": 13,
+      "left": 37.4
+  },
+  {
+      "id": 9,
+      "top": 6,
+      "left": 19
+  }
+];
+/*
   let candles_init =
   [
     {
@@ -89,5 +138,6 @@ import confetti from 'canvas-confetti';
         "left": 13.8
     }
 ];
+*/
 //quiero exportar candles para poder usarlo en Birthday_Cake.jsx
 export {candles_init};
