@@ -40,7 +40,7 @@ const Chat = () => {
     fetchChats();
   }, [userLogged]); // Asegúrate de volver a cargar los chats cuando el usuario cambia
 
-
+let datos="";
   useEffect(() => {
     const subscription = supabase
       .channel(`Messages:chat_id=eq.${selectedChat}`)
@@ -50,8 +50,12 @@ const Chat = () => {
           event: 'INSERT',
           schema: 'public',
         },
-        (payload) => setMessages((prevMessages) => [...prevMessages, payload.new]),
-        console.log(messages)
+        (payload) => {
+          if(payload.new.chat_id==selectedChat){
+            setMessages((prevMessages) => [...prevMessages, payload.new])
+          }
+        },
+        
       )
       .subscribe();
 
@@ -59,7 +63,7 @@ const Chat = () => {
     return () => {
       subscription.unsubscribe();
     };
-  }, []);
+  }, [selectedChat]);
 
   
   const handleChatSelect = async (chatId) => {
@@ -115,6 +119,9 @@ const Chat = () => {
                 {chat.name}
               </li>
             ))}
+          </ul>
+          <ul>
+            ${selectedChat}
           </ul>
         </aside>
 
