@@ -55,6 +55,8 @@ body {
 .selected-chat h3 {
   font-size: 20px;
   margin-bottom: 10px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #4b4b4b;
 }
 
 /* Mensajes */
