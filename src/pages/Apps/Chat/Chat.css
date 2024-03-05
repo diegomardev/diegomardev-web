@@ -99,7 +99,7 @@ body {
   max-width: 80%;
   min-width: 10%;
   width: fit-content;
-  padding: auto;
+  padding: 7px;
 }
 
 /* Contenedor del círculo con la inicial del usuario */

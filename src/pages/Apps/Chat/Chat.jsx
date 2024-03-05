@@ -161,14 +161,15 @@ const Chat = () => {
                     onKeyDown={handleKeyDown}
                   />
                   
-                  <button style={{ marginRight: '10px' , height:'30px', width:'30px', padding:'0px', borderRadius:'15px' }} onClick={() => setShowEmoticons(!showEmoticons)}>😊</button>
+                  <button style={{ marginTop:'1px', marginRight: '12px', marginLeft:'-45px', height:'30px', width:'30px', padding:'0px', borderRadius:'15px', backgroundColor:'rgb(59 59 59)' }} onClick={() => setShowEmoticons(!showEmoticons)}>😊</button>
                   {showEmoticons && (
-                    <div className="emoticon-container">
+                    <div style={{ marginRight: '10px', minWidth:'180px' }} className="emoticon-container">
                       {emoticons.map((emoticon, index) => (
                         <span
                           key={index}
                           onClick={() => handleEmoticonClick(emoticon)}
                           className="emoticon"
+                          style={{ marginRight: '2px'}}
                         >
                           {emoticon}
                         </span>
