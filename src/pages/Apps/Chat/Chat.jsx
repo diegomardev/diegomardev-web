@@ -112,14 +112,19 @@ const Chat = () => {
                 <h3>{chats.find((chat) => chat.id === selectedChat)?.name}</h3>
                 <div className="chat-messages">
                   <ul>
-                    {messages.map((message) => (
-                      <li
-                        key={message.message_id}
-                        className={message.user === userLogged ? 'own-message' : 'other-message'}
-                      >
-                        {message.text}
-                      </li>
-                    ))}
+                  {messages.map((message) => (
+                    <li
+                      key={message.message_id}
+                      className={message.user === userLogged ? 'own-message' : 'other-message'}
+                    >
+                      {message.user !== userLogged && (
+                        <div className="user-circle">
+                          {message.user.charAt(0).toUpperCase()}
+                        </div>
+                      )}
+                      {message.text}
+                    </li>
+                  ))}
                   </ul>
                 </div>
                 <div className="new-message">
