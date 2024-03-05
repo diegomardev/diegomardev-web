@@ -105,13 +105,14 @@ body {
 /* Contenedor del círculo con la inicial del usuario */
 .chat-messages .other-message .user-circle {
   width: 30px;
+  min-width: 30px;
   height: 30px;
   background-color: #4caf50; /* Puedes ajustar el color del círculo según tus preferencias */
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 15px;
   margin-right: 10px;
 }
 /* Nueva entrada de mensaje */
