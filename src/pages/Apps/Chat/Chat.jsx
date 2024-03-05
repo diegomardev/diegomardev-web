@@ -120,9 +120,7 @@ let datos="";
               </li>
             ))}
           </ul>
-          <ul>
-            ${selectedChat}
-          </ul>
+          {/* <ul>${selectedChat}</ul> */}
         </aside>
 
         <div className="selected-chat">
