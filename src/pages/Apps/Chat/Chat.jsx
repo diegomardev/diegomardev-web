@@ -22,11 +22,23 @@ const Chat = () => {
         .select('*')
         .order('created_at', { ascending: false });
 
-      setChats(data);
+      // Filtra los chats según la lógica de privacidad
+      const filteredChats = data.filter(chat => {
+        console.log(chat.users);
+        if (chat.users.includes('all')) {
+          return true; // Si el chat es para todos, lo mostramos
+        } else if (chat.users.includes(userLogged)) {
+          return true; // Si el usuario actual está en el array, también lo mostramos
+        }
+        return false; // En otros casos, ocultamos el chat
+      });
+
+      setChats(filteredChats);
     };
 
     fetchChats();
-  }, []);
+  }, [userLogged]); // Asegúrate de volver a cargar los chats cuando el usuario cambia
+
 
   useEffect(() => {
     const subscription = supabase
