@@ -104,7 +104,12 @@ let datos="";
       handleSendMessage();
     }
   };
+  const formatMessageTime = (createdAt) => {
+    const messageTime = new Date(createdAt);
+    return `${messageTime.getHours()}:${messageTime.getMinutes()}`;
+  };
 
+  
   return (
     <>
       <div>
@@ -140,7 +145,10 @@ let datos="";
                           {message.user.charAt(0).toUpperCase()}
                         </div>
                       )}
-                      {message.text}
+                      <div className="message-content">
+                        <span className="message-text">{message.text}</span>
+                        <span className="message-time">{formatMessageTime(message.created_at)}</span>
+                      </div>
                     </li>
                   ))}
                   </ul>
