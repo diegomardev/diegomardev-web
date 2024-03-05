@@ -32,8 +32,9 @@ const Chat = () => {
         }
         return false; // En otros casos, ocultamos el chat
       });
-
-      setChats(filteredChats);
+      if(userLogged){
+        setChats(filteredChats);
+      }
     };
 
     fetchChats();
@@ -84,7 +85,7 @@ const Chat = () => {
           chat_id: selectedChat,
           text: newMessage,
           created_at: new Date().toISOString(),
-          user: userLogged,
+          user: userLogged || "invitado",
         },
       ]);
 
@@ -151,7 +152,16 @@ const Chat = () => {
                 </div>
               </div>
             ) : (
-              <p style={{ height: '60vh' }}>Selecciona un chat</p>
+              <div style={{ height: '80vh' }}>
+              {userLogged ? (
+                <p>Seleccione un chat</p>
+              ) : (
+                <>
+                  <p>Por favor, inicie sesión para ver los chats.</p>
+                  <button className="button_normal" onClick={() => { window.location.href = "/login"; }}>Iniciar Sesión</button>
+                </>
+              )}
+            </div>
             )}
           </div>
         </div>
