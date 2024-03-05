@@ -23,6 +23,7 @@ import Coordinate_Converter from './pages/Apps/Calculators/Coordinate_Converter/
 import Map from './pages/Apps/Map/Map'
 import Birthday_Cake from './pages/Apps/Birthday_Cake/Birthday_Cake'
 import Threejs from './pages/Apps/Threejs/Threejs'
+import Chat from './pages/Apps/Chat/Chat'
 import Contact from './pages/Contact/Contact'
 import Blog from './pages/Blog/Blog'
 import About from './pages/About/About'
@@ -57,6 +58,7 @@ function App() {
         <Route path="/apps/map" element={<Map />} />
         <Route path="/apps/birthday_cake" element={<Birthday_Cake />} />
         <Route path="/apps/threejs" element={<Threejs />} />
+        <Route path="/apps/chat" element={<Chat />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
