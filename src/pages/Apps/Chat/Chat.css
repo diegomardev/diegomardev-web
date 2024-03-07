@@ -7,7 +7,7 @@ body {
 /* Contenedor principal */
 .chat-container {
   display: flex;
-  height: 100%; /* Ajusta la altura al 100% de la ventana */
+  height: 94vh; /* Ajusta la altura al 100% de la ventana */
   max-width: 1400px;
   margin: auto;
   border-left: 1px solid #4b4b4b;
@@ -30,6 +30,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 5px;
 }
 
 .chat-list li {
@@ -157,4 +158,25 @@ body {
   color: #666; /* Puedes ajustar el color según tus preferencias */
   padding-left: 10px;
   bottom: 5px;
+}
+
+.new-chat {
+  /* padding: 8px 16px; */
+  border: none;
+  border-radius: 20px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  font-size: 40px;
+  height: 40px;
+  width: 40px;
+  line-height: 0.85;
+  margin-top: 8px;
+}
+.chats-navbar{
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  border-bottom: 1px solid #4b4b4b;
+  padding-bottom: 10px;
 }

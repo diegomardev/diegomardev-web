@@ -15,6 +15,12 @@ const Chat = () => {
   const [newMessage, setNewMessage] = useState('');
   const [userLogged, setUserLogged] = useState(localStorage.getItem('user_logged'));
   const [showEmoticons, setShowEmoticons] = useState(false);
+  const [showNewChatForm, setShowNewChatForm] = useState(false);
+  const [newChatData, setNewChatData] = useState({
+    name: '',
+    description: '',
+    users: '',
+  });
 
   useEffect(() => {
     const fetchChats = async () => {
@@ -110,6 +116,51 @@ const Chat = () => {
     setNewMessage((prevMessage) => prevMessage + emoticon);
   };
 
+  const handleNewChatFormToggle = () => {
+    setShowNewChatForm(!showNewChatForm);
+  };
+
+  const handleNewChatInputChange = (e) => {
+    const { name, value } = e.target;
+    setNewChatData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleNewChatSubmit = async (e) => {
+    e.preventDefault();
+    
+    // Crear un nuevo chat en Supabase con los datos del formulario
+    await supabase
+      .from('Chats')
+      .insert([
+        {
+          name: newChatData.name,
+          description: newChatData.description,
+          users: newChatData.users,
+          created_at: new Date().toISOString(),
+        },
+      ]);
+
+    // Actualizar la lista de chats
+    const { data } = await supabase
+      .from('Chats')
+      .select('*')
+      .order('created_at', { ascending: false });
+
+    const filteredChats = data.filter(chat => {
+      if (chat.users.includes('all')) {
+        return true;
+      } else if (chat.users.includes(userLogged)) {
+        return true;
+      }
+      return false;
+    });
+
+    setChats(filteredChats);
+
+    // Ocultar el formulario después de crear el chat
+    setShowNewChatForm(false);
+  };
+
   return (
     <>
       <div>
@@ -117,8 +168,47 @@ const Chat = () => {
       </div>
       <div className="chat-container">
         <aside className="chat-list">
-          <h2>Chats</h2>
+          <div className='chats-navbar'>
+            <h2>Chats</h2>
+            <button
+              className="new-chat"
+              onClick={handleNewChatFormToggle}
+            >
+              +
+            </button>
+          </div>
           <ul>
+          {showNewChatForm && (
+            <form onSubmit={handleNewChatSubmit}>
+              <input
+                className="input"
+                type="text"
+                placeholder="Chat Name"
+                name="name"
+                value={newChatData.name}
+                onChange={handleNewChatInputChange}
+              />
+              <input
+                style={{ marginTop: '5px' }}
+                className="input"
+                type="text"
+                placeholder="Chat Description"
+                name="description"
+                value={newChatData.description}
+                onChange={handleNewChatInputChange}
+              />
+              <input
+                style={{ marginTop: '5px' }}
+                className="input"
+                type="text"
+                placeholder="Chats Users [name1,name2,name3]"
+                name="users"
+                value={newChatData.users}
+                onChange={handleNewChatInputChange}
+              />
+              <button className="button_normal" type="submit">Crear Chat</button>
+            </form>
+          )}
             {chats.map((chat) => (
               <li key={chat.id} onClick={() => handleChatSelect(chat.id)}>
                 {chat.name}
@@ -160,16 +250,16 @@ const Chat = () => {
                     onChange={(e) => setNewMessage(e.target.value)}
                     onKeyDown={handleKeyDown}
                   />
-                  
-                  <button style={{ marginTop:'1px', marginRight: '12px', marginLeft:'-45px', height:'30px', width:'30px', padding:'0px', borderRadius:'15px', backgroundColor:'rgb(59 59 59)' }} onClick={() => setShowEmoticons(!showEmoticons)}>😊</button>
+
+                  <button style={{ marginTop: '1px', marginRight: '12px', marginLeft: '-45px', height: '30px', width: '30px', padding: '0px', borderRadius: '15px', backgroundColor: 'rgb(59 59 59)' }} onClick={() => setShowEmoticons(!showEmoticons)}>😊</button>
                   {showEmoticons && (
-                    <div style={{ marginRight: '10px', minWidth:'180px' }} className="emoticon-container">
+                    <div style={{ marginRight: '10px', minWidth: '180px' }} className="emoticon-container">
                       {emoticons.map((emoticon, index) => (
                         <span
                           key={index}
                           onClick={() => handleEmoticonClick(emoticon)}
                           className="emoticon"
-                          style={{ marginRight: '2px'}}
+                          style={{ marginRight: '2px' }}
                         >
                           {emoticon}
                         </span>
