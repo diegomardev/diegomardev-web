@@ -265,7 +265,10 @@ const Chat = () => {
                         className={message.user === userLogged ? 'own-message' : 'other-message'}
                       >
                         {message.user !== userLogged && (
-                          <div className="user-circle">
+                          <div 
+                            className="user-circle"
+                            data-username={message.user}
+                          >
                             {message.user.charAt(0).toUpperCase()}
                           </div>
                         )}
@@ -370,7 +373,10 @@ const Chat = () => {
                       className={message.user === userLogged ? 'own-message' : 'other-message'}
                     >
                       {message.user !== userLogged && (
-                        <div className="user-circle">
+                        <div 
+                        className="user-circle"
+                        data-username={message.user}
+                        >
                           {message.user.charAt(0).toUpperCase()}
                         </div>
                       )}

@@ -105,6 +105,7 @@ body {
 
 /* Contenedor del círculo con la inicial del usuario */
 .chat-messages .other-message .user-circle {
+  position: relative; /* Establece la posición relativa para que los elementos hijos puedan posicionarse con respecto a este */
   width: 30px;
   min-width: 30px;
   height: 30px;
@@ -115,6 +116,29 @@ body {
   justify-content: center;
   border-radius: 15px;
   margin-right: 10px;
+}
+
+/* Estilo del texto que se mostrará en hover */
+.chat-messages .other-message .user-circle:hover::after {
+  content: attr(data-username); /* Utiliza el atributo "data-username" para mostrar el nombre */
+  position: absolute;
+  top: -30px; /* Ajusta la posición del texto según sea necesario */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  opacity: 0.9;
+  z-index: 1; /* Asegura que el texto esté por encima del círculo */
+  white-space: nowrap; /* Evita que el texto se desborde a una nueva línea */
+  display: none; /* Inicialmente oculta el texto */
+}
+
+/* Muestra el texto en hover */
+.chat-messages .other-message .user-circle:hover::after {
+  display: block;
 }
 /* Nueva entrada de mensaje */
 .new-message {
