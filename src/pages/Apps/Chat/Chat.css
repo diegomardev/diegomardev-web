@@ -80,7 +80,7 @@ body {
 
 /* Mensajes propios */
 .chat-messages .own-message {
-  background-color: #4caf50;
+  background-color: #50b050;
   color: #fff;
   margin-left: auto; /* Empuja los mensajes propios al final del contenedor */
   margin-right: 10px;
@@ -92,7 +92,7 @@ body {
 
 /* Mensajes de otros usuarios */
 .chat-messages .other-message {
-  background-color: #f0f0f0;
+  background-color: #e4bcff;
   color: #333;
   display: flex; /* Alinea los elementos en una fila */
   align-items: center; /* Alinea los elementos en la parte superior del contenedor */
@@ -125,12 +125,12 @@ body {
   top: -30px; /* Ajusta la posición del texto según sea necesario */
   left: 50%;
   transform: translateX(-50%);
-  background-color: #333;
+  background-color: #444;
   color: #fff;
   padding: 5px;
   border-radius: 5px;
   font-size: 12px;
-  opacity: 0.9;
+  opacity: 0.8;
   z-index: 1; /* Asegura que el texto esté por encima del círculo */
   white-space: nowrap; /* Evita que el texto se desborde a una nueva línea */
   display: none; /* Inicialmente oculta el texto */
