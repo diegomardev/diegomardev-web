@@ -184,6 +184,8 @@ body {
   color: #a6abad; /* Puedes ajustar el color según tus preferencias */
   padding-left: 10px;
   bottom: 5px;
+  margin-bottom: -22px;
+  margin-right: -3px;
 }
 
 .new-chat {
