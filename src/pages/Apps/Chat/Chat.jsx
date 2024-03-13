@@ -197,20 +197,130 @@ const Chat = () => {
       <div>
         <Navbar />
       </div>
-      {isMobile ? (
-        <div className="chat-container">
-          {showChatList ? (
-            // Mostrar la lista de chats
-            <aside 
-              className="chat-list"
-              style={{ flex: '100%' }}
-            >
+      {userLogged ? (
+        isMobile ? (
+          <div className="chat-container">
+            {showChatList ? (
+              // Mostrar la lista de chats
+              <aside className="chat-list" style={{ flex: '100%' }}>
+                <div className='chats-navbar'>
+                  <h2>Chats Mobile</h2>
+                  <button className="new-chat" onClick={handleNewChatFormToggle}>
+                    +
+                  </button>
+                </div>
+                <ul>
+                  {showNewChatForm && (
+                    <form onSubmit={handleNewChatSubmit}>
+                      <input
+                        className="input"
+                        type="text"
+                        placeholder="Chat Name"
+                        name="name"
+                        value={newChatData.name}
+                        onChange={handleNewChatInputChange}
+                      />
+                      <input
+                        style={{ marginTop: '5px' }}
+                        className="input"
+                        type="text"
+                        placeholder="Chat Description"
+                        name="description"
+                        value={newChatData.description}
+                        onChange={handleNewChatInputChange}
+                      />
+                      <input
+                        style={{ marginTop: '5px' }}
+                        className="input"
+                        type="text"
+                        placeholder="Chats Users [name1,name2,name3]"
+                        name="users"
+                        value={newChatData.users}
+                        onChange={handleNewChatInputChange}
+                      />
+                      <button className="button_normal" type="submit">Create Chat</button>
+                    </form>
+                  )}
+                  {chats.map((chat) => (
+                    <li key={chat.id} onClick={() => handleChatSelect(chat.id)}>
+                      {chat.name}
+                    </li>
+                  ))}
+                </ul>
+              </aside>
+            ) : (
+              // Mostrar el chat seleccionado y el botón de retroceso
+              <div className="selected-chat-mobile">
+                <div className='nav-bar-chat'>
+                  <button className="back-button" onClick={handleBackToChats}>
+                    {'<'}
+                  </button>
+                  <h3>{chats.find((chat) => chat.id === selectedChat)?.name}</h3>
+                  <div style={{ height: '30px', width: '40px' }}>
+                    
+                  </div>
+                </div>
+                <div>
+                  <div className="chat-messages">
+                    <ul>
+                      {messages.map((message) => (
+                        <li
+                          key={message.message_id}
+                          className={message.user === userLogged ? 'own-message' : 'other-message'}
+                        >
+                          {message.user !== userLogged && (
+                            <div 
+                              className="user-circle"
+                              data-username={message.user}
+                            >
+                              {message.user.charAt(0).toUpperCase()}
+                            </div>
+                          )}
+                          <div className="message-content">
+                            <span className="message-text">{message.text}</span>
+                            <span className="message-time">{formatMessageTime(message.created_at)}</span>
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="new-message">
+                    <input
+                      type="text"
+                      placeholder="Escribe un nuevo mensaje"
+                      value={newMessage}
+                      onChange={(e) => setNewMessage(e.target.value)}
+                      onKeyDown={handleKeyDown}
+                    />
+  
+                    <button style={{ marginTop: '1px', marginRight: '12px', marginLeft: '-45px', height: '30px', width: '30px', padding: '0px', borderRadius: '15px', backgroundColor: 'rgb(59 59 59)' }} onClick={() => setShowEmoticons(!showEmoticons)}>😊</button>
+                    {showEmoticons && (
+                      <div style={{ marginRight: '10px', minWidth: '180px' }} className="emoticon-container">
+                        {emoticons.map((emoticon, index) => (
+                          <span
+                            key={index}
+                            onClick={() => handleEmoticonClick(emoticon)}
+                            className="emoticon"
+                            style={{ marginRight: '2px' }}
+                          >
+                            {emoticon}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                    <button onClick={handleSendMessage}>Send</button>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        ) : (
+          // Código para dispositivos no móviles
+          <div className="chat-container">
+            <aside className="chat-list">
               <div className='chats-navbar'>
-                <h2>Chats Mobile</h2>
-                <button
-                  className="new-chat"
-                  onClick={handleNewChatFormToggle}
-                >
+                <h2>Chats</h2>
+                <button className="new-chat" onClick={handleNewChatFormToggle}>
                   +
                 </button>
               </div>
@@ -253,19 +363,9 @@ const Chat = () => {
                 ))}
               </ul>
             </aside>
-          ) : (
-            // Mostrar el chat seleccionado y el botón de retroceso
-            <div className="selected-chat-mobile">
-              <div className='nav-bar-chat'>
-                <button className="back-button" onClick={handleBackToChats}>
-                  {'<'}
-                </button>
-                <h3>{chats.find((chat) => chat.id === selectedChat)?.name}</h3>
-                <div style={{ height: '30px', width: '40px' }}>
-                  
-                </div>
-              </div>
+            <div className="selected-chat">
               <div>
+                <h3>{chats.find((chat) => chat.id === selectedChat)?.name}</h3>
                 <div className="chat-messages">
                   <ul>
                     {messages.map((message) => (
@@ -275,8 +375,8 @@ const Chat = () => {
                       >
                         {message.user !== userLogged && (
                           <div 
-                            className="user-circle"
-                            data-username={message.user}
+                          className="user-circle"
+                          data-username={message.user}
                           >
                             {message.user.charAt(0).toUpperCase()}
                           </div>
@@ -289,115 +389,9 @@ const Chat = () => {
                     ))}
                   </ul>
                 </div>
+                <div>
+                  {selectedChat ? (
                 <div className="new-message">
-                  <input
-                    type="text"
-                    placeholder="Escribe un nuevo mensaje"
-                    value={newMessage}
-                    onChange={(e) => setNewMessage(e.target.value)}
-                    onKeyDown={handleKeyDown}
-                  />
-
-                  <button style={{ marginTop: '1px', marginRight: '12px', marginLeft: '-45px', height: '30px', width: '30px', padding: '0px', borderRadius: '15px', backgroundColor: 'rgb(59 59 59)' }} onClick={() => setShowEmoticons(!showEmoticons)}>😊</button>
-                  {showEmoticons && (
-                    <div style={{ marginRight: '10px', minWidth: '180px' }} className="emoticon-container">
-                      {emoticons.map((emoticon, index) => (
-                        <span
-                          key={index}
-                          onClick={() => handleEmoticonClick(emoticon)}
-                          className="emoticon"
-                          style={{ marginRight: '2px' }}
-                        >
-                          {emoticon}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                  <button onClick={handleSendMessage}>Send</button>
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-      ) : (
-        // Código para dispositivos no móviles
-        <div className="chat-container">
-          <aside className="chat-list">
-            <div className='chats-navbar'>
-              <h2>Chats</h2>
-              <button
-                className="new-chat"
-                onClick={handleNewChatFormToggle}
-              >
-                +
-              </button>
-            </div>
-            <ul>
-              {showNewChatForm && (
-                <form onSubmit={handleNewChatSubmit}>
-                  <input
-                    className="input"
-                    type="text"
-                    placeholder="Chat Name"
-                    name="name"
-                    value={newChatData.name}
-                    onChange={handleNewChatInputChange}
-                  />
-                  <input
-                    style={{ marginTop: '5px' }}
-                    className="input"
-                    type="text"
-                    placeholder="Chat Description"
-                    name="description"
-                    value={newChatData.description}
-                    onChange={handleNewChatInputChange}
-                  />
-                  <input
-                    style={{ marginTop: '5px' }}
-                    className="input"
-                    type="text"
-                    placeholder="Chats Users [name1,name2,name3]"
-                    name="users"
-                    value={newChatData.users}
-                    onChange={handleNewChatInputChange}
-                  />
-                  <button className="button_normal" type="submit">Create Chat</button>
-                </form>
-              )}
-              {chats.map((chat) => (
-                <li key={chat.id} onClick={() => handleChatSelect(chat.id)}>
-                  {chat.name}
-                </li>
-              ))}
-            </ul>
-          </aside>
-          <div className="selected-chat">
-            <div>
-              <h3>{chats.find((chat) => chat.id === selectedChat)?.name}</h3>
-              <div className="chat-messages">
-                <ul>
-                  {messages.map((message) => (
-                    <li
-                      key={message.message_id}
-                      className={message.user === userLogged ? 'own-message' : 'other-message'}
-                    >
-                      {message.user !== userLogged && (
-                        <div 
-                        className="user-circle"
-                        data-username={message.user}
-                        >
-                          {message.user.charAt(0).toUpperCase()}
-                        </div>
-                      )}
-                      <div className="message-content">
-                        <span className="message-text">{message.text}</span>
-                        <span className="message-time">{formatMessageTime(message.created_at)}</span>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="new-message">
                 <input
                   type="text"
                   placeholder="Escribe un nuevo mensaje"
@@ -423,9 +417,22 @@ const Chat = () => {
                 )}
                 <button onClick={handleSendMessage}>Send</button>
               </div>
+                    ) : (
+                    <div className="new-message" style={{justifyContent: 'center'}}>
+                      <p>Por favor, seleccione un chat.</p>
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        )
+      ) : (
+        // Si el usuario no está logueado
+        <>
+          <p>Por favor, inicie sesión para ver los chats.</p>
+          <button className="button_normal" onClick={() => { window.location.href = "/login"; }}>Iniciar Sesión</button>
+        </>
       )}
     </>
   );
