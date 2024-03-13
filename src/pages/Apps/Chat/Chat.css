@@ -80,7 +80,7 @@ body {
 
 /* Mensajes propios */
 .chat-messages .own-message {
-  background-color: #50b050;
+  background-color: #005c4b;
   color: #fff;
   margin-left: auto; /* Empuja los mensajes propios al final del contenedor */
   margin-right: 10px;
@@ -92,7 +92,7 @@ body {
 
 /* Mensajes de otros usuarios */
 .chat-messages .other-message {
-  background-color: #e4bcff;
+  background-color: #F5F5DC;
   color: #333;
   display: flex; /* Alinea los elementos en una fila */
   align-items: center; /* Alinea los elementos en la parte superior del contenedor */
@@ -181,7 +181,7 @@ body {
 /* Hora del mensaje */
 .chat-messages .message-time {
   font-size: 12px;
-  color: #666; /* Puedes ajustar el color según tus preferencias */
+  color: #a6abad; /* Puedes ajustar el color según tus preferencias */
   padding-left: 10px;
   bottom: 5px;
 }
