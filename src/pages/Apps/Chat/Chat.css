@@ -11,6 +11,8 @@ body {
   max-width: 1400px;
   margin: auto;
   border-left: 1px solid #4b4b4b;
+  background-color: #242424;
+  color: #fff;
 }
 
 /* Lista de chats */
