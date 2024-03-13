@@ -419,7 +419,7 @@ const Chat = () => {
               </div>
                     ) : (
                     <div className="new-message" style={{justifyContent: 'center'}}>
-                      <p>Por favor, seleccione un chat.</p>
+                      <p>Please select a chat.</p>
                     </div>
                   )}
                 </div>
@@ -430,8 +430,8 @@ const Chat = () => {
       ) : (
         // Si el usuario no está logueado
         <>
-          <p>Por favor, inicie sesión para ver los chats.</p>
-          <button className="button_normal" onClick={() => { window.location.href = "/login"; }}>Iniciar Sesión</button>
+          <p>Please log in to use the chat.</p>
+          <button className="button_normal" onClick={() => { window.location.href = "/login"; }}>Login</button>
         </>
       )}
     </>
