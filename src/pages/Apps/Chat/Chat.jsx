@@ -129,7 +129,16 @@ const Chat = () => {
 
   const formatMessageTime = (createdAt) => {
     const messageTime = new Date(createdAt);
-    return `${messageTime.getHours()}:${messageTime.getMinutes()}`;
+    const hours = messageTime.getHours();
+    const minutes = messageTime.getMinutes();
+  
+    // Añade un cero a los minutos si son menores que 10
+    let formattedMinutes = minutes;
+    if(minutes < 10) {
+      formattedMinutes = `0${minutes}`;
+    }
+  
+    return `${hours}:${formattedMinutes}`;
   };
 
   const emoticons = ['😊', '😂', '❤️', '👍', '🎉', '😎', '😍', '🤔'];
