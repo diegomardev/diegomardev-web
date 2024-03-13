@@ -96,8 +96,8 @@ body {
 
 /* Mensajes de otros usuarios */
 .chat-messages .other-message {
-  background-color: #F5F5DC;
-  color: #333;
+  background-color: #363b3d;
+  color: #fff;
   display: flex; /* Alinea los elementos en una fila */
   align-items: center; /* Alinea los elementos en la parte superior del contenedor */
   max-width: 80%;
@@ -239,4 +239,12 @@ body {
   height: 40px;
   width: 40px;
   line-height: 0.85;
+}
+
+.chat-messages::-webkit-scrollbar {
+  width: 6px;               /* width of the entire scrollbar */
+}
+.chat-messages::-webkit-scrollbar-thumb {
+  background-color: #444;    /* color of the scroll thumb */
+  border-radius: 3px;       /* roundness of the scroll thumb */
 }
