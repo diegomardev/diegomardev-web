@@ -80,37 +80,37 @@ function Home() {
 
             <section className="grid-container2">
               <img
-                src="/home/image(3).svg"
+                src="/home/image(3).webp"
                 alt="Image D"
                 onClick={() => handleClickUrl("apps/twitch_chat")}
               />
               <img
-                src="/home/image(0).svg"
+                src="/home/image(0).webp"
                 alt="Image A"
                 onClick={() => handleClickUrl("apps/calculators/aspect_ratio")}
               />
               <img
-                src="/home/image(2).svg"
+                src="/home/image(2).webp"
                 alt="Image C"
                 onClick={() => handleClickUrl("games/pixel_art")}
               />
               <img
-                src="/home/image(5).svg"
+                src="/home/image(5).webp"
                 alt="Image F"
                 onClick={() => handleClickUrl("apps/calculators/coordinate_converter")}
               />
               <img
-                src="/home/image(1).svg"
+                src="/home/image(1).webp"
                 alt="Image B"
                 onClick={() => handleClickUrl("games/click_game")}
               />
               <img
-                src="/home/image(7).svg"
+                src="/home/image(7).webp"
                 alt="Image H"
                 onClick={() => handleClickUrl("contact")}
               />
               <img
-                src="/home/image(8).svg"
+                src="/home/image(8).webp"
                 alt="Image I"
                 onClick={() => handleClickUrl("login")}
               />
@@ -173,47 +173,47 @@ function Home() {
 
             <section className="grid-container">
               <img
-                src="/home/image(0).svg"
+                src="/home/image(0).webp"
                 alt="Image A"
                 onClick={() => handleClickUrl("apps/calculators/aspect_ratio")}
               />
               <img
-                src="/home/image(1).svg"
+                src="/home/image(1).webp"
                 alt="Image B"
                 onClick={() => handleClickUrl("games/click_game")}
               />
               <img
-                src="/home/image(2).svg"
+                src="/home/image(2).webp"
                 alt="Image C"
                 onClick={() => handleClickUrl("games/pixel_art")}
               />
               <img
-                src="/home/image(3).svg"
+                src="/home/image(3).webp"
                 alt="Image D"
                 onClick={() => handleClickUrl("apps/twitch_chat")}
               />
               <img
-                src="/home/image(4).svg"
+                src="/home/image(4).webp"
                 alt="Image E"
                 onClick={() => handleClickUrl("games/russian_roulette")}
               />
               <img
-                src="/home/image(5).svg"
+                src="/home/image(5).webp"
                 alt="Image F"
                 onClick={() => handleClickUrl("apps/calculators/coordinate_converter")}
               />
               <img
-                src="/home/image(6).svg"
+                src="/home/image(6).webp"
                 alt="Image G"
                 onClick={() => handleClickUrl("apps/birthday_cake")}
               />
               <img
-                src="/home/image(7).svg"
+                src="/home/image(7).webp"
                 alt="Image H"
                 onClick={() => handleClickUrl("contact")}
               />
               <img
-                src="/home/image(8).svg"
+                src="/home/image(8).webp"
                 alt="Image I"
                 onClick={() => handleClickUrl("login")}
               />
