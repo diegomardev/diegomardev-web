@@ -90,7 +90,7 @@ function Chronometer() {
         lapTime.seconds = Math.floor(lapTimeInMilliseconds / 100);
         lapTime.milliseconds = lapTimeInMilliseconds - lapTime.seconds * 100;
       }
-      setLaps(prevLaps => [...prevLaps, lapTime]); // Agregar la vuelta al estado de laps
+      setLaps(prevLaps => [lapTime, ...prevLaps]); // Añadir la vuelta al principio del estado de laps
       setCurrentLap({
         hours: 0,
         minutes: 0,
@@ -175,7 +175,7 @@ function Chronometer() {
       </div>
       {laps.map((lap, index) => (
         <div key={index} className="lap-item">
-          <span>Lap {index + 1}: </span>
+          <span>Lap {laps.length - index}: </span>
           <span>
             {lap.minutes.toString().padStart(2, '0')}:
             {lap.seconds.toString().padStart(2, '0')}:
