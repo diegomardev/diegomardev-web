@@ -36,12 +36,6 @@ function Chronometer() {
   const startTimer = () => {
     if (!time.isRunning) {
       setTime({ ...time, isRunning: true });
-      setCurrentLap({
-        hours: 0,
-        minutes: 0,
-        seconds: 0,
-        milliseconds: 0,
-      });
     }
     if (time.isReset) {
       setLaps([]);
