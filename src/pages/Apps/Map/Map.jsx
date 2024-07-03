@@ -66,7 +66,7 @@ function Maps() {
     }
     return Math.abs(area) / 2;
   };
-  
+
   const agregarPuntoDesdeGPS = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -77,24 +77,7 @@ function Maps() {
           setPuntos([...puntos, nuevoPunto]);
         },
         (error) => {
-          switch (error.code) {
-            case error.PERMISSION_DENIED:
-              console.error('Permiso denegado para obtener la ubicación.');
-              break;
-            case error.POSITION_UNAVAILABLE:
-              console.error('La información de la posición no está disponible.');
-              break;
-            case error.TIMEOUT:
-              console.error('Tiempo de espera agotado al obtener la ubicación.');
-              break;
-            default:
-              console.error('Error obteniendo ubicación:', error.message);
-              break;
-          }
-        },
-        {
-          enableHighAccuracy: true, // Habilitar alta precisión si está disponible
-          timeout: 10000, // Tiempo máximo de espera en milisegundos (10 segundos en este caso)
+          console.error('Error obteniendo ubicación:', error);
         }
       );
     } else {
