@@ -27,8 +27,8 @@ function MapClickHandler({ onMapClick }) {
 }
 
 function Maps() {
-  const [latitude, setLatitude] = useState(52.517265);
-  const [longitude, setLongitude] = useState(13.389244);
+  const [latitude, setLatitude] = useState(43.358054445297086);
+  const [longitude, setLongitude] = useState(-8.411136567592623);
   const [puntos, setPuntos] = useState([]);
   const [areas, setAreas] = useState([]);
   const [area, setArea] = useState(0);
