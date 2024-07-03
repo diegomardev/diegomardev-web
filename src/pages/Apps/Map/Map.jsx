@@ -4,7 +4,16 @@ import Navbar from '../../../components/Navbar/Navbar';
 import { fromLatLon } from 'utm';
 import { MapContainer, TileLayer, Marker, Polyline, useMapEvents } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-
+import markermap from     '../../../assets/images/marker-icon.png';
+import markershadow from  '../../../assets/images/marker-shadow.png';
+let markerIcon = L.icon({
+  iconUrl: markermap,
+  shadowUrl: markershadow,
+  iconSize: [25, 41],
+  shadowSize: [41, 41],
+  iconAnchor: [12, 41],
+  shadowAnchor: [12, 41],
+});
 // Componente para manejar los eventos de clic en el mapa
 function MapClickHandler({ onMapClick }) {
   useMapEvents({
@@ -14,7 +23,6 @@ function MapClickHandler({ onMapClick }) {
   });
   return null;
 }
-
 function Maps() {
   const [latitude, setLatitude] = useState(52.517265);
   const [longitude, setLongitude] = useState(13.389244);
@@ -94,10 +102,7 @@ function Maps() {
       <div>
         <div className='map'>
           <MapContainer center={[latitude, longitude]} zoom={zoom} style={{ width: '80vw', height: '60vh', borderRadius: '20px' }}>
-            <TileLayer
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            />
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <MapClickHandler onMapClick={handleMapClick} />
             {puntos.map((punto, index) => (
               <Marker key={index} position={[punto.lat, punto.lon]} />
