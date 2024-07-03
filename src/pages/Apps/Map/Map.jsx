@@ -112,6 +112,9 @@ function Maps() {
           const { latitude, longitude } = position.coords;
           setLatitude(latitude);
           setLongitude(longitude);
+          if (map) {
+            map.setView([latitude, longitude], zoom); // Mover el mapa a la nueva ubicación
+          }
         },
         (error) => {
           console.error('Error obteniendo ubicación:', error);
