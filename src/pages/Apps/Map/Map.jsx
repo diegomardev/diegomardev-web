@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Map.css';
 import Navbar from '../../../components/Navbar/Navbar';
 import { fromLatLon } from 'utm';
 import { MapContainer, TileLayer, Marker, Polyline, useMapEvents } from 'react-leaflet';
+import L from 'leaflet'; // Importa Leaflet directamente para definir el icono
 import 'leaflet/dist/leaflet.css';
-import markermap from     '../../../assets/images/marker-icon.png';
-import markershadow from  '../../../assets/images/marker-shadow.png';
-let markerIcon = L.icon({
+import markermap from '../../../assets/images/marker-icon.png';
+import markershadow from '../../../assets/images/marker-shadow.png';
+
+// Define el icono personalizado para los marcadores
+const markerIcon = new L.Icon({
   iconUrl: markermap,
   shadowUrl: markershadow,
   iconSize: [25, 41],
@@ -14,6 +17,7 @@ let markerIcon = L.icon({
   iconAnchor: [12, 41],
   shadowAnchor: [12, 41],
 });
+
 // Componente para manejar los eventos de clic en el mapa
 function MapClickHandler({ onMapClick }) {
   useMapEvents({
@@ -23,6 +27,7 @@ function MapClickHandler({ onMapClick }) {
   });
   return null;
 }
+
 function Maps() {
   const [latitude, setLatitude] = useState(52.517265);
   const [longitude, setLongitude] = useState(13.389244);
@@ -31,6 +36,37 @@ function Maps() {
   const [area, setArea] = useState(0);
   const [zoom, setZoom] = useState(13);
   const [selecting, setSelecting] = useState(false);
+  const [watchingLocation, setWatchingLocation] = useState(false); // Estado para controlar la actualización de ubicación
+
+  useEffect(() => {
+    // Función para obtener la ubicación actual y actualizarla continuamente
+    const watchLocation = () => {
+      if (navigator.geolocation) {
+        navigator.geolocation.watchPosition(
+          (position) => {
+            const { latitude, longitude } = position.coords;
+            setLatitude(latitude);
+            setLongitude(longitude);
+          },
+          (error) => {
+            console.error('Error obteniendo ubicación:', error);
+          }
+        );
+      } else {
+        alert('Tu navegador no soporta geolocalización.');
+      }
+    };
+
+    // Iniciar o detener la actualización de ubicación
+    if (watchingLocation) {
+      watchLocation();
+    }
+
+    // Limpia el watcher cuando el componente se desmonta o se cambia watchingLocation a false
+    return () => {
+      navigator.geolocation.clearWatch();
+    };
+  }, [watchingLocation]);
 
   const handleMapClick = (event) => {
     if (!selecting) return;
@@ -75,22 +111,8 @@ function Maps() {
     return Math.abs(area) / 2;
   };
 
-  const agregarPuntoDesdeGPS = () => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const { latitude, longitude } = position.coords;
-          const nuevoPunto = { lat: latitude, lon: longitude };
-          console.log('Nuevo Punto GPS:', nuevoPunto); // Para depuración
-          setPuntos([...puntos, nuevoPunto]);
-        },
-        (error) => {
-          console.error('Error obteniendo ubicación:', error);
-        }
-      );
-    } else {
-      alert('Tu navegador no soporta geolocalización.');
-    }
+  const toggleWatchLocation = () => {
+    setWatchingLocation(!watchingLocation); // Cambia el estado para iniciar o detener la actualización
   };
 
   return (
@@ -125,7 +147,7 @@ function Maps() {
           <p>Área actual: {area} metros cuadrados</p>
           <button onClick={iniciarSeleccion} disabled={selecting}>Iniciar Área</button>
           <button onClick={finalizarSeleccion} disabled={!selecting}>Finalizar Área</button>
-          <button onClick={agregarPuntoDesdeGPS} disabled={!selecting}>Agregar Punto desde GPS</button>
+          <button onClick={toggleWatchLocation}>{watchingLocation ? 'Detener' : 'Iniciar'} Actualización GPS</button>
           <h2>Áreas calculadas:</h2>
           {areas.map((areaObj, index) => (
             <div key={index}>
@@ -134,7 +156,6 @@ function Maps() {
                 <p key={pIndex}>Punto {pIndex + 1}: {punto.lat}, {punto.lon}</p>
               ))}
             </div>
-
           ))}
         </div>
       </div>
