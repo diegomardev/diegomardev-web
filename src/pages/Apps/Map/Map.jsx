@@ -105,7 +105,7 @@ function Maps() {
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <MapClickHandler onMapClick={handleMapClick} />
             {puntos.map((punto, index) => (
-              <Marker key={index} position={[punto.lat, punto.lon]} />
+              <Marker key={index} position={[punto.lat, punto.lon]} icon={markerIcon}/>
             ))}
             {areas.map((areaObj, index) => (
               <Polyline key={index} positions={areaObj.puntos.map(punto => [punto.lat, punto.lon])} />
