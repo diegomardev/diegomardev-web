@@ -26,6 +26,11 @@ function Apps() {
         },
         (error) => {
           console.error('Error obteniendo ubicación:', error);
+        },
+        {
+          enableHighAccuracy: true,
+          timeout: 10000,
+          maximumAge: 0
         }
       );
     } else {
