@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Map.css';
 import Navbar from '../../../components/Navbar/Navbar';
 import { fromLatLon } from 'utm';
-import { MapContainer, TileLayer, Marker, Polyline, Popup, useMapEvents } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Polyline, Polygon, Popup, useMapEvents } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import markermap from '../../../assets/images/marker-icon.png';
 import markershadow from '../../../assets/images/marker-shadow.png';
@@ -16,6 +16,7 @@ let markerIcon = L.icon({
   iconAnchor: [12, 41],
   shadowAnchor: [12, 41],
 });
+
 let markerPoint = L.icon({
   iconUrl: markerpoint,
   iconSize: [50, 50],
@@ -43,10 +44,33 @@ function Maps() {
   const [map, setMap] = useState(null); // Estado para guardar referencia al mapa
   const [currentLocation, setCurrentLocation] = useState(null); // Estado para la ubicación actual
   const [center, setCenter] = useState([latitude, longitude]); // Estado para el centro del mapa
+  const [watchId, setWatchId] = useState(null); // Estado para guardar el watchId
 
   useEffect(() => {
-    // Obtener la ubicación actual al cargar el componente
-    moveToCurrentLocation();
+    // Iniciar seguimiento de ubicación al cargar el componente
+    const id = navigator.geolocation.watchPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords;
+        setLatitude(latitude);
+        setLongitude(longitude);
+        setCurrentLocation({ lat: latitude, lon: longitude });
+        setCenter([latitude, longitude]);
+      },
+      (error) => {
+        console.error('Error obteniendo ubicación:', error);
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 0,
+      }
+    );
+    setWatchId(id);
+
+    // Limpiar el watchPosition al desmontar el componente
+    return () => {
+      navigator.geolocation.clearWatch(id);
+    };
   }, []);
 
   const handleMapClick = (event) => {
@@ -109,31 +133,7 @@ function Maps() {
         {
           enableHighAccuracy: true,
           timeout: 10000,
-          maximumAge: 0
-        }
-      );
-    } else {
-      alert('Tu navegador no soporta geolocalización.');
-    }
-  };
-
-  const moveToCurrentLocation = () => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const { latitude, longitude } = position.coords;
-          setLatitude(latitude);
-          setLongitude(longitude);
-          setCurrentLocation({ lat: latitude, lon: longitude }); // Actualizar la ubicación actual
-          setCenter([latitude, longitude]); // Actualizar el centro del mapa
-        },
-        (error) => {
-          console.error('Error obteniendo ubicación:', error);
-        },
-        {
-          enableHighAccuracy: true,
-          timeout: 10000,
-          maximumAge: 0
+          maximumAge: 0,
         }
       );
     } else {
@@ -158,30 +158,30 @@ function Maps() {
               </Marker>
             ))}
             {areas.map((areaObj, index) => (
-              <Polyline key={index} positions={areaObj.puntos.map((punto) => [punto.lat, punto.lon])} />
+              <Polygon key={index} positions={areaObj.puntos.map((punto) => [punto.lat, punto.lon])} />
             ))}
             {puntos.length > 1 && <Polyline positions={puntos.map((punto) => [punto.lat, punto.lon])} />}
             {currentLocation && (
               <Marker position={[currentLocation.lat, currentLocation.lon]} icon={markerIcon}>
                 <Popup>Your point is here</Popup>
               </Marker>
-            )} {/* Marcador para la ubicación actual */}
+            )}
           </MapContainer>
         </div>
         <div className="info">
           <p>Latitude: {latitude}</p>
           <p>Longitude: {longitude}</p>
           <p>Zoom: {zoom}</p>
-          <button className='button_normal' onClick={iniciarSeleccion} disabled={selecting}>
+          <button className="button_normal" onClick={iniciarSeleccion} disabled={selecting}>
             Iniciar Área
           </button>
-          <button className='button_normal' onClick={finalizarSeleccion} disabled={!selecting}>
+          <button className="button_normal" onClick={finalizarSeleccion} disabled={!selecting}>
             Finalizar Área
           </button>
-          <button className='button_normal' onClick={agregarPuntoDesdeGPS} disabled={!selecting}>
+          <button className="button_normal" onClick={agregarPuntoDesdeGPS} disabled={!selecting}>
             Agregar Punto desde GPS
           </button>
-          <button className='button_normal' onClick={moveToCurrentLocation}>Mover a mi ubicación actual</button>
+          <button className="button_normal" onClick={moveToCurrentLocation}>Mover a mi ubicación actual</button>
           <p>Área actual: {area} metros cuadrados</p>
           {puntos.map((punto, index) => (
             <p key={index}>
