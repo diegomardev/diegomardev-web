@@ -5,11 +5,15 @@
   border-radius: 50%;
   border-left-color: #09f;
   animation: spin 1s ease infinite;
-  margin: 10px auto;
+  margin-left: 20px;
 }
 
 @keyframes spin {
   to {
     transform: rotate(360deg);
   }
+}
+.button-container {
+  display: flex;
+  justify-content: center;
 }
