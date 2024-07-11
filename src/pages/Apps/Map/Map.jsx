@@ -44,35 +44,33 @@ function Maps() {
   const [map, setMap] = useState(null); // Estado para guardar referencia al mapa
   const [currentLocation, setCurrentLocation] = useState(null); // Estado para la ubicación actual
   const [center, setCenter] = useState([latitude, longitude]); // Estado para el centro del mapa
-  const [watchId, setWatchId] = useState(null); // Estado para guardar el watchId
 
   useEffect(() => {
-    // Iniciar seguimiento de ubicación al cargar el componente
-    const id = navigator.geolocation.watchPosition(
-      (position) => {
-        const { latitude, longitude } = position.coords;
-        setLatitude(latitude);
-        setLongitude(longitude);
-        setCurrentLocation({ lat: latitude, lon: longitude });
-        setCenter([latitude, longitude]);
-      },
-      (error) => {
-        console.error('Error obteniendo ubicación:', error);
-      },
-      {
-        enableHighAccuracy: true,
-        timeout: 10000,
-        maximumAge: 0,
-      }
-    );
-    setWatchId(id);
-
-    // Limpiar el watchPosition al desmontar el componente
-    return () => {
-      navigator.geolocation.clearWatch(id);
-    };
+    // Obtener la ubicación actual al cargar el componente
+    moveToCurrentLocation();
   }, []);
-
+  let actualizandoGPS = 0;
+  const interval1 = setInterval(() => {
+    if (navigator.geolocation && actualizandoGPS === 0) {
+      actualizandoGPS = 1;
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          
+        },
+        (error) => {
+          console.error('Error obteniendo ubicación:', error);
+        },
+        {
+          enableHighAccuracy: true,
+          timeout: 10000,
+          maximumAge: 0,
+        }
+      );
+      actualizandoGPS = 0;
+    } else {
+      alert('Tu navegador no soporta geolocalización.');
+    }
+  }, 5000);
   const handleMapClick = (event) => {
     if (!selecting) return;
 
@@ -126,6 +124,30 @@ function Maps() {
           setPuntos([...puntos, nuevoPunto]);
           setLatitude(latitude);
           setLongitude(longitude);
+        },
+        (error) => {
+          console.error('Error obteniendo ubicación:', error);
+        },
+        {
+          enableHighAccuracy: true,
+          timeout: 10000,
+          maximumAge: 0,
+        }
+      );
+    } else {
+      alert('Tu navegador no soporta geolocalización.');
+    }
+  };
+
+  const moveToCurrentLocation = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords;
+          setLatitude(latitude);
+          setLongitude(longitude);
+          setCurrentLocation({ lat: latitude, lon: longitude }); // Actualizar la ubicación actual
+          setCenter([latitude, longitude]); // Actualizar el centro del mapa
         },
         (error) => {
           console.error('Error obteniendo ubicación:', error);
