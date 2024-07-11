@@ -6,6 +6,7 @@ import { MapContainer, TileLayer, Marker, Polyline, Popup, useMapEvents } from '
 import 'leaflet/dist/leaflet.css';
 import markermap from '../../../assets/images/marker-icon.png';
 import markershadow from '../../../assets/images/marker-shadow.png';
+import markerpoint from '../../../assets/images/marker-point.svg';
 
 let markerIcon = L.icon({
   iconUrl: markermap,
@@ -14,6 +15,11 @@ let markerIcon = L.icon({
   shadowSize: [41, 41],
   iconAnchor: [12, 41],
   shadowAnchor: [12, 41],
+});
+let markerPoint = L.icon({
+  iconUrl: markerpoint,
+  iconSize: [50, 50],
+  iconAnchor: [25, 25],
 });
 
 // Componente para manejar los eventos de clic en el mapa
@@ -147,7 +153,7 @@ function Maps() {
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <MapClickHandler onMapClick={handleMapClick} />
             {puntos.map((punto, index) => (
-              <Marker key={index} position={[punto.lat, punto.lon]} icon={markerIcon}>
+              <Marker key={index} position={[punto.lat, punto.lon]} icon={markerPoint}>
                 <Popup>Punto {index + 1}</Popup>
               </Marker>
             ))}
@@ -166,22 +172,22 @@ function Maps() {
           <p>Latitude: {latitude}</p>
           <p>Longitude: {longitude}</p>
           <p>Zoom: {zoom}</p>
+          <button className='button_normal' onClick={iniciarSeleccion} disabled={selecting}>
+            Iniciar Área
+          </button>
+          <button className='button_normal' onClick={finalizarSeleccion} disabled={!selecting}>
+            Finalizar Área
+          </button>
+          <button className='button_normal' onClick={agregarPuntoDesdeGPS} disabled={!selecting}>
+            Agregar Punto desde GPS
+          </button>
+          <button className='button_normal' onClick={moveToCurrentLocation}>Mover a mi ubicación actual</button>
+          <p>Área actual: {area} metros cuadrados</p>
           {puntos.map((punto, index) => (
             <p key={index}>
               Punto {index + 1}: {punto.lat}, {punto.lon}
             </p>
           ))}
-          <p>Área actual: {area} metros cuadrados</p>
-          <button onClick={iniciarSeleccion} disabled={selecting}>
-            Iniciar Área
-          </button>
-          <button onClick={finalizarSeleccion} disabled={!selecting}>
-            Finalizar Área
-          </button>
-          <button onClick={agregarPuntoDesdeGPS} disabled={!selecting}>
-            Agregar Punto desde GPS
-          </button>
-          <button onClick={moveToCurrentLocation}>Mover a mi ubicación actual</button>
           <h2>Áreas calculadas:</h2>
           {areas.map((areaObj, index) => (
             <div key={index}>
