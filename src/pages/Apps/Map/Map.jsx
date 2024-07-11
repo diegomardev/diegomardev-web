@@ -19,8 +19,8 @@ let markerIcon = L.icon({
 
 let markerPoint = L.icon({
   iconUrl: markerpoint,
-  iconSize: [50, 50],
-  iconAnchor: [25, 25],
+  iconSize: [40, 40],
+  iconAnchor: [20, 20],
 });
 
 // Componente para manejar los eventos de clic en el mapa
@@ -55,6 +55,7 @@ function Maps() {
       actualizandoGPS = 1;
       navigator.geolocation.getCurrentPosition(
         (position) => {
+          const { latitude, longitude } = position.coords;
           setLatitude(latitude);
           setLongitude(longitude);
         },
@@ -177,16 +178,21 @@ function Maps() {
             <MapClickHandler onMapClick={handleMapClick} />
             {puntos.map((punto, index) => (
               <Marker key={index} position={[punto.lat, punto.lon]} icon={markerPoint}>
-                <Popup>Punto {index + 1}</Popup>
+                <Popup>
+                  Lat: {punto.lat.toFixed(7)} <br /> 
+                  Lon: {punto.lon.toFixed(7)}
+                </Popup>
               </Marker>
             ))}
             {areas.map((areaObj, index) => (
-              <Polygon key={index} positions={areaObj.puntos.map((punto) => [punto.lat, punto.lon])} />
+              <Polygon key={index} positions={areaObj.puntos.map((punto) => [punto.lat, punto.lon])}>
+                <Popup>Área {index + 1}: {areaObj.area.toFixed(2)} m2</Popup>
+              </Polygon>
             ))}
             {puntos.length > 1 && <Polyline positions={puntos.map((punto) => [punto.lat, punto.lon])} />}
             {currentLocation && (
               <Marker position={[currentLocation.lat, currentLocation.lon]} icon={markerIcon}>
-                <Popup>Your point is here</Popup>
+                <Popup>You are here</Popup>
               </Marker>
             )}
           </MapContainer>
@@ -196,16 +202,16 @@ function Maps() {
           <p>Longitude: {longitude}</p>
           <p>Zoom: {zoom}</p>
           <button className="button_normal" onClick={iniciarSeleccion} disabled={selecting}>
-            Iniciar Área
+            Start Area
           </button>
           <button className="button_normal" onClick={finalizarSeleccion} disabled={!selecting}>
-            Finalizar Área
+            Finish Area
           </button>
           <button className="button_normal" onClick={agregarPuntoDesdeGPS} disabled={!selecting}>
-            Agregar Punto desde GPS
+            Add GPS point
           </button>
           <button className="button_normal" onClick={moveToCurrentLocation}>Mover a mi ubicación actual</button>
-          <p>Área actual: {area} metros cuadrados</p>
+          <p>Área actual: {area} m2</p>
           {puntos.map((punto, index) => (
             <p key={index}>
               Punto {index + 1}: {punto.lat}, {punto.lon}
