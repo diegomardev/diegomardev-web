@@ -55,7 +55,8 @@ function Maps() {
       actualizandoGPS = 1;
       navigator.geolocation.getCurrentPosition(
         (position) => {
-
+          setLatitude(latitude);
+          setLongitude(longitude);
         },
         (error) => {
           console.error('Error obteniendo ubicación:', error);
@@ -70,7 +71,7 @@ function Maps() {
     } else {
       alert('Tu navegador no soporta geolocalización.');
     }
-  }, 1000);
+  }, 2000);
   const handleMapClick = (event) => {
     if (!selecting) return;
 
