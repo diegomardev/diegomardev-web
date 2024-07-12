@@ -20,6 +20,7 @@ import Timer from './pages/Apps/Timer/Timer'
 import Calculators from './pages/Apps/Calculators/Calculators'
 import Aspect_Ratio from './pages/Apps/Calculators/Aspect_Ratio/Aspect_Ratio'
 import Coordinate_Converter from './pages/Apps/Calculators/Coordinate_Converter/Coordinate_Converter'
+import Area_Calculator from './pages/Apps/Calculators/Area_Calculator/Area_Calculator'
 import Map from './pages/Apps/Map/Map'
 import Birthday_Cake from './pages/Apps/Birthday_Cake/Birthday_Cake'
 import Threejs from './pages/Apps/Threejs/Threejs'
@@ -55,6 +56,7 @@ function App() {
         <Route path="/apps/calculators" element={<Calculators />} />
         <Route path="/apps/calculators/aspect_ratio" element={<Aspect_Ratio />} />
         <Route path="/apps/calculators/coordinate_converter" element={<Coordinate_Converter />} />
+        <Route path="/apps/calculators/area_calculator" element={<Area_Calculator />} />
         <Route path="/apps/map" element={<Map />} />
         <Route path="/apps/birthday_cake" element={<Birthday_Cake />} />
         <Route path="/apps/threejs" element={<Threejs />} />

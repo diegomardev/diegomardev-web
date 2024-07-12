@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import './Map.css';
-import Navbar from '../../../components/Navbar/Navbar';
+import './Area_Calculator.css';
+import Navbar from '../../../../components/Navbar/Navbar'
 import { fromLatLon } from 'utm';
 import { MapContainer, TileLayer, Marker, Polyline, Polygon, Popup, useMapEvents, ZoomControl } from 'react-leaflet';
 
-import markermap from '../../../assets/images/marker-icon.png';
-import markershadow from '../../../assets/images/marker-shadow.png';
-import markerpoint from '../../../assets/images/marker-point.svg';
+import markermap from '../../../../assets/images/marker-icon.png';
+import markershadow from '../../../../assets/images/marker-shadow.png';
+import markerpoint from '../../../../assets/images/marker-point.svg';
 
 let markerIcon = L.icon({
   iconUrl: markermap,
@@ -218,6 +218,23 @@ function Maps() {
             Add GPS point
           </button>
           <button className="button_normal" onClick={moveToCurrentLocation}>Mover a mi ubicación actual</button>
+          <p>Área actual: {area} m2</p>
+          {puntos.map((punto, index) => (
+            <p key={index}>
+              Punto {index + 1}: {punto.lat}, {punto.lon}
+            </p>
+          ))}
+          <h2>Áreas calculadas:</h2>
+          {areas.map((areaObj, index) => (
+            <div key={index}>
+              <p>Área {index + 1}: {areaObj.area} metros cuadrados</p>
+              {areaObj.puntos.map((punto, pIndex) => (
+                <p key={pIndex}>
+                  Punto {pIndex + 1}: {punto.lat}, {punto.lon}
+                </p>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     </>
