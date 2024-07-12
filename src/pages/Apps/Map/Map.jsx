@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Map.css';
 import Navbar from '../../../components/Navbar/Navbar';
 import { fromLatLon } from 'utm';
-import { MapContainer, TileLayer, Marker, Polyline, Polygon, Popup, useMapEvents } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Polyline, Polygon, Popup, useMapEvents, ZoomControl } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import markermap from '../../../assets/images/marker-icon.png';
 import markershadow from '../../../assets/images/marker-shadow.png';
@@ -173,8 +173,12 @@ function Maps() {
       <h1 className="read-the-docs">Open Map</h1>
       <div>
         <div className="map">
-          <MapContainer key={center.toString()} center={center} zoom={zoom} style={{ width: '80vw', height: '60vh', borderRadius: '20px' }} whenCreated={setMap}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+          <MapContainer key={center.toString()} center={center} zoom={zoom} maxZoom={22} ZoomControl={false} style={{ width: '80vw', height: '60vh', borderRadius: '20px' }} whenCreated={setMap}>
+            <TileLayer 
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              maxZoom={22}
+              maxNativeZoom={22}
+            />
             <MapClickHandler onMapClick={handleMapClick} />
             {puntos.map((punto, index) => (
               <Marker key={index} position={[punto.lat, punto.lon]} icon={markerPoint}>
