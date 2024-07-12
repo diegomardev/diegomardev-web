@@ -173,7 +173,7 @@ function Maps() {
       {/* <h1 className="read-the-docs">Open Map</h1> */}
       <div>
         <div className="map">
-          <MapContainer key={center.toString()} center={center} zoom={zoom} maxZoom={22} ZoomControl={false} style={{ width: '120vw', height: '60vh', borderRadius: '0px' }} whenCreated={setMap}>
+          <MapContainer key={center.toString()} center={center} zoom={zoom} maxZoom={22} ZoomControl={false} style={{ width: '100vw', height: '60vh', borderRadius: '0px' }} whenCreated={setMap}>
             <TileLayer 
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               maxZoom={22}
