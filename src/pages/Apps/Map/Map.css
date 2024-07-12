@@ -17,3 +17,13 @@
   display: flex;
   justify-content: center;
 }
+.leaflet-control-attribution{
+  opacity: 0;
+}
+.leaflet-container{
+  position: absolute;
+}
+.map{
+  width: 100vw;
+  height: 60vh;
+}

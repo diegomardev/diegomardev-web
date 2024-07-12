@@ -3,7 +3,7 @@ import './Map.css';
 import Navbar from '../../../components/Navbar/Navbar';
 import { fromLatLon } from 'utm';
 import { MapContainer, TileLayer, Marker, Polyline, Polygon, Popup, useMapEvents, ZoomControl } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
+
 import markermap from '../../../assets/images/marker-icon.png';
 import markershadow from '../../../assets/images/marker-shadow.png';
 import markerpoint from '../../../assets/images/marker-point.svg';
@@ -39,7 +39,7 @@ function Maps() {
   const [puntos, setPuntos] = useState([]);
   const [areas, setAreas] = useState([]);
   const [area, setArea] = useState(0);
-  const [zoom, setZoom] = useState(18);
+  const [zoom, setZoom] = useState(19);
   const [selecting, setSelecting] = useState(false);
   const [map, setMap] = useState(null); // Estado para guardar referencia al mapa
   const [currentLocation, setCurrentLocation] = useState(null); // Estado para la ubicación actual
@@ -170,10 +170,10 @@ function Maps() {
       <div>
         <Navbar />
       </div>
-      <h1 className="read-the-docs">Open Map</h1>
+      {/* <h1 className="read-the-docs">Open Map</h1> */}
       <div>
         <div className="map">
-          <MapContainer key={center.toString()} center={center} zoom={zoom} maxZoom={22} ZoomControl={false} style={{ width: '80vw', height: '60vh', borderRadius: '20px' }} whenCreated={setMap}>
+          <MapContainer key={center.toString()} center={center} zoom={zoom} maxZoom={22} ZoomControl={false} style={{ width: '120vw', height: '60vh', borderRadius: '0px' }} whenCreated={setMap}>
             <TileLayer 
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               maxZoom={22}
@@ -196,15 +196,18 @@ function Maps() {
             {puntos.length > 1 && <Polyline positions={puntos.map((punto) => [punto.lat, punto.lon])} />}
             {currentLocation && (
               <Marker position={[currentLocation.lat, currentLocation.lon]} icon={markerIcon}>
-                <Popup>You are here</Popup>
+                <Popup>
+                  Lat: {currentLocation.lat} <br /> 
+                  Lon: {currentLocation.lon}
+                </Popup>
               </Marker>
             )}
           </MapContainer>
         </div>
         <div className="info">
-          <p>Latitude: {latitude}</p>
-          <p>Longitude: {longitude}</p>
-          <p>Zoom: {zoom}</p>
+          {/* <p>Latitude: {latitude}</p> */}
+          {/* <p>Longitude: {longitude}</p> */}
+          {/* <p>Zoom: {zoom}</p> */}
           <button className="button_normal" onClick={iniciarSeleccion} disabled={selecting}>
             Start Area
           </button>
