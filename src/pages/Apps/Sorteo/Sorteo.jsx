@@ -19,7 +19,7 @@ const App = () => {
   // Función para obtener los datos del usuario
   const fetchUserData = async () => {
     try {
-      const response = await fetch(`http://diegomar.duckdns.org:9819/api/instagram/${username}`,{referrerPolicy: "unsafe-url" });
+      const response = await fetch(`http://diegomar.duckdns.org:9819/api/instagram/${username}`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
