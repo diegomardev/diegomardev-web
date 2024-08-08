@@ -20,6 +20,7 @@ const PokemonSearch = ({ onPokemonClick }) => {
           poke.name.toLowerCase().includes(searchTerm.toLowerCase())
         )
       );
+      setIsListVisible(true);
     } else {
       setFilteredPokemon([]);
     }
@@ -57,7 +58,7 @@ const PokemonSearch = ({ onPokemonClick }) => {
           {filteredPokemon.map(poke => (
             <li 
               key={poke.name} 
-              onClick={() => onPokemonClick(poke.name)}
+              onClick={() => {onPokemonClick(poke.name);setIsListVisible(false);}}
               className={poke.name === searchTerm ? 'selected' : ''}
             >
               {poke.name}

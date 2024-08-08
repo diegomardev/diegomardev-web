@@ -21,17 +21,21 @@ const PokemonDetail = ({ pokemon }) => {
       {details ? (
         <div>
           <div className='name-container'>
-            <img
-              className='pokemon-thumbnail'
-              src={details.sprites.other.showdown.front_default}
-              alt={details.name}
-            />
+            {details.sprites?.other?.showdown?.front_default && (
+              <img
+                className='pokemon-thumbnail'
+                src={details.sprites.other.showdown.front_default}
+                alt={details.name}
+              />
+            )}
             <h2 className='pokemon-name'>{details.name} #{details.id}</h2>
-            <img
-              className='pokemon-thumbnail pokemon-invert'
-              src={details.sprites.other.showdown.front_default}
-              alt={details.name}
-            />
+            {details.sprites?.other?.showdown?.front_default && (
+              <img
+                className='pokemon-thumbnail pokemon-invert'
+                src={details.sprites.other.showdown.front_default}
+                alt={details.name}
+              />
+            )}
           </div>
           <div className='details-container'>
             <img
@@ -41,8 +45,8 @@ const PokemonDetail = ({ pokemon }) => {
               alt={details.name}
             />
             <div className='pokemon-details'>
-              <p>Height: {details.height}</p>
-              <p>Weight: {details.weight}</p>
+              <p>Height: {details.height/10}m</p>
+              <p>Weight: {details.weight/10}kg</p>
               <p>Type: {details.types.map(type => type.type.name).join(', ')}</p>
               <p>Abilities: {details.abilities.map(ability => ability.ability.name).join(', ')}</p>
               <p>Stats:</p>

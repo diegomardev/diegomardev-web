@@ -34,6 +34,7 @@
 .pokemon-name{
   font-size: xxx-large;
   text-transform: capitalize;
+  margin-top: 0;
 }
 .play-icon {
   display: inline-block;
