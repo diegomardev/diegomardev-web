@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-left: 20px;
 }
 .pokemon-thumbnail {
   width: 50px;
@@ -33,4 +34,14 @@
 .pokemon-name{
   font-size: xxx-large;
   text-transform: capitalize;
+}
+.play-icon {
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.play-icon:hover {
+  color: #007bff;
 }

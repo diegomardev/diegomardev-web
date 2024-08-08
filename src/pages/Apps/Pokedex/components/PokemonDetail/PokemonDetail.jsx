@@ -12,6 +12,10 @@ const PokemonDetail = ({ pokemon }) => {
     }
   }, [pokemon]);
 
+  const playSound = (soundUrl) => {
+    const audio = new Audio(soundUrl);
+    audio.play();
+  };
   return (
     <div>
       {details ? (
@@ -22,7 +26,7 @@ const PokemonDetail = ({ pokemon }) => {
               src={details.sprites.other.showdown.front_default}
               alt={details.name}
             />
-            <h2 className='pokemon-name'> {details.name} #{details.id}</h2>
+            <h2 className='pokemon-name'>{details.name} #{details.id}</h2>
             <img
               className='pokemon-thumbnail pokemon-invert'
               src={details.sprites.other.showdown.front_default}
@@ -32,6 +36,7 @@ const PokemonDetail = ({ pokemon }) => {
           <div className='details-container'>
             <img
               className='pokemon-image'
+              style={{ borderRadius: '50%' }}
               src={details.sprites.other['official-artwork'].front_default}
               alt={details.name}
             />
@@ -40,8 +45,19 @@ const PokemonDetail = ({ pokemon }) => {
               <p>Weight: {details.weight}</p>
               <p>Type: {details.types.map(type => type.type.name).join(', ')}</p>
               <p>Abilities: {details.abilities.map(ability => ability.ability.name).join(', ')}</p>
+              <p>Stats:</p>
+              <ul>
+                {details.stats.map(stat => (
+                  <li key={stat.stat.name}>{stat.stat.name}: {stat.base_stat}</li>
+                ))}
+              </ul>
+              <p>Base Experience: {details.base_experience}</p>
+              <audio id="pokemon-cry" src={details.cries.latest} />
+              <div className='audio-container'>
+                <span className='play-icon' onClick={() => playSound(details.cries.latest)}>🔊</span>
+                <span className='play-icon' onClick={() => playSound(details.cries.legacy)}>🔊</span>
             </div>
-            
+            </div>
           </div>
         </div>
       ) : (
