@@ -17,6 +17,7 @@ function Apps() {
   function app10() {window.location.href = "apps/threejs";}
   function app11() {window.location.href = "apps/chat";}
   function app12() {window.location.href = "apps/sorteo";}
+  function app13() {window.location.href = "apps/pokedex";}
   
   
   
@@ -43,7 +44,7 @@ function Apps() {
       <button className="botones_juegos my-button threejs_text" onClick={app10}>🌐 Three.js 🌐</button>
       <button className="botones_juegos my-button chat_text" onClick={app11}>💬 Chat 💬</button>
       <button className="botones_juegos my-button chat_text" onClick={app12}> Sorteo </button>
-      
+      <button className="botones_juegos my-button chat_text" onClick={app13}>🐉 Pokedex 🐉</button>
       </div>
     </div>
     </>

@@ -19,7 +19,7 @@ const App = () => {
   // Función para obtener los datos del usuario
   const fetchUserData = async () => {
     try {
-      const response = await fetch(`http://diegomar.duckdns.org:9819/api/instagram/${username}`);
+      const response = await fetch(`http://localhost:9819/api/instagram/${username}`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
@@ -48,7 +48,7 @@ const App = () => {
         <div>
           <h2>{userData.Name} ({userData.username})</h2>
           <a href={`https://www.instagram.com/${userData.username}/`} target="_blank" rel="noopener noreferrer">
-            <img src={userData.imageURL} alt="Profile Picture" />
+            <img style={{ borderRadius: '50%' }} src={userData.imageURL} alt="Profile Picture" />
           </a>
           <p>Followers: {userData.followers}</p>
           <p>Following: {userData.following}</p>

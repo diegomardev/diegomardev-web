@@ -1,0 +1,14 @@
+li {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid transparent;
+  transition: background-color 0.2s, border-bottom 0.2s;
+}
+
+li:hover {
+  background-color: #140a0a;
+}
+
+li.selected {
+  border-bottom: 1px solid #000;
+}
