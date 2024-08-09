@@ -3,12 +3,26 @@ import './PokemonDetail.css';
 
 const PokemonDetail = ({ pokemon }) => {
   const [details, setDetails] = useState(null);
+  const [gender, setGender] = useState({ male: null, female: null });
 
   useEffect(() => {
     if (pokemon) {
       fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
         .then(response => response.json())
-        .then(data => setDetails(data));
+        .then(data => {
+          setDetails(data);
+          return fetch(data.species.url);
+        })
+        .then(response => response.json())
+        .then(speciesData => {
+          const maleRate = speciesData.gender_rate;
+          if (maleRate === -1) {
+            setGender({ male: 0, female: 0 });
+          } else {
+            const femaleRate = maleRate * 12.5;
+            setGender({ male: 100 - femaleRate, female: femaleRate });
+          }
+        });
     }
   }, [pokemon]);
 
@@ -16,6 +30,7 @@ const PokemonDetail = ({ pokemon }) => {
     const audio = new Audio(soundUrl);
     audio.play();
   };
+
   return (
     <div>
       {details ? (
@@ -24,6 +39,7 @@ const PokemonDetail = ({ pokemon }) => {
             {details.sprites?.other?.showdown?.front_default && (
               <img
                 className='pokemon-thumbnail'
+                style={{ marginRight: '10px' }}
                 src={details.sprites.other.showdown.front_default}
                 alt={details.name}
               />
@@ -45,27 +61,67 @@ const PokemonDetail = ({ pokemon }) => {
               alt={details.name}
             />
             <div className='pokemon-details'>
-              <p>Height: {details.height/10}m</p>
-              <p>Weight: {details.weight/10}kg</p>
-              <p>Type: {details.types.map(type => type.type.name).join(', ')}</p>
-              <p>Abilities: {details.abilities.map(ability => ability.ability.name).join(', ')}</p>
+              <div className='pokemon-characteristics'>
+                <div className='characteristic'>
+                  <p className='label'>Height</p>
+                  <p className='value'>{details.height / 10} m</p>
+                </div>
+                <div className='characteristic'>
+                  <p className='label'>Weight</p>
+                  <p className='value'>{details.weight / 10} kg</p>
+                </div>
+                <div className='characteristic'>
+                  <p className='label'>Type</p>
+                  <p className='value'>{details.types.map(type => type.type.name).join(', ')}</p>
+                </div>
+                <div className='characteristic'>
+                  <p className='label'>Abilities</p>
+                  <p className='value'>{details.abilities.map(ability => ability.ability.name).join(', ')}</p>
+                </div>
+                <div className='characteristic'>
+                  <p className='label'>Gender</p>
+                  <p className='value-gender'>
+                    {gender.male === 0 && gender.female === 0
+                      ? '♀️♂'
+                      : (
+                        <>
+                          {gender.male > 0 && '♀️'}
+                          {gender.female > 0 && '♂'}
+                        </>
+                      )}
+                  </p>
+                </div>
+                <div className='characteristic'>
+                  <p className='label'>Sound</p>
+                  <div>
+                    <span className='play-icon' onClick={() => playSound(details.cries.latest)}>🔊</span>
+                    <span className='play-icon' onClick={() => playSound(details.cries.legacy)}>🔊</span>
+                  </div>
+                </div>
+              </div>
               <p>Stats:</p>
-              <ul>
+              <div className='stats-container'>
                 {details.stats.map(stat => (
-                  <li key={stat.stat.name}>{stat.stat.name}: {stat.base_stat}</li>
+                  <div key={stat.stat.name} className='stat-bar'>
+                    <span className='stat-label'>{stat.stat.name}</span>
+                    <div className='stat-bar-inner' style={{ width: `${stat.base_stat/4}%` }}>
+                      <span className='stat-value'>{stat.base_stat}</span>
+                    </div>
+                  </div>
                 ))}
-              </ul>
-              <p>Base Experience: {details.base_experience}</p>
-              <audio id="pokemon-cry" src={details.cries.latest} />
-              <div className='audio-container'>
-                <span className='play-icon' onClick={() => playSound(details.cries.latest)}>🔊</span>
-                <span className='play-icon' onClick={() => playSound(details.cries.legacy)}>🔊</span>
-            </div>
+                {/* Base Experience Bar */}
+                <div className='stat-bar'>
+                  <span className='stat-label'>Base Experience</span>
+                  <div className='stat-bar-inner' style={{ width: `${details.base_experience / 5}%` }}>
+                    <span className='stat-value'>{details.base_experience}</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       ) : (
-        <p>Select a Pokémon to see the details.</p>
+        <p>Search a Pokémon to see the details.</p>
       )}
     </div>
   );

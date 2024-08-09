@@ -2,23 +2,61 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
+
 .details-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
+
 .pokemon-details {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-left: 20px;
 }
+
+.pokemon-characteristics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  background-color: #36A9E1;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  width: 300px;
+}
+
+.characteristic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.characteristic .label {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.characteristic .value {
+  font-size: 16px;
+  margin: 5px 0 0 0;
+  text-transform: capitalize;
+}
+.characteristic .value-gender {
+  font-size: 32px;
+  margin: -10px 0 0 0;
+}
+
 .pokemon-thumbnail {
-  width: 50px;
   height: 50px;
   margin-left: 10px;
 }
+
 .pokemon-invert {
   transform: scaleX(-1);
 }
@@ -31,18 +69,61 @@
   border-radius: 50%;
 }
 
-.pokemon-name{
+.pokemon-name {
   font-size: xxx-large;
   text-transform: capitalize;
-  margin-top: 0;
+  margin: 0;
 }
+
 .play-icon {
   display: inline-block;
-  margin: 0 10px;
+  margin:  0 10px 0 5px;
   cursor: pointer;
   font-size: 24px;
 }
 
 .play-icon:hover {
   color: #007bff;
+}
+
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.stat-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 25px;
+}
+
+.stat-label {
+  width: 119px;
+  padding-left: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #4f567e;
+  font-size: 14px;
+}
+
+.stat-bar-inner {
+  background-color: #36A9E1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  transition: width 0.5s ease;
+}
+
+.stat-value {
+  margin-left: 5px;
 }
