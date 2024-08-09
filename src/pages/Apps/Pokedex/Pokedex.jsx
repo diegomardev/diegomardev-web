@@ -6,8 +6,24 @@ import './Pokedex.css';
 
 const App = () => {
   const [selectedPokemon, setSelectedPokemon] = useState(null);
-  return (
 
+  // Leer el parámetro 'pokemon' de la URL al cargar el componente
+  useEffect(() => {
+    const query = new URLSearchParams(window.location.search);
+    const initialPokemon = query.get('pokemon');
+    if (initialPokemon) {
+      setSelectedPokemon(initialPokemon);
+    }
+  }, []);
+
+  // Actualizar la URL cuando se selecciona un Pokémon
+  useEffect(() => {
+    if (selectedPokemon) {
+      window.history.pushState(null, '', `?pokemon=${selectedPokemon}`);
+    }
+  }, [selectedPokemon]);
+
+  return (
     <div>
       <Navbar />
       <h1>Pokedex</h1>

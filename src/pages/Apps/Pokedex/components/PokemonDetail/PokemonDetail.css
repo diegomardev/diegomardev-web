@@ -98,7 +98,7 @@
 .stat-bar {
   display: flex;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: #dddddd;
   border-radius: 10px;
   overflow: hidden;
   height: 25px;
