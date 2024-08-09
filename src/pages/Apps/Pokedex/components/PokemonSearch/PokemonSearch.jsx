@@ -14,7 +14,7 @@ const PokemonSearch = ({ onPokemonClick }) => {
   }, []);
 
   useEffect(() => {
-    if (searchTerm.length >= 3) {
+    if (searchTerm.length >= 2) {
       setFilteredPokemon(
         pokemon.filter(poke => 
           poke.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -47,7 +47,7 @@ const PokemonSearch = ({ onPokemonClick }) => {
         onChange={handleChange} 
         onClick={handleInputClick}
       />
-      {isListVisible && searchTerm.length >= 3 && (
+      {isListVisible && searchTerm.length >= 2 && (
         <ul>
           <li 
             onClick={handleCloseList}
