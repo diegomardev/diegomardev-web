@@ -99,8 +99,9 @@ const PokemonDetail = ({ pokemon }) => {
                   </div>
                 </div>
               </div>
-              <p>Stats:</p>
+              <p className='stat-title'>Stats:</p>
               <div className='stats-container'>
+                
                 {details.stats.map(stat => (
                   <div key={stat.stat.name} className='stat-bar'>
                     <span className='stat-label'>{stat.stat.name}</span>
