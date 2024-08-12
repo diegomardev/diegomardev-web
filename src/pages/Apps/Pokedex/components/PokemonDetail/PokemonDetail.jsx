@@ -199,7 +199,7 @@ const PokemonDetail = ({ pokemon, onPokemonClick }) => {
       </div>
       <div className='details-container-mobile'>
         <img
-          className='pokemon-image'
+          className='pokemon-image-mobile'
           style={{ borderRadius: '50%', width: '300px', height: '300px' }} // Imágenes más pequeñas para móviles
           src={details.sprites.other['official-artwork'].front_default}
           alt={details.name}

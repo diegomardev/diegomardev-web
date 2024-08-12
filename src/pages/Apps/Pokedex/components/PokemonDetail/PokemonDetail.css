@@ -78,7 +78,14 @@
   border-radius: 50%;
   margin-bottom: 15px;
 }
-
+.pokemon-image-mobile {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  /* border: 5px solid #ccc; */
+  /* border-radius: 50%; */
+  margin-bottom: 15px;
+}
 .pokemon-name {
   font-size: xxx-large;
   text-transform: capitalize;
