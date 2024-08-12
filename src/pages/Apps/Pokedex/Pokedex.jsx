@@ -31,7 +31,10 @@ const App = () => {
         onPokemonClick={setSelectedPokemon} 
         selectedPokemon={selectedPokemon}
       />
-      <PokemonDetail pokemon={selectedPokemon} />
+      <PokemonDetail 
+        pokemon={selectedPokemon} 
+        onPokemonClick={setSelectedPokemon}
+      />
     </div>
   );
 };

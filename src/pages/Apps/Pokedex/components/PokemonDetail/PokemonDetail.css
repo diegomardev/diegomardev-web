@@ -11,11 +11,17 @@
   align-items: center;
   margin-top: 20px;
 }
+.details-container-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column;
+}
 
 .pokemon-details {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding-left: 20px;
 }
 
@@ -67,6 +73,7 @@
   display: block;
   border: 5px solid rgb(140, 207, 31);
   border-radius: 50%;
+  margin-bottom: 15px;
 }
 
 .pokemon-name {
@@ -74,7 +81,11 @@
   text-transform: capitalize;
   margin: 0;
 }
-
+.pokemon-name-mobile {
+  font-size: xx-large;
+  text-transform: capitalize;
+  margin: 0;
+}
 .play-icon {
   display: inline-block;
   margin:  0 10px 0 5px;
@@ -131,4 +142,82 @@
 .stat-title{
   margin: 20px 0 0 0;
   font-weight: bold;
+}
+
+
+
+.evolution-container {
+  margin-top: 20px;
+}
+
+.evolution-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.evolution-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.evolution-list-mobile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.evolution-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.evolution-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  margin-right: 10px;
+}
+
+.evolution-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.evolution-info-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 150px;
+}
+.evolution-name {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.evolution-types {
+  display: flex;
+  margin-top: 5px;
+}
+
+.type-label {
+  font-size: 12px;
+  padding: 0px 5px;
+  margin-top: -5px;
+  margin-right: 5px;
+  border-radius: 13px;
+  color: grey;
+  border: 2px solid grey;
+  font-weight: bold;
+}
+.type-label.ground {
+  background-color: #E2BF65;
+}
+
+.evolution-arrow {
+  font-size: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
