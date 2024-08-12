@@ -204,7 +204,7 @@ const PokemonDetail = ({ pokemon, onPokemonClick }) => {
           src={details.sprites.other['official-artwork'].front_default}
           alt={details.name}
         />
-        <div className='pokemon-details'>
+        <div className='pokemon-details-mobile'>
           <div className='pokemon-characteristics'>
             <div className='characteristic'>
               <p className='label'>Height</p>

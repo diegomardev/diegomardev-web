@@ -22,9 +22,12 @@
 .pokemon-details {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  margin-left: 20px;
 }
-
+.pokemon-details-mobile {
+  display: flex;
+  flex-direction: column;
+}
 .pokemon-characteristics {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
