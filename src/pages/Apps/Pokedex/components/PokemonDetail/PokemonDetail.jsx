@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { isMobile } from 'react-device-detect';
 import './PokemonDetail.css';
-import arrow_icon from '../../../../../assets/images/arrow.svg' ;
+import arrow_icon from '../../../../../assets/images/pokedex/arrow.svg';
+import male_icon from '../../../../../assets/images/pokedex/male-icon.svg';
+import female_icon from '../../../../../assets/images/pokedex/female-icon.svg';
+import speaker from '../../../../../assets/images/pokedex/speaker.svg';
+
 const PokemonDetail = ({ pokemon, onPokemonClick }) => {
   const [details, setDetails] = useState(null);
   const [gender, setGender] = useState({ male: null, female: null });
@@ -113,11 +117,11 @@ const PokemonDetail = ({ pokemon, onPokemonClick }) => {
               <p className='label'>Gender</p>
               <p className='value-gender'>
                 {gender.male === 0 && gender.female === 0
-                  ? '♀️♂'
+                  ? 'Unknown'
                   : (
                     <>
-                      {gender.male > 0 && '♀️'}
-                      {gender.female > 0 && '♂'}
+                      {gender.male > 0 && <img src={male_icon} alt="Male Gender" />}
+                      {gender.female > 0 && <img src={female_icon} alt="Female Gender" />}
                     </>
                   )}
               </p>
@@ -125,8 +129,8 @@ const PokemonDetail = ({ pokemon, onPokemonClick }) => {
             <div className='characteristic'>
               <p className='label'>Sound</p>
               <div>
-                <span className='play-icon' onClick={() => playSound(details.cries.latest)}>🔊</span>
-                <span className='play-icon' onClick={() => playSound(details.cries.legacy)}>🔊</span>
+                <img src={speaker} className='play-icon' onClick={() => playSound(details.cries.latest)}/>
+                <img src={speaker} className='play-icon' onClick={() => playSound(details.cries.legacy)}/>
               </div>
             </div>
           </div>
@@ -226,11 +230,11 @@ const PokemonDetail = ({ pokemon, onPokemonClick }) => {
               <p className='label'>Gender</p>
               <p className='value-gender'>
                 {gender.male === 0 && gender.female === 0
-                  ? '♀️♂'
+                  ? 'Unknown'
                   : (
                     <>
-                      {gender.male > 0 && '♀️'}
-                      {gender.female > 0 && '♂'}
+                      {gender.male > 0 && <img src={male_icon} alt="Male Gender" />}
+                      {gender.female > 0 && <img src={female_icon} alt="Female Gender" />}
                     </>
                   )}
               </p>

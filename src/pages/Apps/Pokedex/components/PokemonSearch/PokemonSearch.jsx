@@ -69,7 +69,7 @@ const PokemonSearch = ({ onPokemonClick }) => {
           type="text"
           name="text"
           autoComplete="off"
-          className="input input-pokedex"
+          className="input"
           value={searchTerm}
           onChange={handleChange}
           onClick={handleInputClick}
