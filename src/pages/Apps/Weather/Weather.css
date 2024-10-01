@@ -1,0 +1,84 @@
+.titulo{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.forecast-list {
+  width: 80%;
+  margin-top: 20px;
+  max-width: 700px;
+}
+
+.forecast-item {
+/*   background: #2e3b4e; */
+  background: #4c6385;
+  padding:  2px 5px 0px 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column; /* Para alinear elementos en columna */
+  align-items: flex-start; /* Alinea los elementos al inicio */
+}
+.forecast-header {
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.forecast-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: -15px;
+  margin-bottom: -12px;
+}
+.forecast-date {
+  flex: 2;
+  font-weight: bold;
+}
+
+.forecast-temp {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.forecast-details-2 {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.forecast-weather {
+  /* flex: 1; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-icon {
+  width: 80px;
+  height: auto;
+  /* margin-right: 10px; */
+}
+
+.forecast-rain,
+.forecast-wind {
+  flex: 1.5;
+  text-align: left;
+}

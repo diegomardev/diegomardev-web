@@ -18,6 +18,7 @@ function Apps() {
   function app11() {window.location.href = "apps/chat";}
   function app12() {window.location.href = "apps/sorteo";}
   function app13() {window.location.href = "apps/pokedex";}
+  function app14() {window.location.href = "apps/weather";}
   
   
   
@@ -45,6 +46,8 @@ function Apps() {
       <button className="botones_juegos my-button chat_text" onClick={app11}>💬 Chat 💬</button>
       <button className="botones_juegos my-button chat_text" onClick={app12}> Sorteo </button>
       <button className="botones_juegos my-button chat_text" onClick={app13}>🐉 Pokedex 🐉</button>
+      <button className="botones_juegos my-button chat_text" onClick={app14}>🌦️ Weather 🌦️</button>
+      {/* <button className="botones_juegos" onClick={app15}>���️</button> */}
       </div>
     </div>
     </>
