@@ -7,8 +7,12 @@ const SUPABASE ={
   URL: import.meta.env.VITE_REACT_APP_URL_SUPABASE,
   KEY: import.meta.env.VITE_REACT_APP_KEY_SUPABASE
 }
+const WEATHER ={
+  KEY: import.meta.env.API_KEY_WEATHER
+}
 const TOKENS = {
     TWITCH,
-    SUPABASE
+    SUPABASE,
+    WEATHER
 }
 export default TOKENS;

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Weather.css'; // Archivo CSS para el estilo
 import Navbar from '../../../components/Navbar/Navbar';
+import TOKENS from '../../../../data/constants';
 
 function Weather() {
   const [weatherData, setWeatherData] = useState([]);
@@ -9,10 +10,10 @@ function Weather() {
   const [error, setError] = useState(null);
 
   // Tu clave de API y coordenadas de ubicación
-  const API_KEY = 'f29e4003221bc79cce88e170655e543d'; // Reemplaza con tu clave de API de OpenWeatherMap
+  const API_KEY = TOKENS.WEATHER.KEY; // Reemplaza con tu clave de API de OpenWeatherMap
   const LATITUDE = '43.3623'; // A Coruña, España
   const LONGITUDE = '-8.4115';
-
+  console.log(API_KEY)
   useEffect(() => {
     const fetchWeatherData = async () => {
       try {
