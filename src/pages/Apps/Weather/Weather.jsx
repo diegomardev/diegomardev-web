@@ -11,6 +11,7 @@ function Weather() {
 
   // Tu clave de API y coordenadas de ubicación
   const API_KEY = TOKENS.WEATHER.KEY; // Reemplaza con tu clave de API de OpenWeatherMap
+  //const API_KEY = import.meta.env.API_KEY_WEATHER;
   const LATITUDE = '43.3623'; // A Coruña, España
   const LONGITUDE = '-8.4115';
   console.log(API_KEY)

@@ -8,7 +8,7 @@ const SUPABASE ={
   KEY: import.meta.env.VITE_REACT_APP_KEY_SUPABASE
 }
 const WEATHER ={
-  KEY: import.meta.env.API_KEY_WEATHER
+  KEY: import.meta.env.VITE_API_KEY_WEATHER
 }
 const TOKENS = {
     TWITCH,
