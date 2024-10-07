@@ -60,6 +60,7 @@ function Weather() {
           rain: item.rain ? item.rain['3h'] || 0 : 0,
           humidity: item.main.humidity,
           wind_speed: item.wind.speed,
+          wind_deg: item.wind.deg,
           weather: item.weather[0],
         };
       } else {
@@ -95,6 +96,7 @@ function Weather() {
         rain: item.rain ? item.rain['3h'] || 0 : 0,
         humidity: item.main.humidity,
         wind_speed: item.wind.speed,
+        wind_deg: item.wind.deg,
         weather: item.weather[0],
       };
     });
@@ -151,7 +153,10 @@ function Weather() {
                   </span>
                   <div className="forecast-details-2">
                     <span className="forecast-rain">🌧️ {forecast.rain ? forecast.rain.toFixed(1) : 0} mm</span>
-                    <span className="forecast-wind">💨 {forecast.wind_speed.toFixed(0)} km/h</span>
+                    <span className="forecast-wind" style={{ display: 'flex', alignItems: 'center' }}>
+                      <span style={{ transform: `rotate(${forecast.wind_deg+90}deg)`, display: 'inline-block' }}>💨</span>
+                      <span style={{ marginLeft: '5px'}}> {forecast.wind_speed.toFixed(0)} km/h</span>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -181,7 +186,10 @@ function Weather() {
                   </span>
                   <div className="forecast-details-2">
                     <span className="forecast-rain">🌧️ {forecast.rain ? forecast.rain.toFixed(1) : 0} mm</span>
-                    <span className="forecast-wind">💨 {forecast.wind_speed.toFixed(0)} km/h</span>
+                    <span className="forecast-wind" style={{ display: 'flex', alignItems: 'center' }}>
+                      <span style={{ transform: `rotate(${forecast.wind_deg+90}deg)`, display: 'inline-block' }}>💨</span>
+                      <span style={{ marginLeft: '5px'}}> {forecast.wind_speed.toFixed(0)} km/h</span>
+                    </span>
                   </div>
                 </div>
               </div>
