@@ -117,10 +117,10 @@ function Weather() {
       </div>
       <h1 className="read-the-docs titulo">Weather</h1>
       <div>
-        <button className="button_normal" style={{ width: '146px', padding: '0.6em 0.5em' }} onClick={handleDays}>
+        <button className="button_normal" style={{ width: '146px', padding: '0.6em 0.5em', marginTop: '2px' }} onClick={handleDays}>
           Days
         </button>
-        <button className="button_normal" style={{ width: '146px', padding: '0.6em 0.5em' }} onClick={handleHours}>
+        <button className="button_normal" style={{ width: '146px', padding: '0.6em 0.5em', marginTop: '2px' }} onClick={handleHours}>
           Hours
         </button>
       </div>
