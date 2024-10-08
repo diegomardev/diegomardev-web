@@ -59,7 +59,7 @@ function Weather() {
           temp_min: item.main.temp_min,
           rain: item.rain ? item.rain['3h'] || 0 : 0,
           humidity: item.main.humidity,
-          wind_speed: item.wind.speed,
+          wind_speed: item.wind.speed*3.6,
           wind_deg: item.wind.deg,
           weather: item.weather[0],
         };
@@ -95,7 +95,7 @@ function Weather() {
         temp: item.main.temp,
         rain: item.rain ? item.rain['3h'] || 0 : 0,
         humidity: item.main.humidity,
-        wind_speed: item.wind.speed,
+        wind_speed: item.wind.speed*3.6,
         wind_deg: item.wind.deg,
         weather: item.weather[0],
       };
