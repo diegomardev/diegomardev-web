@@ -10,28 +10,22 @@ function Weather() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [viewMode, setViewMode] = useState('days'); // Estado para cambiar entre días y horas
+  const [city, setCity] = useState('A Coruña'); // Ciudad inicial
+  const [coordinates, setCoordinates] = useState({ lat: '43.3713', lon: '-8.396' });
 
-  // Tu clave de API y coordenadas de ubicación
-  const API_KEY = TOKENS.WEATHER.KEY; // Reemplaza con tu clave de API de OpenWeatherMap
-  const LATITUDE = '43.3623'; // A Coruña, España
-  const LONGITUDE = '-8.4115';
+  const API_KEY = TOKENS.WEATHER.KEY;
 
   useEffect(() => {
     const fetchWeatherData = async () => {
       try {
         setLoading(true);
         const response = await axios.get(
-          `https://api.openweathermap.org/data/2.5/forecast?lat=${LATITUDE}&lon=${LONGITUDE}&units=metric&appid=${API_KEY}`
+          `https://api.openweathermap.org/data/2.5/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&units=metric&appid=${API_KEY}`
         );
-        console.log(response.data);
-        // Procesa los datos para agruparlos por días
         const dailyData = processDailyForecast(response.data.list);
         setWeatherData(dailyData);
-        console.log(dailyData);
-        // Procesa los datos para mostrar cada 3 horas
         const hourlyData = processHourlyForecast(response.data.list);
         setHourlyData(hourlyData);
-
         setLoading(false);
       } catch (error) {
         setError('Hubo un problema obteniendo los datos del clima.');
@@ -40,9 +34,25 @@ function Weather() {
     };
 
     fetchWeatherData();
-  }, []);
+  }, [coordinates]);
 
-  // Función para procesar los datos por día
+  const handleCityChange = (event) => {
+    setCity(event.target.value);
+  };
+
+  const searchCity = async () => {
+    try {
+      const response = await axios.get(
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`
+      );
+      const { coord } = response.data;
+      console.log(coord);
+      setCoordinates({ lat: coord.lat, lon: coord.lon });
+    } catch (error) {
+      setError('No se pudo encontrar la ciudad.');
+    }
+  };
+
   const processDailyForecast = (list) => {
     const daily = {};
     list.forEach((item) => {
@@ -59,7 +69,7 @@ function Weather() {
           temp_min: item.main.temp_min,
           rain: item.rain ? item.rain['3h'] || 0 : 0,
           humidity: item.main.humidity,
-          wind_speed: item.wind.speed*3.6,
+          wind_speed: item.wind.speed * 3.6,
           wind_deg: item.wind.deg,
           weather: item.weather[0],
         };
@@ -68,7 +78,6 @@ function Weather() {
         daily[day].temp_min = Math.min(daily[day].temp_min, item.main.temp_min);
         daily[day].rain += item.rain ? item.rain['3h'] || 0 : 0;
       }
-      // Si la hora es las 15:00, guarda el icono de las 15:00
       if (date.getHours() === 15 || date.getHours() === 14) {
         daily[day].weather = item.weather[0];
       }
@@ -80,9 +89,7 @@ function Weather() {
     }));
   };
 
-  // Función para procesar los datos cada 3 horas
   const processHourlyForecast = (list) => {
-    console.log(list);
     return list.map((item) => {
       const date = new Date(item.dt * 1000);
       return {
@@ -95,23 +102,26 @@ function Weather() {
         temp: item.main.temp,
         rain: item.rain ? item.rain['3h'] || 0 : 0,
         humidity: item.main.humidity,
-        wind_speed: item.wind.speed*3.6,
+        wind_speed: item.wind.speed * 3.6,
         wind_deg: item.wind.deg,
         weather: item.weather[0],
       };
     });
   };
 
-  // Manejar vista de días
   const handleDays = () => {
     setViewMode('days');
   };
 
-  // Manejar vista de horas
   const handleHours = () => {
     setViewMode('hours');
   };
-
+  const handleKeyPress = (e, callback) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      callback(e);
+    }
+  };
   return (
     <>
       <div>
@@ -119,10 +129,24 @@ function Weather() {
       </div>
       <h1 className="read-the-docs titulo">Weather</h1>
       <div>
-        <button className="button_normal" style={{ width: '146px', padding: '0.6em 0.5em', marginTop: '2px' }} onClick={handleDays}>
+      <div className="input-weather">
+          <input
+            id='login_1'
+            required
+            type="text"
+            name="text"
+            autoComplete="off"
+            className="input"
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
+            onKeyDown={(e) => handleKeyPress(e, searchCity)}
+          />
+          <label htmlFor="login_1" className="user-label-weather">Find City - Enter to Find</label>
+        </div>
+        <button className="button_normal button-weather" onClick={handleDays}>
           Days
         </button>
-        <button className="button_normal" style={{ width: '146px', padding: '0.6em 0.5em', marginTop: '2px' }} onClick={handleHours}>
+        <button className="button_normal button-weather" onClick={handleHours}>
           Hours
         </button>
       </div>
@@ -154,7 +178,7 @@ function Weather() {
                   <div className="forecast-details-2">
                     <span className="forecast-rain">🌧️ {forecast.rain ? forecast.rain.toFixed(1) : 0} mm</span>
                     <span className="forecast-wind" style={{ display: 'flex', alignItems: 'center' }}>
-                      <span style={{ transform: `rotate(${forecast.wind_deg+90}deg)`, display: 'inline-block' }}>💨</span>
+                      <span style={{ transform: `rotate(${forecast.wind_deg + 90}deg)`, display: 'inline-block' }}>💨</span>
                       <span style={{ marginLeft: '5px'}}> {forecast.wind_speed.toFixed(0)} km/h</span>
                     </span>
                   </div>
@@ -187,7 +211,7 @@ function Weather() {
                   <div className="forecast-details-2">
                     <span className="forecast-rain">🌧️ {forecast.rain ? forecast.rain.toFixed(1) : 0} mm</span>
                     <span className="forecast-wind" style={{ display: 'flex', alignItems: 'center' }}>
-                      <span style={{ transform: `rotate(${forecast.wind_deg+90}deg)`, display: 'inline-block' }}>💨</span>
+                      <span style={{ transform: `rotate(${forecast.wind_deg + 90}deg)`, display: 'inline-block' }}>💨</span>
                       <span style={{ marginLeft: '5px'}}> {forecast.wind_speed.toFixed(0)} km/h</span>
                     </span>
                   </div>

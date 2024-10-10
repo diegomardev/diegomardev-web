@@ -8,7 +8,29 @@
   align-items: center;
   color: #ffffff;
 }
-
+.input-weather{
+  position: relative;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: auto;
+  margin-bottom: 10px;
+  display: flex;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.user-label-weather{
+  position: absolute;
+  color: #888;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4,0,0.2,1);
+  text-align: center;
+  left: 17px;
+}
+.button-weather{
+  width: 147px;
+  height: 45px;
+}
 .forecast-list {
   width: 80%;
   max-width: 700px;
