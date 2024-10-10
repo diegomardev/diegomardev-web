@@ -9,6 +9,7 @@ function Weather() {
   const [hourlyData, setHourlyData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [errorCity, setErrorCity] = useState(null);
   const [viewMode, setViewMode] = useState('days'); // Estado para cambiar entre días y horas
   const [city, setCity] = useState('A Coruña'); // Ciudad inicial
   const [coordinates, setCoordinates] = useState({ lat: '43.3713', lon: '-8.396' });
@@ -28,7 +29,7 @@ function Weather() {
         setHourlyData(hourlyData);
         setLoading(false);
       } catch (error) {
-        setError('Hubo un problema obteniendo los datos del clima.');
+        setError('There was a problem fetching the weather data...');
         setLoading(false);
       }
     };
@@ -42,6 +43,7 @@ function Weather() {
 
   const searchCity = async () => {
     try {
+      setErrorCity(null);
       const response = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`
       );
@@ -49,7 +51,7 @@ function Weather() {
       console.log(coord);
       setCoordinates({ lat: coord.lat, lon: coord.lon });
     } catch (error) {
-      setError('No se pudo encontrar la ciudad.');
+      setErrorCity('❌');
     }
   };
 
@@ -142,6 +144,7 @@ function Weather() {
             onKeyDown={(e) => handleKeyPress(e, searchCity)}
           />
           <label htmlFor="login_1" className="user-label-weather">Find City - Enter to Find</label>
+          {errorCity && <p style={{ marginLeft: '5px'}}>{errorCity}</p>}
         </div>
         <button className="button_normal button-weather" onClick={handleDays}>
           Days
@@ -151,7 +154,7 @@ function Weather() {
         </button>
       </div>
       <div className="weather-container">
-        {loading && <p>Cargando...</p>}
+        {loading && <p>Loading...</p>}
         {error && <p>{error}</p>}
 
         {viewMode === 'days' && weatherData && (
