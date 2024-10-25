@@ -42,7 +42,7 @@ function Apps() {
       <button className="botones_juegos my-button unit_converter_text" onClick={app7}>📟 Calculators 📟</button>
       <button className="botones_juegos my-button map_text" onClick={app8}>🗺️ Map 🗺️</button>
       <button className="botones_juegos my-button birthdaycake_text" onClick={app9}>🎂 Birthday Cake 🎂</button>
-      <button className="botones_juegos my-button threejs_text" onClick={app10}>🌐 Three.js 🌐</button>
+      <button className="botones_juegos my-button threejs_text" onClick={app10}>🌐 3D STL Viewer 🌐</button>
       <button className="botones_juegos my-button chat_text" onClick={app11}>💬 Chat 💬</button>
       <button className="botones_juegos my-button chat_text" onClick={app12}> Sorteo </button>
       <button className="botones_juegos my-button chat_text" onClick={app13}>🐉 Pokedex 🐉</button>
