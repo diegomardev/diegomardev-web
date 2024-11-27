@@ -1,0 +1,30 @@
+.styled-table-dino {
+  width: 70%;
+  border-collapse: separate; /* Cambiado a "separate" */
+  border-spacing: 0; /* Asegura que no haya espacio entre las celdas */
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #585858;
+  border-radius: 10px; /* Aplica bordes redondeados */
+  overflow: hidden; /* Asegura que el contenido no sobresalga */
+  display: inline-table;
+}
+
+.styled-table-dino thead tr {
+  background-color: #3f3f3f;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.styled-table-dino th,
+.styled-table-dino td {
+  padding: 12px 15px;
+}
+
+.styled-table-dino tbody tr {
+  border-bottom: 1px solid #585858;
+}
+
+.styled-table-dino tbody tr:nth-of-type(even) {
+  background-color: #2e2a2a;
+}
