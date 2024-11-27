@@ -8,6 +8,7 @@
   border-radius: 10px; /* Aplica bordes redondeados */
   overflow: hidden; /* Asegura que el contenido no sobresalga */
   display: inline-table;
+  max-width: 600px;
 }
 
 .styled-table-dino thead tr {
