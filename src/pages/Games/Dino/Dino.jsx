@@ -69,7 +69,7 @@ const DinoGame = () => {
       // Nombre de la tabla que deseas leer
       const tableName = 'Top_Score_Dino';
       // Realiza la consulta para obtener los datos
-      const { data, error } = await supabase.from(tableName).select().order('column_score', { ascending: false }).limit(10);
+      const { data, error } = await supabase.from(tableName).select().order('column_score', { ascending: false }).limit(5);
       if (error) {throw error;}
       setTopScores(data);
       //console.log('Datos leídos correctamente:', data);
@@ -96,10 +96,10 @@ const DinoGame = () => {
           if (error) {
             throw error;
           }
-          console.log(`La puntuación de ${playerName}(${newScore}) se actualizó correctamente.`);
+          //console.log(`La puntuación de ${playerName}(${newScore}) se actualizó correctamente.`);
           leerDatos();
         } else {
-          console.log(`La puntuación actual de ${playerName}(${currentScore}) es igual o mayor que la nueva puntuación(${newScore}).`);
+          //console.log(`La puntuación actual de ${playerName}(${currentScore}) es igual o mayor que la nueva puntuación(${newScore}).`);
         }
       } else {
         // Si la fila no existe, crea una nueva fila con el nombre y puntuación
@@ -118,18 +118,19 @@ const DinoGame = () => {
     }
   }
   return (
-    <div style={{maxWidth: '100%', width: '100%', margin: '0 auto' }}>
+    <div>
       <Navbar />
-      <h1 className="read-the-docs">Dino Game</h1>
-      <div ref={dinoRef}>
+      <h1 className="read-the-docs" style={{marginTop: "10px", marginBottom: "0px"}}>Dino Game</h1>
+      <div style={{marginTop: '-40px'}} ref={dinoRef}>
         <ChromeDinoGame />
       </div>
-      <h2>Final Score: {score}</h2>
+      <h2 style={{margin: '0'}}>Space to Start!🦖</h2>
+      <h2 style={{margin: '0', marginBottom: '20px'}}>Login to save your score!</h2>
       <div>
         <table className="styled-table-dino">
           <thead>
             <tr>
-              <th>Top Player</th>
+              <th>Top Players</th>
               <th>Scores</th>
             </tr>
           </thead>

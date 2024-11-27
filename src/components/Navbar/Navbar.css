@@ -3,7 +3,7 @@
   /* background: linear-gradient(45deg, #224aff, #34bb5d, #aace28,#da1d88, #da1d88); */
   background: linear-gradient(45deg, #2b2b2b, #525252);
   height: 60px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
