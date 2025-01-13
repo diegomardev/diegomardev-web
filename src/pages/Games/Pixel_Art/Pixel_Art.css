@@ -8,7 +8,11 @@
   justify-content: center;
   margin-top: 20px;
 }
-
+.color-exac-palette {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .color-option {
   width: 30px;
   height: 30px;

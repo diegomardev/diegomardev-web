@@ -5,6 +5,7 @@ import Navbar from '../../../components/Navbar/Navbar';
 import TOKENS from '../../../../data/constants';
 import './Pixel_Art.css';
 import { IconHeart, IconHeartFilled, IconBrush, IconHeartCode } from '@tabler/icons-react';
+import { color } from 'framer-motion';
 
 const supabaseUrl = TOKENS.SUPABASE.URL;
 const supabaseKey = TOKENS.SUPABASE.KEY;
@@ -185,6 +186,17 @@ const Pixel_Art = () => {
           />
         ))}
       </div>
+      <div className="color-exac-palette">
+        <h3 style={{marginRight: "10px"}}>Select Custom Color</h3>
+        <input
+        style={{width: "44px", height: "44px"}}
+        type="color"
+        value={selectedColor}
+        onChange={(e) => setSelectedColor(e.target.value)}
+        >
+        </input>
+      </div>
+      
     </div>
   );
 };
