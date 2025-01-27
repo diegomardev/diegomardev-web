@@ -64,6 +64,38 @@ const DinoGame = () => {
     actualizarPuntuacion(playerName,score);
   }, [score]);
 
+  // Función para enviar el evento de "tecla Space" y hacer saltar al Dino
+  const handleJump = () => {
+    // Se crea un evento de teclado "keydown" con la tecla ' '
+    const eventDown = new KeyboardEvent('keydown', {
+      key: ' ',
+      code: 'Space',
+      keyCode: 32,
+      charCode: 32,
+      which: 32,
+      bubbles: true,
+      cancelable: true
+    });
+
+    // Se lanza el evento al documento
+    document.dispatchEvent(eventDown);
+
+    // (Opcional) Si el juego requiere que se suelte la tecla,
+    // podemos despachar un 'keyup' después de un pequeño delay.
+    setTimeout(() => {
+      const eventUp = new KeyboardEvent('keyup', {
+        key: ' ',
+        code: 'Space',
+        keyCode: 32,
+        charCode: 32,
+        which: 32,
+        bubbles: true,
+        cancelable: true
+      });
+      document.dispatchEvent(eventUp);
+    }, 100);
+  };
+
   async function leerDatos() { // Define la función para leer datos
     try {
       // Nombre de la tabla que deseas leer
@@ -124,6 +156,7 @@ const DinoGame = () => {
       <div style={{marginTop: '-40px'}} ref={dinoRef}>
         <ChromeDinoGame />
       </div>
+      <button className='botones_juegos_start'  onMouseDown ={handleJump} > Jump</button>
       <h2 style={{margin: '0'}}>Space to Start/Jump!🦖</h2>
       <h2 style={{margin: '0', marginBottom: '20px'}}>Login to save your score!</h2>
       <div>
