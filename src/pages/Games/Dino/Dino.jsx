@@ -156,7 +156,7 @@ const DinoGame = () => {
       <div style={{marginTop: '-40px'}} ref={dinoRef}>
         <ChromeDinoGame />
       </div>
-      <button className='botones_juegos_start'  onMouseDown ={handleJump} > Jump</button>
+      <button className='botones_juegos_start'  onMouseDown ={handleJump} onTouchStart ={handleJump} > Jump</button>
       <h2 style={{margin: '0'}}>Space to Start/Jump!🦖</h2>
       <h2 style={{margin: '0', marginBottom: '20px'}}>Login to save your score!</h2>
       <div>
