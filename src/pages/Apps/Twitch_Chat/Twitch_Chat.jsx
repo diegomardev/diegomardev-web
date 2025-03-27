@@ -18,7 +18,7 @@ curl -X POST 'https://id.twitch.tv/oauth2/token' \
 
 function mayusPrimeraLetra(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
-}
+} 
 
 function getTwitchAuthorization() {
   let url = "https://id.twitch.tv/oauth2/token?client_id="+clinetId+"&client_secret="+clinetSecret+"&grant_type=client_credentials";
