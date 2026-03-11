@@ -28,6 +28,7 @@ import Chat from './pages/Apps/Chat/Chat'
 import Sorteo from './pages/Apps/Sorteo/Sorteo'
 import Pokedex from './pages/Apps/Pokedex/Pokedex'
 import Weather from './pages/Apps/Weather/Weather'
+import Radio from './pages/Apps/Radio/Radio'
 import Contact from './pages/Contact/Contact'
 import Blog from './pages/Blog/Blog'
 import About from './pages/About/About'
@@ -67,6 +68,7 @@ function App() {
         <Route path="/apps/sorteo" element={<Sorteo />} />
         <Route path="/apps/pokedex" element={<Pokedex />} />
         <Route path="/apps/weather" element={<Weather />} />
+        <Route path="/apps/radio" element={<Radio />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
