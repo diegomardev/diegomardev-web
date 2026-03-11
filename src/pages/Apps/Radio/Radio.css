@@ -27,7 +27,7 @@
   border-radius: 18px;
   padding: 24px 20px;
   min-height: 180px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -43,8 +43,9 @@
 .radio-card__header {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 30px;
   margin-bottom: 28px;
+  margin-left: 28px;
 }
 
 .radio-card__logo-wrapper {
