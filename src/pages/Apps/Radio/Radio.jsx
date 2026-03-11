@@ -13,27 +13,27 @@ function Radio() {
     {
       id: 2,
       name: 'Rock FM',
-      streamUrl: '',
+      streamUrl: 'https://rockfm-cope.flumotion.com/playlist.m3u8',
     },
     {
       id: 3,
       name: 'Europa FM',
-      streamUrl: '',
+      streamUrl: 'https://radio-atres-live.ondacero.es/api/livestream-redirect/EFMAAC.aac',
     },
     {
       id: 4,
       name: 'LOS40',
-      streamUrl: '',
+      streamUrl: 'https://playerservices.streamtheworld.com/api/livestream-redirect/LOS40_SC',
     },
     {
       id: 5,
       name: 'Cadena 100',
-      streamUrl: '',
+      streamUrl: 'https://cadena100-cope.flumotion.com/playlist.m3u8',
     },
     {
       id: 6,
       name: 'Kiss FM',
-      streamUrl: '',
+      streamUrl: 'https://kissfm-cope.flumotion.com/playlist.m3u8',
     },
   ];
 
