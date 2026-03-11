@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import Navbar from '../../../components/Navbar/Navbar';
-import './Los40Classic.css';
+import './Radio.css';
 
 function Los40Classic() {
   const audioRef = useRef(null);
