@@ -33,7 +33,7 @@ function Radio() {
     {
       id: 6,
       name: 'Kiss FM',
-      streamUrl: 'https://kissfm-cope.flumotion.com/playlist.m3u8',
+      streamUrl: 'https://kissfm.kissfmradio.cires21.com/kissfm.mp3',
     },
   ];
 
