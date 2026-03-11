@@ -1,0 +1,45 @@
+.radio-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.radio-player__card {
+  width: 100%;
+  max-width: 700px;
+  padding: 2rem;
+  border-radius: 16px;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.radio-player__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.radio-player__text {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #cfcfcf;
+}
+
+.radio-player__warning {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #ffd166;
+}
+
+.radio-player__audio {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.radio-player__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
