@@ -7,7 +7,7 @@ function Los40Classic() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   // Sustituye esta URL por la URL REAL del stream si la tienes autorizada
-  const streamUrl = '';
+  const streamUrl = 'https://27903.live.streamtheworld.com/LOS40_CLASSIC_SC';
 
   const handlePlay = async () => {
     if (!streamUrl) return;
