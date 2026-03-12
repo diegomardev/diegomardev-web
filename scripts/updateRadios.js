@@ -9,8 +9,6 @@ const __dirname = path.dirname(__filename);
 const RAW_URL =
   'https://raw.githubusercontent.com/LaQuay/TDTChannels/master/RADIO.md';
 
-const DEFAULT_FAVORITES = new Set(['LOS40 Classic', 'Rock FM', 'Europa FM']);
-
 const OUTPUT_PATH = path.join(
   __dirname,
   '../src/assets/radios/radios.json'
@@ -88,11 +86,27 @@ function normalizeCategory(category) {
   return category.trim();
 }
 
+function slugify(text) {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function cleanValue(value) {
+  const trimmed = value.trim();
+  return trimmed === '-' ? '' : trimmed;
+}
+
 function parseMarkdownToRadios(markdown) {
   const lines = markdown.split('\n');
 
   const radios = [];
   let currentCategory = '';
+  let currentRegion = '';
   let id = 1;
 
   for (const rawLine of lines) {
@@ -102,6 +116,12 @@ function parseMarkdownToRadios(markdown) {
 
     if (line.startsWith('## ')) {
       currentCategory = normalizeCategory(line.replace('## ', '').trim());
+      currentRegion = '';
+      continue;
+    }
+
+    if (line.startsWith('### ')) {
+      currentRegion = line.replace('### ', '').trim();
       continue;
     }
 
@@ -115,11 +135,11 @@ function parseMarkdownToRadios(markdown) {
 
     const columns = splitMarkdownRow(line);
 
-    if (columns.length < 4) continue;
+    if (columns.length < 5) continue;
 
-    const [nameCell, streamCell, , logoCell] = columns;
+    const [nameCell, streamCell, , logoCell, epgIdCell] = columns;
 
-    const name = nameCell.trim();
+    const name = cleanValue(nameCell);
     if (!name || name === 'Emisoras') continue;
 
     const streams = extractLinks(streamCell).map((link) => ({
@@ -129,18 +149,52 @@ function parseMarkdownToRadios(markdown) {
     }));
 
     const logo = extractLinks(logoCell)[0]?.url || '';
+    const epgId = cleanValue(epgIdCell);
+    const region = currentCategory === 'Autonómicas' ? currentRegion : '';
+
+    const slug = slugify(
+      `${currentCategory}-${region ? `${region}-` : ''}${name}`
+    );
 
     radios.push({
       id: id++,
       name,
       category: currentCategory || 'General',
+      region,
       logo,
+      epgId,
+      slug,
       streams,
-      favoriteDefault: DEFAULT_FAVORITES.has(name),
     });
   }
 
   return radios;
+}
+
+function addFavoriteKeys(radios) {
+  const epgIdCount = new Map();
+
+  for (const radio of radios) {
+    if (!radio.epgId) continue;
+    epgIdCount.set(radio.epgId, (epgIdCount.get(radio.epgId) || 0) + 1);
+  }
+
+  return radios.map((radio) => {
+    let favoriteKey = '';
+
+    if (radio.epgId && epgIdCount.get(radio.epgId) === 1) {
+      favoriteKey = radio.epgId;
+    } else if (radio.epgId) {
+      favoriteKey = `${radio.epgId}__${radio.slug}`;
+    } else {
+      favoriteKey = radio.slug;
+    }
+
+    return {
+      ...radio,
+      favoriteKey,
+    };
+  });
 }
 
 async function main() {
@@ -150,11 +204,18 @@ async function main() {
 
     console.log('Generando JSON...');
     const radios = parseMarkdownToRadios(markdown);
+    const radiosWithFavoriteKey = addFavoriteKeys(radios);
 
     fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
-    fs.writeFileSync(OUTPUT_PATH, JSON.stringify(radios, null, 2), 'utf8');
+    fs.writeFileSync(
+      OUTPUT_PATH,
+      JSON.stringify(radiosWithFavoriteKey, null, 2),
+      'utf8'
+    );
 
-    console.log(`✅ radios.json generado con ${radios.length} emisoras`);
+    console.log(
+      `✅ radios.json generado con ${radiosWithFavoriteKey.length} emisoras`
+    );
     console.log(`📁 ${OUTPUT_PATH}`);
   } catch (error) {
     console.error('❌ Error:', error.message);
