@@ -4,7 +4,7 @@ import radiosData from '../../../assets/radios/radios.json';
 import './Radio.css';
 
 const RADIOS_PER_PAGE = 9;
-const FAVORITES_STORAGE_KEY = 'favorite_radios';
+const FAVORITES_STORAGE_KEY = 'favorite_radios_keys_v2';
 
 const CATEGORY_PRIORITY = {
   Musicales: 1,
@@ -15,11 +15,25 @@ const CATEGORY_PRIORITY = {
   General: 6,
 };
 
+const DEFAULT_FAVORITE_KEYS = [
+  "Cadena100.Radio",
+  "CadenaDial.Radio",
+  "Los40Classic.Radio",
+  "Los40.Radio",
+  "EuropaFM.Radio",
+  "KissFm.Radio",
+  "autonomicas-galicia-verbena-fm",
+  "autonomicas-c-valenciana-motiva",
+  "RockFM.Radio"];
+
 function Radio() {
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-  const [favoriteIds, setFavoriteIds] = useState([]);
+  const [favoriteKeys, setFavoriteKeys] = useState([]);
   const searchInputRef = useRef(null);
+
+  const getRadioFavoriteKey = (radio) =>
+    radio.favoriteKey || radio.epgId || radio.slug || String(radio.id);
 
   useEffect(() => {
     const savedFavorites = localStorage.getItem(FAVORITES_STORAGE_KEY);
@@ -29,7 +43,7 @@ function Radio() {
         const parsed = JSON.parse(savedFavorites);
 
         if (Array.isArray(parsed)) {
-          setFavoriteIds(parsed);
+          setFavoriteKeys(parsed);
           return;
         }
       } catch (error) {
@@ -37,14 +51,18 @@ function Radio() {
       }
     }
 
-    const defaultFavoriteIds = radiosData
-      .filter((radio) => radio.favoriteDefault)
-      .map((radio) => radio.id);
+    const availableKeys = new Set(
+      radiosData.map((radio) => getRadioFavoriteKey(radio))
+    );
 
-    setFavoriteIds(defaultFavoriteIds);
+    const defaultFavorites = DEFAULT_FAVORITE_KEYS.filter((key) =>
+      availableKeys.has(key)
+    );
+
+    setFavoriteKeys(defaultFavorites);
     localStorage.setItem(
       FAVORITES_STORAGE_KEY,
-      JSON.stringify(defaultFavoriteIds)
+      JSON.stringify(defaultFavorites)
     );
   }, []);
 
@@ -53,11 +71,13 @@ function Radio() {
     setCurrentPage(1);
   };
 
-  const toggleFavorite = (radioId) => {
-    setFavoriteIds((prev) => {
-      const updated = prev.includes(radioId)
-        ? prev.filter((id) => id !== radioId)
-        : [...prev, radioId];
+  const toggleFavorite = (radio) => {
+    const radioKey = getRadioFavoriteKey(radio);
+
+    setFavoriteKeys((prev) => {
+      const updated = prev.includes(radioKey)
+        ? prev.filter((key) => key !== radioKey)
+        : [...prev, radioKey];
 
       localStorage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify(updated));
       return updated;
@@ -70,8 +90,8 @@ function Radio() {
     );
 
     return [...filtered].sort((a, b) => {
-      const aFav = favoriteIds.includes(a.id);
-      const bFav = favoriteIds.includes(b.id);
+      const aFav = favoriteKeys.includes(getRadioFavoriteKey(a));
+      const bFav = favoriteKeys.includes(getRadioFavoriteKey(b));
 
       if (aFav && !bFav) return -1;
       if (!aFav && bFav) return 1;
@@ -85,7 +105,7 @@ function Radio() {
 
       return a.name.localeCompare(b.name, 'es', { sensitivity: 'base' });
     });
-  }, [searchTerm, favoriteIds]);
+  }, [searchTerm, favoriteKeys]);
 
   const totalPages = Math.ceil(sortedRadios.length / RADIOS_PER_PAGE);
 
@@ -188,7 +208,8 @@ function Radio() {
         <div className="radio-grid">
           {paginatedRadios.length > 0 ? (
             paginatedRadios.map((radio) => {
-              const isFavorite = favoriteIds.includes(radio.id);
+              const radioKey = getRadioFavoriteKey(radio);
+              const isFavorite = favoriteKeys.includes(radioKey);
               const mainStream = getMainStream(radio);
 
               return (
@@ -198,7 +219,7 @@ function Radio() {
                     className={`radio-card__favorite ${
                       isFavorite ? 'active' : ''
                     }`}
-                    onClick={() => toggleFavorite(radio.id)}
+                    onClick={() => toggleFavorite(radio)}
                     aria-label={
                       isFavorite
                         ? `Quitar ${radio.name} de favoritos`
@@ -226,7 +247,9 @@ function Radio() {
                     <div className="radio-card__info">
                       <h2 className="radio-card__title">{radio.name}</h2>
                       <span className="radio-card__category">
-                        {radio.category}
+                        {radio.region
+                          ? `${radio.category} · ${radio.region}`
+                          : radio.category}
                       </span>
                     </div>
                   </div>
@@ -248,18 +271,8 @@ function Radio() {
             </div>
           )}
         </div>
-
         {totalPages > 1 && (
           <div className="radio-pagination">
-            <button
-              type="button"
-              className="radio-pagination__btn"
-              onClick={() => handlePageChange(currentPage - 1)}
-              disabled={currentPage === 1}
-            >
-              Anterior
-            </button>
-
             <div className="radio-pagination__numbers">
               {getVisiblePages().map((item) => {
                 if (typeof item === 'string') {
@@ -284,15 +297,6 @@ function Radio() {
                 );
               })}
             </div>
-
-            <button
-              type="button"
-              className="radio-pagination__btn"
-              onClick={() => handlePageChange(currentPage + 1)}
-              disabled={currentPage === totalPages}
-            >
-              Siguiente
-            </button>
           </div>
         )}
       </div>
