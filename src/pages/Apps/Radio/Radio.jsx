@@ -1,7 +1,43 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState, useCallback } from 'react';
 import Navbar from '../../../components/Navbar/Navbar';
 import radiosData from '../../../assets/radios/radios.json';
 import './Radio.css';
+
+function RadioPlayer({ streamUrl }) {
+  const audioRef = useRef(null);
+
+  const handleEnded = useCallback(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    // Recarga el src y vuelve a reproducir desde el inicio del stream
+    audio.load();
+    audio.play().catch(() => {});
+  }, []);
+
+  const handleError = useCallback(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    // Espera un momento y reintenta en caso de error de red
+    setTimeout(() => {
+      audio.load();
+      audio.play().catch(() => {});
+    }, 3000);
+  }, []);
+
+  return (
+    <audio
+      ref={audioRef}
+      controls
+      preload="none"
+      className="radio-card__audio"
+      onEnded={handleEnded}
+      onError={handleError}
+    >
+      <source src={streamUrl} />
+      Tu navegador no soporta audio HTML5.
+    </audio>
+  );
+}
 
 const RADIOS_PER_PAGE = 9;
 const FAVORITES_STORAGE_KEY = 'favorite_radios_keys_v2';
@@ -255,10 +291,7 @@ function Radio() {
                   </div>
 
                   {mainStream ? (
-                    <audio controls preload="none" className="radio-card__audio">
-                      <source src={mainStream.url} />
-                      Tu navegador no soporta audio HTML5.
-                    </audio>
+                    <RadioPlayer streamUrl={mainStream.url} />
                   ) : (
                     <div className="radio-card__empty">Stream no disponible</div>
                   )}
