@@ -4123,7 +4123,7 @@
     "category": "Autonómicas",
     "region": "Aragón",
     "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
-    "epgId": "",
+    "epgId": "RNE.Radio",
     "slug": "autonomicas-aragon-radio-nacional-aragon",
     "streams": [
       {
@@ -4132,7 +4132,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne1/ara/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-aragon-radio-nacional-aragon"
+    "favoriteKey": "RNE.Radio__autonomicas-aragon-radio-nacional-aragon"
   },
   {
     "id": 236,
@@ -4140,7 +4140,7 @@
     "category": "Autonómicas",
     "region": "Aragón",
     "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
-    "epgId": "",
+    "epgId": "RNE5.Radio",
     "slug": "autonomicas-aragon-radio-5-aragon",
     "streams": [
       {
@@ -4149,7 +4149,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne5/zgz/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-aragon-radio-5-aragon"
+    "favoriteKey": "RNE5.Radio__autonomicas-aragon-radio-5-aragon"
   },
   {
     "id": 237,
@@ -5301,7 +5301,7 @@
     "category": "Autonómicas",
     "region": "Cantabria",
     "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
-    "epgId": "",
+    "epgId": "RNE.Radio",
     "slug": "autonomicas-cantabria-radio-nacional-cantabria",
     "streams": [
       {
@@ -5310,7 +5310,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne1/ctb/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-cantabria-radio-nacional-cantabria"
+    "favoriteKey": "RNE.Radio__autonomicas-cantabria-radio-nacional-cantabria"
   },
   {
     "id": 305,
@@ -5318,7 +5318,7 @@
     "category": "Autonómicas",
     "region": "Cantabria",
     "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
-    "epgId": "",
+    "epgId": "RNE5.Radio",
     "slug": "autonomicas-cantabria-radio-5-cantabria",
     "streams": [
       {
@@ -5327,7 +5327,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne5/ctb/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-cantabria-radio-5-cantabria"
+    "favoriteKey": "RNE5.Radio__autonomicas-cantabria-radio-5-cantabria"
   },
   {
     "id": 306,
@@ -5658,7 +5658,7 @@
     "category": "Autonómicas",
     "region": "Castilla-La Mancha",
     "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
-    "epgId": "",
+    "epgId": "RNE.Radio",
     "slug": "autonomicas-castilla-la-mancha-radio-nacional-castilla-la-mancha",
     "streams": [
       {
@@ -5667,7 +5667,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne1/clm/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-castilla-la-mancha-radio-nacional-castilla-la-mancha"
+    "favoriteKey": "RNE.Radio__autonomicas-castilla-la-mancha-radio-nacional-castilla-la-mancha"
   },
   {
     "id": 326,
@@ -5675,7 +5675,7 @@
     "category": "Autonómicas",
     "region": "Castilla-La Mancha",
     "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
-    "epgId": "",
+    "epgId": "RNE5.Radio",
     "slug": "autonomicas-castilla-la-mancha-radio-5-castilla-la-mancha",
     "streams": [
       {
@@ -5684,7 +5684,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne5/tol/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-castilla-la-mancha-radio-5-castilla-la-mancha"
+    "favoriteKey": "RNE5.Radio__autonomicas-castilla-la-mancha-radio-5-castilla-la-mancha"
   },
   {
     "id": 327,
@@ -6371,7 +6371,7 @@
     "name": "Radio Serranía",
     "category": "Autonómicas",
     "region": "Castilla-La Mancha",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNnacipw8b-DXWbR9fOFT5EwWOd3-QFrv0zdUHTlnh6Q&s",
+    "logo": "https://play-lh.googleusercontent.com/4QQwgiAxHgttu-Cnz2zlypFKnvevz1v30xYi0qaAzzAhwZnfZ8UszPapSCarQeCEIg=s200",
     "epgId": "",
     "slug": "autonomicas-castilla-la-mancha-radio-serrania",
     "streams": [
@@ -6389,7 +6389,7 @@
     "category": "Autonómicas",
     "region": "Castilla y León",
     "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
-    "epgId": "",
+    "epgId": "RNE.Radio",
     "slug": "autonomicas-castilla-y-leon-radio-nacional-castilla-y-leon",
     "streams": [
       {
@@ -6398,7 +6398,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne1/cyl/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-castilla-y-leon-radio-nacional-castilla-y-leon"
+    "favoriteKey": "RNE.Radio__autonomicas-castilla-y-leon-radio-nacional-castilla-y-leon"
   },
   {
     "id": 369,
@@ -6406,7 +6406,7 @@
     "category": "Autonómicas",
     "region": "Castilla y León",
     "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
-    "epgId": "",
+    "epgId": "RNE5.Radio",
     "slug": "autonomicas-castilla-y-leon-radio-5-castilla-y-leon",
     "streams": [
       {
@@ -6415,7 +6415,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne5/vll/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-castilla-y-leon-radio-5-castilla-y-leon"
+    "favoriteKey": "RNE5.Radio__autonomicas-castilla-y-leon-radio-5-castilla-y-leon"
   },
   {
     "id": 370,
@@ -7279,7 +7279,7 @@
       {
         "label": "stream",
         "type": "stream",
-        "url": "https://cast2.vulnerados.es:8102/stream"
+        "url": "https://sonic2.sistemahost.es:8010/stream"
       }
     ],
     "favoriteKey": "autonomicas-castilla-y-leon-fabulosa-fm"
@@ -7414,7 +7414,7 @@
     "category": "Autonómicas",
     "region": "Cataluña",
     "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
-    "epgId": "",
+    "epgId": "RNE.Radio",
     "slug": "autonomicas-cataluna-radio-nacional-catalunya",
     "streams": [
       {
@@ -7423,7 +7423,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne1/cat/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-cataluna-radio-nacional-catalunya"
+    "favoriteKey": "RNE.Radio__autonomicas-cataluna-radio-nacional-catalunya"
   },
   {
     "id": 429,
@@ -7448,7 +7448,7 @@
     "category": "Autonómicas",
     "region": "Cataluña",
     "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
-    "epgId": "",
+    "epgId": "RNE5.Radio",
     "slug": "autonomicas-cataluna-radio-5-catalunya",
     "streams": [
       {
@@ -7457,7 +7457,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne5/bcn/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-cataluna-radio-5-catalunya"
+    "favoriteKey": "RNE5.Radio__autonomicas-cataluna-radio-5-catalunya"
   },
   {
     "id": 431,
@@ -8400,7 +8400,7 @@
       {
         "label": "stream",
         "type": "stream",
-        "url": "https://node-26.zeno.fm/gta5xkfvbrruv"
+        "url": "https://streaming0103.sonicpanelradio.com/8248/stream"
       }
     ],
     "favoriteKey": "autonomicas-cataluna-actuality-fm"
@@ -8992,7 +8992,7 @@
     "category": "Autonómicas",
     "region": "Ceuta",
     "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
-    "epgId": "",
+    "epgId": "RNE.Radio",
     "slug": "autonomicas-ceuta-radio-nacional-ceuta",
     "streams": [
       {
@@ -9001,7 +9001,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne1/ceu/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-ceuta-radio-nacional-ceuta"
+    "favoriteKey": "RNE.Radio__autonomicas-ceuta-radio-nacional-ceuta"
   },
   {
     "id": 518,
@@ -9009,7 +9009,7 @@
     "category": "Autonómicas",
     "region": "Ceuta",
     "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
-    "epgId": "",
+    "epgId": "RNE5.Radio",
     "slug": "autonomicas-ceuta-radio-5-ceuta",
     "streams": [
       {
@@ -9018,7 +9018,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne5/ceu/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-ceuta-radio-5-ceuta"
+    "favoriteKey": "RNE5.Radio__autonomicas-ceuta-radio-5-ceuta"
   },
   {
     "id": 519,
@@ -9077,7 +9077,7 @@
     "category": "Autonómicas",
     "region": "C. de Madrid",
     "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
-    "epgId": "",
+    "epgId": "RNE.Radio",
     "slug": "autonomicas-c-de-madrid-radio-nacional-madrid",
     "streams": [
       {
@@ -9086,7 +9086,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne1/mad/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-c-de-madrid-radio-nacional-madrid"
+    "favoriteKey": "RNE.Radio__autonomicas-c-de-madrid-radio-nacional-madrid"
   },
   {
     "id": 523,
@@ -9094,7 +9094,7 @@
     "category": "Autonómicas",
     "region": "C. de Madrid",
     "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
-    "epgId": "",
+    "epgId": "RNE5.Radio",
     "slug": "autonomicas-c-de-madrid-radio-5-madrid",
     "streams": [
       {
@@ -9103,7 +9103,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne5/mad/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-c-de-madrid-radio-5-madrid"
+    "favoriteKey": "RNE5.Radio__autonomicas-c-de-madrid-radio-5-madrid"
   },
   {
     "id": 524,
@@ -10012,7 +10012,7 @@
     "category": "Autonómicas",
     "region": "C. Foral de Navarra",
     "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
-    "epgId": "",
+    "epgId": "RNE.Radio",
     "slug": "autonomicas-c-foral-de-navarra-radio-nacional-navarra",
     "streams": [
       {
@@ -10021,7 +10021,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne1/nav/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-c-foral-de-navarra-radio-nacional-navarra"
+    "favoriteKey": "RNE.Radio__autonomicas-c-foral-de-navarra-radio-nacional-navarra"
   },
   {
     "id": 578,
@@ -10029,7 +10029,7 @@
     "category": "Autonómicas",
     "region": "C. Foral de Navarra",
     "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
-    "epgId": "",
+    "epgId": "RNE5.Radio",
     "slug": "autonomicas-c-foral-de-navarra-radio-5-navarra",
     "streams": [
       {
@@ -10038,7 +10038,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne5/nav/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-c-foral-de-navarra-radio-5-navarra"
+    "favoriteKey": "RNE5.Radio__autonomicas-c-foral-de-navarra-radio-5-navarra"
   },
   {
     "id": 579,
@@ -10323,7 +10323,7 @@
     "category": "Autonómicas",
     "region": "C. Valenciana",
     "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
-    "epgId": "",
+    "epgId": "RNE.Radio",
     "slug": "autonomicas-c-valenciana-radio-nacional-comunidad-valenciana",
     "streams": [
       {
@@ -10332,7 +10332,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne1/val/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-c-valenciana-radio-nacional-comunidad-valenciana"
+    "favoriteKey": "RNE.Radio__autonomicas-c-valenciana-radio-nacional-comunidad-valenciana"
   },
   {
     "id": 596,
@@ -10340,7 +10340,7 @@
     "category": "Autonómicas",
     "region": "C. Valenciana",
     "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
-    "epgId": "",
+    "epgId": "RNE5.Radio",
     "slug": "autonomicas-c-valenciana-radio-5-comunidad-valenciana",
     "streams": [
       {
@@ -10349,7 +10349,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne5/vlc/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-c-valenciana-radio-5-comunidad-valenciana"
+    "favoriteKey": "RNE5.Radio__autonomicas-c-valenciana-radio-5-comunidad-valenciana"
   },
   {
     "id": 597,
@@ -11942,7 +11942,7 @@
       {
         "label": "stream",
         "type": "stream",
-        "url": "https://stream.radio90.fm:2002/web"
+        "url": "https://azura.radio90.fm/listen/radio90/stream"
       }
     ],
     "favoriteKey": "autonomicas-c-valenciana-radio-90fm"
@@ -12106,7 +12106,7 @@
     "category": "Autonómicas",
     "region": "Extremadura",
     "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
-    "epgId": "",
+    "epgId": "RNE.Radio",
     "slug": "autonomicas-extremadura-radio-nacional-extremadura",
     "streams": [
       {
@@ -12115,7 +12115,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne1/ext/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-extremadura-radio-nacional-extremadura"
+    "favoriteKey": "RNE.Radio__autonomicas-extremadura-radio-nacional-extremadura"
   },
   {
     "id": 700,
@@ -12123,7 +12123,7 @@
     "category": "Autonómicas",
     "region": "Extremadura",
     "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
-    "epgId": "",
+    "epgId": "RNE5.Radio",
     "slug": "autonomicas-extremadura-radio-5-extremadura",
     "streams": [
       {
@@ -12132,7 +12132,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne5/cce/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-extremadura-radio-5-extremadura"
+    "favoriteKey": "RNE5.Radio__autonomicas-extremadura-radio-5-extremadura"
   },
   {
     "id": 701,
@@ -12384,7 +12384,7 @@
       {
         "label": "stream",
         "type": "stream",
-        "url": "http://5.135.183.124:8327/stream"
+        "url": "https://radiotvzafra.es/cadenadial"
       }
     ],
     "favoriteKey": "autonomicas-extremadura-cadena-dial-zafra-rio-bodion"
@@ -12493,28 +12493,11 @@
   },
   {
     "id": 722,
-    "name": "Radio Picariña",
-    "category": "Autonómicas",
-    "region": "Galicia",
-    "logo": "https://graph.facebook.com/aradiogalega/picture?width=200&height=200",
-    "epgId": "",
-    "slug": "autonomicas-galicia-radio-picarina",
-    "streams": [
-      {
-        "label": "m3u8",
-        "type": "m3u8",
-        "url": "https://crtvg-picarina-schlive.flumotion.cloud/crtvglive/smil:channel11PRG.smil/playlist.m3u8"
-      }
-    ],
-    "favoriteKey": "autonomicas-galicia-radio-picarina"
-  },
-  {
-    "id": 723,
     "name": "Radio Nacional Galicia",
     "category": "Autonómicas",
     "region": "Galicia",
     "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
-    "epgId": "",
+    "epgId": "RNE.Radio",
     "slug": "autonomicas-galicia-radio-nacional-galicia",
     "streams": [
       {
@@ -12523,15 +12506,15 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne1/gal/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-galicia-radio-nacional-galicia"
+    "favoriteKey": "RNE.Radio__autonomicas-galicia-radio-nacional-galicia"
   },
   {
-    "id": 724,
+    "id": 723,
     "name": "Radio 5 Galicia",
     "category": "Autonómicas",
     "region": "Galicia",
     "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
-    "epgId": "",
+    "epgId": "RNE5.Radio",
     "slug": "autonomicas-galicia-radio-5-galicia",
     "streams": [
       {
@@ -12540,10 +12523,10 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne5/lcg/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-galicia-radio-5-galicia"
+    "favoriteKey": "RNE5.Radio__autonomicas-galicia-radio-5-galicia"
   },
   {
-    "id": 725,
+    "id": 724,
     "name": "Radio Marca Vigo",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12560,7 +12543,7 @@
     "favoriteKey": "autonomicas-galicia-radio-marca-vigo"
   },
   {
-    "id": 726,
+    "id": 725,
     "name": "Radio Marca Coruña",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12577,7 +12560,7 @@
     "favoriteKey": "autonomicas-galicia-radio-marca-coruna"
   },
   {
-    "id": 727,
+    "id": 726,
     "name": "SER Arosa",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12594,7 +12577,7 @@
     "favoriteKey": "S_Arosa.Radio"
   },
   {
-    "id": 728,
+    "id": 727,
     "name": "SER Baixo Miño",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12611,7 +12594,7 @@
     "favoriteKey": "S_BaixoMino.Radio"
   },
   {
-    "id": 729,
+    "id": 728,
     "name": "SER Coruña",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12628,7 +12611,7 @@
     "favoriteKey": "S_Coruna.Radio"
   },
   {
-    "id": 730,
+    "id": 729,
     "name": "SER Ferrol",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12645,7 +12628,7 @@
     "favoriteKey": "S_Ferrol.Radio"
   },
   {
-    "id": 731,
+    "id": 730,
     "name": "SER Galicia",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12662,7 +12645,7 @@
     "favoriteKey": "S_Galicia.Radio"
   },
   {
-    "id": 732,
+    "id": 731,
     "name": "SER Lugo",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12679,7 +12662,7 @@
     "favoriteKey": "S_Lugo.Radio"
   },
   {
-    "id": 733,
+    "id": 732,
     "name": "SER Nordés",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12696,7 +12679,7 @@
     "favoriteKey": "S_Nordes.Radio"
   },
   {
-    "id": 734,
+    "id": 733,
     "name": "SER Ourense",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12713,7 +12696,7 @@
     "favoriteKey": "S_Ourense.Radio"
   },
   {
-    "id": 735,
+    "id": 734,
     "name": "SER Pontevedra",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12730,7 +12713,7 @@
     "favoriteKey": "S_Pontevedra.Radio"
   },
   {
-    "id": 736,
+    "id": 735,
     "name": "SER Principal Monforte",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12747,7 +12730,7 @@
     "favoriteKey": "S_PrincipalMonforte.Radio"
   },
   {
-    "id": 737,
+    "id": 736,
     "name": "SER Principal Vilalba",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12764,7 +12747,7 @@
     "favoriteKey": "S_PrincipalVilalba.Radio"
   },
   {
-    "id": 738,
+    "id": 737,
     "name": "SER Vigo",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12781,7 +12764,7 @@
     "favoriteKey": "S_Vigo.Radio"
   },
   {
-    "id": 739,
+    "id": 738,
     "name": "COPE A Coruña",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12798,7 +12781,7 @@
     "favoriteKey": "autonomicas-galicia-cope-a-coruna"
   },
   {
-    "id": 740,
+    "id": 739,
     "name": "COPE Lugo",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12815,7 +12798,7 @@
     "favoriteKey": "autonomicas-galicia-cope-lugo"
   },
   {
-    "id": 741,
+    "id": 740,
     "name": "COPE Pontevedra",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12832,7 +12815,7 @@
     "favoriteKey": "autonomicas-galicia-cope-pontevedra"
   },
   {
-    "id": 742,
+    "id": 741,
     "name": "COPE Ferrol",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12849,7 +12832,7 @@
     "favoriteKey": "autonomicas-galicia-cope-ferrol"
   },
   {
-    "id": 743,
+    "id": 742,
     "name": "COPE Ourense",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12866,7 +12849,7 @@
     "favoriteKey": "autonomicas-galicia-cope-ourense"
   },
   {
-    "id": 744,
+    "id": 743,
     "name": "COPE Ribadeo",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12883,7 +12866,7 @@
     "favoriteKey": "autonomicas-galicia-cope-ribadeo"
   },
   {
-    "id": 745,
+    "id": 744,
     "name": "COPE Santiago",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12900,7 +12883,7 @@
     "favoriteKey": "autonomicas-galicia-cope-santiago"
   },
   {
-    "id": 746,
+    "id": 745,
     "name": "COPE Vigo",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12917,7 +12900,7 @@
     "favoriteKey": "autonomicas-galicia-cope-vigo"
   },
   {
-    "id": 747,
+    "id": 746,
     "name": "Onda Cero A Coruña",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12934,7 +12917,7 @@
     "favoriteKey": "OC_ACoruna.Radio"
   },
   {
-    "id": 748,
+    "id": 747,
     "name": "Onda Cero Lugo",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12951,7 +12934,7 @@
     "favoriteKey": "OC_Lugo.Radio"
   },
   {
-    "id": 749,
+    "id": 748,
     "name": "Onda Cero Monforte de Lemos",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12968,7 +12951,7 @@
     "favoriteKey": "OC_MonfortedeLemos.Radio"
   },
   {
-    "id": 750,
+    "id": 749,
     "name": "Onda Cero Ourense",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -12985,7 +12968,7 @@
     "favoriteKey": "OC_Ourense.Radio"
   },
   {
-    "id": 751,
+    "id": 750,
     "name": "Onda Cero Pontevedra",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -13002,7 +12985,7 @@
     "favoriteKey": "OC_Pontevedra.Radio"
   },
   {
-    "id": 752,
+    "id": 751,
     "name": "Onda Cero Santiago",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -13019,7 +13002,7 @@
     "favoriteKey": "OC_Santiago.Radio"
   },
   {
-    "id": 753,
+    "id": 752,
     "name": "Onda Cero Vigo",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -13036,7 +13019,7 @@
     "favoriteKey": "OC_Vigo.Radio"
   },
   {
-    "id": 754,
+    "id": 753,
     "name": "LOS40 Classic Vigo",
     "category": "Autonómicas",
     "region": "Galicia",
@@ -13051,6 +13034,23 @@
       }
     ],
     "favoriteKey": "autonomicas-galicia-los40-classic-vigo"
+  },
+  {
+    "id": 754,
+    "name": "Radio Picariña",
+    "category": "Autonómicas",
+    "region": "Galicia",
+    "logo": "https://graph.facebook.com/aradiogalega/picture?width=200&height=200",
+    "epgId": "",
+    "slug": "autonomicas-galicia-radio-picarina",
+    "streams": [
+      {
+        "label": "m3u8",
+        "type": "m3u8",
+        "url": "https://crtvg-picarina-schlive.flumotion.cloud/crtvglive/smil:channel11PRG.smil/playlist.m3u8"
+      }
+    ],
+    "favoriteKey": "autonomicas-galicia-radio-picarina"
   },
   {
     "id": 755,
@@ -13296,7 +13296,7 @@
     "category": "Autonómicas",
     "region": "Illes Balears",
     "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
-    "epgId": "",
+    "epgId": "RNE.Radio",
     "slug": "autonomicas-illes-balears-radio-nacional-islas-baleares",
     "streams": [
       {
@@ -13305,7 +13305,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne1/bal/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-illes-balears-radio-nacional-islas-baleares"
+    "favoriteKey": "RNE.Radio__autonomicas-illes-balears-radio-nacional-islas-baleares"
   },
   {
     "id": 770,
@@ -13313,7 +13313,7 @@
     "category": "Autonómicas",
     "region": "Illes Balears",
     "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
-    "epgId": "",
+    "epgId": "RNE5.Radio",
     "slug": "autonomicas-illes-balears-radio-5-islas-baleares",
     "streams": [
       {
@@ -13322,7 +13322,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne5/pmi/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-illes-balears-radio-5-islas-baleares"
+    "favoriteKey": "RNE5.Radio__autonomicas-illes-balears-radio-5-islas-baleares"
   },
   {
     "id": 771,
@@ -13811,7 +13811,7 @@
     "category": "Autonómicas",
     "region": "La Rioja",
     "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
-    "epgId": "",
+    "epgId": "RNE.Radio",
     "slug": "autonomicas-la-rioja-radio-nacional-la-rioja",
     "streams": [
       {
@@ -13820,7 +13820,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne1/rio/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-la-rioja-radio-nacional-la-rioja"
+    "favoriteKey": "RNE.Radio__autonomicas-la-rioja-radio-nacional-la-rioja"
   },
   {
     "id": 800,
@@ -13828,7 +13828,7 @@
     "category": "Autonómicas",
     "region": "La Rioja",
     "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
-    "epgId": "",
+    "epgId": "RNE5.Radio",
     "slug": "autonomicas-la-rioja-radio-5-la-rioja",
     "streams": [
       {
@@ -13837,7 +13837,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne5/rio/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-la-rioja-radio-5-la-rioja"
+    "favoriteKey": "RNE5.Radio__autonomicas-la-rioja-radio-5-la-rioja"
   },
   {
     "id": 801,
@@ -13998,7 +13998,7 @@
     "category": "Autonómicas",
     "region": "Melilla",
     "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
-    "epgId": "",
+    "epgId": "RNE.Radio",
     "slug": "autonomicas-melilla-radio-nacional-melilla",
     "streams": [
       {
@@ -14007,7 +14007,7 @@
         "url": "https://rnelivestream.rtve.es/rne1/mel/master.m3u8"
       }
     ],
-    "favoriteKey": "autonomicas-melilla-radio-nacional-melilla"
+    "favoriteKey": "RNE.Radio__autonomicas-melilla-radio-nacional-melilla"
   },
   {
     "id": 811,
@@ -14015,7 +14015,7 @@
     "category": "Autonómicas",
     "region": "Melilla",
     "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
-    "epgId": "",
+    "epgId": "RNE5.Radio",
     "slug": "autonomicas-melilla-radio-5-melilla",
     "streams": [
       {
@@ -14024,7 +14024,7 @@
         "url": "https://rnelivestream.rtve.es/rne5/mel/master.m3u8"
       }
     ],
-    "favoriteKey": "autonomicas-melilla-radio-5-melilla"
+    "favoriteKey": "RNE5.Radio__autonomicas-melilla-radio-5-melilla"
   },
   {
     "id": 812,
@@ -14079,40 +14079,6 @@
   },
   {
     "id": 815,
-    "name": "EITB Musika",
-    "category": "Autonómicas",
-    "region": "País Vasco",
-    "logo": "https://graph.facebook.com/eitb/picture?width=200&height=200",
-    "epgId": "",
-    "slug": "autonomicas-pais-vasco-eitb-musika",
-    "streams": [
-      {
-        "label": "m3u8",
-        "type": "m3u8",
-        "url": "https://multimedia.eitb.eus/live-content/eitbmusika-hls/master.m3u8"
-      }
-    ],
-    "favoriteKey": "autonomicas-pais-vasco-eitb-musika"
-  },
-  {
-    "id": 816,
-    "name": "EITB Euskal Kantak",
-    "category": "Autonómicas",
-    "region": "País Vasco",
-    "logo": "https://graph.facebook.com/eitbEuskalKantak/picture?width=200&height=200",
-    "epgId": "",
-    "slug": "autonomicas-pais-vasco-eitb-euskal-kantak",
-    "streams": [
-      {
-        "label": "m3u8",
-        "type": "m3u8",
-        "url": "https://multimedia.eitb.eus/live-content/eitbeuskalkantak-hls/master.m3u8"
-      }
-    ],
-    "favoriteKey": "autonomicas-pais-vasco-eitb-euskal-kantak"
-  },
-  {
-    "id": 817,
     "name": "Radio Vitoria",
     "category": "Autonómicas",
     "region": "País Vasco",
@@ -14129,7 +14095,7 @@
     "favoriteKey": "autonomicas-pais-vasco-radio-vitoria"
   },
   {
-    "id": 818,
+    "id": 816,
     "name": "Gaztea",
     "category": "Autonómicas",
     "region": "País Vasco",
@@ -14146,12 +14112,12 @@
     "favoriteKey": "autonomicas-pais-vasco-gaztea"
   },
   {
-    "id": 819,
+    "id": 817,
     "name": "Radio Nacional País Vasco",
     "category": "Autonómicas",
     "region": "País Vasco",
     "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
-    "epgId": "",
+    "epgId": "RNE.Radio",
     "slug": "autonomicas-pais-vasco-radio-nacional-pais-vasco",
     "streams": [
       {
@@ -14160,15 +14126,15 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne1/eus/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-pais-vasco-radio-nacional-pais-vasco"
+    "favoriteKey": "RNE.Radio__autonomicas-pais-vasco-radio-nacional-pais-vasco"
   },
   {
-    "id": 820,
+    "id": 818,
     "name": "Radio 5 País Vasco",
     "category": "Autonómicas",
     "region": "País Vasco",
     "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
-    "epgId": "",
+    "epgId": "RNE5.Radio",
     "slug": "autonomicas-pais-vasco-radio-5-pais-vasco",
     "streams": [
       {
@@ -14177,10 +14143,10 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne5/vit/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-pais-vasco-radio-5-pais-vasco"
+    "favoriteKey": "RNE5.Radio__autonomicas-pais-vasco-radio-5-pais-vasco"
   },
   {
-    "id": 821,
+    "id": 819,
     "name": "Radio Marca Bilbao",
     "category": "Autonómicas",
     "region": "País Vasco",
@@ -14197,7 +14163,7 @@
     "favoriteKey": "autonomicas-pais-vasco-radio-marca-bilbao"
   },
   {
-    "id": 822,
+    "id": 820,
     "name": "Radio Marca Donostia",
     "category": "Autonómicas",
     "region": "País Vasco",
@@ -14214,7 +14180,7 @@
     "favoriteKey": "autonomicas-pais-vasco-radio-marca-donostia"
   },
   {
-    "id": 823,
+    "id": 821,
     "name": "Radio Marca Vitoria",
     "category": "Autonómicas",
     "region": "País Vasco",
@@ -14231,7 +14197,7 @@
     "favoriteKey": "autonomicas-pais-vasco-radio-marca-vitoria"
   },
   {
-    "id": 824,
+    "id": 822,
     "name": "SER Bilbao",
     "category": "Autonómicas",
     "region": "País Vasco",
@@ -14248,7 +14214,7 @@
     "favoriteKey": "S_Bilbao.Radio"
   },
   {
-    "id": 825,
+    "id": 823,
     "name": "SER Eibar",
     "category": "Autonómicas",
     "region": "País Vasco",
@@ -14265,7 +14231,7 @@
     "favoriteKey": "S_Eibar.Radio"
   },
   {
-    "id": 826,
+    "id": 824,
     "name": "SER Irun",
     "category": "Autonómicas",
     "region": "País Vasco",
@@ -14282,7 +14248,7 @@
     "favoriteKey": "S_Irun.Radio"
   },
   {
-    "id": 827,
+    "id": 825,
     "name": "SER San Sebastián",
     "category": "Autonómicas",
     "region": "País Vasco",
@@ -14299,7 +14265,7 @@
     "favoriteKey": "S_SanSebastian.Radio"
   },
   {
-    "id": 828,
+    "id": 826,
     "name": "SER Vitoria",
     "category": "Autonómicas",
     "region": "País Vasco",
@@ -14316,7 +14282,7 @@
     "favoriteKey": "S_Vitoria.Radio"
   },
   {
-    "id": 829,
+    "id": 827,
     "name": "COPE Bilbao",
     "category": "Autonómicas",
     "region": "País Vasco",
@@ -14333,7 +14299,7 @@
     "favoriteKey": "autonomicas-pais-vasco-cope-bilbao"
   },
   {
-    "id": 830,
+    "id": 828,
     "name": "COPE San Sebastián",
     "category": "Autonómicas",
     "region": "País Vasco",
@@ -14350,7 +14316,7 @@
     "favoriteKey": "autonomicas-pais-vasco-cope-san-sebastian"
   },
   {
-    "id": 831,
+    "id": 829,
     "name": "COPE Vitoria",
     "category": "Autonómicas",
     "region": "País Vasco",
@@ -14367,7 +14333,7 @@
     "favoriteKey": "autonomicas-pais-vasco-cope-vitoria"
   },
   {
-    "id": 832,
+    "id": 830,
     "name": "Onda Cero Bilbao",
     "category": "Autonómicas",
     "region": "País Vasco",
@@ -14384,7 +14350,7 @@
     "favoriteKey": "OC_Bilbao.Radio"
   },
   {
-    "id": 833,
+    "id": 831,
     "name": "Onda Cero San Sebastián",
     "category": "Autonómicas",
     "region": "País Vasco",
@@ -14401,7 +14367,7 @@
     "favoriteKey": "OC_SanSebastian.Radio"
   },
   {
-    "id": 834,
+    "id": 832,
     "name": "Onda Cero Vitoria",
     "category": "Autonómicas",
     "region": "País Vasco",
@@ -14418,7 +14384,7 @@
     "favoriteKey": "OC_Vitoria.Radio"
   },
   {
-    "id": 835,
+    "id": 833,
     "name": "Cadena 100 Gipuzkoa",
     "category": "Autonómicas",
     "region": "País Vasco",
@@ -14429,13 +14395,13 @@
       {
         "label": "stream",
         "type": "stream",
-        "url": "https://server8.emitironline.com:18196/stream"
+        "url": "https://stream.zeno.fm/129gp05ccchvv"
       }
     ],
     "favoriteKey": "autonomicas-pais-vasco-cadena-100-gipuzkoa"
   },
   {
-    "id": 836,
+    "id": 834,
     "name": "Europa FM Gipuzkoa",
     "category": "Autonómicas",
     "region": "País Vasco",
@@ -14450,6 +14416,40 @@
       }
     ],
     "favoriteKey": "autonomicas-pais-vasco-europa-fm-gipuzkoa"
+  },
+  {
+    "id": 835,
+    "name": "EITB Musika",
+    "category": "Autonómicas",
+    "region": "País Vasco",
+    "logo": "https://graph.facebook.com/eitb/picture?width=200&height=200",
+    "epgId": "",
+    "slug": "autonomicas-pais-vasco-eitb-musika",
+    "streams": [
+      {
+        "label": "m3u8",
+        "type": "m3u8",
+        "url": "https://multimedia.eitb.eus/live-content/eitbmusika-hls/master.m3u8"
+      }
+    ],
+    "favoriteKey": "autonomicas-pais-vasco-eitb-musika"
+  },
+  {
+    "id": 836,
+    "name": "EITB Euskal Kantak",
+    "category": "Autonómicas",
+    "region": "País Vasco",
+    "logo": "https://graph.facebook.com/eitbEuskalKantak/picture?width=200&height=200",
+    "epgId": "",
+    "slug": "autonomicas-pais-vasco-eitb-euskal-kantak",
+    "streams": [
+      {
+        "label": "m3u8",
+        "type": "m3u8",
+        "url": "https://multimedia.eitb.eus/live-content/eitbeuskalkantak-hls/master.m3u8"
+      }
+    ],
+    "favoriteKey": "autonomicas-pais-vasco-eitb-euskal-kantak"
   },
   {
     "id": 837,
@@ -14711,7 +14711,7 @@
       {
         "label": "stream",
         "type": "stream",
-        "url": "https://stream.zeno.fm/mpgqwn4h0wzuv"
+        "url": "https://sonic.mediatelekom.net/8476/stream"
       }
     ],
     "favoriteKey": "autonomicas-pais-vasco-fm-musical"
@@ -14807,7 +14807,7 @@
     "category": "Autonómicas",
     "region": "P. de Asturias",
     "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
-    "epgId": "",
+    "epgId": "RNE.Radio",
     "slug": "autonomicas-p-de-asturias-radio-nacional-asturias",
     "streams": [
       {
@@ -14816,7 +14816,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne1/ast/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-p-de-asturias-radio-nacional-asturias"
+    "favoriteKey": "RNE.Radio__autonomicas-p-de-asturias-radio-nacional-asturias"
   },
   {
     "id": 858,
@@ -14824,7 +14824,7 @@
     "category": "Autonómicas",
     "region": "P. de Asturias",
     "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
-    "epgId": "",
+    "epgId": "RNE5.Radio",
     "slug": "autonomicas-p-de-asturias-radio-5-asturias",
     "streams": [
       {
@@ -14833,7 +14833,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne5/ast/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-p-de-asturias-radio-5-asturias"
+    "favoriteKey": "RNE5.Radio__autonomicas-p-de-asturias-radio-5-asturias"
   },
   {
     "id": 859,
@@ -15339,7 +15339,7 @@
     "category": "Autonómicas",
     "region": "R. de Murcia",
     "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
-    "epgId": "",
+    "epgId": "RNE.Radio",
     "slug": "autonomicas-r-de-murcia-radio-nacional-murcia",
     "streams": [
       {
@@ -15348,7 +15348,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne1/mur/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-r-de-murcia-radio-nacional-murcia"
+    "favoriteKey": "RNE.Radio__autonomicas-r-de-murcia-radio-nacional-murcia"
   },
   {
     "id": 889,
@@ -15356,7 +15356,7 @@
     "category": "Autonómicas",
     "region": "R. de Murcia",
     "logo": "https://pbs.twimg.com/profile_images/1405097207339028480/H7nP_7Ti_200x200.jpg",
-    "epgId": "",
+    "epgId": "RNE5.Radio",
     "slug": "autonomicas-r-de-murcia-radio-5-murcia",
     "streams": [
       {
@@ -15365,7 +15365,7 @@
         "url": "https://dispatcher.rndfnk.com/crtve/rne5/mur/mp3/high"
       }
     ],
-    "favoriteKey": "autonomicas-r-de-murcia-radio-5-murcia"
+    "favoriteKey": "RNE5.Radio__autonomicas-r-de-murcia-radio-5-murcia"
   },
   {
     "id": 890,
