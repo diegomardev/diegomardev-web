@@ -3,73 +3,252 @@ import Navbar from '../../../components/Navbar/Navbar';
 import radiosData from '../../../assets/radios/radios.json';
 import './Radio.css';
 
-function RadioPlayer({ streamUrl }) {
-  const audioRef = useRef(null);
-
-  const handleEnded = useCallback(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
-    // Recarga el src y vuelve a reproducir desde el inicio del stream
-    audio.load();
-    audio.play().catch(() => {});
-  }, []);
-
-  const handleError = useCallback(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
-    // Espera un momento y reintenta en caso de error de red
-    setTimeout(() => {
-      audio.load();
-      audio.play().catch(() => {});
-    }, 3000);
-  }, []);
-
-  return (
-    <audio
-      ref={audioRef}
-      controls
-      preload="none"
-      className="radio-card__audio"
-      onEnded={handleEnded}
-      onError={handleError}
-    >
-      <source src={streamUrl} />
-      Tu navegador no soporta audio HTML5.
-    </audio>
-  );
-}
-
+const MAX_GLOBAL_RETRIES = 3;
+const RETRY_DELAY_MS = 3000;
 const RADIOS_PER_PAGE = 9;
 const FAVORITES_STORAGE_KEY = 'favorite_radios_keys_v2';
+const PLAYBACK_STORAGE_KEY = 'radio_playback_state_v1';
 
 const CATEGORY_PRIORITY = {
   Musicales: 1,
   Nacionales: 2,
-  'Autonómicas': 3,
+  Autonómicas: 3,
   Deportivas: 4,
   Infantiles: 5,
   General: 6,
 };
 
 const DEFAULT_FAVORITE_KEYS = [
-  "Cadena100.Radio",
-  "CadenaDial.Radio",
-  "Los40Classic.Radio",
-  "Los40.Radio",
-  "EuropaFM.Radio",
-  "KissFm.Radio",
-  "autonomicas-galicia-verbena-fm",
-  "autonomicas-c-valenciana-motiva",
-  "RockFM.Radio"];
+  'Cadena100.Radio',
+  'CadenaDial.Radio',
+  'Los40Classic.Radio',
+  'Los40.Radio',
+  'EuropaFM.Radio',
+  'KissFm.Radio',
+  'autonomicas-galicia-verbena-fm',
+  'autonomicas-c-valenciana-motiva',
+  'RockFM.Radio',
+];
+
+function readSavedPlayback() {
+  try {
+    const savedPlayback = localStorage.getItem(PLAYBACK_STORAGE_KEY);
+    const parsedPlayback = savedPlayback ? JSON.parse(savedPlayback) : null;
+
+    if (
+      parsedPlayback &&
+      typeof parsedPlayback.radioKey === 'string' &&
+      typeof parsedPlayback.isPlaying === 'boolean'
+    ) {
+      return parsedPlayback;
+    }
+  } catch (error) {
+    console.error('Error leyendo el estado de la radio:', error);
+  }
+
+  return { radioKey: null, isPlaying: false };
+}
+
+function RadioPlayer({
+  playerId,
+  streamUrl,
+  onPlayerPlay,
+  onPlayerPause,
+  shouldAutoPlay,
+  registerPlayer,
+  consumeGlobalRetry,
+}) {
+  const audioRef = useRef(null);
+  const retryTimeoutRef = useRef(null);
+
+  const clearRetryTimeout = useCallback(() => {
+    if (retryTimeoutRef.current) {
+      clearTimeout(retryTimeoutRef.current);
+      retryTimeoutRef.current = null;
+    }
+  }, []);
+
+  const stop = useCallback(() => {
+    clearRetryTimeout();
+
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    audio.pause();
+
+    try {
+      audio.currentTime = 0;
+    } catch {
+      // Algunos streams en directo no permiten mover currentTime
+    }
+  }, [clearRetryTimeout]);
+
+  useEffect(() => {
+    registerPlayer(playerId, { stop });
+
+    return () => {
+      clearRetryTimeout();
+      registerPlayer(playerId, null);
+    };
+  }, [playerId, registerPlayer, stop, clearRetryTimeout]);
+
+  useEffect(() => {
+    if (!shouldAutoPlay) return;
+
+    audioRef.current?.play().catch(() => {});
+  }, [shouldAutoPlay, streamUrl]);
+
+  const resumePlayback = useCallback(() => {
+    if (!shouldAutoPlay) return;
+
+    audioRef.current?.play().catch(() => {});
+  }, [shouldAutoPlay]);
+
+  useEffect(() => {
+    if (!shouldAutoPlay) return undefined;
+
+    const resumeAfterUserInteraction = () => {
+      const audio = audioRef.current;
+      if (!audio) return;
+
+      audio.play().catch(() => {});
+    };
+
+    window.addEventListener('pointerdown', resumeAfterUserInteraction, {
+      once: true,
+    });
+    window.addEventListener('keydown', resumeAfterUserInteraction, {
+      once: true,
+    });
+
+    return () => {
+      window.removeEventListener('pointerdown', resumeAfterUserInteraction);
+      window.removeEventListener('keydown', resumeAfterUserInteraction);
+    };
+  }, [shouldAutoPlay]);
+
+  const attemptRecovery = useCallback(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    clearRetryTimeout();
+
+    const canRetry = consumeGlobalRetry();
+
+    if (!canRetry) {
+      audio.pause();
+      return;
+    }
+
+    retryTimeoutRef.current = window.setTimeout(() => {
+      const currentAudio = audioRef.current;
+      if (!currentAudio) return;
+
+      currentAudio.load();
+      currentAudio.play().catch(() => {});
+    }, RETRY_DELAY_MS);
+  }, [clearRetryTimeout, consumeGlobalRetry]);
+
+  return (
+    <audio
+      ref={audioRef}
+      src={streamUrl}
+      controls
+      preload={shouldAutoPlay ? 'auto' : 'none'}
+      autoPlay={shouldAutoPlay}
+      className="radio-card__audio"
+      onPlay={() => onPlayerPlay(playerId)}
+      onPause={() => onPlayerPause(playerId)}
+      onCanPlay={resumePlayback}
+      onEnded={attemptRecovery}
+      onError={attemptRecovery}
+    >
+      Tu navegador no soporta audio HTML5.
+    </audio>
+  );
+}
 
 function Radio() {
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [favoriteKeys, setFavoriteKeys] = useState([]);
+  const [favoritesLoaded, setFavoritesLoaded] = useState(false);
+  const [savedPlayback] = useState(readSavedPlayback);
+  const [pendingAutoPlayKey, setPendingAutoPlayKey] = useState(
+    savedPlayback.isPlaying ? savedPlayback.radioKey : null
+  );
   const searchInputRef = useRef(null);
+
+  const playersRef = useRef(new Map());
+  const activePlayerIdRef = useRef(null);
+  const globalRetryCountRef = useRef(0);
+  const hasRestoredPageRef = useRef(false);
 
   const getRadioFavoriteKey = (radio) =>
     radio.favoriteKey || radio.epgId || radio.slug || String(radio.id);
+
+  const resetGlobalRetryCount = useCallback(() => {
+    globalRetryCountRef.current = 0;
+  }, []);
+
+  const consumeGlobalRetry = useCallback(() => {
+    if (globalRetryCountRef.current >= MAX_GLOBAL_RETRIES) {
+      return false;
+    }
+
+    globalRetryCountRef.current += 1;
+    return true;
+  }, []);
+
+  const registerPlayer = useCallback((playerId, controls) => {
+    if (!controls) {
+      playersRef.current.delete(playerId);
+      return;
+    }
+
+    playersRef.current.set(playerId, controls);
+  }, []);
+
+  const handlePlayerPlay = useCallback(
+    (playerId) => {
+      const activePlayerId = activePlayerIdRef.current;
+
+      if (activePlayerId && activePlayerId !== playerId) {
+        const previousPlayer = playersRef.current.get(activePlayerId);
+        previousPlayer?.stop();
+      }
+
+      activePlayerIdRef.current = playerId;
+      setPendingAutoPlayKey(null);
+      resetGlobalRetryCount();
+      localStorage.setItem(
+        PLAYBACK_STORAGE_KEY,
+        JSON.stringify({ radioKey: playerId, isPlaying: true })
+      );
+    },
+    [resetGlobalRetryCount]
+  );
+
+  const handlePlayerPause = useCallback((playerId) => {
+    if (activePlayerIdRef.current !== playerId) return;
+
+    localStorage.setItem(
+      PLAYBACK_STORAGE_KEY,
+      JSON.stringify({ radioKey: playerId, isPlaying: false })
+    );
+  }, []);
+
+  useEffect(() => {
+    const handleMouseDownAnywhere = () => {
+      resetGlobalRetryCount();
+    };
+
+    window.addEventListener('mousedown', handleMouseDownAnywhere);
+
+    return () => {
+      window.removeEventListener('mousedown', handleMouseDownAnywhere);
+    };
+  }, [resetGlobalRetryCount]);
 
   useEffect(() => {
     const savedFavorites = localStorage.getItem(FAVORITES_STORAGE_KEY);
@@ -80,6 +259,7 @@ function Radio() {
 
         if (Array.isArray(parsed)) {
           setFavoriteKeys(parsed);
+          setFavoritesLoaded(true);
           return;
         }
       } catch (error) {
@@ -100,6 +280,7 @@ function Radio() {
       FAVORITES_STORAGE_KEY,
       JSON.stringify(defaultFavorites)
     );
+    setFavoritesLoaded(true);
   }, []);
 
   const clearSearch = () => {
@@ -149,6 +330,26 @@ function Radio() {
     const startIndex = (currentPage - 1) * RADIOS_PER_PAGE;
     return sortedRadios.slice(startIndex, startIndex + RADIOS_PER_PAGE);
   }, [sortedRadios, currentPage]);
+
+  useEffect(() => {
+    if (
+      hasRestoredPageRef.current ||
+      !favoritesLoaded ||
+      !savedPlayback.isPlaying
+    ) {
+      return;
+    }
+
+    const savedRadioIndex = sortedRadios.findIndex(
+      (radio) => getRadioFavoriteKey(radio) === savedPlayback.radioKey
+    );
+
+    if (savedRadioIndex >= 0) {
+      setCurrentPage(Math.floor(savedRadioIndex / RADIOS_PER_PAGE) + 1);
+    }
+
+    hasRestoredPageRef.current = true;
+  }, [favoritesLoaded, savedPlayback, sortedRadios]);
 
   useEffect(() => {
     if (currentPage > totalPages && totalPages > 0) {
@@ -291,7 +492,18 @@ function Radio() {
                   </div>
 
                   {mainStream ? (
-                    <RadioPlayer streamUrl={mainStream.url} />
+                    <RadioPlayer
+                      playerId={radioKey}
+                      streamUrl={mainStream.url}
+                      onPlayerPlay={handlePlayerPlay}
+                      onPlayerPause={handlePlayerPause}
+                      shouldAutoPlay={
+                        favoritesLoaded &&
+                        pendingAutoPlayKey === radioKey
+                      }
+                      registerPlayer={registerPlayer}
+                      consumeGlobalRetry={consumeGlobalRetry}
+                    />
                   ) : (
                     <div className="radio-card__empty">Stream no disponible</div>
                   )}
@@ -304,6 +516,7 @@ function Radio() {
             </div>
           )}
         </div>
+
         {totalPages > 1 && (
           <div className="radio-pagination">
             <div className="radio-pagination__numbers">

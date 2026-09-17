@@ -61,6 +61,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://diegomardev.com/games/russian_roulette</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://diegomardev.com/apps/twitch_chat</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -104,5 +109,5 @@
     <loc>https://diegomardev.com/apps/calculators/coordinate_converter</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>
+  </url>  
 </urlset>
