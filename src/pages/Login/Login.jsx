@@ -121,9 +121,9 @@ function Login() {
           setIsLoggedIn(true);
           confetti();
           notify_ok('Logged in');
-          if (new URLSearchParams(location.search).get('returnTo') === 'pixel-art') {
-            navigate('/games/pixel_art');
-          }
+          const returnTo = new URLSearchParams(location.search).get('returnTo');
+          if (returnTo === 'pixel-art') navigate('/games/pixel_art');
+          if (returnTo === 'chat') navigate('/apps/chat');
         } else {
           notify('Incorrect username or password');
         }

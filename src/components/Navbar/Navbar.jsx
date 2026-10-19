@@ -65,7 +65,6 @@ const Navbar = () => {
         <a href='/apps'>Apps</a>
         <a href='/blog'>Blog</a>
         <a href='/contact'>Contact</a>
-        <a href='/about'>About</a>
         {userLogged ? (
           <a href='/login'>{userLogged.charAt(0).toUpperCase()+userLogged.slice(1)}</a>
         ) : (
