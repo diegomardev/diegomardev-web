@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { createClient } from '@supabase/supabase-js';
-import confetti from 'canvas-confetti';
+import { pixelArtSupabase as supabase } from '../../../lib/pixelArtSession';
+import PixelArtGallery from './PixelArtGallery';
 import Navbar from '../../../components/Navbar/Navbar';
-import TOKENS from '../../../../data/constants';
 import './Pixel_Art.css';
-import { IconHeart, IconHeartFilled, IconBrush, IconHeartCode } from '@tabler/icons-react';
-import { color } from 'framer-motion';
+import { IconBrush } from '@tabler/icons-react';
 
-const supabaseUrl = TOKENS.SUPABASE.URL;
-const supabaseKey = TOKENS.SUPABASE.KEY;
-const supabase = createClient(supabaseUrl, supabaseKey);
 
 const colorPalette = [
   '#000000', // Black
@@ -23,12 +18,13 @@ const colorPalette = [
 ];
 
 const Pixel_Art = () => {
-  const [selectedColor, setSelectedColor] = useState('#36C5F0'); // Default color is black
-  const [pixels, setPixels] = useState([]);
-  const [mundial_pixels, setMundial_pixels] = useState([]);
+  const [selectedColor, setSelectedColor] = useState('#36C5F0');
+  const [pixels, setPixels] = useState(() => Array.from({ length: 16 }, () => Array.from({ length: 16 }, () => ['#000000', ''])));
   const [playerName, setPlayerName] = useState('');
   const [hoveredPixel, setHoveredPixel] = useState({ row: -1, col: -1 });
-  const [active, setActive] = useState(false)
+  const [ready, setReady] = useState(false);
+  const [pending, setPending] = useState(false);
+  const [canvasError, setCanvasError] = useState('');
 
   useEffect(() => {
     if(localStorage.getItem('user_logged') !== null){
@@ -38,36 +34,23 @@ const Pixel_Art = () => {
       setPlayerName(localStorage.getItem('playerName'));
     }
   }, []);
-  // Create an empty 16x16 pixel grid
-  async function initializePixels() {
-    const initialPixels = new Array(16).fill(null).map(() => new Array(16).fill(['#000000','Diego']));
-    setPixels(initialPixels);
-    /*
-    const tableName = 'Pixel_Art';
-    const { data, error } = await supabase
-    .from(tableName)
-    .update([{pixel_colors: initialPixels }])
-    .eq('id', 1)
-    .select()
-    if (error) {throw error;}
-    */
-  };
-
   // Handle pixel click and update the color
   async function handlePixelClick(row, col) {
-    const updatedPixels = [...pixels];
-    updatedPixels[row][col] = [selectedColor,playerName];
+    if (!ready || pending) return;
+    const updatedPixels = pixels.map(column => column.map(pixel => [...pixel]));
+    updatedPixels[row][col] = [selectedColor, playerName];
     setPixels(updatedPixels);
-    //console.log([pixels]);
-    
-    const tableName = 'Pixel_Art';
-    const { data, error } = await supabase
-    .from(tableName)
-    .update([{pixel_colors: updatedPixels }])
-    .eq('id', 1)
-    .select()
-    if (error) {throw error;}
-  };
+    setPending(true);
+    setCanvasError('');
+    try {
+      const { data, error } = await supabase.from('Pixel_Art')
+        .update({ pixel_colors: updatedPixels }).eq('id', 1).select('id');
+      if (error || !data?.length) throw error || new Error('Canvas update rejected');
+    } catch {
+      await leerDatos();
+      setCanvasError('Could not update the shared canvas. Please try again.');
+    } finally { setPending(false); }
+  }
 
   async function leerDatos() { // Define la función para leer datos
     try {
@@ -76,12 +59,16 @@ const Pixel_Art = () => {
       // Realiza la consulta para obtener los datos
       const { data, error } = await supabase
       .from(tableName)
-      .select('pixel_colors')
+      .select('pixel_colors').eq('id', 1).single();
       if (error) {throw error;}
       //console.log('Datos leídos correctamente:', data[0].pixel_colors);
-      setPixels(data[0].pixel_colors);
+      if (!Array.isArray(data?.pixel_colors) || data.pixel_colors.length !== 16) throw new Error('Invalid canvas');
+      setPixels(data.pixel_colors);
+      setReady(true);
+      setCanvasError('');
     } catch (error) {
-      console.error('Error al leer datos:', error.message);
+      setReady(false);
+      setCanvasError('Could not load the shared canvas.');
     }
   }
   //Nos subscribimos a la tabla para que nos notifique cuando se haga un cambio 
@@ -95,8 +82,15 @@ const Pixel_Art = () => {
         {
           event: 'UPDATE',
           schema: 'public',
+          table: 'Pixel_Art',
+          filter: 'id=eq.1',
         },
-        (payload) => setPixels(payload.new.pixel_colors)
+        (payload) => {
+          if (Array.isArray(payload.new.pixel_colors)) {
+            setPixels(payload.new.pixel_colors);
+            setReady(true);
+          }
+        }
       )
       .subscribe();
 
@@ -109,7 +103,6 @@ const Pixel_Art = () => {
   // Initialize the pixel grid when the component mounts
   useEffect(() => {
     // Inicializa la cuadrícula de píxeles cuando el componente se monta
-    initializePixels();
     leerDatos();
   }, []);
 
@@ -120,7 +113,7 @@ const Pixel_Art = () => {
     }
   };
   return (
-    <div>
+    <div className="pixel-art-page">
       <div><Navbar /></div>
       <h1 className="read-the-docs" style={{ display: 'flex', justifyContent: 'center'}}>
         <span style={{ color: colorPalette[2] }}>P</span>
@@ -156,7 +149,8 @@ const Pixel_Art = () => {
         />
         <label htmlFor="input_name" className="user-label">Name - Enter to set</label>
       </div>
-      <div className="pixel-grid">
+      {canvasError && <p role="alert">{canvasError} <button className="button_normal" onClick={leerDatos}>Retry</button></p>}
+      <div className="pixel-grid" aria-busy={!ready || pending}>
         {pixels.map((row, rowIndex) => (
           <div key={rowIndex} className="pixel-row">
             {row.map((pixelData, colIndex) => (
@@ -196,7 +190,7 @@ const Pixel_Art = () => {
         >
         </input>
       </div>
-      
+      <PixelArtGallery pixels={pixels} ready={ready} pending={pending} />
     </div>
   );
 };

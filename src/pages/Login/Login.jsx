@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import diegomar from '../../assets/users/diegomar.jpg';
 import userpng from '../../assets/users/user.png';
 import confetti from 'canvas-confetti';
@@ -8,16 +9,10 @@ import Atropos from 'atropos';
 import MyCard from './MyCard';
 import { Flip, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { createClient } from '@supabase/supabase-js';
-import TOKENS from '../../../data/constants';
-// Configura tu conexión a Supabase
-//console.log(TOKENS_SUPABASE)
-const supabaseUrl = TOKENS.SUPABASE.URL;
-const supabaseKey = TOKENS.SUPABASE.KEY;
-const supabase = createClient(supabaseUrl, supabaseKey);
-
-
+import { getPixelArtToken, PIXEL_ART_SESSION_KEY, pixelArtSupabase as supabase } from '../../lib/pixelArtSession';
 function Login() {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Estado para controlar el estado de inicio de sesión
   const [isRegister, setIsRegister] = useState(false); // Estado para controlar el estado de inicio de sesión
 
@@ -84,6 +79,9 @@ function Login() {
   const handletoLogin = () => {
     if(isLoggedIn){setIsLoggedIn(false)}
     setIsRegister(false);
+    const token = getPixelArtToken();
+    localStorage.removeItem(PIXEL_ART_SESSION_KEY);
+    if (token) supabase.rpc('pixel_art_logout', { p_token: token }).catch(console.error);
     localStorage.removeItem('user_logged');
   };
   //Función para validar el usuario y la contraseña
@@ -91,14 +89,10 @@ function Login() {
     e.preventDefault();
     try {
       if (userInput.length>=3 && passwordInput.length>=6) {
-        const tableName = 'Users';
-        const { data, error } = await supabase
-          .from(tableName)
-          .select()
-          /* .eq('user', userInput) // Buscar el usuario por nombre de usuario */
-          .or(`user.eq.${userInput},email.eq.${userInput}`)
-          .eq('password', passwordInput) // Y también por contraseña
-          .single(); // Solo esperamos un resultado
+        const { data: session, error } = await supabase.rpc('pixel_art_login', {
+          p_identifier: userInput.trim(), p_password: passwordInput,
+        });
+        const data = session?.profile;
     
         if (error) {
           notify('Incorrect username or password');
@@ -106,12 +100,13 @@ function Login() {
         }
 
         if (data) {
+          localStorage.setItem(PIXEL_ART_SESSION_KEY, session.token);
           localStorage.setItem('user_logged', data.user);
           if (data.profile_image) {
             fetchImage(data);
           }
           else{
-            const { name, last_name, id, user } = data; // Obtener los datos del usuario
+            const { name, last_name, id } = data; // Obtener los datos del usuario
             //console.log(id)
             const newUser = {
               name: name,
@@ -126,6 +121,9 @@ function Login() {
           setIsLoggedIn(true);
           confetti();
           notify_ok('Logged in');
+          if (new URLSearchParams(location.search).get('returnTo') === 'pixel-art') {
+            navigate('/games/pixel_art');
+          }
         } else {
           notify('Incorrect username or password');
         }
@@ -244,7 +242,7 @@ function Login() {
             setShowImageBorder(show_image_border);
             setBorderImageColor(color_image_border);
             setShowShadow(show_image_shadow);
-            setShadowColor(color_image_shadow); 
+            setShadowColor(color_image_shadow);
             setIsLoggedIn(true);
             
           } else {
@@ -259,15 +257,23 @@ function Login() {
     }
   };
   //Función para validar el usuario y la contraseña
-  async function save_login_user(user_logged) {
+  async function save_login_user() {
     
     try {
-      const tableName = 'Users';
+      const token = getPixelArtToken();
+      if (!token) return;
+      const { data: authenticatedUser, error: sessionError } = await supabase.rpc('pixel_art_session_user', { p_token: token });
+      if (sessionError) throw sessionError;
+      if (!authenticatedUser) {
+        localStorage.removeItem(PIXEL_ART_SESSION_KEY);
+        setIsLoggedIn(false);
+        return;
+      }
       const { data, error } = await supabase
-        .from(tableName)
-        .select()
-        .or(`user.eq.${user_logged},email.eq.${user_logged}`)
-        .single(); // Solo esperamos un resultado
+        .from('Users')
+        .select('id,name,last_name,user,profile_image,show_image_border,color_image_border,show_image_shadow,color_image_shadow')
+        .eq('user', authenticatedUser)
+        .single();
       if (error) {
         notify('Please insert username and password');
         return;
@@ -291,7 +297,7 @@ function Login() {
         setShowImageBorder(show_image_border);
         setBorderImageColor(color_image_border);
         setShowShadow(show_image_shadow);
-        setColorShadow(color_image_shadow); 
+        setShadowColor(color_image_shadow);
         setIsLoggedIn(true);
       }
     } catch (error) {

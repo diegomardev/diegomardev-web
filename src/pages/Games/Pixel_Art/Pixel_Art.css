@@ -92,3 +92,24 @@ html.dark .color-option {
 .pixel.active {
   background-color: transparent; /* Fondo negro por defecto */
 }
+.pixel-art-page .pixel-grid {
+  width: min(352px, calc(100% - 24px));
+  margin: 20px auto 0;
+}
+.pixel-art-page .pixel-row { flex: 1; min-width: 0; }
+.pixel-art-page .pixel { width: 100%; height: auto; aspect-ratio: 1; box-sizing: border-box; }
+.pixel-art-page .color-palette { max-width: 352px; margin: 20px auto 0; padding: 0 12px; }
+.pixel-art-page .color-option { flex: 1; max-width: 30px; min-width: 0; height: auto; aspect-ratio: 1; }
+
+/* Keep the editor and saved snapshots together within the desktop viewport. */
+.pixel-art-page > h1 { margin: 14px 0; }
+.pixel-art-page > .input-group { margin-bottom: 4px; }
+.pixel-art-page .pixel-grid { margin-top: 8px; }
+.pixel-art-page .color-palette { margin-top: 12px; }
+.pixel-art-page .color-exac-palette { margin: 6px 0 0; }
+.pixel-art-page .color-exac-palette h3 { margin-top: 0; margin-bottom: 0; }
+@media (min-width: 721px) and (max-height: 960px) {
+  .pixel-art-page .pixel-grid {
+    width: min(352px, calc(100% - 24px), clamp(176px, calc(100svh - 600px), 352px));
+  }
+}
