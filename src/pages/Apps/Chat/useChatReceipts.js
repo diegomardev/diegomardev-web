@@ -4,6 +4,7 @@ import { getPixelArtToken, pixelArtSupabase as supabase } from '../../../lib/pix
 // Polling keeps receipts persistent across reconnects without exposing the
 // receipt table or depending on the project's Realtime publication settings.
 export function useChatReceipts({ username, selectedId, messages, messagePane }) {
+  const [events, setEvents] = useState([]);
   const [statuses, setStatuses] = useState({});
   const [receiptError, setReceiptError] = useState('');
   const visible = useRef(new Set());
@@ -17,6 +18,7 @@ export function useChatReceipts({ username, selectedId, messages, messagePane })
     let timer;
     const received = new Set();
     const read = new Set();
+    setEvents([]);
     setStatuses({});
     if (!username) return;
     async function sync() {
@@ -37,18 +39,21 @@ export function useChatReceipts({ username, selectedId, messages, messagePane })
       const requestedRoom = room.current;
       let retryImmediately = false;
       try {
-        const { data, error } = await supabase.rpc('chat_sync_receipts', {
+        const [{ data, error }, activity] = await Promise.all([supabase.rpc('chat_sync_receipts', {
           p_token: token, p_chat_id: requestedRoom,
           p_received: receivedBatch, p_read: readBatch,
-        });
+        }), requestedRoom ? supabase.rpc('chat_room_events', { p_token: token, p_chat_id: requestedRoom }) : Promise.resolve({ data: [] })]);
         if (!active) return;
         if (error) throw error;
         for (const id of receivedBatch) received.delete(id);
         for (const id of readBatch) read.delete(id);
         // The response includes message contents: ACK only after receiving it.
         for (const message of data.inbox || []) received.add(String(message.message_id));
-        if (room.current === requestedRoom) setStatuses(data.statuses || {});
-        setReceiptError('');
+        if (room.current === requestedRoom) {
+          setStatuses(data.statuses || {});
+          if (!activity.error) setEvents(current => JSON.stringify(current) === JSON.stringify(activity.data || []) ? current : activity.data || []);
+        }
+        setReceiptError(activity.error ? 'Could not load group activity. Retrying…' : '');
         retryImmediately = received.size > 0 || room.current !== requestedRoom;
       } catch (error) {
         if (active) setReceiptError(error.code === '28000'
@@ -75,6 +80,7 @@ export function useChatReceipts({ username, selectedId, messages, messagePane })
   }, [username]);
 
   useEffect(() => {
+    setEvents([]);
     setStatuses({});
     visible.current.clear();
     syncRef.current();
@@ -100,5 +106,5 @@ export function useChatReceipts({ username, selectedId, messages, messagePane })
     return () => { observer.disconnect(); visible.current.clear(); };
   }, [messages, selectedId, username, messagePane]);
 
-  return { statuses, receiptError };
+  return { statuses, receiptError, events };
 }

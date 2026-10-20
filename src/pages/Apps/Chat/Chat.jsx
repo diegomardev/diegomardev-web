@@ -1,11 +1,11 @@
-import { useEffect, useRef, useState } from 'react';
+import { Fragment, useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { IconArrowLeft, IconMessageCircle, IconMoodSmile, IconPlus, IconSend, IconX } from '@tabler/icons-react';
+import { IconArrowLeft, IconMessageCircle, IconMoodSmile, IconPlus, IconSend, IconDots, IconArchive, IconTrash, IconRestore, IconX } from '@tabler/icons-react';
 import Navbar from '../../../components/Navbar/Navbar';
-import { pixelArtSupabase as supabase } from '../../../lib/pixelArtSession';
+import { getPixelArtToken, pixelArtSupabase as supabase } from '../../../lib/pixelArtSession';
 import { useChatReceipts } from './useChatReceipts';
 import { MessageChecks } from './MessageChecks';
-import { canViewChat, formatMessageTime, mergeMessages, messageKey, parseChatUsers } from './chatUtils';
+import { canViewChat, formatMessageDate, messageDayKey, formatMessageTime, mergeMessages, messageKey, parseChatUsers } from './chatUtils';
 import './Chat.css';
 
 const EMOJIS = ['😊', '😂', '❤️', '👍', '🎉', '😎', '😍', '🤔'];
@@ -15,6 +15,15 @@ export default function Chat() {
   const [footerHeight, setFooterHeight] = useState(0);
   const composerForm = useRef(null);
   const [username, setUsername] = useState(() => localStorage.getItem('user_logged'));
+  const [deleteTarget, setDeleteTarget] = useState(null);
+  const deleteDialog = useRef(null);
+  const [roomMenuId, setRoomMenuId] = useState(null);
+  const roomActionsRef = useRef(null);
+  const [roomStates, setRoomStates] = useState({});
+  const [listView, setListView] = useState('active');
+  const [changingRoom, setChangingRoom] = useState(false);
+  const [roomActionError, setRoomActionError] = useState('');
+  const roomActionLock = useRef(false);
   const [chats, setChats] = useState([]);
   const [selectedId, setSelectedId] = useState(null);
   const [messages, setMessages] = useState([]);
@@ -43,9 +52,13 @@ export default function Chat() {
   const usernameRef = useRef(username);
   selectedRef.current = selectedId;
   usernameRef.current = username;
-  const selectedChat = chats.find(room => room.id === selectedId);
+  const selectedChat = chats.find(room => room.id === selectedId && !roomStates[room.id]);
+  const hiddenChats = chats.filter(room => roomStates[room.id] === 'archived');
+  const shownChats = chats.filter(room => (roomStates[room.id] || 'active') === listView);
   const draft = drafts[selectedId] || '';
-  const { statuses, receiptError } = useChatReceipts({ username, selectedId, messages, messagePane });
+  const { statuses, receiptError, events } = useChatReceipts({ username, selectedId, messages, messagePane });
+
+  const timeline = mergeMessages(messages, events.map(event => ({ message_id: `event:${event.id}`, created_at: event.created_at, systemEvent: true, user: event.username })));
 
   useEffect(() => {
     if (!composerForm.current) { setFooterHeight(0); return; }
@@ -66,6 +79,9 @@ export default function Chat() {
 
   useEffect(() => {
     setChats([]);
+    setRoomStates({});
+    setListView('active');
+    setRoomActionError('');
     setSelectedId(null);
     setDrafts({});
     setShowEmoji(false);
@@ -78,14 +94,18 @@ export default function Chat() {
       setLoadingChats(true);
       setListError('');
       try {
-        const { data, error } = await supabase.from('Chats').select('*').order('created_at', { ascending: false });
+        const [{ data, error }, hidden] = await Promise.all([
+          supabase.from('Chats').select('*').order('created_at', { ascending: false }),
+          supabase.rpc('chat_list_room_states', { p_token: getPixelArtToken() }),
+        ]);
         if (!active) return;
-        if (error) throw error;
+        if (error || hidden.error) throw error || hidden.error;
+        setRoomStates(hidden.data || {});
         const visible = (data || []).filter(room => canViewChat(room, username));
         setChats(visible);
-        setSelectedId(current => visible.some(room => room.id === current) ? current : null);
+        setSelectedId(current => visible.some(room => room.id === current && !(hidden.data || {})[room.id]) ? current : null);
       } catch {
-        if (active) setListError('Could not load your chats.');
+        if (active) setListError('Could not load your chats. If your session expired, sign in again.');
       } finally { if (active) setLoadingChats(false); }
     }
     loadChats();
@@ -127,7 +147,7 @@ export default function Chat() {
 
   useEffect(() => {
     if (messagePane.current && shouldFollow.current) messagePane.current.scrollTop = messagePane.current.scrollHeight;
-  }, [messages, loadingMessages]);
+  }, [messages, events, loadingMessages]);
 
   useEffect(() => {
     if (!showEmoji) return;
@@ -139,6 +159,26 @@ export default function Chat() {
     document.addEventListener('keydown', close);
     return () => { document.removeEventListener('pointerdown', close); document.removeEventListener('keydown', close); };
   }, [showEmoji]);
+
+  useEffect(() => {
+    if (!roomMenuId) return;
+    roomActionsRef.current?.querySelector('[role="menuitem"]')?.focus();
+    const dismiss = event => {
+      if (event.type === 'keydown') {
+        if (event.key !== 'Escape') return;
+        roomActionsRef.current?.querySelector('[aria-haspopup="menu"]')?.focus();
+      } else if (roomActionsRef.current?.contains(event.target)) return;
+      setRoomMenuId(null);
+    };
+    document.addEventListener('pointerdown', dismiss);
+    document.addEventListener('keydown', dismiss);
+    return () => {
+      document.removeEventListener('pointerdown', dismiss);
+      document.removeEventListener('keydown', dismiss);
+    };
+  }, [roomMenuId]);
+
+  useEffect(() => { setRoomMenuId(null); }, [username, listView]);
 
   function updateDraft(value) {
     setDrafts(current => ({ ...current, [selectedId]: value }));
@@ -154,9 +194,9 @@ export default function Chat() {
     setSending(true);
     setSendError('');
     try {
-      const { data, error } = await supabase.from('Messages').insert({
-        chat_id: roomId, text: originalDraft.trim(), user: author, created_at: new Date().toISOString(),
-      }).select('*').single();
+      const { data, error } = await supabase.rpc('chat_send_message', {
+        p_token: getPixelArtToken(), p_chat_id: roomId, p_text: originalDraft.trim(),
+      });
       if (error || !data) throw error || new Error('Empty response');
       if (usernameRef.current !== author) return;
       setDrafts(current => current[roomId] === originalDraft ? { ...current, [roomId]: '' } : current);
@@ -168,6 +208,45 @@ export default function Chat() {
     } catch {
       if (selectedRef.current === roomId && usernameRef.current === author) setSendError('Message not sent. Your text is still here; please try again.');
     } finally { sendLock.current = false; setSending(false); }
+  }
+
+  async function changeChatState(room, state) {
+    if (roomActionLock.current) return;
+    setRoomMenuId(null);
+    roomActionLock.current = true;
+    setChangingRoom(true);
+    setRoomActionError('');
+    const author = username;
+    try {
+      const { error } = await supabase.rpc(state === 'deleted' ? 'chat_delete_forever' : 'chat_set_room_state', {
+        p_token: getPixelArtToken(), p_chat_id: room.id, ...(state === 'deleted' ? {} : { p_state: state }),
+      });
+      if (error) throw error;
+      if (usernameRef.current !== author) return;
+      setRoomStates(current => { const next = { ...current }; if (state === 'active') delete next[room.id]; else next[room.id] = state; return next; });
+      if (state !== 'active') setSelectedId(current => current === room.id ? null : current);
+      else { setListView('active'); setSelectedId(room.id); }
+      if (state === 'deleted') setDrafts(current => { const next = { ...current }; delete next[room.id]; return next; });
+      return true;
+    } catch {
+      if (usernameRef.current === author) setRoomActionError('Could not update this chat. Please try again.');
+      return false;
+    } finally { roomActionLock.current = false; setChangingRoom(false); }
+  }
+
+  function requestDeleteChat(room) {
+    setRoomMenuId(null);
+    setRoomActionError('');
+    setDeleteTarget(room);
+    deleteDialog.current.showModal();
+  }
+
+  async function confirmDeleteChat() {
+    if (!deleteTarget) return;
+    if (await changeChatState(deleteTarget, 'deleted')) {
+      deleteDialog.current.close();
+      setDeleteTarget(null);
+    }
   }
 
   function openNewChat() {
@@ -192,6 +271,7 @@ export default function Chat() {
       if (error || !data) throw error || new Error('Empty response');
       if (usernameRef.current !== author) return;
       setChats(current => [data, ...current.filter(room => room.id !== data.id)]);
+      setListView('active');
       setSelectedId(data.id);
       setNewChat(emptyChat);
       createDialog.current?.close();
@@ -219,14 +299,36 @@ export default function Chat() {
             <div className="dm-chat-rooms">
               {loadingChats ? <p className="dm-chat-notice" role="status">Loading chats…</p> : listError ? (
                 <div className="dm-chat-notice" role="alert"><p>{listError}</p><button className="button_normal" onClick={() => setListRevision(value => value + 1)}>Retry</button></div>
-              ) : !chats.length ? <p className="dm-chat-notice">No conversations yet. Use + to create one.</p> : (
-                <ul>{chats.map(room => <li key={room.id}>
-                  <button className={`dm-chat-room ${room.id === selectedId ? 'is-selected' : ''}`} aria-current={room.id === selectedId ? 'true' : undefined} onClick={() => setSelectedId(room.id)}>
+              ) : !shownChats.length ? <p className="dm-chat-notice">{listView === 'archived' ? 'No archived chats.' : 'No conversations here. Use + to create one.'}</p> : (
+                <ul>{shownChats.map(room => <li key={room.id} className="dm-chat-room-row">
+                  <button className={`dm-chat-room ${room.id === selectedId ? 'is-selected' : ''}`} aria-current={room.id === selectedId ? 'true' : undefined} disabled={changingRoom} onClick={() => { setRoomMenuId(null); if (listView !== 'active') changeChatState(room, 'active'); else setSelectedId(room.id); }}>
                     <span className="dm-chat-avatar" aria-hidden="true">{(room.name || '?').slice(0, 1).toUpperCase()}</span>
-                    <span className="dm-chat-room-copy"><strong>{room.name}</strong><small>{room.description || 'Open conversation'}</small></span>
+                    <span className="dm-chat-room-copy"><strong>{room.name}</strong><small>{listView === 'archived' ? 'Unarchive chat' : room.description || 'Open conversation'}</small></span>
+                    {listView !== 'active' && <IconRestore size={18} aria-hidden="true" />}
                   </button>
+                  <div className="dm-chat-room-actions" ref={roomMenuId === room.id ? roomActionsRef : null}>
+                    <button className="dm-chat-room-options" type="button" aria-label={`Options for ${room.name}`} title="Chat options" aria-haspopup="menu" aria-expanded={roomMenuId === room.id} aria-controls={roomMenuId === room.id ? `room-menu-${room.id}` : undefined} disabled={changingRoom} onClick={() => setRoomMenuId(current => current === room.id ? null : room.id)}><IconDots size={18} aria-hidden="true" /></button>
+                    {roomMenuId === room.id && <div className="dm-chat-room-menu" role="menu" id={`room-menu-${room.id}`} aria-label={`Options for ${room.name}`} onKeyDown={event => {
+                      if (['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(event.key)) {
+                        event.preventDefault();
+                        const items = [...event.currentTarget.querySelectorAll('[role="menuitem"]')];
+                        const index = items.indexOf(document.activeElement);
+                        const next = event.key === 'Home' ? 0 : event.key === 'End' ? items.length - 1 : (index + (event.key === 'ArrowUp' ? -1 : 1) + items.length) % items.length;
+                        items[next]?.focus();
+                      }
+                      if (event.key === 'Tab') setRoomMenuId(null);
+                    }}>
+                        <button type="button" role="menuitem" disabled={changingRoom} onClick={() => changeChatState(room, listView === 'archived' ? 'active' : 'archived')}>{listView === 'archived' ? <IconRestore size={17} /> : <IconArchive size={17} />}{listView === 'archived' ? 'Unarchive chat' : 'Archive chat'}</button>
+                        <button className="dm-chat-delete-action" type="button" role="menuitem" disabled={changingRoom} title="Eliminar y salir del grupo" onClick={() => requestDeleteChat(room)}><IconTrash size={17} />Eliminar y salir del grupo</button>
+                    </div>}
+                  </div>
                 </li>)}</ul>
               )}
+              {!loadingChats && !listError && <>
+                {listView !== 'active' && <button className="button_normal dm-chat-hidden-toggle" type="button" onClick={() => setListView('active')}><IconArrowLeft size={16} />Back to chats</button>}
+                {listView !== 'archived' && hiddenChats.length > 0 && <button className="button_normal dm-chat-hidden-toggle" type="button" onClick={() => setListView('archived')}><IconArchive size={16} />Archived chats ({hiddenChats.length})</button>}
+              </>}
+              {roomActionError && <p className="dm-chat-notice" role="alert">{roomActionError}</p>}
             </div>
             <footer className="dm-chat-account"><span className="dm-chat-avatar" aria-hidden="true">{username.slice(0, 1).toUpperCase()}</span><div><strong>{username}</strong><small>Signed in</small></div></footer>
           </aside>
@@ -244,8 +346,10 @@ export default function Chat() {
               }} aria-busy={loadingMessages}>
                 {loadingMessages ? <p className="dm-chat-notice" role="status">Loading messages…</p> : messageError ? (
                   <div className="dm-chat-notice" role="alert"><p>{messageError}</p><button className="button_normal" onClick={() => setMessageRevision(value => value + 1)}>Retry</button></div>
-                ) : !messages.length ? <div className="dm-chat-empty dm-chat-empty-small"><IconMessageCircle size={36} stroke={1.4} /><p>No messages yet.<br />Say hello to start the conversation.</p></div> : (
-                  <ol aria-label="Messages">{messages.map(message => <li key={messageKey(message)} data-message-id={messageKey(message)} data-message-author={message.user} className={`dm-chat-message ${message.user === username ? 'is-own' : ''}`}>
+                ) : !timeline.length ? <div className="dm-chat-empty dm-chat-empty-small"><IconMessageCircle size={36} stroke={1.4} /><p>No messages yet.<br />Say hello to start the conversation.</p></div> : (
+                  <ol aria-label="Messages">{timeline.map((message, index) => <Fragment key={messageKey(message)}>
+                    {messageDayKey(message.created_at) && (index === 0 || messageDayKey(message.created_at) !== messageDayKey(timeline[index - 1].created_at)) && <li className="dm-chat-day"><time dateTime={messageDayKey(message.created_at)}>{formatMessageDate(message.created_at)}</time></li>}
+                    {message.systemEvent ? <li className="dm-chat-day dm-chat-system"><span>{message.user} ha dejado el grupo</span></li> : <li data-message-id={messageKey(message)} data-message-author={message.user} className={`dm-chat-message ${message.user === username ? 'is-own' : ''}`}>
                     {message.user !== username && <span className="dm-chat-avatar dm-chat-message-avatar" aria-hidden="true">{(message.user || '?').slice(0, 1).toUpperCase()}</span>}
                     <div className="dm-chat-bubble">
                       {message.user !== username && <strong className="dm-chat-author">{message.user || 'Unknown user'}</strong>}
@@ -254,7 +358,7 @@ export default function Chat() {
                         {message.user === username && <MessageChecks status={statuses[messageKey(message)] || 'sent'} />}
                       </span></p>
                     </div>
-                  </li>)}</ol>
+                  </li>}</Fragment>)}</ol>
                 )}
               </div>
               <form ref={composerForm} className="dm-chat-composer" onSubmit={sendMessage}>
@@ -276,6 +380,15 @@ export default function Chat() {
           </section>
         </main>
       )}
+      <dialog className="dm-chat-dialog" ref={deleteDialog} aria-labelledby="delete-chat-title" onCancel={event => { if (changingRoom) event.preventDefault(); else setDeleteTarget(null); }}>
+        <h2 id="delete-chat-title">¿Eliminar y salir del grupo?</h2>
+        <p>Eliminarás “{deleteTarget?.name}” definitivamente de tu cuenta. No podrás recuperarlo. Los demás conservarán la conversación y verán que has dejado el grupo.</p>
+        {roomActionError && <p className="dm-chat-send-error" role="alert">{roomActionError}</p>}
+        <footer>
+          <button autoFocus className="button_normal" type="button" disabled={changingRoom} onClick={() => { deleteDialog.current.close(); setDeleteTarget(null); }}>Cancel</button>
+          <button className="button_normal dm-chat-delete-confirm" type="button" disabled={changingRoom} onClick={confirmDeleteChat}>{changingRoom ? 'Eliminando…' : 'Eliminar y salir'}</button>
+        </footer>
+      </dialog>
       <dialog className="dm-chat-dialog" ref={createDialog} aria-labelledby="new-chat-title" onCancel={event => { if (creating) event.preventDefault(); }}>
         <header><h2 id="new-chat-title">New chat</h2><button type="button" className="button_normal dm-chat-icon" aria-label="Close" disabled={creating} onClick={() => createDialog.current.close()}><IconX size={20} /></button></header>
         <form onSubmit={createChat}>

@@ -127,3 +127,46 @@ html.light .dm-chat-send-error { color: #ad3027; }
   cursor: auto;
   transition: none;
 }
+
+.dm-chat-messages .dm-chat-day,
+.dm-chat-messages .dm-chat-day:hover {
+  display: flex;
+  justify-content: center;
+  padding: 6px 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  cursor: default;
+  transition: none;
+}
+.dm-chat-day time {
+  padding: 4px 12px;
+  border: 1px solid var(--chat-border);
+  border-radius: 7px;
+  background: var(--chat-panel);
+  color: var(--chat-muted);
+  font-size: 12px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.dm-chat-page .dm-chat-hidden-toggle { width: 100%; margin-top: 12px; font-size: .78rem; }
+
+.dm-chat-room-row { position: relative; }
+.dm-chat-room-row .dm-chat-room { padding-right: 40px; }
+.dm-chat-room-actions { position: absolute; top: 5px; right: 5px; z-index: 2; }
+.dm-chat-room-actions:has([role="menu"]) { z-index: 4; }
+.dm-chat-room-options { display: flex; align-items: center; justify-content: center; width: 30px; height: 28px; padding: 0; border: 0; border-radius: 7px; background: transparent; color: var(--chat-muted); }
+.dm-chat-room-options:hover, .dm-chat-room-options[aria-expanded="true"] { background: var(--chat-hover); color: var(--chat-text); }
+.dm-chat-room-menu { position: absolute; top: 31px; right: 0; width: 176px; padding: 5px; box-sizing: border-box; border: 1px solid var(--chat-border); border-radius: 9px; background: var(--chat-panel); box-shadow: 0 6px 20px #0004; }
+.dm-chat-room-menu button { display: flex; align-items: center; gap: 9px; width: 100%; padding: 10px 8px; border: 0; border-radius: 5px; background: transparent; color: var(--chat-text); font-size: .82rem; text-align: left; }
+.dm-chat-room-menu button:hover { background: var(--chat-hover); }
+
+.dm-chat-room-menu .dm-chat-delete-action { color: #e99991; }
+html.light .dm-chat-room-menu .dm-chat-delete-action { color: #ad3027; }
+
+.dm-chat-page .dm-chat-delete-confirm { color: #e99991; border-color: #e9999166; }
+html.light .dm-chat-page .dm-chat-delete-confirm { color: #ad3027; border-color: #ad302766; }
+
+.dm-chat-system span { max-width: 85%; padding: 4px 12px; border: 1px solid var(--chat-border); border-radius: 7px; background: var(--chat-panel); color: var(--chat-muted); font-size: 12px; line-height: 18px; text-align: center; overflow-wrap: anywhere; }
+.dm-chat-room-menu { width: 224px; }

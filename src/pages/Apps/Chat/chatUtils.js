@@ -30,3 +30,16 @@ export function formatMessageTime(value) {
   const date = new Date(value);
   return Number.isNaN(date.getTime()) ? '' : date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 }
+
+// Calendar days follow the viewer's timezone, just like the message clock.
+export function messageDayKey(value) {
+  if (!value) return '';
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return '';
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+}
+
+export function formatMessageDate(value) {
+  if (!messageDayKey(value)) return '';
+  return new Date(value).toLocaleDateString('es-ES', { day: 'numeric', month: 'numeric', year: 'numeric' });
+}

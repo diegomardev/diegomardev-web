@@ -106,3 +106,84 @@ passed in Supabase before the migration was committed.
 Local isolated browser checks verified single grey, double grey, double blue,
 reception ACK after receiving contents, no read ACK before opening a room,
 and aligned account/composer separators. Build and existing unit tests pass.
+
+## Chat dates and personal removal
+
+`20261019210000_chat_hidden_rooms.sql` was applied on 2026-10-19. Hidden chat
+IDs are stored per user in a private RLS table. Only session-validated RPCs
+`chat_list_hidden` and `chat_set_hidden` can access them; hiding requires room
+membership and affects only the caller. No messages or shared rooms are deleted.
+The three-dot menu at the top right of each sidebar room offers Archive chat.
+Archived chats shows the same menu with Unarchive chat. Hidden rooms remain hidden until restored,
+including when new messages arrive. Messages and receipt behavior are retained.
+A transactional SQL test verified hide, repeated hide, restore, user isolation,
+preserved messages, invalid sessions, and non-member rejection; fixtures were
+rolled back. Final verification confirmed RLS and blocked anonymous direct reads.
+
+Message history has a centered date chip at the first message and each change
+of local calendar day. The timezone matches the viewer's message clock. Unit
+tests cover midnight boundaries and invalid dates. Isolated browser checks
+verified three day groups and removal persistence across reload, then restore.
+
+The sidebar menu supports keyboard focus, Escape, and outside-click dismissal.
+Isolated browser checks verified archive/unarchive through the menu and mobile
+list navigation. The production build passes.
+
+## Separate archive and delete actions
+
+`20261019220000_chat_deleted_rooms.sql` was applied on 2026-10-19. The existing
+private preference table now distinguishes archived chats from deleted chats.
+`chat_list_room_states` and `chat_set_room_state` validate the session and room
+membership. Delete chat moves only the caller's chat to Deleted chats, where
+Restore chat returns it to the active list with all messages. Archive chat
+continues to use Archived chats. This recoverable behavior was superseded by the permanent-deletion migration below.
+Older list/visibility RPCs remain available for frontend deployment compatibility.
+
+A rolled-back SQL fixture verified archive, delete, restore, isolation between
+users, preserved messages, invalid sessions, and non-member rejection. Final
+verification confirmed RLS and blocked direct updates. Isolated browser checks
+verified both menu choices, keyboard navigation, deletion persistence across
+reload and restoration of the full history. Production build passes.
+
+## Permanent personal deletion
+
+`20261019230000_chat_permanent_deletion.sql` replaces the recoverable delete
+behavior. Confirmed Delete forever calls `chat_delete_forever`; Deleted chats
+and Restore chat are removed from the UI. The private per-user tombstone keeps
+the room out of the account's lists permanently. Other participants' shared
+history remains. This is not a physical purge of shared Messages records.
+The server rejects restoration and archiving of a deleted room through both
+current and legacy RPCs. Archive/unarchive remains reversible. Old clients must
+update before deleting; their previous delete RPC now rejects the operation.
+
+The migration was applied on 2026-10-19 after transactional tests verified
+permanent deletion, blocked restoration including the legacy RPC, session and
+membership checks, and isolation. No real deleted records existed when applied;
+the migration refuses to convert existing recoverable deletions silently. Browser
+QA used local fixtures to verify Cancel, Delete forever and persistence across
+reload without a recovery list. The app asks the user to confirm each deletion.
+
+## Eliminar y salir del grupo
+
+`20261020010000_chat_leave_events.sql` was applied on 2026-10-20. The menu and
+confirmation now say Eliminar y salir del grupo. Confirmation atomically stores
+the permanent personal deletion and a server-authored left event. Repeated
+requests produce one notice. Archive/unarchive produces no event. Other members
+see username ha dejado el grupo centered with the date-chip styling, merged
+chronologically into history. Events live in a private RLS table; the session
+RPC returns them only to current members. The UI polls with receipt syncing.
+
+New sends use `chat_send_message`, deriving author/time from the server and
+checking membership and departure. Receipt snapshots omit departed recipients;
+inbox syncing skips rooms the user left, and group receipt aggregates exclude
+departed recipients. The previous core delete function has no client execute
+grant, preventing an event-free RPC bypass. Shared message records stay intact.
+The legacy direct Chats/Messages table permissions are unchanged; this does not
+claim to secure every legacy read/write path outside the new chat RPCs.
+
+Transactional fixtures (rolled back) verified one departure event, archive with
+no event, denied departed sends/event reads, no new receipt for departed users,
+remaining-member sends and private event storage. Local mock browser checks
+verified timeline placement, date grouping, sending via the new RPC and the
+confirmation wording. No real participant was removed or notified by testing.
+The production build and chat utility tests pass.
