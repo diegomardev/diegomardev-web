@@ -7,6 +7,7 @@ import { useChatReceipts } from './useChatReceipts';
 import { MessageChecks } from './MessageChecks';
 import { canViewChat, formatMessageDate, messageDayKey, formatMessageTime, mergeMessages, messageKey, parseChatUsers } from './chatUtils';
 import './Chat.css';
+import { useSessionUser } from '../../../lib/useSessionUser';
 
 const EMOJIS = ['😊', '😂', '❤️', '👍', '🎉', '😎', '😍', '🤔'];
 const emptyChat = { name: '', description: '', users: '' };
@@ -17,7 +18,7 @@ export default function Chat() {
   const infoOrigin = useRef(null);
   const [footerHeight, setFooterHeight] = useState(0);
   const composerForm = useRef(null);
-  const [username, setUsername] = useState(() => localStorage.getItem('user_logged'));
+  const username = useSessionUser();
   const [deleteTarget, setDeleteTarget] = useState(null);
   const deleteDialog = useRef(null);
   const [roomMenuId, setRoomMenuId] = useState(null);
@@ -93,15 +94,6 @@ export default function Chat() {
     return () => observer.disconnect();
   }, [selectedChat?.id]);
 
-  useEffect(() => {
-    const syncUser = () => setUsername(localStorage.getItem('user_logged'));
-    window.addEventListener('storage', syncUser);
-    window.addEventListener('focus', syncUser);
-    return () => {
-      window.removeEventListener('storage', syncUser);
-      window.removeEventListener('focus', syncUser);
-    };
-  }, []);
 
   useEffect(() => {
     setChats([]);
@@ -354,7 +346,7 @@ export default function Chat() {
               </>}
               {roomActionError && <p className="dm-chat-notice" role="alert">{roomActionError}</p>}
             </div>
-            <footer className="dm-chat-account"><span className="dm-chat-avatar" aria-hidden="true">{username.slice(0, 1).toUpperCase()}</span><div><strong>{username}</strong><small>Signed in</small></div></footer>
+            <Link className="dm-chat-account" to="/login" aria-label={`Ver perfil de ${username}`} title="Ver mi perfil"><span className="dm-chat-avatar" aria-hidden="true">{username.slice(0, 1).toUpperCase()}</span><div><strong>{username}</strong><small>Signed in</small></div></Link>
           </aside>
           <section className="dm-chat-conversation" aria-label={selectedChat?.name || 'Conversation'}>
             {!selectedChat ? <div className="dm-chat-empty"><IconMessageCircle size={56} stroke={1.2} /><h2>A space to talk</h2><p>Select a conversation from the list<br />or create a new chat with +.</p></div> : <>

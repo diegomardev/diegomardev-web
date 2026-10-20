@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { getPixelArtToken, PIXEL_ART_SESSION_KEY, pixelArtSupabase as supabase } from '../../../lib/pixelArtSession';
+import { getPixelArtToken, PIXEL_ART_SESSION_KEY, clearSiteSession, validateSiteSession, pixelArtSupabase as supabase } from '../../../lib/pixelArtSession';
 import './PixelArtGallery.css';
+import { SESSION_CHANGED } from '../../../lib/sessionStore';
 
 const PAGE_SIZE = 6;
 const artworkNumber = item => `#${String(item.artwork_number).padStart(4, '0')}`;
@@ -40,18 +41,20 @@ export default function PixelArtGallery({ pixels, ready, pending }) {
     setChecking(true);
     if (!token) { setAuthor(null); setChecking(false); return; }
     try {
-      const { data, error } = await supabase.rpc('pixel_art_session_user', { p_token: token });
-      setAuthor(error ? null : data);
-    } catch { setAuthor(null); }
-    finally { setChecking(false); }
+      const data = await validateSiteSession();
+      if (getPixelArtToken() === token) setAuthor(data);
+    } catch { if (getPixelArtToken() === token) setAuthor(null); }
+    finally { if (getPixelArtToken() === token) setChecking(false); }
   }, []);
 
   useEffect(() => {
     checkSession();
     const onStorage = (event) => { if (event.key === PIXEL_ART_SESSION_KEY || event.key === null) checkSession(); };
+    window.addEventListener(SESSION_CHANGED, checkSession);
     window.addEventListener('storage', onStorage);
     window.addEventListener('focus', checkSession);
     return () => {
+      window.removeEventListener(SESSION_CHANGED, checkSession);
       window.removeEventListener('storage', onStorage);
       window.removeEventListener('focus', checkSession);
     };
@@ -92,10 +95,11 @@ export default function PixelArtGallery({ pixels, ready, pending }) {
     setSaving(true);
     setMessage('');
     // Snapshot colors before the asynchronous call; don't publish hover names.
+    const token = getPixelArtToken();
     const colors = pixels.map(column => column.map(pixel => pixel[0]));
     try {
       const { error } = await supabase.rpc('save_pixel_art', {
-        p_token: getPixelArtToken(), p_title: title.trim() || 'Pixel Art', p_colors: colors,
+        p_token: token, p_title: title.trim() || 'Pixel Art', p_colors: colors,
       });
       if (error) throw error;
       setTitle('');
@@ -105,7 +109,7 @@ export default function PixelArtGallery({ pixels, ready, pending }) {
     } catch (error) {
       if (error.code === '28000') {
         setAuthor(null);
-        localStorage.removeItem(PIXEL_ART_SESSION_KEY);
+        clearSiteSession(token);
         setMessage('Your session has expired. Log in again to save.');
       } else if (error.message?.includes('10 seconds')) {
         setMessage('Please wait 10 seconds before saving again.');

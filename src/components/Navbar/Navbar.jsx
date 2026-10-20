@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import { useSessionUser } from '../../lib/useSessionUser';
 import demonlogo from '../../assets/images/demon.svg';
 import rocket from '../../assets/images/rocket.svg';
 
@@ -7,7 +8,7 @@ import {IconHome} from '@tabler/icons-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [userLogged, setUserLogged] = useState(localStorage.getItem('user_logged'));
+  const userLogged = useSessionUser();
   const [darkMode, setDarkMode] = useState(() => {
     const storedDarkMode = localStorage.getItem('dark-mode');
     if (storedDarkMode !== null) {
@@ -35,19 +36,6 @@ const Navbar = () => {
     setDarkMode(!darkMode);
   };
   
-  useEffect(() => {
-    // Establecer el intervalo en el montaje del componente
-    const loginInterval = setInterval(() => {
-      if (localStorage.getItem('user_logged') !== null) {
-        setUserLogged(localStorage.getItem('user_logged'));
-      } else {
-        setUserLogged('');
-      }
-    }, 1000);
-
-    // Limpiar el intervalo cuando el componente se desmonta
-    return () => clearInterval(loginInterval);
-  }, []); // El segundo argumento de useEffect es un array de dependencias, que está vacío en este caso.
 
   return (
     <div className='navbar_cabecera'>

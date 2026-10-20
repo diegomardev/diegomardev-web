@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { getPixelArtToken, pixelArtSupabase as supabase } from '../../../lib/pixelArtSession';
+import { getPixelArtToken, clearSiteSession, pixelArtSupabase as supabase } from '../../../lib/pixelArtSession';
 
 // Polling keeps receipts persistent across reconnects without exposing the
 // receipt table or depending on the project's Realtime publication settings.
@@ -59,6 +59,7 @@ export function useChatReceipts({ username, selectedId, messages, messagePane })
         setReceiptError(activity.error || info.error ? 'Could not load group information. Retrying…' : '');
         retryImmediately = received.size > 0 || room.current !== requestedRoom;
       } catch (error) {
+        if (error.code === '28000') clearSiteSession(token);
         if (active) setReceiptError(error.code === '28000'
           ? 'Sign in again to confirm message delivery and reading.'
           : 'Message confirmations unavailable. Retrying…');

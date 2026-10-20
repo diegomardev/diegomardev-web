@@ -209,3 +209,25 @@ retention, departed-member exclusion and access denials; fixtures rolled back.
 Browser QA used local mock data for title/menu opening, participant labels,
 Escape/close behavior and a 390px mobile viewport without horizontal overflow.
 The source and dist are saved locally for the owner's GitHub deployment.
+
+## Logout/session consistency repair (2026-10-20)
+
+The previous Logout handler called .catch() on a Supabase PostgREST builder,
+which is PromiseLike and has no .catch method. It removed pixel_art_session,
+then threw before removing user_logged, leaving a stale navbar identity while
+chat RPCs had no token. Logout now clears both keys and emits a same-tab session
+change synchronously, then awaits revocation through a native async function.
+Network failure cannot prevent local logout. Navbar and Chat share a hook that
+requires a token, validates sessions on mount/focus/visibility and periodically,
+and responds to session changes across tabs. Invalid/revoked sessions clear both
+keys; transient network errors retain a potentially valid session for retry.
+Late profile/avatar loads verify their captured token before changing the UI.
+The gallery and chat receipt errors also clear expired sessions consistently.
+
+Six unit tests pass, including the Supabase thenable regression, stale identity,
+network failure, stale-token guards and existing chat utilities. An isolated
+browser using fake diego credentials verified login, chat list loading, logout,
+cross-tab synchronization, immediate re-login/logout with a pending profile
+fetch, and reload after logout. A read-only production query found five available
+chats, zero archived and two left for diego; no group preferences were changed.
+No database migration or production session mutation was required for this fix.

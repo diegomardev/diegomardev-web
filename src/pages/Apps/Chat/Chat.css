@@ -1,4 +1,5 @@
 .dm-chat-page {
+  --chat-header-height: 78px;
   --chat-panel: #242424;
   --chat-sidebar: #202020;
   --chat-canvas: #1d1f20;
@@ -29,7 +30,7 @@ html.light .dm-chat-page {
 .dm-chat-page button:focus-visible, .dm-chat-page a:focus-visible, .dm-chat-page textarea:focus-visible, .dm-chat-page input:focus-visible { outline: 2px solid #36c5f0; outline-offset: 2px; }
 .dm-chat-shell { display: grid; grid-template-columns: 280px minmax(0, 1fr); width: min(1120px, calc(100% - 32px)); height: calc(100dvh - 84px); margin: 12px auto; border: 1px solid var(--chat-border); border-radius: 16px; overflow: hidden; background: var(--chat-panel); text-align: left; box-sizing: border-box; }
 .dm-chat-sidebar { min-height: 0; display: flex; flex-direction: column; background: var(--chat-sidebar); border-right: 1px solid var(--chat-border); }
-.dm-chat-sidebar-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 18px; border-bottom: 1px solid var(--chat-border); }
+.dm-chat-sidebar-header { height: var(--chat-header-height); min-height: var(--chat-header-height); box-sizing: border-box; flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 18px; border-bottom: 1px solid var(--chat-border); }
 .dm-chat-sidebar-header h1 { font-size: 1.35rem; line-height: 1.2; margin: 0 0 4px; }
 .dm-chat-sidebar-header span { font-size: .78rem; color: var(--chat-muted); }
 .dm-chat-page .dm-chat-icon { flex-shrink: 0; width: 38px; height: 38px; padding: 0; }
@@ -44,12 +45,12 @@ html.light .dm-chat-page {
 .dm-chat-room-copy strong, .dm-chat-room-copy small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .dm-chat-room-copy strong { font-size: .92rem; font-weight: 600; }
 .dm-chat-room-copy small { font-size: .78rem; color: var(--chat-muted); margin-top: 3px; }
-.dm-chat-account { margin: 0; flex-shrink: 0; box-sizing: border-box; min-height: var(--chat-footer-height, 0px); padding: 14px 18px; display: flex; align-items: center; gap: 12px; border-top: 1px solid var(--chat-border); }
+.dm-chat-account { color: inherit; text-decoration: none; margin: 0; flex-shrink: 0; box-sizing: border-box; min-height: var(--chat-footer-height, 0px); padding: 14px 18px; display: flex; align-items: center; gap: 12px; border-top: 1px solid var(--chat-border); }
 .dm-chat-account strong, .dm-chat-account small { display: block; }
 .dm-chat-account strong { font-size: .86rem; overflow-wrap: anywhere; }
 .dm-chat-account small { font-size: .73rem; color: var(--chat-muted); }
 .dm-chat-conversation { display: flex; flex-direction: column; min-width: 0; min-height: 0; background: var(--chat-canvas); }
-.dm-chat-header { display: flex; align-items: center; gap: 12px; padding: 16px 22px; border-bottom: 1px solid var(--chat-border); background: var(--chat-panel); min-height: 78px; box-sizing: border-box; }
+.dm-chat-header { display: flex; align-items: center; gap: 12px; padding: 16px 22px; border-bottom: 1px solid var(--chat-border); background: var(--chat-panel); height: var(--chat-header-height); min-height: var(--chat-header-height); flex-shrink: 0; box-sizing: border-box; }
 .dm-chat-heading { min-width: 0; flex: 1; }
 .dm-chat-heading h2 { margin: 0; font-size: 1rem; line-height: 1.4; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .dm-chat-heading p { margin: 2px 0 0; font-size: .78rem; color: var(--chat-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -103,11 +104,12 @@ html.light .dm-chat-send-error { color: #ad3027; }
 .dm-chat-dialog footer { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; }
 .dm-chat-page .dm-chat-back { display: inline-flex; }
 @media (max-width: 700px) {
+  .dm-chat-page { --chat-header-height: 70px; }
   .dm-chat-shell { grid-template-columns: minmax(0, 1fr); width: calc(100% - 16px); margin: 8px; height: calc(100dvh - 76px); border-radius: 12px; }
   .dm-chat-shell[data-chat-open="false"] .dm-chat-conversation { display: none; }
   .dm-chat-shell[data-chat-open="true"] .dm-chat-sidebar { display: none; }
   .dm-chat-sidebar { border-right: 0; }
-  .dm-chat-header { padding: 12px; gap: 9px; min-height: 70px; }
+  .dm-chat-header { padding: 12px; gap: 9px; }
   .dm-chat-header > .dm-chat-avatar { display: none; }
   .dm-chat-messages { padding: 14px 10px; }
   .dm-chat-bubble { max-width: 84%; }
@@ -181,7 +183,7 @@ html.light .dm-chat-page .dm-chat-delete-confirm { color: #ad3027; border-color:
 .dm-chat-header-actions { position: relative; flex-shrink: 0; z-index: 5; }
 .dm-chat-header-actions .dm-chat-room-menu { top: 44px; }
 .dm-chat-group-info { position: absolute; z-index: 7; right: 0; top: 0; bottom: 0; width: min(360px, 100%); display: flex; flex-direction: column; min-height: 0; min-width: 0; border-left: 1px solid var(--chat-border); background: var(--chat-sidebar); box-shadow: -12px 0 30px #0003; }
-.dm-chat-group-info > header { display: flex; align-items: center; gap: 12px; flex-shrink: 0; min-height: 78px; box-sizing: border-box; padding: 12px 16px; border-bottom: 1px solid var(--chat-border); }
+.dm-chat-group-info > header { display: flex; align-items: center; gap: 12px; flex-shrink: 0; height: var(--chat-header-height); min-height: var(--chat-header-height); flex-shrink: 0; box-sizing: border-box; padding: 12px 16px; border-bottom: 1px solid var(--chat-border); }
 .dm-chat-group-info h2 { margin: 0; font-size: .95rem; font-weight: 500; }
 .dm-chat-info-body { min-height: 0; overflow-y: auto; padding: 0 20px 24px; scrollbar-width: thin; }
 .dm-chat-info-summary { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 26px 0 22px; }
@@ -211,5 +213,6 @@ html.light .dm-chat-info-leave { color: #ad3027; }
   .dm-chat-header-members span { font-size: .72rem; }
   .dm-chat-header-members svg { display: none; }
   .dm-chat-group-info { width: 100%; box-sizing: border-box; }
-  .dm-chat-group-info > header { min-height: 70px; }
 }
+
+.dm-chat-account:hover { color: inherit; background: var(--chat-hover); }

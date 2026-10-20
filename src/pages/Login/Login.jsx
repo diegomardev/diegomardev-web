@@ -9,8 +9,10 @@ import Atropos from 'atropos';
 import MyCard from './MyCard';
 import { Flip, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { getPixelArtToken, PIXEL_ART_SESSION_KEY, pixelArtSupabase as supabase } from '../../lib/pixelArtSession';
+import { getPixelArtToken, setSiteSession, clearSiteSession, logoutSiteSession, validateSiteSession, pixelArtSupabase as supabase } from '../../lib/pixelArtSession';
+import { useSessionUser } from '../../lib/useSessionUser';
 function Login() {
+  const sessionUsername = useSessionUser();
   const navigate = useNavigate();
   const location = useLocation();
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Estado para controlar el estado de inicio de sesión
@@ -79,10 +81,8 @@ function Login() {
   const handletoLogin = () => {
     if(isLoggedIn){setIsLoggedIn(false)}
     setIsRegister(false);
-    const token = getPixelArtToken();
-    localStorage.removeItem(PIXEL_ART_SESSION_KEY);
-    if (token) supabase.rpc('pixel_art_logout', { p_token: token }).catch(console.error);
-    localStorage.removeItem('user_logged');
+    setPasswordInput('');
+    logoutSiteSession();
   };
   //Función para validar el usuario y la contraseña
   async function handleLogin(e) {
@@ -100,24 +100,9 @@ function Login() {
         }
 
         if (data) {
-          localStorage.setItem(PIXEL_ART_SESSION_KEY, session.token);
-          localStorage.setItem('user_logged', data.user);
-          if (data.profile_image) {
-            fetchImage(data);
-          }
-          else{
-            const { name, last_name, id } = data; // Obtener los datos del usuario
-            //console.log(id)
-            const newUser = {
-              name: name,
-              lastName: last_name,
-              id: id,
-              image: userpng,
-              imageSize: user.imageSize,
-              user: data.user,
-            };
-          setUser(newUser); // Almacenar los datos del usuario en el estado
-          }
+          setSiteSession(session.token, data.user);
+          applyProfile(data);
+          if (data.profile_image) fetchImage(data, session.token);
           setIsLoggedIn(true);
           confetti();
           notify_ok('Logged in');
@@ -204,107 +189,44 @@ function Login() {
       notify("Error updating the image shadow");
     }
   }
-  const fetchImage = async (datas) => {
+  function applyProfile(data) {
+    setUser({ id: data.id, name: data.name, lastName: data.last_name, user: data.user, image: userpng, imageSize: 200 });
+    setShowImageBorder(data.show_image_border ?? true);
+    setBorderImageColor(data.color_image_border || '#000000');
+    setShowShadow(data.show_image_shadow ?? true);
+    setShadowColor(data.color_image_shadow || '#000000');
+    setIsLoggedIn(true);
+  }
+
+  const fetchImage = async (data, token) => {
     try {
-      const user_logged = localStorage.getItem('user_logged');
-      const directoryPath = `${user_logged}/`;
-      //console.log(directoryPath);
-  
-      // Obtener la lista de archivos en el directorio
-      const { data: filesData, error: filesError } = await supabase.storage.from('Users').list(directoryPath);
-  
-      if (filesError) {
-        console.error('Error al obtener la lista de archivos:', filesError.message);
-        return;
-      }
-      //console.log(filesData);
-      // Seleccionar el primer archivo de la lista (puedes ajustar esto según tus necesidades)
-      const firstFile = filesData?.[0];
-      if (firstFile) {
-        // Obtener la URL firmada para el archivo seleccionado
-        const filePath = `${directoryPath}${firstFile.name}`;
-        const { data, error } = await supabase.storage.from('Users').createSignedUrl(filePath, 60);
-        //console.log(data);
-        if (error) {
-          console.error('Error al obtener la URL firmada:', error.message);
-        } else {
-          if (datas) {
-            const { name, last_name, id, show_image_border, color_image_border, show_image_shadow, color_image_shadow} = datas; // Obtener los datos del usuario
-            //console.log(id)
-            const newUser = {
-              name: name,
-              lastName: last_name,
-              id: id,
-              image: data.signedUrl,
-              imageSize: user.imageSize,
-            };
-            setUser(newUser); // Almacenar los datos del usuario en el estado
-            setShowImageBorder(show_image_border);
-            setBorderImageColor(color_image_border);
-            setShowShadow(show_image_shadow);
-            setShadowColor(color_image_shadow);
-            setIsLoggedIn(true);
-            
-          } else {
-            notify('Please insert username and password');
-          }
-        }
-      } else {
-        console.warn('No se encontraron archivos en el directorio.');
-      }
-    } catch (error) {
-      console.error('Error en fetchImage:', error.message);
-    }
+      const directory = `${data.user}/`;
+      const { data: files, error } = await supabase.storage.from('Users').list(directory);
+      if (error || !files?.[0] || getPixelArtToken() !== token) return;
+      const { data: signed, error: signedError } = await supabase.storage.from('Users').createSignedUrl(`${directory}${files[0].name}`, 60);
+      if (signedError || getPixelArtToken() !== token) return;
+      setUser(current => current.user === data.user ? { ...current, image: signed.signedUrl } : current);
+    } catch { /* Keep the default avatar if image loading fails. */ }
   };
-  //Función para validar el usuario y la contraseña
+
   async function save_login_user() {
-    
+    const token = getPixelArtToken();
+    if (!token) { clearSiteSession(); setIsLoggedIn(false); return; }
     try {
-      const token = getPixelArtToken();
-      if (!token) return;
-      const { data: authenticatedUser, error: sessionError } = await supabase.rpc('pixel_art_session_user', { p_token: token });
-      if (sessionError) throw sessionError;
-      if (!authenticatedUser) {
-        localStorage.removeItem(PIXEL_ART_SESSION_KEY);
-        setIsLoggedIn(false);
-        return;
-      }
-      const { data, error } = await supabase
-        .from('Users')
+      const authenticatedUser = await validateSiteSession();
+      if (getPixelArtToken() !== token || !authenticatedUser) return;
+      const { data, error } = await supabase.from('Users')
         .select('id,name,last_name,user,profile_image,show_image_border,color_image_border,show_image_shadow,color_image_shadow')
-        .eq('user', authenticatedUser)
-        .single();
-      if (error) {
-        notify('Please insert username and password');
-        return;
-      }
-      //console.log(data);
-      //si ese usuario tiene imagen llamamos a la función fetch para coger la imagen de la base de datos
-      if (data.profile_image) {
-        fetchImage(data);
-      }
-      else{
-        const { name, last_name, id, show_image_border, color_image_border, show_image_shadow, color_image_shadow} = data; // Obtener los datos del usuario
-        //console.log(id)
-        const newUser = {
-          name: name,
-          lastName: last_name,
-          id: id,
-          image: userpng,
-          imageSize: user.imageSize,
-        };
-        setUser(newUser); // Almacenar los datos del usuario en el estado
-        setShowImageBorder(show_image_border);
-        setBorderImageColor(color_image_border);
-        setShowShadow(show_image_shadow);
-        setShadowColor(color_image_shadow);
-        setIsLoggedIn(true);
-      }
-    } catch (error) {
-      console.error('Error during login:', error.message);
-      notify('An error occurred while logging in.');
+        .eq('user', authenticatedUser).single();
+      if (getPixelArtToken() !== token) return;
+      if (error) { notify('Could not load your profile. Please try again.'); return; }
+      applyProfile(data);
+      if (data.profile_image) fetchImage(data, token);
+    } catch {
+      if (getPixelArtToken() === token) notify('Could not verify your session. Please try again.');
     }
   }
+
   async function leerDatos() { // Define la función para leer datos
     try {
       // Nombre de la tabla que deseas leer
@@ -337,10 +259,9 @@ function Login() {
   };
 
   useEffect(() => {
-    if(localStorage.getItem('user_logged') !== (null)){
-      save_login_user(localStorage.getItem('user_logged'));
-    }
-  }, []);
+    if (sessionUsername) save_login_user();
+    else { setIsLoggedIn(false); setSelectedImage(null); }
+  }, [sessionUsername]);
 
   const [selectedImage, setSelectedImage] = useState(null);
 
