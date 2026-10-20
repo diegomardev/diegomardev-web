@@ -187,3 +187,25 @@ remaining-member sends and private event storage. Local mock browser checks
 verified timeline placement, date grouping, sending via the new RPC and the
 confirmation wording. No real participant was removed or notified by testing.
 The production build and chat utility tests pass.
+
+## Group header and information panel
+
+`20261020020000_chat_group_info.sql` was applied on 2026-10-20. The group header
+shows current usernames between the group title and its three-dot menu. Click
+the title/participants or choose Información del grupo to open the panel with
+name, description, creation date, member count and username list. Desktop uses
+a third column; mobile uses the conversation area with a close button. Live is
+replaced by the options menu, which also exposes archive and leave actions.
+
+The session-validated `chat_group_info` RPC returns only room metadata and
+usernames. Public rooms include registered accounts; named rooms match exact
+legacy membership. Archived members stay included; departed members do not.
+Invalid sessions, non-members and departed callers are denied. The panel
+refreshes with receipt polling. No roles, admin privileges, encryption claims
+or unsupported media controls are fabricated from the screenshot reference.
+
+Transactional fixtures verified metadata, two exact members, archived-member
+retention, departed-member exclusion and access denials; fixtures rolled back.
+Browser QA used local mock data for title/menu opening, participant labels,
+Escape/close behavior and a 390px mobile viewport without horizontal overflow.
+The source and dist are saved locally for the owner's GitHub deployment.

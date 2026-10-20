@@ -4,6 +4,7 @@ import { getPixelArtToken, pixelArtSupabase as supabase } from '../../../lib/pix
 // Polling keeps receipts persistent across reconnects without exposing the
 // receipt table or depending on the project's Realtime publication settings.
 export function useChatReceipts({ username, selectedId, messages, messagePane }) {
+  const [groupInfo, setGroupInfo] = useState(null);
   const [events, setEvents] = useState([]);
   const [statuses, setStatuses] = useState({});
   const [receiptError, setReceiptError] = useState('');
@@ -18,6 +19,7 @@ export function useChatReceipts({ username, selectedId, messages, messagePane })
     let timer;
     const received = new Set();
     const read = new Set();
+    setGroupInfo(null);
     setEvents([]);
     setStatuses({});
     if (!username) return;
@@ -39,10 +41,10 @@ export function useChatReceipts({ username, selectedId, messages, messagePane })
       const requestedRoom = room.current;
       let retryImmediately = false;
       try {
-        const [{ data, error }, activity] = await Promise.all([supabase.rpc('chat_sync_receipts', {
+        const [{ data, error }, activity, info] = await Promise.all([supabase.rpc('chat_sync_receipts', {
           p_token: token, p_chat_id: requestedRoom,
           p_received: receivedBatch, p_read: readBatch,
-        }), requestedRoom ? supabase.rpc('chat_room_events', { p_token: token, p_chat_id: requestedRoom }) : Promise.resolve({ data: [] })]);
+        }), requestedRoom ? supabase.rpc('chat_room_events', { p_token: token, p_chat_id: requestedRoom }) : Promise.resolve({ data: [] }), requestedRoom ? supabase.rpc('chat_group_info', { p_token: token, p_chat_id: requestedRoom }) : Promise.resolve({ data: null })]);
         if (!active) return;
         if (error) throw error;
         for (const id of receivedBatch) received.delete(id);
@@ -51,9 +53,10 @@ export function useChatReceipts({ username, selectedId, messages, messagePane })
         for (const message of data.inbox || []) received.add(String(message.message_id));
         if (room.current === requestedRoom) {
           setStatuses(data.statuses || {});
+          if (!info.error) setGroupInfo(current => JSON.stringify(current) === JSON.stringify(info.data) ? current : info.data);
           if (!activity.error) setEvents(current => JSON.stringify(current) === JSON.stringify(activity.data || []) ? current : activity.data || []);
         }
-        setReceiptError(activity.error ? 'Could not load group activity. Retrying…' : '');
+        setReceiptError(activity.error || info.error ? 'Could not load group information. Retrying…' : '');
         retryImmediately = received.size > 0 || room.current !== requestedRoom;
       } catch (error) {
         if (active) setReceiptError(error.code === '28000'
@@ -80,6 +83,7 @@ export function useChatReceipts({ username, selectedId, messages, messagePane })
   }, [username]);
 
   useEffect(() => {
+    setGroupInfo(null);
     setEvents([]);
     setStatuses({});
     visible.current.clear();
@@ -106,5 +110,5 @@ export function useChatReceipts({ username, selectedId, messages, messagePane })
     return () => { observer.disconnect(); visible.current.clear(); };
   }, [messages, selectedId, username, messagePane]);
 
-  return { statuses, receiptError, events };
+  return { statuses, receiptError, events, groupInfo };
 }

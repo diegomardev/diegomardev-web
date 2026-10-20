@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { IconArrowLeft, IconMessageCircle, IconMoodSmile, IconPlus, IconSend, IconDots, IconArchive, IconTrash, IconRestore, IconX } from '@tabler/icons-react';
+import { IconArrowLeft, IconMessageCircle, IconMoodSmile, IconPlus, IconSend, IconDots, IconArchive, IconTrash, IconRestore, IconInfoCircle, IconUsers, IconCalendar, IconX } from '@tabler/icons-react';
 import Navbar from '../../../components/Navbar/Navbar';
 import { getPixelArtToken, pixelArtSupabase as supabase } from '../../../lib/pixelArtSession';
 import { useChatReceipts } from './useChatReceipts';
@@ -12,6 +12,9 @@ const EMOJIS = ['😊', '😂', '❤️', '👍', '🎉', '😎', '😍', '🤔'
 const emptyChat = { name: '', description: '', users: '' };
 
 export default function Chat() {
+  const [showGroupInfo, setShowGroupInfo] = useState(false);
+  const infoClose = useRef(null);
+  const infoOrigin = useRef(null);
   const [footerHeight, setFooterHeight] = useState(0);
   const composerForm = useRef(null);
   const [username, setUsername] = useState(() => localStorage.getItem('user_logged'));
@@ -34,7 +37,6 @@ export default function Chat() {
   const [messageError, setMessageError] = useState('');
   const [sendError, setSendError] = useState('');
   const [sending, setSending] = useState(false);
-  const [connection, setConnection] = useState('connecting');
   const [showEmoji, setShowEmoji] = useState(false);
   const [newChat, setNewChat] = useState(emptyChat);
   const [createError, setCreateError] = useState('');
@@ -56,7 +58,31 @@ export default function Chat() {
   const hiddenChats = chats.filter(room => roomStates[room.id] === 'archived');
   const shownChats = chats.filter(room => (roomStates[room.id] || 'active') === listView);
   const draft = drafts[selectedId] || '';
-  const { statuses, receiptError, events } = useChatReceipts({ username, selectedId, messages, messagePane });
+  const { statuses, receiptError, events, groupInfo } = useChatReceipts({ username, selectedId, messages, messagePane });
+
+  const members = groupInfo?.id === selectedId ? groupInfo.members || [] : [];
+  const membersLabel = groupInfo?.id === selectedId ? members.join(', ') : 'Cargando participantes…';
+
+  function openGroupInfo(event) {
+    infoOrigin.current = event?.currentTarget;
+    setRoomMenuId(null);
+    setShowGroupInfo(true);
+  }
+
+  function closeGroupInfo() {
+    setShowGroupInfo(false);
+    if (infoOrigin.current?.isConnected) infoOrigin.current.focus();
+    else document.querySelector('.dm-chat-header-actions > button')?.focus();
+  }
+
+  useEffect(() => { setShowGroupInfo(false); }, [selectedId, username]);
+  useEffect(() => {
+    if (!showGroupInfo) return;
+    infoClose.current?.focus();
+    const escape = event => { if (event.key === 'Escape') closeGroupInfo(); };
+    document.addEventListener('keydown', escape);
+    return () => document.removeEventListener('keydown', escape);
+  }, [showGroupInfo]);
 
   const timeline = mergeMessages(messages, events.map(event => ({ message_id: `event:${event.id}`, created_at: event.created_at, systemEvent: true, user: event.username })));
 
@@ -121,14 +147,12 @@ export default function Chat() {
     shouldFollow.current = true;
     if (!selectedId || !username) { setLoadingMessages(false); return; }
     setLoadingMessages(true);
-    setConnection('connecting');
     const channel = supabase.channel(`chat-messages-${selectedId}`)
       .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'Messages', filter: `chat_id=eq.${selectedId}` }, payload => {
         if (active && payload.new.chat_id === selectedId) setMessages(current => mergeMessages(current, [payload.new]));
       })
       .subscribe(status => {
         if (!active) return;
-        setConnection(status === 'SUBSCRIBED' ? 'live' : 'connecting');
         if (status === 'SUBSCRIBED') loadMessages();
       });
     async function loadMessages() {
@@ -290,7 +314,7 @@ export default function Chat() {
           <Link className="button_normal" to="/login?returnTo=chat">Log in</Link>
         </main>
       ) : (
-        <main className="dm-chat-shell" style={footerHeight ? { '--chat-footer-height': `${footerHeight}px` } : undefined} data-chat-open={Boolean(selectedChat)}>
+        <main className="dm-chat-shell" style={footerHeight ? { '--chat-footer-height': `${footerHeight}px` } : undefined} data-chat-open={Boolean(selectedChat)} data-info-open={showGroupInfo && Boolean(selectedChat)}>
           <aside className="dm-chat-sidebar" aria-label="Conversations">
             <header className="dm-chat-sidebar-header">
               <div><h1>Chats</h1><span>Your conversations</span></div>
@@ -335,10 +359,29 @@ export default function Chat() {
           <section className="dm-chat-conversation" aria-label={selectedChat?.name || 'Conversation'}>
             {!selectedChat ? <div className="dm-chat-empty"><IconMessageCircle size={56} stroke={1.2} /><h2>A space to talk</h2><p>Select a conversation from the list<br />or create a new chat with +.</p></div> : <>
               <header className="dm-chat-header">
-                <button className="button_normal dm-chat-icon dm-chat-back" aria-label="Back to chats" onClick={() => setSelectedId(null)}><IconArrowLeft size={20} /></button>
-                <span className="dm-chat-avatar" aria-hidden="true">{(selectedChat.name || '?').slice(0, 1).toUpperCase()}</span>
-                <div className="dm-chat-heading"><h2>{selectedChat.name}</h2><p>{selectedChat.description || 'Conversation'}</p></div>
-                <span className={`dm-chat-connection ${connection === 'live' ? 'is-live' : ''}`} role="status">{connection === 'live' ? 'Live' : 'Connecting…'}</span>
+                <button className="button_normal dm-chat-icon dm-chat-back" type="button" aria-label="Back to chats" title="Cerrar conversación" onClick={() => setSelectedId(null)}><IconArrowLeft size={20} /></button>
+                <button className="dm-chat-group-title" type="button" onClick={openGroupInfo} aria-label={`Información de ${selectedChat.name}`}>
+                  <span className="dm-chat-avatar" aria-hidden="true">{(selectedChat.name || '?').slice(0, 1).toUpperCase()}</span>
+                  <span className="dm-chat-heading"><strong>{groupInfo?.id === selectedId ? groupInfo.name : selectedChat.name}</strong><small>{selectedChat.description || 'Información del grupo'}</small></span>
+                </button>
+                <button className="dm-chat-header-members" type="button" onClick={openGroupInfo} title={membersLabel} aria-label={`Participantes: ${membersLabel}`}><IconUsers size={16} aria-hidden="true" /><span>{membersLabel}</span></button>
+                <div className="dm-chat-header-actions" ref={roomMenuId === 'header' ? roomActionsRef : null}>
+                  <button className="button_normal dm-chat-icon" type="button" aria-label="Opciones del grupo" aria-haspopup="menu" aria-expanded={roomMenuId === 'header'} aria-controls={roomMenuId === 'header' ? 'header-group-menu' : undefined} onClick={() => setRoomMenuId(current => current === 'header' ? null : 'header')}><IconDots size={20} /></button>
+                  {roomMenuId === 'header' && <div className="dm-chat-room-menu" id="header-group-menu" role="menu" aria-label="Opciones del grupo" onKeyDown={event => {
+                    if (['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(event.key)) {
+                      event.preventDefault();
+                      const items = [...event.currentTarget.querySelectorAll('[role="menuitem"]')];
+                      const index = items.indexOf(document.activeElement);
+                      const next = event.key === 'Home' ? 0 : event.key === 'End' ? items.length - 1 : (index + (event.key === 'ArrowUp' ? -1 : 1) + items.length) % items.length;
+                      items[next]?.focus();
+                    }
+                    if (event.key === 'Tab') setRoomMenuId(null);
+                  }}>
+                    <button type="button" role="menuitem" onClick={openGroupInfo}><IconInfoCircle size={17} />Información del grupo</button>
+                    <button type="button" role="menuitem" disabled={changingRoom} onClick={() => changeChatState(selectedChat, 'archived')}><IconArchive size={17} />Archive chat</button>
+                    <button className="dm-chat-delete-action" type="button" role="menuitem" disabled={changingRoom} onClick={() => requestDeleteChat(selectedChat)}><IconTrash size={17} />Eliminar y salir del grupo</button>
+                  </div>}
+                </div>
               </header>
               <div className="dm-chat-messages" ref={messagePane} onScroll={event => {
                 const el = event.currentTarget;
@@ -378,6 +421,19 @@ export default function Chat() {
               </form>
             </>}
           </section>
+          {showGroupInfo && selectedChat && <aside className="dm-chat-group-info" aria-label="Información del grupo">
+            <header><button ref={infoClose} className="button_normal dm-chat-icon" type="button" aria-label="Cerrar información del grupo" onClick={closeGroupInfo}><IconX size={20} /></button><h2>Info. del grupo</h2></header>
+            <div className="dm-chat-info-body">
+              <div className="dm-chat-info-summary"><span className="dm-chat-avatar dm-chat-info-avatar" aria-hidden="true">{(selectedChat.name || '?').slice(0, 1).toUpperCase()}</span><h3>{groupInfo?.id === selectedId ? groupInfo.name : selectedChat.name}</h3><p>{groupInfo?.id === selectedId ? `${members.length} ${members.length === 1 ? 'miembro' : 'miembros'}` : 'Cargando miembros…'}</p></div>
+              <section className="dm-chat-info-section"><h3>Descripción</h3><p>{groupInfo?.id === selectedId ? groupInfo.description || 'Sin descripción' : selectedChat.description || 'Sin descripción'}</p>
+                {messageDayKey(selectedChat.created_at) && <p className="dm-chat-info-created"><IconCalendar size={16} aria-hidden="true" />Creado el {formatMessageDate(selectedChat.created_at)}</p>}
+              </section>
+              <section className="dm-chat-info-section"><h3><IconUsers size={17} aria-hidden="true" />Participantes{groupInfo?.id === selectedId ? ` · ${members.length}` : ''}</h3>
+                {groupInfo?.id !== selectedId ? <p role="status">Cargando participantes…</p> : <ul className="dm-chat-info-members">{members.map(member => <li key={member}><span className="dm-chat-avatar" aria-hidden="true">{member.slice(0, 1).toUpperCase()}</span><span>{member}{member === username && <small>Tú</small>}</span></li>)}</ul>}
+              </section>
+              <button className="dm-chat-info-leave" type="button" disabled={changingRoom} onClick={() => requestDeleteChat(selectedChat)}><IconTrash size={18} />Eliminar y salir del grupo</button>
+            </div>
+          </aside>}
         </main>
       )}
       <dialog className="dm-chat-dialog" ref={deleteDialog} aria-labelledby="delete-chat-title" onCancel={event => { if (changingRoom) event.preventDefault(); else setDeleteTarget(null); }}>
