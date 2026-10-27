@@ -1,0 +1,11 @@
+{
+  "name": "coin",
+  "source": "https://awtrix.de/icons/coin",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#de6100","#ffa200","#ffce19","#ffce19","#ffce19","#ffce19","#000000","#de6100","#ffa200","#ffce19","#ffd219","#ffa200","#de6100","#ffce19","#ffce10","#de6100","#ffa200","#ffce19","#ffa200","#ffa200","#de6100","#de6100","#ffce19","#de6100","#ffa200","#ffce19","#ffa200","#ffa200","#de6100","#de6100","#ffce19","#de6100","#ffa200","#ffce19","#ffa200","#ffa200","#de6100","#de6100","#ffce19","#de6100","#ffa200","#ffce19","#ffa200","#ffa200","#de6100","#de6100","#ffce19","#de6100","#ffa200","#ffce19","#ffd219","#ffa200","#de6100","#ffce19","#ffce10","#000000","#de6100","#ffa200","#ffce19","#ffce19","#ffce19","#ffce19","#000000"]
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Fotovoltaico",
+  "source": "https://awtrix.de/icons/fotovoltaico",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 200,
+  "frames": [
+    ["#f7f7f7","#0892ef","#f7f7f7","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#0892ef","#0892ef","#0892ef","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#f7fbef","#0892ef","#f7fbef","#0892ef","#f7fbef","#0892ef","#f7fbef","#c5ef9c","#0892ef","#0892ef","#0892ef","#c5ef9c","#c5ef9c","#c5ef9c","#0892ef","#c5ef9c","#f7f7f7","#0892ef","#f7f7f7","#c5ef9c","#c5ef9c","#c5ef9c","#f7fbef","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#e61c08","#c5ef9c","#000000","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#e67d08","#e67d08","#e67d08","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#e67d08","#e67d08","#e67d08"],
+    ["#0892ef","#0892ef","#0892ef","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#f7f7f7","#0892ef","#f7f7f7","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#0892ef","#eff7ff","#0892ef","#eff7ff","#0892ef","#eff7ff","#0892ef","#c5ef9c","#f7f7f7","#0892ef","#f7f7f7","#c5ef9c","#c5ef9c","#c5ef9c","#eff7ff","#c5ef9c","#0892ef","#0892ef","#0892ef","#c5ef9c","#c5ef9c","#c5ef9c","#0892ef","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#e61c08","#c5ef9c","#000000","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#e67d08","#e67d08","#e67d08","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#e67d08","#e67d08","#e67d08"],
+    ["#0892ef","#0892ef","#0892ef","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#0892ef","#0892ef","#0892ef","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#0892ef","#0892ef","#f7fbef","#0892ef","#f7fbef","#0892ef","#f7fbef","#c5ef9c","#0892ef","#0892ef","#0892ef","#c5ef9c","#c5ef9c","#c5ef9c","#0892ef","#c5ef9c","#0892ef","#0892ef","#0892ef","#c5ef9c","#c5ef9c","#c5ef9c","#f7fbef","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#e61c08","#c5ef9c","#000000","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#e67d08","#e67d08","#e67d08","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#c5ef9c","#e67d08","#e67d08","#e67d08"]
+  ]
+}

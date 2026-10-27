@@ -1,0 +1,11 @@
+{
+  "name": "pikachu",
+  "source": "https://awtrix.de/icons/pikachu",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#424142","#424142","#ffffff","#ffffff","#ffffff","#ffffff","#424142","#ffffff","#ffffff","#ffeb31","#ff9a00","#ffffff","#ffffff","#ffffff","#ff9a00","#ffffff","#ffffff","#ffffff","#ffeb3a","#ffeb3a","#ffeb3a","#ffeb3a","#ff9a00","#ff9600","#ff9600","#ffffff","#ffeb3a","#000000","#ffeb3a","#ffeb3a","#000000","#ff9600","#ff9600","#ffffff","#ff1c00","#ffeb3a","#ffeb3a","#ffeb3a","#ff9a00","#ffffff","#c56d00","#ffffff","#ffffff","#ff9600","#ff9600","#ff9600","#ffffff","#ffffff","#c56d00","#fff300","#ff9600","#fff300","#ff9600","#fff300","#ffffff","#ffffff","#ffffff","#fff300","#ff9600","#c56d00","#c56d00","#ff9600","#ffffff"]
+  ]
+}

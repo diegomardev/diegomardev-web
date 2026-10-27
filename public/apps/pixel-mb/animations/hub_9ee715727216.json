@@ -1,0 +1,11 @@
+{
+  "name": "twitter_1",
+  "source": "https://awtrix.de/icons/twitter-1",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#52aef7","#000000","#000000","#000000","#000000","#52aeef","#000000","#000000","#52aef7","#52aef7","#000000","#000000","#52aeef","#52aef7","#52aeef","#000000","#52aeef","#52aeef","#52aeef","#52aeef","#52aeef","#52aeef","#52aef7","#52aef7","#52aef7","#52aeef","#52aeef","#52aef7","#52aeef","#52aeef","#52aef7","#ffffff","#000000","#52aeef","#52aef7","#52aeef","#ffffff","#52aeef","#ffffff","#ffffff","#000000","#000000","#52aef7","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#000000","#52aeef","#52aef7","#52aeef","#ffffff","#000000","#000000","#ffffff","#52aef7","#52aef7","#52aef7","#000000","#000000","#000000","#000000","#ffffff"]
+  ]
+}

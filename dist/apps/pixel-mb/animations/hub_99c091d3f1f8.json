@@ -1,0 +1,11 @@
+{
+  "name": "fuxart",
+  "source": "https://awtrix.de/icons/fuxart",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffdfbd","#ffe3c5","#ffebce","#ffefde","#fff3e6","#f7f7ef","#f7fbf7","#fffbff","#ffebd6","#bd4919","#f7fff7","#f7f7ef","#f7f7ef","#f7fbef","#8c3519","#f7f7f7","#ffd7b5","#9c7d6b","#4a2408","#ef7900","#ef7900","#000800","#8c615a","#f7f7ef","#ffb263","#f7fbff","#f77500","#f78e00","#f78a00","#ef7100","#deebde","#ffefde","#ff6519","#7b7573","#a54910","#ef7908","#ef7900","#9c4919","#8c9a94","#ffbe84","#f75d10","#f7e7de","#fffbff","#c55119","#de6108","#f7ffff","#fff7ef","#ffa652","#ef5510","#f76108","#ff6108","#f7ffff","#eff7f7","#ff7519","#ff8629","#ff8629","#e65110","#ef5108","#f76119","#f7713a","#ef8252","#ff6919","#ff7521","#ff7521"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "taiji",
+  "source": "https://awtrix.de/icons/taiji",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#d6bebd","#d6bebd","#527de6","#527def","#000000","#000000","#000000","#d6bebd","#d6bebd","#527de6","#527de6","#5279e6","#527de6","#000000","#d6bebd","#d6bebd","#d6bebd","#5279e6","#527de6","#d6bebd","#527de6","#527de6","#d6bebd","#d6bebd","#527de6","#527de6","#527def","#527de6","#527de6","#527de6","#d6bebd","#d6bebd","#d6bebd","#d6bebd","#527de6","#527de6","#527de6","#527de6","#d6bebd","#d6bebd","#527de6","#d6bebd","#d6bebd","#527de6","#527de6","#527de6","#000000","#d6bebd","#d6bebd","#d6bebd","#d6bebd","#527de6","#527de6","#000000","#000000","#000000","#d6bebd","#d6bebd","#527de6","#527de6","#000000","#000000"]
+  ]
+}

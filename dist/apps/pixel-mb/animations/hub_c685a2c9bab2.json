@@ -1,0 +1,11 @@
+{
+  "name": "yellow",
+  "source": "https://awtrix.de/icons/yellow",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a"]
+  ]
+}

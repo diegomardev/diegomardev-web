@@ -1,0 +1,11 @@
+{
+  "name": "greece",
+  "source": "https://awtrix.de/icons/greece",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#083da5","#fffbff","#0839a5","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#003da5","#0839a5","#0839a5","#0839a5","#0839a5","#0039a5","#fffbff","#003da5","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#0839a5","#003da5","#0839a5","#0839a5","#0839a5","#0839a5","#0839a5","#0839a5","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#083da5","#0839a5","#0839a5","#003da5","#0839a5","#0839a5","#0839a5","#0839a5","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#0839a5","#0039a5","#0839a5","#003da5","#0839a5","#0839a5","#0839a5","#0839a5"]
+  ]
+}

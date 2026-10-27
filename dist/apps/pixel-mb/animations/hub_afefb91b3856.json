@@ -1,0 +1,11 @@
+{
+  "name": "tezos",
+  "source": "https://awtrix.de/icons/tezos",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#297df7","#297df7","#ffffff","#297df7","#297dff","#297df7","#297df7","#297df7","#297df7","#297df7","#ffffff","#297dff","#297df7","#297df7","#297df7","#297df7","#297df7","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#297df7","#297dff","#297df7","#297df7","#ffffff","#297df7","#297df7","#ffffff","#297dff","#297df7","#297df7","#297df7","#ffffff","#ffffff","#297dff","#297df7","#ffffff","#297df7","#297df7","#297dff","#297df7","#ffffff","#ffffff","#297df7","#ffffff","#297df7","#297df7","#297dff","#297df7","#297df7","#297df7","#297df7","#ffffff","#297df7","#297df7","#297df7","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#297dff"]
+  ]
+}

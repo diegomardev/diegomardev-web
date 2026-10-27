@@ -1,0 +1,11 @@
+{
+  "name": "snapchat",
+  "source": "https://awtrix.de/icons/snapchat",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffff10","#ffff10","#ffff10","#ffff10","#ffff10","#ffff10","#ffff10","#ffff10","#ffff10","#ffff10","#ffff10","#ffffff","#ffffff","#ffff10","#ffff10","#ffff10","#ffff10","#ffff10","#ffffff","#ffffff","#ffffff","#ffffff","#ffff10","#ffff10","#ffff10","#ffff10","#ffffff","#ffffff","#ffffff","#ffffff","#ffff10","#ffff10","#ffff10","#ffff10","#ffffff","#ffffff","#ffffff","#ffffff","#ffff10","#ffff10","#ffff10","#ffff10","#ffffff","#ffffff","#ffffff","#ffffff","#ffff10","#ffff10","#ffff10","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffff10","#ffff10","#ffff10","#ffff10","#ffff10","#ffff10","#ffff10","#ffff10","#ffff10"]
+  ]
+}

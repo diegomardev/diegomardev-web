@@ -1,0 +1,11 @@
+{
+  "name": "insta",
+  "source": "https://awtrix.de/icons/insta",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ff394a","#ffff84","#4aaeff","#845919","#845919","#845919","#293d4a","#293d42","#f70008","#ffff10","#3175ff","#845921","#845919","#845919","#192429","#192d31","#d60008","#ffd719","#0055ef","#8c8a8c","#8c8a8c","#cecece","#845919","#845921","#e6dbce","#e6dbce","#8c8a8c","#293d4a","#192831","#8c8a8c","#e6dbce","#e6dbce","#e6dbce","#e6dbce","#8c8a8c","#3a5963","#314552","#8c8a8c","#e6dbce","#e6dbce","#e6dbce","#e6dbce","#cecece","#8c8a8c","#8c8a8c","#cecece","#e6dbce","#e6dbce","#d6cab5","#e6dbce","#e6dbce","#e6dbce","#e6dbce","#e6dbce","#e6dbce","#d6cab5","#bdb29c","#bdb29c","#d6cab5","#d6cab5","#d6cab5","#d6cab5","#bdb29c","#bdb29c"]
+  ]
+}

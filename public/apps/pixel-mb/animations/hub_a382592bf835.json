@@ -1,0 +1,11 @@
+{
+  "name": "hnt",
+  "source": "https://awtrix.de/icons/hnt",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#3a0cf7","#3a0cf7","#3a0cf7","#ffffff","#3a0cf7","#3a0cf7","#000000","#3a0cf7","#3a0cf7","#ffffff","#ffffff","#ffffff","#3a0cf7","#3a0cf7","#3a0cf7","#3a0cf7","#ffffff","#3a0cf7","#3a0cf7","#3a0cf7","#ffffff","#ffffff","#3a0cf7","#ffffff","#3a0cf7","#ffffff","#ffffff","#3a0cf7","#ffffff","#3a0cf7","#3a0cf7","#ffffff","#3a0cf7","#ffffff","#ffffff","#3a0cf7","#ffffff","#3a0cf7","#ffffff","#ffffff","#3a0cf7","#3a0cf7","#3a0cf7","#ffffff","#3a0cf7","#3a0cf7","#3a0cf7","#3a0cf7","#ffffff","#ffffff","#ffffff","#3a0cf7","#3a0cf7","#000000","#3a0cf7","#3a0cf7","#ffffff","#3a0cf7","#3a0cf7","#3a0cf7","#000000","#000000"]
+  ]
+}

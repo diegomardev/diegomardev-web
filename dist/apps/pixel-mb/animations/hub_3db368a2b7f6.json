@@ -1,0 +1,11 @@
+{
+  "name": "calendar25",
+  "source": "https://awtrix.de/icons/calendar25",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#bdbabd","#bdbabd","#ffffff","#bdbabd","#bdbabd","#ffffff","#bdbabd","#bdbabd","#004dce","#004dce","#0049ce","#0049ce","#004dce","#004dce","#0049ce","#0049ce","#004dce","#ffffff","#ffffff","#ffffff","#004dce","#ffffff","#ffffff","#ffffff","#004dce","#0049ce","#004dce","#ffffff","#0049ce","#ffffff","#0049ce","#004dce","#004dce","#ffffff","#ffffff","#ffffff","#004dce","#ffffff","#ffffff","#ffffff","#3a9aff","#ffffff","#3a9aff","#3a9aff","#3a9aff","#3a9aff","#3a9aff","#ffffff","#3a9aff","#ffffff","#ffffff","#ffffff","#3a9aff","#ffffff","#ffffff","#ffffff","#3a9aff","#3a9aff","#3a9aff","#3a9aff","#3a9aff","#3a9aff","#3a9aff","#3a9aff"]
+  ]
+}

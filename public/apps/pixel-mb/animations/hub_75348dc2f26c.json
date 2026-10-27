@@ -1,0 +1,11 @@
+{
+  "name": "pinterest",
+  "source": "https://awtrix.de/icons/pinterest",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#ffffff","#ffffff","#ffffff","#f70008","#000000","#000000","#000000","#ffffff","#f70008","#f70008","#f70008","#ffffff","#f70008","#000000","#ffffff","#f70008","#f70008","#f70008","#f70008","#f70008","#ffffff","#f70008","#ffffff","#f70008","#ffffff","#f70008","#f70008","#f70008","#ffffff","#f70008","#ffffff","#f70008","#ffffff","#f70008","#f70008","#f70008","#ffffff","#f70008","#f70010","#f70008","#ffffff","#ffffff","#f70008","#ffffff","#f70008","#f70008","#000000","#f70008","#ffffff","#f70008","#ffffff","#f70008","#f70008","#000000","#000000","#000000","#ffffff","#f70008","#f70008","#f70008","#000000","#000000"]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "calender",
+  "source": "https://awtrix.de/icons/calender",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 400,
+  "frames": [
+    ["#d62d29","#f7ebef","#d62d29","#d62d29","#d62d29","#f7ebef","#d62d29","#000000","#d62d29","#f7ebef","#d62d29","#d62d29","#d62d29","#f7ebef","#d62d29","#000000","#941c19","#941c19","#941c19","#941c19","#941c19","#941c19","#941c19","#000000","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#000000","#bdcace","#000000","#000000","#bdcace","#bdcace","#bdcace","#bdcace","#000000","#bdcace","#000000","#000000","#bdcace","#bdcace","#bdcace","#bdcace","#000000","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#000000","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#000000"],
+    ["#d62d29","#f7ebef","#d62d29","#d62d29","#d62d29","#f7ebef","#d62d29","#000000","#d62d29","#f7ebef","#d62d29","#d62d29","#d62d29","#f7ebef","#d62d29","#000000","#941c19","#941c19","#941c19","#941c19","#941c19","#941c19","#941c19","#000000","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#000000","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#000000","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#000000","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#000000","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#bdcace","#000000"]
+  ]
+}

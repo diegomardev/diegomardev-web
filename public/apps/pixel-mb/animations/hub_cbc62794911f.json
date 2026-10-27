@@ -1,0 +1,11 @@
+{
+  "name": "amazon",
+  "source": "https://awtrix.de/icons/amazon",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#000000","#000000","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#000000","#000000","#ffffff","#ffffff","#000000","#000000","#ffffff","#ff9600","#000000","#000000","#ffffff","#ffffff","#000000","#000000","#ff9600","#ff9600","#ff9600","#000000","#000000","#000000","#000000","#ff9600","#ff9600","#ffffff","#ff9600","#ff9600","#ff9600","#ff9600","#ff9600","#ff9600","#ffffff"]
+  ]
+}

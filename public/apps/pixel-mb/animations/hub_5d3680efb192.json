@@ -1,0 +1,11 @@
+{
+  "name": "BVB09logo",
+  "source": "https://awtrix.de/icons/bvb09logo",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#f7eb19","#f7eb19","#f7eb19","#000000","#f7eb19","#f7eb19","#f7eb19","#ffffff","#f7eb19","#000000","#f7eb19","#000000","#f7eb19","#000000","#f7eb19","#ffffff","#f7eb19","#000000","#f7eb19","#000000","#f7eb19","#f7eb19","#f7eb19","#ffffff","#f7eb19","#000000","#f7eb19","#000000","#000000","#000000","#f7eb19","#ffffff","#f7eb19","#f7eb19","#f7eb19","#000000","#f7eb19","#f7eb19","#f7eb19","#ffffff"]
+  ]
+}

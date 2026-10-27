@@ -1,0 +1,11 @@
+{
+  "name": "edeka",
+  "source": "https://awtrix.de/icons/edeka",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#f7ff00","#0814ff","#0814ff","#0814ff","#0814ff","#0814ff","#f7ff00","#f7ff00","#f7ff00","#0814ff","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#0814ff","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#0814ff","#0014ff","#0810ff","#0010ff","#0814ff","#f7ff00","#f7ff00","#f7ff00","#0814ff","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#0810ff","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#0010ff","#0814ff","#0814ff","#0814ff","#0814ff","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#f7ff00","#f7ff00"]
+  ]
+}

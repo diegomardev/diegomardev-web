@@ -1,0 +1,11 @@
+{
+  "name": "coolapk2",
+  "source": "https://awtrix.de/icons/coolapk2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#08ca7b","#10c673","#08c673","#10c673","#10c673","#10c673","#10c673","#08ca7b","#10c273","#08c273","#00be6b","#08be73","#10c273","#08be73","#08c273","#10c273","#08be73","#21c27b","#a5e7ce","#5ad29c","#08ba6b","#52d79c","#08be6b","#08be73","#19be73","#94dfbd","#19be73","#63d2a5","#cef3e6","#cef3e6","#08be73","#08ba6b","#10b673","#94dfbd","#10b66b","#6bd2a5","#52c694","#94dfbd","#a5e3c5","#08b26b","#08ae6b","#21b673","#a5e3ce","#52c694","#00ae63","#08ae63","#42c28c","#19b26b","#00ae63","#08ae63","#00aa5a","#08aa63","#08ae63","#08ae63","#08ae63","#08ae63","#00ae63","#08aa63","#00aa63","#08aa63","#08aa63","#08aa63","#08aa63","#08ae63"]
+  ]
+}

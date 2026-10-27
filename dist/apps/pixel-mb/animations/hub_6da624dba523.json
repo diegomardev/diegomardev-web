@@ -1,0 +1,11 @@
+{
+  "name": "checklist",
+  "source": "https://awtrix.de/icons/checklist",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#d6c25a","#d6c25a","#d6c25a","#d6c25a","#d6c25a","#d6c25a","#d6c25a","#d6c25a","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#efa210","#ffffff","#5a6152","#5a6152","#5a6152","#5a6152","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#19caef","#ffffff","#5a6152","#5a6152","#5a6152","#5a6152","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#9ceb10","#ffffff","#5a6152","#5a6152","#5a6152","#5a6152","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

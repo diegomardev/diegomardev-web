@@ -1,0 +1,11 @@
+{
+  "name": "mma",
+  "source": "https://awtrix.de/icons/mma",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#d60808","#d60800","#de3531","#de3531","#de3531","#de3131","#de3531","#d61010","#d60800","#d60c10","#fff3f7","#ffffff","#ffffff","#ffffff","#ffdfde","#d62829","#d60800","#d60800","#d61819","#d61819","#d61810","#d61819","#d61408","#d60400","#d60800","#ef9294","#ffffff","#ffffff","#ffffff","#ffffff","#ef9294","#d60800","#d62829","#ffdbde","#ffffff","#f7cace","#de5152","#de5152","#de3531","#d60800","#de3531","#ffffff","#ffffff","#d60400","#d60800","#d60800","#d60800","#d60800","#de3531","#ffffff","#ffffff","#d60400","#d60808","#d60800","#d60400","#d60800","#d61010","#de3531","#de3531","#d60808","#d60800","#d60800","#d60800","#d60400"]
+  ]
+}

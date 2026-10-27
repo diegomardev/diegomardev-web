@@ -1,0 +1,11 @@
+{
+  "name": "google_play_music",
+  "source": "https://awtrix.de/icons/google-play-music",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#f75531","#f75531","#ffd210","#ffd210","#ffd210","#ffd210","#000000","#000000","#f75531","#ffd210","#ffd210","#ff8e00","#ffffff","#ffeb8c","#ffd210","#000000","#f75531","#ffd210","#ff8e00","#ff8e00","#ffffff","#ff8e00","#ffd210","#000000","#f75531","#ffd210","#ff8e00","#ffffff","#ffffff","#ff8e00","#ffd210","#f75531","#f75531","#ffd210","#ff8e00","#ffe7c5","#ffe7c5","#ffd210","#ffd210","#000000","#f75531","#f75531","#ffd210","#ffd210","#ffd210","#ffd210","#000000","#000000","#f75531","#f75531","#f75531","#f75531","#000000","#000000","#000000","#000000","#f75529","#f75531","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "mosque_assr",
+  "source": "https://awtrix.de/icons/mosque-assr",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#94baf7","#94baf7","#94baf7","#94baf7","#94baf7","#94baf7","#94baf7","#94baf7","#94baf7","#94baf7","#c5cec5","#94baf7","#94baf7","#94baf7","#94baf7","#94baf7","#9cc6ff","#9cc6ff","#c5cec5","#9cc6ff","#9cc6ff","#9cc6ff","#9cc6ff","#9cc6ff","#9cc6ff","#c5cec5","#c5cec5","#9cc6ff","#9cc6ff","#9cc6ff","#9cc6ff","#9cc6ff","#bdd7ff","#c5cec5","#c5cec5","#bdd7ff","#bdd7ff","#ffffff","#bdd7ff","#bdd7ff","#bdd7ff","#c5cec5","#c5cec5","#bdd7ff","#ffffff","#ffffff","#ffffff","#bdd7ff","#ffe7b5","#c5cec5","#c5cec5","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffe7b5","#c5cec5","#c5cec5","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

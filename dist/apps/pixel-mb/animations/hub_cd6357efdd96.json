@@ -1,0 +1,11 @@
+{
+  "name": "dog",
+  "source": "https://awtrix.de/icons/dog",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#f7d2ad","#f7d2ad","#000000","#000000","#f7d2ad","#f7d2ad","#000000","#f7d2ad","#f7d2ad","#f7d2ad","#f7d2ad","#f7d2ad","#f7d2ad","#f7d2ad","#f7d2ad","#f7d2ad","#000000","#f7d2ad","#ffffff","#ffffff","#f7d2ad","#000000","#f7d2ad","#f7d2ad","#000000","#f7d2ad","#ffffff","#ffffff","#f7d2ad","#000000","#f7d2ad","#f7d2ad","#f7d2ad","#f7d2ad","#ffffff","#ffffff","#f7d2ad","#f7d2ad","#f7d2ad","#f7d2ad","#ffffff","#ffffff","#000000","#000000","#ffffff","#ffffff","#f7d2ad","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#bd2d29","#bd2d29","#ffffff","#ffffff","#000000"]
+  ]
+}

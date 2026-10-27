@@ -1,0 +1,11 @@
+{
+  "name": "bundesliga",
+  "source": "https://awtrix.de/icons/bundesliga",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ff0c00","#ff0c00","#ff0c00","#ff0c00","#ff0c00","#ff0c00","#ff0c00","#ff0c00","#ff0c00","#ff0800","#ff0c00","#ffffff","#ff0c00","#ff0c00","#ff0c00","#ff0c00","#ff0c00","#ffffff","#ffffff","#ff0800","#ff0c00","#ff0c00","#ff0c00","#ff0800","#ffffff","#ff0c00","#ffffff","#ff0c00","#ff0c00","#ff0c00","#ff0c00","#ffffff","#ff0c00","#ff0c00","#ffffff","#ffffff","#ffffff","#ffffff","#ff0c00","#ff0800","#ff0c00","#ff0800","#ffffff","#ff0800","#ff0c00","#ff0c00","#ff0800","#ff0c00","#ff0800","#ff0c00","#ffffff","#ff0c00","#ff0c00","#ff0c00","#ff0800","#ff0c00","#ff0c00","#ffffff","#ff0c00","#ff0c00","#ff0c00","#ff0800","#ff0c00","#ff0c00"]
+  ]
+}

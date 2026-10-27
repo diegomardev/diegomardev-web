@@ -1,0 +1,11 @@
+{
+  "name": "oeg",
+  "source": "https://awtrix.de/icons/oeg",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#ffffff","#ffffff","#ffffff","#ffffff","#31c24a","#31c24a","#31c24a","#31c24a","#ffffff","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#ffffff","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#ffffff","#ffffff","#ffffff","#ffffff","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#ffffff","#31c24a","#31c24a","#31c24a","#31c24a","#ffffff","#ffffff","#ffffff","#ffffff","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a","#31c24a"]
+  ]
+}

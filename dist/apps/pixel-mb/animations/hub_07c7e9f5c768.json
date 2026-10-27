@@ -1,0 +1,12 @@
+{
+  "name": "boy2blink",
+  "source": "https://awtrix.de/icons/boy2blink",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 500,
+  "frames": [
+    ["#000000","#c5863a","#c5863a","#9c5129","#9c5129","#9c5129","#9c5129","#000000","#c5863a","#c5863a","#ad6942","#ad6942","#ad6942","#9c5129","#9c5129","#9c5129","#c5863a","#c5863a","#ad6942","#c5863a","#ad6942","#ad6942","#9c5129","#9c5129","#c5863a","#ad6942","#ffd2bd","#ad6942","#ffdfce","#ad6942","#ffdfce","#9c5129","#c5863a","#ffd2bd","#000000","#ffdfce","#ffdfce","#000000","#ffd2bd","#efa284","#ffdfce","#ffdfce","#ffdfce","#ffd2bd","#ffdfce","#ffdfce","#ffd2bd","#efa284","#ffdfce","#ffd2bd","#ffb2b5","#ffdfce","#ffdfce","#ffb2b5","#ffd2bd","#efa284","#000000","#ffd2bd","#ffd2bd","#ffd2bd","#efa284","#efa284","#efa284","#000000"],
+    ["#000000","#c5863a","#c5863a","#9c5129","#9c5129","#9c5129","#9c5129","#000000","#c5863a","#c5863a","#ad6942","#ad6942","#ad6942","#9c5129","#9c5129","#9c5129","#c5863a","#c5863a","#ad6942","#c5863a","#ad6942","#ad6942","#9c5129","#9c5129","#c5863a","#ad6942","#ffd2bd","#ad6942","#ffdfce","#ad6942","#ffdfce","#9c5129","#c5863a","#ffd2bd","#ffdfce","#ffdfce","#ffdfce","#ffdfce","#ffd2bd","#efa284","#ffdfce","#ffdfce","#ffdfce","#ffd2bd","#ffdfce","#ffdfce","#ffd2bd","#efa284","#ffdfce","#ffd2bd","#ffb2b5","#ffdfce","#ffdfce","#ffb2b5","#ffd2bd","#efa284","#000000","#ffd2bd","#ffd2bd","#ffd2bd","#efa284","#efa284","#efa284","#000000"]
+  ]
+}

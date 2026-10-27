@@ -1,0 +1,11 @@
+{
+  "name": "organizer",
+  "source": "https://awtrix.de/icons/organizer",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#101008","#ffffff","#000000","#ffffff","#000000","#ffffff","#000000","#000000","#6382e6","#ffffff","#6382ef","#ffffff","#6382e6","#ffffff","#6382ef","#292421","#6382e6","#6382e6","#6382e6","#6382e6","#6382e6","#6382e6","#6382e6","#b5ceff","#6382e6","#9c9a9c","#9c9a9c","#9c9a9c","#9c9a9c","#9c9a9c","#6382e6","#b5ceff","#6382e6","#6382e6","#6382e6","#6382e6","#6382e6","#6382e6","#6382ef","#b5ceff","#6382e6","#9c9a9c","#9c9a9c","#9c9a9c","#9c9a9c","#9c9a9c","#6382e6","#b5ceff","#6382e6","#6382e6","#6382e6","#6382e6","#6382e6","#6382e6","#6382e6","#b5ceff","#000000","#b5ceff","#b5ceff","#b5ceff","#b5d2ff","#b5ceff","#b5ceff","#b5ceff"]
+  ]
+}

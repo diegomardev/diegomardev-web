@@ -1,0 +1,11 @@
+{
+  "name": "ftm",
+  "source": "https://awtrix.de/icons/ftm",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#10b6ef","#10b6ef","#10b6ef","#10b6ef","#000000","#000000","#000000","#10b6ef","#10b6ef","#ffffff","#ffffff","#10b6ef","#10b6f7","#000000","#10b6ef","#10b6ef","#ffffff","#ffffff","#10b6ef","#ffffff","#10b6ef","#10b6ef","#10b6ef","#10b6ef","#ffffff","#10b6ef","#ffffff","#ffffff","#10b6ef","#10b6ef","#10b6ef","#10b6ef","#ffffff","#ffffff","#10b6ef","#ffffff","#10b6ef","#10b6ef","#10b6ef","#10b6ef","#ffffff","#10b6ef","#10b6f7","#ffffff","#10b6ef","#10b6ef","#000000","#10b6ef","#10b6ef","#ffffff","#ffffff","#10b6ef","#10b6ef","#000000","#000000","#000000","#10b6ef","#10b6ef","#10b6ef","#10b6ef","#000000","#000000"]
+  ]
+}

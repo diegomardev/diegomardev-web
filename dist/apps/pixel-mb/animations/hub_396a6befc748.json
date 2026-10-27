@@ -1,0 +1,11 @@
+{
+  "name": "youbi_mon_getsu",
+  "source": "https://awtrix.de/icons/youbi-mon-getsu",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 7,
+  "height": 7,
+  "frameMs": 20,
+  "frames": [
+    ["#8c108c","#8c108c","#ffffff","#ffffff","#ffffff","#ffffff","#8c108c","#8c108c","#8c108c","#ffffff","#8c108c","#8c108c","#ffffff","#8c108c","#8c108c","#8c108c","#ffffff","#ffffff","#ffffff","#ffffff","#8c108c","#8c108c","#8c108c","#ffffff","#8c108c","#8c108c","#ffffff","#8c108c","#8c108c","#8c108c","#ffffff","#ffffff","#ffffff","#ffffff","#8c108c","#8c108c","#8c108c","#ffffff","#8c108c","#8c108c","#ffffff","#8c108c","#8c108c","#ffffff","#8c108c","#8c108c","#ffffff","#ffffff","#8c108c"]
+  ]
+}

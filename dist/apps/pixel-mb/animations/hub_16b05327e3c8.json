@@ -1,0 +1,11 @@
+{
+  "name": "youbi_sat_do",
+  "source": "https://awtrix.de/icons/youbi-sat-do",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 7,
+  "height": 7,
+  "frameMs": 20,
+  "frames": [
+    ["#08149c","#08149c","#08149c","#ffffff","#08149c","#08149c","#08149c","#08149c","#08149c","#08149c","#ffffff","#08149c","#08149c","#08149c","#08149c","#08149c","#ffffff","#ffffff","#ffffff","#08149c","#08149c","#08149c","#08149c","#08149c","#ffffff","#08149c","#08149c","#08149c","#08149c","#08149c","#08149c","#ffffff","#08149c","#08149c","#08149c","#08149c","#08149c","#08149c","#ffffff","#08149c","#08149c","#08149c","#08149c","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#08149c"]
+  ]
+}

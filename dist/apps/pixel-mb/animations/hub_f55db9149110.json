@@ -1,0 +1,11 @@
+{
+  "name": "btcv2",
+  "source": "https://awtrix.de/icons/btcv2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#f7a600","#f7a600","#ffffff","#f7a600","#ffffff","#f7a600","#f7a600","#f7a600","#f7a600","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#f7a600","#f7a600","#f7a600","#f7a600","#ffffff","#f7a600","#f7a600","#f7a600","#ffffff","#f7a600","#f7a600","#f7a600","#ffffff","#ffffff","#ffffff","#ffffff","#f7a200","#f7a600","#f7a600","#f7a600","#ffffff","#f7a600","#f7a600","#f7a600","#ffffff","#f7a200","#f7a600","#f7a600","#ffffff","#f7a600","#f7a600","#f7a600","#ffffff","#f7a600","#f7a600","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#f7a600","#f7a200","#f7a600","#f7a600","#ffffff","#f7a600","#ffffff","#f7a600","#f7a600","#f7a600"]
+  ]
+}

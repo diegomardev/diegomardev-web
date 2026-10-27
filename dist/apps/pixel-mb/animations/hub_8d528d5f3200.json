@@ -1,0 +1,11 @@
+{
+  "name": "victron",
+  "source": "https://awtrix.de/icons/victron",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#0051ff","#fff700","#fff700","#0041ff","#0041ff","#fff700","#fff700","#082de6","#0051ff","#fff700","#fff700","#0041ff","#0041ff","#fff700","#fff700","#0051ff","#0051ff","#fff700","#fff700","#0041ff","#0041ff","#fff700","#fff700","#082de6","#0051ff","#0051ff","#fff700","#0041ff","#0041ff","#fff700","#0051ff","#082de6","#0051ff","#0051ff","#f7fb00","#f7fb00","#f7fb00","#f7fb00","#0051ff","#082de6","#0051ff","#0051ff","#f7fb00","#fff700","#fff700","#f7fb00","#0051ff","#082de6","#0051ff","#0051ff","#0051ff","#fff700","#fff700","#0051ff","#0051ff","#082de6","#0051ff","#082de6","#082de6","#082de6","#082de6","#082de6","#082de6","#082de6"]
+  ]
+}

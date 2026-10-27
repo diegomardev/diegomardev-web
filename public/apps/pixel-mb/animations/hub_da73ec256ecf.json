@@ -1,0 +1,11 @@
+{
+  "name": "home-assistant",
+  "source": "https://awtrix.de/icons/home-assistant-2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#19bef7","#000000","#000000","#000000","#000000","#000000","#000000","#19bef7","#19bef7","#19bef7","#000000","#000000","#000000","#000000","#19bef7","#19bef7","#ffffff","#19bef7","#19bef7","#000000","#000000","#19bef7","#19bef7","#19bef7","#dedbde","#19bef7","#19bef7","#19bef7","#000000","#19bef7","#19bef7","#19bef7","#dedbde","#19bef7","#ffffff","#19bef7","#000000","#19bef7","#ffffff","#19bef7","#dedbde","#dedbde","#19bef7","#19bef7","#000000","#19bef7","#19bef7","#dedbde","#dedbde","#19bef7","#19bef7","#19bef7"]
+  ]
+}

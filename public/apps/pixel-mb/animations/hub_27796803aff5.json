@@ -1,0 +1,11 @@
+{
+  "name": "trockner",
+  "source": "https://awtrix.de/icons/trockner",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#cecece","#cecece","#cecece","#cecece","#cecece","#cecece","#000000","#000000","#cecece","#cecece","#f78610","#cecece","#848684","#cecece","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#ffffff","#cecece","#848684","#848684","#cecece","#ffffff","#000000","#000000","#ffffff","#848684","#ffffff","#ffffff","#848684","#ffffff","#000000","#000000","#ffffff","#848684","#ffffff","#ffffff","#848684","#ffffff","#000000","#000000","#ffffff","#cecece","#848684","#848684","#cecece","#ffffff","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"]
+  ]
+}

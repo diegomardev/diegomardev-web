@@ -1,0 +1,12 @@
+{
+  "name": "terminal_blink_red",
+  "source": "https://awtrix.de/icons/terminal-blink-red",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 500,
+  "frames": [
+    ["#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ffffff","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ffffff","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ffffff","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ffffff","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ffffff","#ef4d29","#ef4d29","#ffffff","#ffffff","#ffffff","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29"],
+    ["#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ffffff","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ffffff","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ffffff","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ffffff","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ffffff","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29","#ef4d29"]
+  ]
+}

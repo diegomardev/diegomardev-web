@@ -1,0 +1,11 @@
+{
+  "name": "terminal_red",
+  "source": "https://awtrix.de/icons/terminal-red",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ef4929","#ef4d21","#ef4929","#ef4929","#ef4929","#ef4929","#ef4929","#ef4d21","#ef4929","#ffffff","#ef4929","#ef4929","#ef4929","#ef4929","#ef4929","#ef4d29","#ef4d21","#ef4929","#ffffff","#ef4929","#ef4d29","#ef4929","#ef4929","#ef4929","#ef4929","#ef4d21","#ef4929","#ffffff","#ef4929","#ef4929","#ef4929","#ef4929","#ef4929","#ef4929","#ffffff","#ef4929","#ef4921","#ef4929","#ef4929","#ef4929","#ef4929","#ffffff","#ef4929","#ef4929","#ffffff","#ffffff","#ffffff","#ef4d29","#ef4929","#ef4929","#ef4929","#ef4929","#ef4929","#ef4929","#ef4929","#ef4929","#ef4929","#ef4d29","#ef4929","#ef4921","#ef4929","#ef4929","#ef4929","#ef4d21"]
+  ]
+}

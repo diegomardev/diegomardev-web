@@ -1,0 +1,11 @@
+{
+  "name": "cpic",
+  "source": "https://awtrix.de/icons/cpic",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#ffffff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#ffffff","#ffffff","#ffffff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#ffffff","#ffffff","#ffffff","#ffffff","#0065ff","#0065ff","#0065ff","#0065ff","#ffffff","#ffffff","#ffffff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#0065ff","#ffffff","#0065ff","#0065ff","#0065ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

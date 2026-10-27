@@ -1,0 +1,11 @@
+{
+  "name": "ukraine",
+  "source": "https://awtrix.de/icons/ukraine",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#293dff","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#fff300","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

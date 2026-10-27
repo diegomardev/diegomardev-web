@@ -1,0 +1,11 @@
+{
+  "name": "news",
+  "source": "https://awtrix.de/icons/news",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#4261bd","#4261bd","#4261bd","#4261bd","#4261bd","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#6b717b","#ffffff","#4261bd","#4261bd","#ffffff","#4261bd","#4261bd","#ffffff","#6b717b","#ffffff","#4261bd","#4261bd","#ffffff","#ffffff","#ffffff","#ffffff","#6b717b","#949294","#949294","#949294","#949294","#949294","#949294","#949294","#6b717b","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

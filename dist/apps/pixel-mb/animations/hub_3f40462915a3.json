@@ -1,0 +1,11 @@
+{
+  "name": "telegram",
+  "source": "https://awtrix.de/icons/telegram",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#6bc2ef","#3ab2e6","#31b2e6","#6bc6ef","#000000","#000000","#000000","#21a2de","#31aade","#31aade","#31aee6","#31aee6","#29aae6","#000000","#63bae6","#29a2d6","#29a6de","#21a6de","#ffffff","#29a6de","#29a6de","#6bc6ef","#299ed6","#109ace","#6bbee6","#ffffff","#ffffff","#29a6de","#29a6de","#31aede","#219ace","#31a2d6","#ffffff","#ffffff","#ffffff","#29a6de","#29a2d6","#31a6de","#5ab2d6","#1996ce","#0892c5","#29a2d6","#ffffff","#29a6de","#299ed6","#63bae6","#000000","#108ec5","#1996ce","#1996c5","#0892c5","#1996ce","#1092ce","#000000","#000000","#000000","#5ab2d6","#219ace","#199ace","#5ab2d6","#000000","#000000"]
+  ]
+}

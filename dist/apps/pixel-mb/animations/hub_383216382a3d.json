@@ -1,0 +1,11 @@
+{
+  "name": "rgb_matrix_white",
+  "source": "https://awtrix.de/icons/rgb-matrix-white",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ff0000","#19ff00","#4239ff","#ff0000","#19ff00","#4239ff","#ff0000","#10ff00","#3131ff","#ff0000","#19ff00","#4239ff","#ff0000","#19ff00","#4239ff","#ff0000","#10ff00","#3131ff","#ff0000","#19ff00","#4239ff","#ff0000","#19ff00","#4239ff","#ff0000","#10ff00","#3131ff","#ff0000","#19ff00","#4239ff","#ff0000","#19ff00","#3131ff","#ff0000","#19ff00","#3131ff","#ff0000","#19ff00","#4239ff","#ff0000","#19ff00","#3131ff","#ff0000","#19ff00","#3131ff","#ff0000","#19ff00","#4235ff","#ff0000","#19ff00","#3131ff","#ff0000","#10ff00","#3131ff","#ff0000","#19ff00","#3131ff","#ff0000","#19ff00","#3131ff","#ff0000","#19ff00","#3131ff","#ff0000"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Moon - Full Moon",
+  "source": "https://awtrix.de/icons/moon-full-moon",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#dedbde","#dedbde","#d6d7d6","#dedbde","#000000","#000000","#000000","#d6d7d6","#cecace","#f7f7f7","#efebef","#d6d7d6","#dedbde","#000000","#d6d7d6","#dedbde","#f7f7f7","#efebef","#cecace","#cecace","#d6d7d6","#dedbde","#dedbde","#efebef","#cecace","#efebef","#cecace","#f7f7f7","#f7f7f7","#d6d7d6","#d6d7d6","#f7f7f7","#cecace","#f7f7f7","#f7f7f7","#efebef","#f7f7f7","#d6d7d6","#d6d7d6","#d6d7d6","#f7f7f7","#f7f7f7","#efebef","#cecace","#dedbde","#d6d7d6","#000000","#d6d7d6","#d6d7d6","#cecace","#f7f7f7","#dedbde","#dedbde","#000000","#000000","#000000","#dedbde","#d6d7d6","#d6d7d6","#dedbde","#000000","#000000"]
+  ]
+}

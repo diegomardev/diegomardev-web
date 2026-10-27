@@ -1,0 +1,11 @@
+{
+  "name": "nebel",
+  "source": "https://awtrix.de/icons/nebel",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#cecece","#cecece","#cecece","#848684","#848684","#848684","#000000","#cecece","#ffffff","#ffffff","#ffffff","#ffffff","#848684","#848684","#cecece","#ffffff","#ffffff","#ffffff","#ffffff","#cecece","#cecece","#cecece","#cecece","#000000","#cecece","#cecece","#cecece","#cecece","#cecece","#cecece","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#cecece","#cecece","#cecece","#cecece","#cecece","#cecece","#cecece","#cecece","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#cecece","#cecece","#cecece","#cecece","#cecece","#cecece","#cecece","#cecece"]
+  ]
+}

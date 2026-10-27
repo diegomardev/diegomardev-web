@@ -1,0 +1,11 @@
+{
+  "name": "colorbar",
+  "source": "https://awtrix.de/icons/colorbar",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ceced6","#c5ca00","#00aece","#00ca00","#bd00ce","#ce0000","#001cce","#000000","#cecece","#c5ca00","#00aece","#00ce00","#bd00ce","#ce0000","#0020ce","#000000","#cecece","#c5ca00","#00b2ce","#00ca00","#bd00ce","#ce0000","#0020ce","#000000","#cecece","#c5ca00","#00aed6","#00ca00","#bd00ce","#ce0000","#0020ce","#000000","#cecece","#c5ca00","#00aece","#00ca00","#bd00ce","#ce0000","#0020ce","#000000","#0000de","#0000de","#000000","#c500e6","#000000","#00b2ce","#000000","#cecece","#2918ce","#291cce","#ffffff","#6b35ce","#000000","#000000","#212021","#000000","#291cce","#291cce","#ffffff","#6b35ce","#000000","#000000","#212021","#000000"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "airpressure",
+  "source": "https://awtrix.de/icons/airpressure",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#ffffff","#00a6ff","#00a6ff","#00a6ff","#00a6ff","#ffffff","#000000","#ffffff","#00a6ff","#00a6ff","#00a6ff","#00a6ff","#ffffff","#00a6ff","#ffffff","#ffffff","#00a2ff","#00a6ff","#00a6ff","#ffffff","#00a6ff","#00a6ff","#ffffff","#ffffff","#00a6ff","#00a6ff","#ffffff","#00a6ff","#00a6ff","#00a6ff","#ffffff","#00a6ff","#00a6ff","#00a6ff","#00a6ff","#00a6ff","#00a6ff","#00a6ff","#00a6ff","#000000","#00a6ff","#00a6ff","#00a6ff","#00a6ff","#00a6ff","#00a6ff","#000000","#000000","#000000","#00a6ff","#00a6ff","#00a6ff","#00a6ff","#000000","#000000"]
+  ]
+}

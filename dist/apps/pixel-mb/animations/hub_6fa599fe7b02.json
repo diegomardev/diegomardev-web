@@ -1,0 +1,11 @@
+{
+  "name": "candle",
+  "source": "https://awtrix.de/icons/candle",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#8c8a8c","#8c8a8c","#8c8a8c","#ffbe00","#ffbe00","#ffbe00","#8c8a8c","#8c8a8c","#8c8a8c","#8c8a8c","#ffbe00","#ffbe00","#ffbe00","#ffbe00","#8c8a8c","#8c8a8c","#8c8a8c","#8c8a8c","#ffbe00","#ff8600","#ff8600","#ffbe00","#8c8a8c","#8c8a8c","#8c8a8c","#8c8a8c","#ffbe00","#ff8600","#ff8600","#8c8a8c","#8c8a8c","#8c8a8c","#8c8a8c","#8c8a8c","#8c8a8c","#ff0000","#ff0000","#8c8a8c","#8c8a8c","#8c8a8c","#8c8a8c","#8c8a8c","#8c8a8c","#ff0000","#ff0000","#8c8a8c","#8c8a8c","#8c8a8c","#8c8a8c","#8c8a8c","#8c8a8c","#ff0000","#ff0000","#8c8a8c","#8c8a8c","#8c8a8c","#8c8a8c","#8c8a8c","#8c8a8c","#ff0000","#ff0000","#8c8a8c","#8c8a8c","#8c8a8c"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "sum",
+  "source": "https://awtrix.de/icons/sum",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#00ffff","#00ffff","#00ffff","#00ffff","#00ffff","#00ffff","#00ffff","#00ffff","#00ffff","#00ffff","#00ffff","#ffff00","#ffff00","#00ffff","#00ffff","#00ffff","#00ffff","#00ffff","#ffff00","#ffff00","#ffff00","#ffff00","#00ffff","#00ffff","#00d2ff","#00d2ff","#ffff00","#ffff00","#ffff00","#ffff00","#00d2ff","#00d2ff","#00d2ff","#00d2ff","#00d2ff","#ffff00","#ffff00","#00d2ff","#00d2ff","#00d2ff","#00d2ff","#00d2ff","#00d2ff","#00d2ff","#00d2ff","#00d2ff","#00d2ff","#00d2ff","#00d2ff","#00d2ff","#ffae00","#ffae00","#ffae00","#ffae00","#00d2ff","#00d2ff","#00d2ff","#ffae00","#ffae00","#ffae00","#ffae00","#ffae00","#ffae00","#00d2ff"]
+  ]
+}

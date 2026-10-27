@@ -1,0 +1,11 @@
+{
+  "name": "porto2",
+  "source": "https://awtrix.de/icons/porto2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#21e308","#21e308","#21e308","#de2819","#de2819","#de2819","#de2819","#de2819","#21e308","#21e308","#21e308","#de2819","#de2819","#de2819","#de2819","#de2819","#21e308","#21e308","#ffeb00","#ffeb00","#de2819","#de2819","#de2819","#de2819","#21e308","#ffeb00","#ffffff","#ffffff","#ffeb00","#de2819","#de2819","#de2819","#21e308","#ffeb00","#ffffff","#ffffff","#ffeb00","#de2819","#de2819","#de2819","#21e308","#21e308","#ffeb00","#ffeb00","#de2819","#de2819","#de2819","#de2819","#21e308","#21e308","#21e308","#de2819","#de2819","#de2819","#de2819","#de2819","#21e308","#21e308","#21e308","#de2819","#de2819","#de2819","#de2819","#de2819"]
+  ]
+}

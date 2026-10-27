@@ -1,0 +1,11 @@
+{
+  "name": "deutsche_bahn",
+  "source": "https://awtrix.de/icons/deutsche-bahn",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ff1000","#ff0000","#ff0000","#ffffff","#ff0000","#ff0000","#ff0000","#ff0000","#ff0c00","#ffffff","#ffffff","#ff0000","#ff0000","#ffffff","#ffffff","#ff0000","#ff1000","#ffffff","#ffffff","#ff0000","#ff0000","#ff0400","#ff0400","#ffffff","#ff0c00","#ffffff","#ffffff","#ff0000","#ff0000","#ffffff","#ffffff","#ff0400","#ff1000","#ffffff","#ffffff","#ff0000","#ff0000","#ffffff","#ffffff","#ff0000","#ff1000","#ff0000","#ff0000","#ffffff","#ff0400","#ff0000","#ff0000","#ff0000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

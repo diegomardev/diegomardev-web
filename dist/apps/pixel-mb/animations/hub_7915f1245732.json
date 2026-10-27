@@ -1,0 +1,11 @@
+{
+  "name": "husqvarna",
+  "source": "https://awtrix.de/icons/husqvarna",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#0024ff","#ffffff","#ffffff","#0024ff","#ffffff","#ffffff","#0024ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#0024ff","#ffffff","#0024ff","#0024ff","#0024ff","#0024ff","#0024ff","#0024ff","#ffffff","#ffffff","#0024ff","#ffffff","#0024ff","#0024ff","#ffffff","#0024ff","#ffffff","#ffffff","#0024ff","#ffffff","#ffffff","#ffffff","#ffffff","#0024ff","#ffffff","#ffffff","#0024ff","#ffffff","#0024ff","#0024ff","#ffffff","#0024ff","#ffffff","#ffffff","#0024ff","#0024ff","#0024ff","#0024ff","#0024ff","#0024ff","#ffffff","#0024ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#0024ff"]
+  ]
+}

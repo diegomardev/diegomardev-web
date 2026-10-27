@@ -1,0 +1,11 @@
+{
+  "name": "singapore",
+  "source": "https://awtrix.de/icons/singapore",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ef2431","#ef2831","#ef2431","#ef2831","#ef2831","#ef2831","#ef2831","#ef2831","#ef2829","#f7fff7","#ef2831","#ef2831","#ef2831","#ef2431","#ef2829","#ef2831","#ef2831","#fffff7","#ef2831","#ef2831","#ef2831","#ef2831","#ef2831","#ef2831","#ef2831","#ef2431","#ef2831","#ef2831","#ef2431","#ef2431","#ef2831","#ef2831","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

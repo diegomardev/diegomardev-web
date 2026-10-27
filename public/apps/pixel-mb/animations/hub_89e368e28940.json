@@ -1,0 +1,12 @@
+{
+  "name": "tumbledryer",
+  "source": "https://awtrix.de/icons/tumbledryer",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 200,
+  "frames": [
+    ["#000000","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#000000","#000000","#adaaad","#adaaad","#adaaad","#adaaad","#5aff00","#adaaad","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#ffffff","#b5b2b5","#6b6d6b","#6b6d6b","#b5b2b5","#ffffff","#000000","#000000","#ffffff","#6b6d6b","#943131","#ff0000","#6b6d6b","#ffffff","#000000","#000000","#ffffff","#6b6d6b","#ff0000","#943131","#6b6d6b","#ffffff","#000000","#000000","#ffffff","#b5b2b5","#6b6d6b","#6b6d6b","#b5b2b5","#ffffff","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"],
+    ["#000000","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#000000","#000000","#adaaad","#adaaad","#adaaad","#adaaad","#5aff00","#adaaad","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#ffffff","#b5b2b5","#6b6d6b","#6b6d6b","#b5b2b5","#ffffff","#000000","#000000","#ffffff","#6b6d6b","#ff0000","#943131","#6b6d6b","#ffffff","#000000","#000000","#ffffff","#6b6d6b","#943131","#ff0000","#6b6d6b","#ffffff","#000000","#000000","#ffffff","#b5b2b5","#6b6d6b","#6b6d6b","#b5b2b5","#ffffff","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"]
+  ]
+}

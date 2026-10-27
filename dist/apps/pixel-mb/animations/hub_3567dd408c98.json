@@ -1,0 +1,11 @@
+{
+  "name": "papyrus",
+  "source": "https://awtrix.de/icons/papyrus",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#000000","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#000000","#ffffff","#ffffff","#ff3900","#000000","#000000","#ffffff","#000000","#ffffff","#ffffff","#ff3900","#ff3900","#000000","#000000","#ffffff","#ffffff","#ffffff","#ff3900","#ff3900","#bdbec5","#bdbebd","#000000","#ffffff","#ffffff","#ffffff","#b5b6b5","#b5b6b5","#b5b6b5","#b5b6b5","#000000","#ff3900","#ff3900","#adaead","#adaead","#ff3900","#ff3900","#000000","#000000"]
+  ]
+}

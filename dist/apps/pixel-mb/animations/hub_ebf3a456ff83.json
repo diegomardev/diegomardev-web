@@ -1,0 +1,11 @@
+{
+  "name": "lighton",
+  "source": "https://awtrix.de/icons/lighton",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#e6e7e6","#e6e7ef","#ffff63","#ffff63","#ffff63","#e6e74a","#e6e7e6","#ffffce","#ffffce","#ffff63","#ffff5a","#ffff63","#ffff63","#ffff63","#e6e74a","#e6e7e6","#e6e7e6","#ffff63","#ffff63","#9c9a31","#9c9a31","#ffff63","#e6e74a","#e6e7e6","#e6e7e6","#ffff63","#9c9a31","#ffff63","#ffff63","#9c9a31","#e6e74a","#ffffce","#e6e7e6","#ffff63","#ffff63","#9c9a29","#9c9a31","#ffff63","#efe74a","#e6e7e6","#e6e7e6","#e6e7e6","#ffff63","#9c9a31","#9c9a31","#e6e74a","#e6e7ef","#e6e7e6","#ffffce","#e6e7e6","#848284","#4a4d4a","#4a4d42","#000000","#e6e7e6","#ffffce","#e6e7e6","#e6e7e6","#848284","#4a4d4a","#4a4d4a","#000000","#e6e7e6","#e6e7ef"]
+  ]
+}

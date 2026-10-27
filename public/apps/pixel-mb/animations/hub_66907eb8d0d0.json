@@ -1,0 +1,11 @@
+{
+  "name": "vencorex",
+  "source": "https://awtrix.de/icons/vencorex",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#f77d08","#f77d08","#f77d08","#f77d08","#f77d08","#f77d08","#000000","#f77d08","#ffffff","#ffffff","#f77d08","#f77d08","#ffffff","#ffffff","#f77d08","#ffffff","#f77d08","#f77d08","#f77d08","#ffffff","#f77d08","#f77d08","#ffffff","#ffffff","#f77d08","#f77d08","#f77d08","#ffffff","#f77d08","#f77d08","#ffffff","#ffffff","#f77d08","#f77d08","#ffffff","#f77d08","#f77d08","#f77d08","#ffffff","#ffffff","#f77d08","#f77d08","#ffffff","#f77d08","#f77d08","#f77d08","#ffffff","#f77d08","#ffffff","#ffffff","#f77d08","#f77d08","#ffffff","#ffffff","#f77d08","#000000","#f77d08","#f77d08","#f77d08","#f77d08","#f77d08","#f77d08","#000000"]
+  ]
+}

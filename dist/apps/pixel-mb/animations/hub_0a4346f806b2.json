@@ -1,0 +1,11 @@
+{
+  "name": "penguin",
+  "source": "https://awtrix.de/icons/penguin",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#313d31","#313d3a","#313d3a","#ffffff","#ffffff","#313d3a","#313d3a","#31393a","#313d3a","#ffffff","#29868c","#ffffff","#ffffff","#29868c","#ffffff","#313d3a","#313d3a","#ffffff","#10414a","#ffffff","#ffffff","#10414a","#ffffff","#313d3a","#313931","#313d3a","#ffffff","#d6a221","#d6a229","#ffffff","#424542","#31393a","#31393a","#525d5a","#ffffff","#ffffff","#ffffff","#ffffff","#52595a","#313d3a","#313d3a","#525d5a","#525d5a","#ffffff","#ffffff","#525d5a","#525d5a","#313d3a","#313d3a","#525d52","#b5b6b5","#ffffff","#ffffff","#b5b6b5","#525d5a","#313d3a","#d67510","#d67510","#d6a229","#d6a221","#d67510","#d67519","#d6a229","#d6a229"]
+  ]
+}

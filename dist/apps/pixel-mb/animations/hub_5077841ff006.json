@@ -1,0 +1,11 @@
+{
+  "name": "skype",
+  "source": "https://awtrix.de/icons/skype",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#29baff","#29baff","#29baff","#000000","#000000","#000000","#000000","#29baff","#29baff","#29baff","#ffffff","#ffffff","#29baff","#000000","#000000","#29baff","#29baff","#ffffff","#29baff","#29baff","#ffffff","#29baff","#000000","#29baff","#29beff","#29baff","#ffffff","#29baff","#29baff","#29baff","#000000","#000000","#29baff","#29baff","#29baff","#ffffff","#29baff","#29beff","#29baff","#000000","#29baff","#ffffff","#29baff","#29baff","#ffffff","#29baff","#29baff","#000000","#000000","#29baff","#ffffff","#ffffff","#29baff","#29baff","#29baff","#000000","#000000","#000000","#000000","#29baff","#29baff","#29baff","#000000"]
+  ]
+}

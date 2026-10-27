@@ -1,0 +1,11 @@
+{
+  "name": "ein_paar_wolken",
+  "source": "https://awtrix.de/icons/ein-paar-wolken",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#ffff19","#000000","#ffff10","#000000","#000000","#000000","#ffff10","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffff10","#ffff10","#ffff10","#ffffff","#000000","#000000","#ffff10","#000000","#ffff10","#ffffff","#cecece","#cecece","#cecece","#000000","#000000","#000000","#ffffff","#cecece","#848684","#848684","#ffffff","#cecece","#000000","#ffffff","#cecece","#ceced6","#848684","#cecece","#ffffff","#cecece","#000000","#cecece","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#cecece","#000000","#000000","#cecece","#ffffff","#ffffff","#ffffff","#cecece","#000000"]
+  ]
+}

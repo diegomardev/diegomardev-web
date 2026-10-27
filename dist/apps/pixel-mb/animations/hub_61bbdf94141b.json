@@ -1,0 +1,11 @@
+{
+  "name": "udst",
+  "source": "https://awtrix.de/icons/udst",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#21a27b","#21a27b","#21a27b","#21a27b","#000000","#000000","#000000","#21a27b","#21a27b","#21a27b","#21a27b","#21a27b","#21a27b","#000000","#21a27b","#19a27b","#ffffff","#ffffff","#ffffff","#ffffff","#19a27b","#21a27b","#21a27b","#21a27b","#21a27b","#ffffff","#ffffff","#21a27b","#21a27b","#21a27b","#21a27b","#21a27b","#21a27b","#ffffff","#ffffff","#21a27b","#21a27b","#21a27b","#21a27b","#21a27b","#19a27b","#ffffff","#ffffff","#19a27b","#21a27b","#21a27b","#000000","#21a27b","#21a27b","#21a27b","#21a27b","#21a27b","#21a27b","#000000","#000000","#000000","#21a27b","#21a27b","#21a27b","#21a27b","#000000","#000000"]
+  ]
+}

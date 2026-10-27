@@ -1,0 +1,11 @@
+{
+  "name": "shield",
+  "source": "https://awtrix.de/icons/shield",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#b5d2de","#b5d2de","#b5d2de","#b5d2de","#ffffff","#8479ad","#8479ad","#8479ad","#081c5a","#081c5a","#081c5a","#b5d2de","#ffffff","#8479ad","#8479ad","#8479ad","#081c5a","#001c5a","#081c5a","#b5d2de","#b5d2de","#8479ad","#8479ad","#8479ad","#081c5a","#081c5a","#081c5a","#b5d2de","#b5d2de","#8479ad","#8479ad","#8479ad","#081c5a","#081c5a","#081c5a","#ffffff","#b5d2de","#8479ad","#8479ad","#8479ad","#081c5a","#081c5a","#081c5a","#ffffff","#000000","#b5d2de","#8479ad","#8479ad","#081c5a","#8479ad","#ffffff","#000000","#000000","#000000","#b5d2de","#b5d2de","#b5d2de","#ffffff","#000000","#000000"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "reddit",
+  "source": "https://awtrix.de/icons/reddit",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ff3900","#ff3d00","#ff3d00","#ff3d00","#ff3d00","#ffffff","#ffffff","#ff3d00","#ff3d00","#ff3d00","#ff3d00","#ff3d00","#ffffff","#ff3d00","#ff3d00","#ff3d00","#ffffff","#ff3d00","#ffffff","#ffffff","#ffffff","#ffffff","#ff3d00","#ffffff","#ff3d00","#ffffff","#ff3d00","#ffffff","#ffffff","#ff3d00","#ffffff","#ff3d00","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ff3d00","#ffffff","#ffffff","#ff3d00","#ffffff","#ffffff","#ff3d00","#ffffff","#ffffff","#ff3900","#ff3d00","#ffffff","#ffffff","#ff3d00","#ff3900","#ff3d00","#ffffff","#ffffff","#ffffff","#ffffff","#ff3900","#ff3d00"]
+  ]
+}

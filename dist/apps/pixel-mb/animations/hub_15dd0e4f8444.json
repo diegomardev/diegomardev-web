@@ -1,0 +1,11 @@
+{
+  "name": "ifttt",
+  "source": "https://awtrix.de/icons/ifttt",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#0096ff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#0096ff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#009aff","#ef4931","#ef4931","#ef4931","#ef4931","#ef4929","#313131","#313131","#313131","#ef4931","#ef4931","#ef4931","#ef4931","#ef4931","#313131","#293131","#313131","#ef4931","#ef4931","#ef4931","#ef4929","#ef4931","#313131","#313131","#313131"]
+  ]
+}

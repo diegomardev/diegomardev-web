@@ -1,0 +1,11 @@
+{
+  "name": "pressure",
+  "source": "https://awtrix.de/icons/pressure",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#ffffff","#f7ebef","#949694","#000000","#000000","#ffffff","#f7ebef","#737173","#efebef","#dedbde","#a5a6a5","#848284","#bdbebd","#dedbde","#dedbde","#dedbde","#a5a2a5","#a5a2a5","#a5a2a5","#949694","#b5b6b5","#b5b6b5","#bdbebd","#949694","#ffffff","#ffffff","#ffffff","#848284","#000000","#a5a2a5","#949694","#ffffff","#000000","#00518c","#0096ff","#ffffff","#000000","#000000","#000000","#ffffff","#000000","#0096ff","#00518c","#ffffff","#000000","#000000","#000000","#ffffff","#000000","#000000","#000000","#ffffff","#000000","#000000","#000000","#000000","#f7f3f7","#f7f3f7","#f7f3f7","#000000"]
+  ]
+}

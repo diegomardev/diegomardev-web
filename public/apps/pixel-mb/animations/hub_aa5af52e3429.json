@@ -1,0 +1,11 @@
+{
+  "name": "strava",
+  "source": "https://awtrix.de/icons/strava",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#ff6900","#ff6900","#ff6d08","#ff6100","#ff5d00","#ff5500","#000000","#ff6900","#ff6900","#ff7519","#ffffff","#ff7119","#ff5500","#ff5500","#ff5100","#ff6500","#ff6500","#ffefe6","#ffffff","#ffefe6","#ff5500","#ff5100","#ff4900","#ff6100","#ff6500","#ffffff","#ffb68c","#ffffff","#ff4d00","#ff4d00","#ff4900","#ff5d00","#ff6100","#ff6100","#ffbe94","#ff5908","#ffb694","#ff5508","#ff4900","#ff5900","#ff5900","#ff5500","#ffb28c","#ffc6ad","#ffb294","#ff5100","#ff4900","#ff5500","#ff5500","#ff5100","#ff5d19","#ffc6ad","#ff5910","#ff4900","#ff4900","#000000","#ff4d00","#ff4d00","#ff4900","#ff4d00","#ff4900","#ff4900","#000000"]
+  ]
+}

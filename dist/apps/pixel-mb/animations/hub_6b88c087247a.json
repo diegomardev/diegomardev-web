@@ -1,0 +1,11 @@
+{
+  "name": "bitcoin",
+  "source": "https://awtrix.de/icons/bitcoin",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#ffa600","#ffa600","#ffffff","#ffa600","#ffa600","#ffa600","#000000","#ffa600","#ffa600","#ffffff","#ffffff","#ffffff","#ffa600","#ffa600","#ffa600","#ffa600","#ffa600","#ffffff","#ffa600","#ffa600","#ffffff","#ffa600","#ffa600","#ffa600","#ffa600","#ffffff","#ffffff","#ffffff","#ffa600","#ffa600","#ffa600","#ffa600","#ffa600","#ffffff","#ffa600","#ffa600","#ffffff","#ffa600","#ffa600","#ffa600","#ffa600","#ffffff","#ffa600","#ffa600","#ffffff","#ffa600","#ffa600","#ffa600","#ffa600","#ffffff","#ffffff","#ffffff","#ffffff","#ffa600","#ffa600","#000000","#ffa600","#ffa600","#ffffff","#ffa600","#ffa600","#ffa600","#000000"]
+  ]
+}

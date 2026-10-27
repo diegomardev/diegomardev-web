@@ -1,0 +1,13 @@
+{
+  "name": "sunny_window",
+  "source": "https://awtrix.de/icons/sunny-window",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 200,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#8482ff","#8482ff","#8482ff","#ffffff","#8482ff","#8482ff","#ffffff","#ffffff","#ffff00","#8482ff","#ffff00","#ffffff","#8482ff","#8482ff","#ffffff","#ffffff","#8482ff","#ffff00","#8482ff","#ffffff","#8482ff","#8482ff","#ffffff","#ffffff","#ffff00","#8482ff","#ffff00","#ffffff","#8482ff","#8482ff","#ffffff","#ffffff","#8482ff","#8482ff","#8482ff","#ffffff","#8482ff","#8482ff","#ffffff","#ffffff","#8482ff","#8482ff","#8482ff","#ffffff","#8482ff","#8482ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"],
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#8482ff","#8482ff","#8482ff","#ffffff","#8482ff","#8482ff","#ffffff","#ffffff","#ffff00","#ffff00","#ffff00","#ffffff","#8482ff","#8482ff","#ffffff","#ffffff","#ffff00","#ffff00","#ffff00","#ffffff","#8482ff","#8482ff","#ffffff","#ffffff","#ffff00","#ffff00","#ffff00","#ffffff","#8482ff","#8482ff","#ffffff","#ffffff","#8482ff","#8482ff","#8482ff","#ffffff","#8482ff","#8482ff","#ffffff","#ffffff","#8482ff","#8482ff","#8482ff","#ffffff","#8482ff","#8482ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"],
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#8482ff","#8482ff","#8482ff","#ffffff","#8482ff","#8482ff","#ffffff","#ffffff","#8482ff","#8482ff","#8482ff","#ffffff","#8482ff","#8482ff","#ffffff","#ffffff","#8482ff","#ffff00","#8482ff","#ffffff","#8482ff","#8482ff","#ffffff","#ffffff","#8482ff","#8482ff","#8482ff","#ffffff","#8482ff","#8482ff","#ffffff","#ffffff","#8482ff","#8482ff","#8482ff","#ffffff","#8482ff","#8482ff","#ffffff","#ffffff","#8482ff","#8482ff","#8482ff","#ffffff","#8482ff","#8482ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

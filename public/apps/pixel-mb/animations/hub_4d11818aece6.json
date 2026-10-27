@@ -1,0 +1,11 @@
+{
+  "name": "formula1",
+  "source": "https://awtrix.de/icons/formula1",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#f7c2c5","#ff0000","#ff0000","#ff0000","#ff0000","#ffffff","#ef5552","#f7c2c5","#ff0000","#f7c2c5","#ffffff","#ffffff","#ffffff","#f7c2c5","#ff0000","#ff0000","#f7c2c5","#ffffff","#ff0000","#ff0000","#ffffff","#ff0000","#f7c2c5","#ff0000","#ffffff","#ff0000","#f7c2c5","#ffffff","#ff0000","#ff8284","#ffffff","#ff0000","#ffffff","#ff0000","#ffffff","#ff0000","#ff8284","#f7c2c5","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

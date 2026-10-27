@@ -1,0 +1,11 @@
+{
+  "name": "pacman",
+  "source": "https://awtrix.de/icons/pacman",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffff4a","#ffff4a","#ffff42","#ffff4a","#000000","#000000","#000000","#ffff4a","#ffff4a","#ffff42","#000000","#ffff42","#ffff4a","#000000","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff5a","#000000","#000000","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff63","#000000","#000000","#000000","#ffff4a","#ffff4a","#ffff42","#ffff4a","#ffff4a","#ffff63","#101419","#000000","#000000","#ffff4a","#ffff42","#ffff4a","#ffff4a","#ffff42","#ffff4a","#000000","#000000","#000000","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#000000","#000000"]
+  ]
+}

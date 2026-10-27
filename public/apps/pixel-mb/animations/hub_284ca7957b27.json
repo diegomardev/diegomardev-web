@@ -1,0 +1,11 @@
+{
+  "name": "twentysix",
+  "source": "https://awtrix.de/icons/twentysix",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#2186f7","#000000","#000000","#2186f7","#1986f7","#000000","#000000","#2186f7","#1986f7","#2186f7","#2186f7","#2186f7","#2186f7","#2186f7","#2186f7","#2186f7","#ffffff","#ffffff","#ffffff","#2186f7","#2186f7","#ffffff","#ffffff","#ffffff","#2186f7","#2186f7","#ffffff","#2186f7","#1986ff","#ffffff","#2186f7","#1986f7","#ffffff","#ffffff","#ffffff","#1986f7","#2186f7","#ffffff","#ffffff","#ffffff","#ffffff","#2186f7","#2186ff","#2186f7","#2186f7","#ffffff","#2186f7","#ffffff","#ffffff","#ffffff","#ffffff","#2186f7","#1986f7","#ffffff","#ffffff","#ffffff","#2186f7","#1986f7","#1986f7","#2186f7","#2186f7","#1986f7","#2186f7","#2186f7"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "thaiflag",
+  "source": "https://awtrix.de/icons/thaiflag",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ef1821","#ef1821","#ef1821","#ef1821","#ef1821","#ef1821","#ef1821","#ef1821","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#3145f7","#3145f7","#3145f7","#3145f7","#3145f7","#3145f7","#3145f7","#3145f7","#3145f7","#3145f7","#3145f7","#3145f7","#3145f7","#3145f7","#3145f7","#3145f7","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ef1821","#ef1821","#ef1821","#ef1821","#ef1821","#ef1821","#ef1821","#ef1821","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

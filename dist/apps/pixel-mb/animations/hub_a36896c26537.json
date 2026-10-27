@@ -1,0 +1,11 @@
+{
+  "name": "XAG",
+  "source": "https://awtrix.de/icons/xag",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#cecece","#cecece","#cecece","#cecece","#000000","#000000","#000000","#cecece","#adaaad","#adaaad","#adaaad","#adaaad","#848284","#000000","#000000","#cecece","#adaaad","#adaaad","#adaaad","#adaaad","#848284","#000000","#000000","#cecece","#adaaad","#adaaad","#adaaad","#adaaad","#848284","#000000","#000000","#cecece","#adaaad","#adaaad","#adaaad","#adaaad","#848284","#000000","#000000","#000000","#848284","#848284","#848284","#848284","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

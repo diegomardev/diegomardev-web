@@ -1,0 +1,11 @@
+{
+  "name": "hongkong",
+  "source": "https://awtrix.de/icons/hongkong",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#de2810","#de2810","#de2810","#de2810","#de2810","#e62810","#de2810","#de2810","#de2810","#de2810","#de2810","#de2810","#de2810","#e62810","#de2810","#de2810","#de2810","#de2810","#de2810","#ffffff","#de2810","#de2810","#de2810","#de2810","#de2810","#de2810","#de2810","#ffffff","#ffffff","#ffffff","#de2810","#de2810","#de2810","#de2810","#ffffff","#ffffff","#ffffff","#de2810","#de2810","#de2810","#de2810","#de2810","#de2810","#de2408","#ffffff","#de1c08","#e62810","#de2810","#e62810","#de2810","#de2810","#de2810","#de2810","#de2810","#de2810","#de2810","#de2810","#de2810","#de2810","#de2810","#de2810","#de2810","#de2810","#de2408"]
+  ]
+}

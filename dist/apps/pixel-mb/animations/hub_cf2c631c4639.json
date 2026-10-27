@@ -1,0 +1,12 @@
+{
+  "name": "battery_40_vert_discharge",
+  "source": "https://awtrix.de/icons/battery-40-vert-discharge-2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 3,
+  "frameMs": 500,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#ffae19","#ffae19","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"],
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#ffae19","#de8e00","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"]
+  ]
+}

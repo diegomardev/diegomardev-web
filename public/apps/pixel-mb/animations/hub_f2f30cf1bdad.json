@@ -1,0 +1,12 @@
+{
+  "name": "bottom_dry_cabinet_wet",
+  "source": "https://awtrix.de/icons/bottom-dry-cabinet-wet",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 200,
+  "frames": [
+    ["#000000","#ffffff","#ffffff","#ffffff","#636563","#636563","#ffffff","#000000","#000000","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#000000","#000000","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#000000","#000000","#ffffff","#ffffff","#ffffff","#636563","#636563","#ffffff","#000000","#000000","#ffffff","#10d2ff","#000000","#10d2ff","#000000","#ffffff","#000000","#000000","#ffffff","#000000","#10d2ff","#000000","#10d2ff","#ffffff","#000000","#000000","#ffffff","#10d2ff","#000000","#10d2ff","#000000","#ffffff","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"],
+    ["#000000","#ffffff","#ffffff","#ffffff","#636563","#636563","#ffffff","#000000","#000000","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#000000","#000000","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#000000","#000000","#ffffff","#ffffff","#ffffff","#636563","#de0000","#ffffff","#000000","#000000","#ffffff","#000000","#10d2ff","#000000","#10d2ff","#ffffff","#000000","#000000","#ffffff","#10d2ff","#000000","#10d2ff","#000000","#ffffff","#000000","#000000","#ffffff","#000000","#10d2ff","#000000","#10d2ff","#ffffff","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"]
+  ]
+}

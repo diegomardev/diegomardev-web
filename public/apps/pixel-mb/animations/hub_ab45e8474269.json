@@ -1,0 +1,11 @@
+{
+  "name": "blueberry",
+  "source": "https://awtrix.de/icons/blueberry",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#00ffce","#00ffce","#00ffce","#00ffce","#00ffce","#00ffce","#00ffce","#00ffce","#00ffce","#00ffce","#1045ef","#1049ef","#ef1410","#ef1410","#00ffce","#00ffce","#00ffce","#1049ef","#ef1410","#1049ef","#ef1410","#1049ef","#ef1410","#00ffce","#1049ef","#1049f7","#ef1410","#1049ef","#ef1410","#1049ef","#ef1410","#ef1410","#1045ef","#1049ef","#1045ef","#1049ef","#ef1410","#ef1408","#ef1410","#ef1410","#1049ef","#1049ef","#ef1410","#1049ef","#ef1410","#1049ef","#ef1410","#ef1410","#00ffce","#1049ef","#1049ef","#ef1410","#1049ef","#ef1410","#ef1410","#00ffce","#00ffce","#00ffce","#1045ef","#0849ef","#ef1410","#ef1410","#00ffce","#00ffce"]
+  ]
+}

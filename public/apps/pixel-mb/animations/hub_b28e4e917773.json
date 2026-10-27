@@ -1,0 +1,11 @@
+{
+  "name": "thunderbird",
+  "source": "https://awtrix.de/icons/thunderbird",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#00c6ff","#00c6ff","#00c6ff","#000000","#000000","#000000","#000000","#00c6ff","#003dff","#003dff","#003dff","#00c6ff","#00c6ff","#000000","#00c6ff","#003dff","#003dff","#003dff","#003dff","#003dff","#003dff","#00c6ff","#003dff","#ffffff","#003dff","#ffffff","#ffffff","#ffffff","#003dff","#00c6ff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#003dff","#00c6ff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#003dff","#00c6ff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#00c6ff","#000000","#000000","#000000","#000000","#000000","#00c6ff","#00c6ff","#000000","#000000"]
+  ]
+}

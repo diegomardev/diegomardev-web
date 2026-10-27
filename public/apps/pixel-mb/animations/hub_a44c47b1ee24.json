@@ -1,0 +1,11 @@
+{
+  "name": "sword",
+  "source": "https://awtrix.de/icons/sword",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#b5d2de","#192421","#192421","#192421","#192421","#ffffff","#ffffff","#ffffff","#b5d2de","#b5d2de","#212021","#192421","#ffffff","#b5d2de","#b5d2de","#212021","#ffffff","#8479ad","#001c5a","#ffffff","#b5d2de","#b5d2de","#212021","#212021","#212021","#081c5a","#ffffff","#b5d2de","#b5d2de","#211c21","#212019","#b5d2de","#212021","#ffffff","#b5d2de","#b5d2de","#081c5a","#192019","#b5d2de","#211c19","#b5d2de","#b5d2de","#b5d2de","#081c5a","#8479ad","#b5d2de","#212019","#212019","#9c4921","#b5d2de","#212021","#212019","#b5d2de","#9c4921","#192019","#9c4921","#212021","#101c19","#b5d2de","#8479ad","#212019","#212021","#9c4921"]
+  ]
+}

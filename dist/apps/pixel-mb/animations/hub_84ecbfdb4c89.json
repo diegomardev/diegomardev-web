@@ -1,0 +1,11 @@
+{
+  "name": "Apple Music",
+  "source": "https://awtrix.de/icons/apple-music-2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ff6563","#ff6563","#ff6563","#ff6563","#ff6563","#ff6563","#ff6563","#ff6563","#f73d3a","#f73d3a","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#f73d3a","#f73d3a","#f73d3a","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#f73d3a","#f73d3a","#f73d3a","#ffffff","#f73d3a","#f73d3a","#f73d3a","#ffffff","#f73d3a","#d61410","#d61410","#ffffff","#d61410","#d61410","#d61410","#ffffff","#d61410","#d61410","#ffffff","#ffffff","#d61410","#d61410","#ffffff","#ffffff","#d61410","#d61410","#ffffff","#ffffff","#d61410","#d61410","#ffffff","#ffffff","#d61410","#d61410","#d61410","#d61410","#d61410","#d61410","#d61410","#d61410","#d61410"]
+  ]
+}

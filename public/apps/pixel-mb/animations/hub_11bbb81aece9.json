@@ -1,0 +1,11 @@
+{
+  "name": "saltwatertank",
+  "source": "https://awtrix.de/icons/saltwatertank",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#cecace","#0079bd","#0079bd","#0079bd","#0079bd","#0079bd","#0079bd","#cecace","#cecace","#4abeff","#4abeff","#4abeff","#4abeff","#4abeff","#4abeff","#cecace","#cecace","#4abeff","#4abeff","#4abeff","#4abeff","#4abeff","#4abeff","#cecace","#cecace","#4abeff","#4abeff","#4abeff","#4abeff","#4abeff","#4abeff","#cecace","#cecace","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#cecace","#cecace","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#cecace","#cecace","#cecace","#ffffff","#ffffff","#ffffff","#ffffff","#cecace","#cecace","#000000","#cecace","#cecace","#cecace","#cecace","#cecace","#cecace","#000000"]
+  ]
+}

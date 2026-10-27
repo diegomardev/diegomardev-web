@@ -1,0 +1,11 @@
+{
+  "name": "yellow dot",
+  "source": "https://awtrix.de/icons/yellow-dot",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#efdf00","#efdf00","#000000","#000000","#000000","#000000","#000000","#efdf00","#efdf00","#efdf00","#efdf00","#000000","#000000","#000000","#efdf00","#efdf00","#efdf00","#efdf00","#efdf00","#efdf00","#000000","#efdf00","#efdf00","#efdf00","#efdf00","#efdf00","#efdf00","#efdf00","#efdf00","#efdf00","#efdf00","#efdf00","#efdf00","#efdf00","#efdf00","#efdf00","#efdf00","#000000","#efdf00","#efdf00","#efdf00","#efdf00","#efdf00","#efdf00","#000000","#000000","#000000","#efdf00","#efdf00","#efdf00","#efdf00","#000000","#000000","#000000","#000000","#000000","#efdf00","#efdf00","#000000","#000000","#000000"]
+  ]
+}

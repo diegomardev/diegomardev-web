@@ -1,0 +1,11 @@
+{
+  "name": "zwift",
+  "source": "https://awtrix.de/icons/zwift",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ff6519","#ff6510","#ff6510","#ff6510","#ff6510","#ff6510","#ff6510","#ff6519","#ff6110","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#ff7129","#ff6508","#fffbff","#fffbff","#fffbff","#fffbff","#ffffff","#fffbff","#ff6110","#ff6519","#ff6519","#ff6108","#fffbff","#ffffff","#fffbff","#ff6508","#ff6510","#ff6110","#ff6110","#fffbff","#fffbff","#fffbff","#ff6110","#ff6110","#ff6108","#ff6110","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#ff6110","#ff6510","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#ff6110","#ff6519","#ff6510","#ff6110","#ff6508","#ff6508","#ff6510","#ff6110","#ff6110"]
+  ]
+}

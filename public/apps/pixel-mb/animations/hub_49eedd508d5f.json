@@ -1,0 +1,13 @@
+{
+  "name": "engadget",
+  "source": "https://awtrix.de/icons/engadget",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 200,
+  "frames": [
+    ["#009ede","#ffffff","#ffffff","#009ede","#ffffff","#ffffff","#009ede","#009ede","#009ede","#009ede","#009ede","#ffffff","#009ede","#009ede","#ffffff","#009ede","#009ede","#009ede","#ffffff","#009ede","#ffffff","#009ede","#009ede","#ffffff","#ffffff","#ffffff","#009ede","#ffffff","#009ede","#ffffff","#009ede","#ffffff","#ffffff","#009ede","#ffffff","#009ede","#009ede","#ffffff","#009ede","#ffffff","#ffffff","#ffffff","#ffffff","#009ede","#009ede","#009ede","#009ede","#009ede","#ffffff","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#ffffff","#ffffff","#ffffff","#009ede","#009ede","#009ede","#009ede","#009ede"],
+    ["#009ede","#ffffff","#ffffff","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#ffffff","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#ffffff","#009ede","#ffffff","#009ede","#009ede","#009ede","#ffffff","#ffffff","#009ede","#ffffff","#009ede","#ffffff","#009ede","#009ede","#ffffff","#009ede","#ffffff","#009ede","#009ede","#ffffff","#009ede","#009ede","#ffffff","#ffffff","#ffffff","#009ede","#009ede","#009ede","#009ede","#009ede","#ffffff","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#ffffff","#ffffff","#ffffff","#009ede","#009ede","#009ede","#009ede","#009ede"],
+    ["#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#ffffff","#009ede","#009ede","#009ede","#009ede","#009ede","#ffffff","#ffffff","#009ede","#ffffff","#009ede","#009ede","#009ede","#009ede","#ffffff","#009ede","#ffffff","#009ede","#009ede","#009ede","#009ede","#009ede","#ffffff","#ffffff","#ffffff","#009ede","#009ede","#009ede","#009ede","#009ede","#ffffff","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#009ede","#ffffff","#ffffff","#ffffff","#009ede","#009ede","#009ede","#009ede","#009ede"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "etoro",
+  "source": "https://awtrix.de/icons/etoro",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#6bae00","#ffffff","#ffffff","#6bae00","#ffffff","#ffffff","#ffffff","#6bae00","#ffffff","#ffffff","#ffffff","#ffffff","#6bae00","#ffffff","#6bae00","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#6bae00","#ffffff","#6bae00","#ffffff","#6bae00","#6bae00","#ffffff","#6bae00","#ffffff","#ffffff","#ffffff","#6bae00","#ffffff","#ffffff","#6bae00","#ffffff","#ffffff","#ffffff","#6bae00","#6bae00","#6bae00","#6bae00","#6bae00","#6bae00","#ffffff","#ffffff","#6bae00","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#6bae00","#6bae08","#6bae00","#6bae00","#ffffff","#ffffff"]
+  ]
+}

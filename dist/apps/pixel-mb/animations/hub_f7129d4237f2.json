@@ -1,0 +1,14 @@
+{
+  "name": "vacuum_mopping",
+  "source": "https://awtrix.de/icons/vacuum-mopping",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 200,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#000000","#adaaad","#10c2ff","#10c2ff","#000000","#10c2ff","#adaaad","#000000","#000000","#10c2ff","#10c2ff","#000000","#000000","#10c2ff","#10c2ff","#000000"],
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#000000","#adaaad","#10c2ff","#10c2ff","#10c2ff","#000000","#adaaad","#000000","#000000","#10c2ff","#10c2ff","#10c2ff","#000000","#000000","#10c2ff","#000000"],
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#000000","#adaaad","#000000","#10c2ff","#10c2ff","#10c2ff","#adaaad","#000000","#000000","#000000","#10c2ff","#10c2ff","#10c2ff","#10c2ff","#10c2ff","#000000"],
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#000000","#adaaad","#10c2ff","#000000","#10c2ff","#10c2ff","#adaaad","#000000","#000000","#10c2ff","#000000","#000000","#10c2ff","#10c2ff","#10c2ff","#000000"]
+  ]
+}

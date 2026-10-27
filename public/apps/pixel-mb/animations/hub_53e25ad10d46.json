@@ -1,0 +1,11 @@
+{
+  "name": "bilibiliplay",
+  "source": "https://awtrix.de/icons/bilibiliplay",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#19aade","#000000","#000000","#21aade","#000000","#000000","#000000","#21aade","#21aade","#21aade","#21aae6","#21aade","#21aade","#000000","#21aade","#19aade","#21aade","#ffffff","#21aade","#21aade","#21aade","#21aade","#21aade","#21aade","#21aade","#ffffff","#ffffff","#21aae6","#21aade","#21aade","#21aade","#21aade","#21aade","#ffffff","#19aade","#21aade","#21aade","#19aade","#000000","#19aade","#21aade","#21aade","#21aade","#21aade","#21aade","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

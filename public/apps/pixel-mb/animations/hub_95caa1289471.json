@@ -1,0 +1,11 @@
+{
+  "name": "zdf",
+  "source": "https://awtrix.de/icons/zdf",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#ff7d19","#ff7d19","#ff7d19","#ff7d19","#000000","#000000","#000000","#ff7d19","#ff7d19","#ff7d19","#ffffff","#ffffff","#ffffff","#000000","#ff7d19","#ff7d19","#ff7d19","#ff7d19","#ff7d19","#ff7d10","#ff7d19","#ffffff","#ff7d19","#ff7d19","#ff7d19","#ff7d19","#ff7d19","#ffffff","#ffffff","#ff7d19","#ff7d19","#ff7d19","#ff7d19","#ff7d10","#ffffff","#ff7d10","#ff7d19","#ff7d19","#ff7d19","#ff7d19","#ff7d19","#ff7d19","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ff7910","#ff7d19","#ff7d10","#ff7d19","#ff7d19","#ff7d10","#000000","#000000","#000000","#ff7d19","#ff7d19","#ff7d19","#ff7d10","#000000","#000000"]
+  ]
+}

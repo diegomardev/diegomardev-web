@@ -1,0 +1,11 @@
+{
+  "name": "orange",
+  "source": "https://awtrix.de/icons/orange",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#ffc200","#ffc200","#ffc200","#ffc200","#000000","#000000","#000000","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#000000","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#000000","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#ffc200","#000000","#000000","#000000","#ffc200","#ffc200","#ffc200","#ffc200","#000000","#000000"]
+  ]
+}

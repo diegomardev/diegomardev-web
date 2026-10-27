@@ -1,0 +1,11 @@
+{
+  "name": "question",
+  "source": "https://awtrix.de/icons/question",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#b58219","#ffce00","#ffce00","#ffce00","#ffce00","#ffce00","#000000","#b58210","#ffce00","#9c6500","#ffffff","#ffffff","#ffffff","#ffce00","#ffce00","#b58219","#9c6500","#ffffff","#ffd200","#ffce00","#9c6500","#ffffff","#ffce00","#b58219","#9c6500","#ffffff","#ffce00","#ffce00","#9c6500","#ffffff","#ffce00","#b58219","#ffce00","#ffce00","#ffce00","#9c6500","#ffffff","#ffce00","#ffce00","#b58219","#ffce00","#ffce00","#9c6500","#ffffff","#ffce00","#ffce00","#ffce00","#b58219","#ffce00","#ffce00","#ffce00","#ffce00","#ffce00","#ffce00","#ffce00","#000000","#b58210","#ffce00","#9c6500","#ffffff","#ffce00","#ffce00","#000000"]
+  ]
+}

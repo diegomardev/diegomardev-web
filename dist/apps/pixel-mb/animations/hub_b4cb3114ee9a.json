@@ -1,0 +1,11 @@
+{
+  "name": "lucerne",
+  "source": "https://awtrix.de/icons/lucerne",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff","#1000ff"]
+  ]
+}

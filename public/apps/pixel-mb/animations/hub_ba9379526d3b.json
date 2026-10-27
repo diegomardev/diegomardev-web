@@ -1,0 +1,11 @@
+{
+  "name": "turk",
+  "source": "https://awtrix.de/icons/turk",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#f70000","#f70000","#f70000","#f70000","#f70000","#ef1c19","#ef1c21","#ef1c21","#f70000","#ffffff","#ffffff","#ffffff","#ff0000","#ff0000","#ef1821","#ef1821","#ffffff","#ff0000","#ff0000","#ff0000","#f70000","#ffffff","#f70000","#f70000","#ffffff","#ff0000","#ff0000","#ff0000","#ffffff","#f70000","#ffffff","#f70000","#ffffff","#ff0000","#ff0000","#ff0000","#f70000","#ffffff","#f70000","#f70000","#ffffff","#f70000","#f70000","#f70000","#ff0000","#ef1821","#ef1821","#ef1821","#f70000","#ffffff","#ffffff","#ffffff","#f70000","#ff0000","#ef1821","#ef1821","#ef1821","#f70000","#ef1821","#ef1c21","#ef1821","#ef1821","#ef1c21","#ef1821"]
+  ]
+}

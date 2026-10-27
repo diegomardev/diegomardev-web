@@ -1,0 +1,11 @@
+{
+  "name": "ard",
+  "source": "https://awtrix.de/icons/ard",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#0020ff","#0020ff","#0020ff","#0020ff","#ffffff","#ffffff","#ffffff","#0020ff","#0020ff","#0020ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#001cff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#0020ff","#0020ff","#0020ff","#0020ff","#ffffff","#ffffff","#ffffff","#ffffff","#0020ff","#0020ff","#0020ff","#0020ff","#ffffff","#ffffff","#ffffff","#ffffff","#001cff","#0020ff","#0020ff","#0020ff","#ffffff","#ffffff","#ffffff","#ffffff","#0020ff","#001cff","#0020ff","#0020ff","#ffffff","#ffffff","#ffffff","#ffffff","#0020ff","#0020ff","#0020ff","#0020ff","#ffffff","#ffffff","#0020ff","#0020ff","#0020ff"]
+  ]
+}

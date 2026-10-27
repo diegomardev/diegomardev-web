@@ -1,0 +1,12 @@
+{
+  "name": "twitchlive",
+  "source": "https://awtrix.de/icons/twitchlive",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 1150,
+  "frames": [
+    ["#000000","#8465ce","#8465ce","#8465ce","#8465ce","#8465ce","#8465ce","#8465ce","#8465ce","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#8465ce","#8465ce","#ffffff","#ffffff","#8465ce","#ffffff","#8465ce","#ffffff","#8465ce","#8465ce","#ffffff","#ffffff","#8465ce","#ffffff","#8465ce","#ffffff","#8465ce","#8465ce","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#8465ce","#8465ce","#8465ce","#8465ce","#ffffff","#ffffff","#8465ce","#8465ce","#8465ce","#000000","#000000","#8465ce","#ffffff","#8465ce","#000000","#000000","#000000","#000000","#000000","#8465ce","#8465ce","#000000","#000000","#000000","#000000"],
+    ["#000000","#8465ce","#8465ce","#8465ce","#8465ce","#8465ce","#ef1c19","#ef1c19","#8465ce","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ef1c19","#ef1c19","#8465ce","#ffffff","#ffffff","#8465ce","#ffffff","#8465ce","#ffffff","#8465ce","#8465ce","#ffffff","#ffffff","#8465ce","#ffffff","#8465ce","#ffffff","#8465ce","#8465ce","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#8465ce","#8465ce","#8465ce","#8465ce","#ffffff","#ffffff","#8465ce","#8465ce","#8465ce","#000000","#000000","#8465ce","#ffffff","#8465ce","#000000","#000000","#000000","#000000","#000000","#8465ce","#8465ce","#000000","#000000","#000000","#000000"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "foxjk.com",
+  "source": "https://awtrix.de/icons/foxjk-com",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#73d200","#cefb3a","#c5e342","#7b8631","#737d31","#bddb63","#d6ff31","#84df00","#d6ff31","#849a10","#000000","#3a3d3a","#080808","#000000","#9cae52","#d6ff31","#bdd24a","#191819","#000000","#101c19","#525152","#000000","#3a3552","#ceff00","#d6e37b","#31393a","#3a413a","#cecece","#cecace","#5a5d5a","#5a5d52","#ceff10","#adbe4a","#bdb6a5","#c5c2bd","#bdae94","#bdbabd","#bdb6b5","#9cb221","#d6ff52","#a5ca42","#d6c2ad","#ceba9c","#efdfc5","#fff7d6","#cec68c","#def784","#bdfb00","#5aca00","#a5b28c","#ffebc5","#8c8a7b","#000000","#94ba00","#a5f300","#6bd200","#63ce00","#5aca00","#bdce9c","#d6ba9c","#292419","#103100","#5abe00","#528210"]
+  ]
+}

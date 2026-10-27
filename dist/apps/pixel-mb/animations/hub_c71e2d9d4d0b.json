@@ -1,0 +1,11 @@
+{
+  "name": "Strand",
+  "source": "https://awtrix.de/icons/strand",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#00bac5","#00fbf7","#00fbf7","#00bac5","#00fbf7","#00fbf7","#00fbf7","#00bac5","#00fbf7","#00fbf7","#00fbf7","#00fbf7","#00bac5","#00fbf7","#00fbf7","#00fbf7","#00fbf7","#00bac5","#00fbf7","#00fbf7","#00fbf7","#00fbf7","#00fbf7","#00bac5","#00bac5","#00fbf7","#00fbf7","#00fbf7","#00bac5","#00fbf7","#00fbf7","#00fbf7","#00fbf7","#00fbf7","#00fbf7","#00fbf7","#00fbf7","#00fbf7","#00bac5","#00bac5","#ffb663","#00bac5","#00fbf7","#00fbf7","#00bac5","#00fbf7","#00fbf7","#ffb663","#ffb663","#ffb663","#ffb663","#ffb663","#ffb663","#ffb663","#ffb663","#f70c08","#ffb663","#f70c08","#ffb663","#ffb663","#f70c08","#ffb663","#ffb663","#ffb663"]
+  ]
+}

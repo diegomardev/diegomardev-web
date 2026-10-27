@@ -1,0 +1,11 @@
+{
+  "name": "katze",
+  "source": "https://awtrix.de/icons/katze",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#e6f7ff","#94c284","#94ba8c","#e6efff","#9cbe9c","#3a9e42","#ffffff","#f7ffff","#cee7c5","#737d63","#9caa9c","#f7fbff","#b5c6ad","#429a3a","#ffffff","#ffffff","#adae84","#948a8c","#b5b6bd","#f7f7de","#ced2c5","#63a642","#b5cea5","#b5cead","#9c715a","#e6e7ef","#dedfe6","#dee7a5","#d6dbc5","#9cc652","#4a8210","#3a8a29","#d6d2d6","#f7f3f7","#f7f7ff","#bdbab5","#c5e773","#add74a","#94c231","#84ba3a","#efeff7","#efebf7","#efebf7","#dedbef","#a5d24a","#a5c652","#8cb229","#7ba631","#e6e3ef","#ded7de","#cec6ce","#d6d2de","#9cb65a","#94a66b","#849642","#638629","#cec2c5","#c5bebd","#a5929c","#a59a9c","#a59a9c","#8c8284","#847d7b","#526929"]
+  ]
+}

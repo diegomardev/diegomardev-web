@@ -1,0 +1,11 @@
+{
+  "name": "clock",
+  "source": "https://awtrix.de/icons/clock",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#00a6f7","#009ade","#009ade","#009ade","#7bcaff","#7bcaff","#000000","#0079c5","#00a2e6","#009ae6","#009ae6","#009ae6","#7bcaff","#7bcaff","#0096d6","#0071b5","#0071b5","#0071b5","#0075b5","#0071b5","#0071bd","#008ece","#0086c5","#0875c5","#ffffff","#ffffff","#296dc5","#ffffff","#ffffff","#ffffff","#086db5","#1075bd","#ffffff","#ffffff","#525db5","#ffffff","#ffffff","#ffffff","#0865ad","#1075bd","#ffffff","#ffffff","#8ca2c5","#6b86c5","#8c96c5","#ffffff","#0861ad","#1082ce","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#0871ad","#000000","#2186ce","#1979bd","#1979b5","#1979b5","#197dbd","#1971ad","#000000"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "hkologo",
+  "source": "https://awtrix.de/icons/hkologo",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#f7f7f7","#7ba2b5","#ffffff","#ffffff","#ffffff","#00458c","#fffff7","#08458c","#08498c","#3a75ad","#004984","#f7fff7","#004d84","#004d8c","#efffff","#004594","#084184","#08497b","#00458c","#084984","#94beef","#94bae6","#f7ffff","#8cbeff","#8cbaf7","#94a2ad","#94baef","#8cbeef","#104573","#00458c","#004d94","#08498c","#004d8c","#f7ffff","#00457b","#104573","#ffffff","#00518c","#4275ad","#084184","#08458c","#ffffff","#004d8c","#ffffff","#ffffff","#fffbff","#7b9aad","#f7ffff","#fffbff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

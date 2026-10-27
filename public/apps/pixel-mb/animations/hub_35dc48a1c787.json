@@ -1,0 +1,11 @@
+{
+  "name": "whitecarstatic",
+  "source": "https://awtrix.de/icons/whitecarstatic",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#000000","#ffffff","#000000","#000000","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#313531","#ffffff","#ffffff","#ffffff","#a5a2a5","#313531","#ffffff","#ffffff","#a5a2a5","#000000","#000000","#000000","#313531","#a5a2a5","#000000","#000000"]
+  ]
+}

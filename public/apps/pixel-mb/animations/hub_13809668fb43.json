@@ -1,0 +1,11 @@
+{
+  "name": "pencil",
+  "source": "https://awtrix.de/icons/pencil",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#191810","#191810","#081410","#101810","#000000","#ffffff","#ffaad6","#000000","#191808","#081408","#191810","#000000","#d6efff","#ff75b5","#ff96c5","#ffb6de","#081410","#191810","#000000","#ffffff","#ffffad","#d6efff","#ff8ebd","#ffb6de","#191410","#000000","#ffffff","#ffff9c","#ffff9c","#ffba00","#adaae6","#000000","#000000","#fffff7","#ffae00","#ffff9c","#ffae00","#ffae00","#000000","#191810","#000000","#fffff7","#fffff7","#a53119","#ffae00","#000000","#101810","#101010","#a596c5","#fffff7","#fffff7","#ffae00","#000000","#191810","#081410","#191810","#a596bd","#a59ac5","#000000","#000000","#191810","#191410","#101810","#191810"]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Sunny Morning",
+  "source": "https://awtrix.de/icons/sunny-morning",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 500,
+  "frames": [
+    ["#fff700","#ffc600","#ffc600","#00aaff","#00aaff","#00e3ff","#00e3ff","#00e3ff","#ffc600","#ffc600","#0079ff","#0079ff","#8c5110","#00aaff","#00e3ff","#00e3ff","#ffc600","#005dff","#005dff","#8c5110","#ffffff","#8c5110","#00aaff","#00e3ff","#0035ff","#0035ff","#8c5110","#ffffff","#ffffff","#ffffff","#8c5110","#00aaff","#1900ff","#8c5110","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#8c5110","#1900ff","#1900ff","#ffffff","#5a2d00","#ffffff","#000000","#ffffff","#0079ff","#1900ff","#1900ff","#ffffff","#5a2d00","#ffffff","#ffffff","#ffffff","#0035ff","#10ae00","#10ae00","#10ae00","#10ae00","#10ae00","#10ae00","#10ae00","#10ae00"],
+    ["#fff700","#ffc600","#0079ff","#00aaff","#00aaff","#00e3ff","#00e3ff","#00e3ff","#ffc600","#005dff","#0079ff","#0079ff","#8c5110","#00aaff","#00e3ff","#00e3ff","#0035ff","#005dff","#005dff","#8c5110","#ffffff","#8c5110","#00aaff","#00e3ff","#0035ff","#0035ff","#8c5110","#ffffff","#ffffff","#ffffff","#8c5110","#00aaff","#1900ff","#8c5110","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#8c5110","#1900ff","#1900ff","#ffffff","#5a2d00","#ffffff","#000000","#ffffff","#0079ff","#1900ff","#1900ff","#ffffff","#5a2d00","#ffffff","#ffffff","#ffffff","#0035ff","#10ae00","#10ae00","#10ae00","#10ae00","#10ae00","#10ae00","#10ae00","#10ae00"]
+  ]
+}

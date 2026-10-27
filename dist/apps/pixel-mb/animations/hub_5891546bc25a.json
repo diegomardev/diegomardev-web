@@ -1,0 +1,11 @@
+{
+  "name": "sunbattery_100",
+  "source": "https://awtrix.de/icons/sunbattery-100",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#efd208","#000000","#efd208","#000000","#efd208","#000000","#000000","#000000","#000000","#efd208","#efd208","#efd208","#000000","#ffffff","#ffffff","#000000","#efd208","#efd208","#efd208","#efd208","#ffffff","#00db29","#00db29","#ffffff","#000000","#efd208","#efd208","#efd208","#ffffff","#00db29","#00db29","#ffffff","#efd208","#000000","#efd208","#000000","#ffffff","#00db29","#00db29","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#00db29","#00db29","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#00db29","#00db29","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

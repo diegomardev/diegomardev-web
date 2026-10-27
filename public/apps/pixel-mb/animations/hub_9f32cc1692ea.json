@@ -1,0 +1,11 @@
+{
+  "name": "parking",
+  "source": "https://awtrix.de/icons/parking",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#9ca6ef","#5265ff","#3149ef","#3149ef","#3149ef","#3149ef","#5265ff","#9ca6ef","#5265ff","#3149ef","#ffffff","#ffffff","#ffffff","#3149ef","#3149ef","#5265ff","#3149ef","#3149ef","#ffffff","#3149ef","#3149ef","#ffffff","#3149ef","#3149ef","#3149ef","#3145ef","#ffffff","#3149ef","#3149ef","#ffffff","#3149ef","#3149ef","#3149ef","#3149ef","#ffffff","#ffffff","#ffffff","#3149ef","#3149ef","#3149ef","#3149ef","#3149ef","#ffffff","#3149ef","#3149ef","#3149ef","#3149ef","#3149ef","#5265ff","#3149ef","#ffffff","#3149ef","#3149ef","#3149ef","#3145ef","#5265ff","#9ca6ef","#5265ff","#3149ef","#3149ef","#3149ef","#3149ef","#5265ff","#9ca6ef"]
+  ]
+}

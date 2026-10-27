@@ -1,0 +1,11 @@
+{
+  "name": "doughnotcandy",
+  "source": "https://awtrix.de/icons/doughnotcandy",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#e6bec5","#e6bac5","#e6bac5","#e6bac5","#e6bac5","#e6bac5","#000000","#e6bac5","#e6bac5","#7bca73","#e6bac5","#e6bac5","#de1c19","#e6bac5","#e6bac5","#e6bac5","#e6bac5","#e6bac5","#5a2408","#5a2408","#e6bac5","#e6bac5","#3abed6","#e6bac5","#dedf08","#e6bac5","#522400","#5a2408","#e6bac5","#e6bac5","#e6bac5","#e6bac5","#e6bac5","#e6bac5","#e6bac5","#e6bac5","#e6bac5","#42ca84","#e6bac5","#ad4d00","#e6bac5","#de1c19","#e6bac5","#e6bac5","#e6bac5","#e6bac5","#ad4d00","#ad5100","#ad4d00","#e6bac5","#ad5100","#ad5100","#ad4d08","#ad5108","#ad5100","#000000","#ad5100","#ad4d08","#ad5100","#ad4d00","#ad5100","#ad5100","#000000"]
+  ]
+}

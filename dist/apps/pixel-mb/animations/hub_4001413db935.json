@@ -1,0 +1,11 @@
+{
+  "name": "enercity",
+  "source": "https://awtrix.de/icons/enercity",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#9c009c","#a51c6b","#b51c63","#bd184a","#bd184a","#ce1442","#d61029","#ff0000","#9c009c","#a51c6b","#b51c63","#ffffff","#ffffff","#ce1442","#d61029","#ff0000","#9c009c","#a51c6b","#ffffff","#bd184a","#bd184a","#ffffff","#d61029","#ff0000","#9c009c","#a51c6b","#ffffff","#ffffff","#ffffff","#ffffff","#d61029","#ff0000","#9c009c","#a51c6b","#ffffff","#bd184a","#bd184a","#ce1442","#d61029","#ff0000","#9c009c","#a51c6b","#b51c63","#ffffff","#ffffff","#ffffff","#d61029","#ff0000","#9c009c","#a51c6b","#b51863","#bd144a","#bd184a","#ce1442","#d61021","#ff0000","#9c009c","#a51c6b","#b51c63","#bd184a","#bd184a","#ce1442","#d61029","#ff0000"]
+  ]
+}

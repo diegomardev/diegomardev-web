@@ -1,0 +1,11 @@
+{
+  "name": "Teams in a call",
+  "source": "https://awtrix.de/icons/teams-in-a-call",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#730000","#730000","#730000","#730000","#000000","#000000","#000000","#730000","#ffffff","#ffffff","#ffffff","#ffffff","#730000","#000000","#730000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#730000","#730000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#730000","#730000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#730000","#730000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#730000","#000000","#730000","#ffffff","#ffffff","#ffffff","#ffffff","#730000","#000000","#000000","#000000","#730000","#730000","#730000","#730000","#000000","#000000"]
+  ]
+}

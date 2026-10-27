@@ -1,0 +1,11 @@
+{
+  "name": "zone",
+  "source": "https://awtrix.de/icons/zone",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#ffdf00","#ffdf00","#000000","#000000","#000000","#000000","#000000","#ffdf00","#ffffff","#ffffff","#ffdf00","#000000","#000000","#ffdf00","#ffdf00","#ff7d00","#ff7d00","#ff7d00","#ff7d00","#ffdf00","#ffdf00","#ffffff","#ffffff","#ffffff","#ffffff","#ff7d00","#ffffff","#ffffff","#ffffff","#ffdf00","#ffffff","#ffffff","#ff7d00","#ffffff","#ffffff","#ffffff","#ffdf00","#000000","#ffdf00","#ff7d00","#ff7d00","#ff7d00","#ff7d00","#ffdf00","#000000","#ffdf00","#ffffff","#ffffff","#ffdf00","#ffdf00","#ffffff","#ffffff","#ffdf00","#000000","#ffdf00","#ffdf00","#000000","#000000","#ffdf00","#ffdf00","#000000"]
+  ]
+}

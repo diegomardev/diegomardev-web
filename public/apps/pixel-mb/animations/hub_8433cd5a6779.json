@@ -1,0 +1,11 @@
+{
+  "name": "lettersm",
+  "source": "https://awtrix.de/icons/lettersm",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#f7206b","#f7206b","#f7206b","#f7206b","#f7206b","#f7206b","#f7206b","#f7206b","#f7206b","#ffffff","#f7206b","#f7206b","#f7206b","#f7206b","#ffffff","#f7206b","#f7206b","#ffffff","#ffffff","#f7206b","#f7206b","#ffffff","#ffffff","#f7206b","#f7206b","#ffffff","#f7206b","#ffffff","#ffffff","#f7206b","#ffffff","#f7206b","#f71c6b","#ffffff","#f7206b","#f7206b","#f7206b","#f7206b","#ffffff","#f71c6b","#f7206b","#ffffff","#f7206b","#f7206b","#f7206b","#f7206b","#ffffff","#f7206b","#f7206b","#ffffff","#f7206b","#f7206b","#f7206b","#f7206b","#ffffff","#f7206b","#f7206b","#f7206b","#f7206b","#f7206b","#f7206b","#f7206b","#f7206b","#f7206b"]
+  ]
+}

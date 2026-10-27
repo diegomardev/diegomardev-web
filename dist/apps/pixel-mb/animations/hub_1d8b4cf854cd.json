@@ -1,0 +1,11 @@
+{
+  "name": "beer",
+  "source": "https://awtrix.de/icons/beer",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#e6e3c5","#efebef","#e6e3c5","#e6e3c5","#000000","#000000","#000000","#c5c6c5","#efebe6","#efebef","#e6e3c5","#efebe6","#c5c6c5","#000000","#000000","#d6d2b5","#e6c66b","#e6e75a","#e6e3e6","#b5964a","#000000","#000000","#000000","#000000","#e6c66b","#e6e75a","#e6b652","#b5964a","#cee3ce","#cee3ce","#000000","#000000","#e6c26b","#e6db5a","#e6b64a","#b5964a","#000000","#e6ebe6","#000000","#000000","#e6b64a","#e6d25a","#e6b64a","#a58a4a","#000000","#efebef","#000000","#000000","#d6ae52","#dec652","#ceaa52","#ad9252","#b5c6b5","#000000","#000000","#000000","#deebe6","#deebe6","#ceebd6","#ceebd6","#000000","#000000"]
+  ]
+}

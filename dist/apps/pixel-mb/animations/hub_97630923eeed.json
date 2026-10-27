@@ -1,0 +1,11 @@
+{
+  "name": "untis",
+  "source": "https://awtrix.de/icons/untis",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ff9a00","#ff9a00","#ff9a00","#ff9a00","#ff9a00","#ff9a00","#ff9a00","#ff9a00","#ff9a00","#ff9a00","#ffffff","#ffffff","#0039ce","#ffffff","#ffa208","#ff9a00","#ff9a00","#ffffff","#ffffff","#ffffff","#0039ce","#f73d08","#ffffff","#ff9a00","#ff9a00","#ffffff","#ffffff","#ffffff","#f74100","#f7c608","#f7c608","#ff9a00","#ff9a00","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ff9a00","#ff9a00","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ff9a00","#ff9a00","#ff9a00","#ffffff","#ffffff","#ffffff","#ffffff","#ff9a00","#ff9a00","#ff9a00","#ff9a00","#ff9a00","#ff9a00","#ff9a00","#ff9a00","#ff9a00","#ff9a00"]
+  ]
+}

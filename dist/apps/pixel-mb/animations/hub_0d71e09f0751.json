@@ -1,0 +1,12 @@
+{
+  "name": "fritzbox3",
+  "source": "https://awtrix.de/icons/fritzbox3",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 330,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#5a595a","#ffffff","#5a595a","#ffffff","#5a595a","#ffffff","#ffffff","#ffffff","#5a595a","#ffffff","#5a595a","#ffffff","#5a595a","#ffffff"],
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#5a595a","#ffffff","#5a595a","#ffffff","#00ff31","#ffffff","#ffffff","#ffffff","#5a595a","#ffffff","#5a595a","#ffffff","#00ff31","#ffffff"]
+  ]
+}

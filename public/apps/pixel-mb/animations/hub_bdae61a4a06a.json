@@ -1,0 +1,11 @@
+{
+  "name": "spanishrepublic",
+  "source": "https://awtrix.de/icons/spanishrepublic",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#f71419","#f71419","#f71419","#f71419","#f71419","#f71419","#f71419","#f71419","#f71419","#f71419","#f71419","#f71419","#f71419","#f71419","#f71419","#f71419","#ffff00","#ffff00","#ffff00","#ffff00","#ffff00","#ffff00","#ffff00","#ffff00","#ffff00","#ffff00","#ffff00","#ffff00","#ffff00","#ffff00","#ffff00","#ffff00","#ad00f7","#ad00f7","#ad00f7","#ad00f7","#ad00f7","#ad00f7","#ad00f7","#ad00f7","#ad00f7","#ad00f7","#ad00f7","#ad00f7","#ad00f7","#ad00f7","#ad00f7","#ad00f7","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

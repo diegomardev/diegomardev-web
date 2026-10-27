@@ -1,0 +1,12 @@
+{
+  "name": "AMS_Heating2",
+  "source": "https://awtrix.de/icons/ams-heating2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 200,
+  "frames": [
+    ["#000000","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#000000","#d6d2d6","#ff0000","#ff0000","#00ff4a","#00ff4a","#0000ff","#0000ff","#d6d2d6","#d6d2d6","#ff0000","#ff0000","#00ff4a","#00ff4a","#0000ff","#0000ff","#d6d2d6","#d6d2d6","#ff0000","#ff0000","#00ff4a","#00ff4a","#0000ff","#0000ff","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#ff9a00","#ff0000","#ff9a00","#ff0000","#ff9a00","#ff0000","#d6d2d6","#d6d2d6","#ff9a00","#ff0000","#ff9a00","#ff0000","#ff9a00","#ff0000","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6"],
+    ["#000000","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#000000","#d6d2d6","#ff0000","#ff0000","#00ff4a","#00ff4a","#0000ff","#0000ff","#d6d2d6","#d6d2d6","#ff0000","#ff0000","#00ff4a","#00ff4a","#0000ff","#0000ff","#d6d2d6","#d6d2d6","#ff0000","#ff0000","#00ff4a","#00ff4a","#0000ff","#0000ff","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#ff0000","#ff9a00","#ff0000","#ff9a00","#ff0000","#ff9a00","#d6d2d6","#d6d2d6","#ff0000","#ff9a00","#ff0000","#ff9a00","#ff0000","#ff9a00","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6"]
+  ]
+}

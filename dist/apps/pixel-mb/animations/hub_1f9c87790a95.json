@@ -1,0 +1,11 @@
+{
+  "name": "piplup2",
+  "source": "https://awtrix.de/icons/piplup2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#318eef","#318eef","#318eef","#000000","#000000","#000000","#000000","#ffffff","#8cd2ef","#ffffff","#ffffff","#318eef","#000000","#000000","#000000","#42494a","#efdb29","#3a494a","#ffffff","#318eef","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#318eef","#000000","#000000","#000000","#318eef","#318eef","#318eef","#318eef","#8cd2ef","#000000","#000000","#8cd2ef","#ffffff","#8cd2ef","#ffffff","#8cd2ef","#8cd2ef","#000000","#000000","#000000","#8cd2ef","#8cd2ef","#8cd2f7","#8cd2ef","#8cd2ef","#000000","#000000","#000000","#efdb21","#000000","#000000","#000000","#efdb29","#000000","#000000"]
+  ]
+}

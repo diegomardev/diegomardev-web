@@ -1,0 +1,12 @@
+{
+  "name": "battery_vert_20_charge",
+  "source": "https://awtrix.de/icons/battery-vert-20-load",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 3,
+  "frameMs": 500,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"],
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#ff0000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"]
+  ]
+}

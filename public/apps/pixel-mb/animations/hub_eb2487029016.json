@@ -1,0 +1,11 @@
+{
+  "name": "lux3",
+  "source": "https://awtrix.de/icons/lux3",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#f7e710","#f7e708","#f7e708","#f7e708","#f7e708","#f7e708","#f7e710","#f7e708","#f7e708","#2910f7","#290cf7","#2910f7","#2910f7","#2910ff","#2910f7","#f7e708","#f7e708","#ffffff","#2910f7","#2910f7","#2910f7","#290cf7","#2910f7","#f7e710","#f7e708","#ffffff","#2910f7","#2910f7","#ffffff","#2910ff","#ffffff","#f7e708","#f7e708","#ffffff","#2910f7","#2910f7","#2910f7","#ffffff","#2910f7","#f7e708","#f7e708","#ffffff","#ffffff","#2910f7","#ffffff","#2910f7","#ffffff","#f7e708","#f7e708","#2910ff","#2910f7","#2910f7","#2910f7","#2910f7","#2910f7","#f7e708","#f7e708","#f7e708","#f7e708","#f7e708","#f7e710","#f7e708","#f7e708","#f7e708"]
+  ]
+}

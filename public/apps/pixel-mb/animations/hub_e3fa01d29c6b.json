@@ -1,0 +1,11 @@
+{
+  "name": "sod",
+  "source": "https://awtrix.de/icons/sod",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#ffffff","#ffffff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#ffffff","#ffffff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#ffffff","#ffffff","#00c2ff","#00c2ff","#ffffff","#ffffff","#00c2ff","#00c2ff","#ffffff","#ffffff","#00c2ff","#00c2ff","#ffffff","#ffffff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#ffffff","#ffffff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#ffffff","#ffffff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff"]
+  ]
+}

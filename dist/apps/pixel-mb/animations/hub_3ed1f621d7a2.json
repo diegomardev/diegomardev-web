@@ -1,0 +1,11 @@
+{
+  "name": "burger",
+  "source": "https://awtrix.de/icons/burger",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#deaa7b","#deaa7b","#deaa7b","#deaa7b","#e6d7bd","#deaa7b","#000000","#deaa7b","#deaa7b","#e6d7bd","#deaa7b","#deaa7b","#deaa7b","#deaa7b","#deaa7b","#deaa7b","#deaa7b","#deaa7b","#deaa7b","#e6d7bd","#deaa7b","#deaa7b","#deaa7b","#deaa7b","#deaa7b","#deaa7b","#deaa7b","#deaa7b","#deaa7b","#deaa7b","#e6d7bd","#e6d7bd","#e6d7bd","#e6d7bd","#e6d7bd","#e6d7bd","#e6d7bd","#e6d7bd","#e6d7bd","#de515a","#52925a","#52925a","#52925a","#ffae31","#ffae31","#ffae31","#52925a","#a57563","#7b3929","#7b3929","#7b3929","#7b3929","#7b3929","#7b3929","#a57563","#deaa7b","#deaa7b","#deaa7b","#deaa7b","#deaa7b","#deaa7b","#deaa7b","#deaa7b"]
+  ]
+}

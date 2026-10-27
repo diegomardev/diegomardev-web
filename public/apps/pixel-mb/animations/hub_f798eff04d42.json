@@ -1,0 +1,11 @@
+{
+  "name": "homematic",
+  "source": "https://awtrix.de/icons/homematic",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#6382e6","#9ccece","#9ccece","#9ccece","#9ccece","#9ccece","#000000","#6382e6","#6382e6","#6382e6","#9ccece","#9ccece","#9ccece","#9ccece","#9ccece","#6382e6","#6382e6","#ffffff","#ffffff","#ffffff","#ffffff","#9ccece","#9ccece","#4a65ce","#6382e6","#ffffff","#4a61ce","#9cb2ff","#ffffff","#9cb2ff","#9cb2ff","#4a65ce","#4a65ce","#ffffff","#4a65ce","#8496ff","#ffffff","#9cb2ff","#9cb2ff","#4a65ce","#4a65ce","#ffffff","#ffffff","#ffffff","#ffffff","#849aff","#849aff","#4a65ce","#19319c","#102d9c","#19319c","#19319c","#849aff","#849aff","#849aff","#000000","#19319c","#19319c","#19319c","#19319c","#849aff","#849aff","#000000"]
+  ]
+}

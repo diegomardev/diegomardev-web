@@ -1,0 +1,11 @@
+{
+  "name": "ireland",
+  "source": "https://awtrix.de/icons/ireland",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#009a4a","#009a4a","#ffffff","#ffffff","#ff7900","#ff7900","#000000","#000000","#009a4a","#009a4a","#ffffff","#ffffff","#ff7900","#ff7900","#000000","#000000","#009a4a","#009a4a","#ffffff","#ffffff","#ff7900","#ff7900","#000000","#000000","#009a4a","#009a4a","#ffffff","#ffffff","#ff7900","#ff7900","#000000","#000000","#009a4a","#009a4a","#ffffff","#ffffff","#ff7900","#ff7900","#000000","#000000","#009a4a","#009a4a","#ffffff","#ffffff","#ff7900","#ff7900","#000000","#000000","#009a4a","#009a4a","#ffffff","#ffffff","#ff7900","#ff7900","#000000","#000000","#009a4a","#009a4a","#ffffff","#ffffff","#ff7900","#ff7900","#000000"]
+  ]
+}

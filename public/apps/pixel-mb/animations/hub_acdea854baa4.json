@@ -1,0 +1,11 @@
+{
+  "name": "deutsche_post",
+  "source": "https://awtrix.de/icons/deutsche-post",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffca29","#ffca29","#ffca29","#ffca29","#ffca29","#ffca29","#ffca29","#ffca29","#000000","#ffca29","#ffca29","#000000","#000000","#ffca29","#ffca29","#000000","#000000","#ffca29","#000000","#ffca29","#ffca29","#000000","#ffca29","#000000","#ffca29","#000000","#000000","#ffca29","#ffca29","#000000","#ffca29","#000000","#ffca29","#ffca29","#000000","#000000","#000000","#000000","#000000","#ffca29","#ffca29","#ffca29","#ffca29","#ffca29","#ffca29","#ffca29","#ffca29","#ffca29","#ffca29","#ffca29","#000000","#ffca29","#ffca29","#000000","#ffca29","#ffca29","#ffca29","#000000","#ffca29","#ffca29","#ffca29","#ffc629","#000000","#ffca29"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "rbleipzig",
+  "source": "https://awtrix.de/icons/rbleipzig",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#bd0842","#bd0c42","#bd0c42","#001c42","#001c42","#bd0c42","#bd0842","#bd0c42","#bd0c42","#bd0c42","#001c42","#001c42","#ffffff","#001c42","#bd0c42","#bd0c42","#bd0c42","#ffffff","#001842","#ffffff","#001c42","#001c42","#ffffff","#bd0c42","#ffffff","#ffffff","#ffffff","#001c42","#001c42","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000"]
+  ]
+}

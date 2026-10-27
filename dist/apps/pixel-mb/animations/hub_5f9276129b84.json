@@ -1,0 +1,11 @@
+{
+  "name": "vet",
+  "source": "https://awtrix.de/icons/vet",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#52c6f7","#52c6f7","#52c6f7","#52c6f7","#52c6f7","#52c6f7","#000000","#ffffff","#ffffff","#52c6ff","#52c6f7","#52c6ff","#52c6f7","#52c6f7","#ffffff","#52c6f7","#ffffff","#52c6f7","#52c6f7","#52c6f7","#52c6f7","#ffffff","#ffffff","#52c6f7","#ffffff","#52c6f7","#52c6f7","#52c6f7","#52c6f7","#ffffff","#52c6f7","#52c6f7","#ffffff","#ffffff","#52c6f7","#52c6f7","#ffffff","#ffffff","#52c6f7","#52c6f7","#52c6f7","#ffffff","#52c6ff","#52c6f7","#ffffff","#52c6ff","#52c6f7","#52c6f7","#52c6ff","#ffffff","#ffffff","#ffffff","#ffffff","#52c6f7","#52c6f7","#000000","#52c6f7","#52c6f7","#ffffff","#ffffff","#52c6f7","#52c6f7","#000000"]
+  ]
+}

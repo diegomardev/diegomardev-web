@@ -1,0 +1,11 @@
+{
+  "name": "ta3",
+  "source": "https://awtrix.de/icons/ta3",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#003d84","#003d84","#003d84","#ce0831","#ce0831","#ce0831","#ce0831","#ce0831","#003984","#003984","#ce0831","#ce0831","#ffffff","#ffffff","#ce0831","#ce0831","#003d84","#003d84","#ce0831","#ffffff","#ce0831","#ce0831","#ffffff","#ce0831","#003d84","#ce0831","#ce0831","#ce0831","#ce0831","#ffffff","#ce0831","#ce0831","#003d84","#ce0831","#ce0831","#ce0831","#ce0831","#ce0831","#ffffff","#ce0831","#003d84","#003984","#ce0831","#ffffff","#ce0831","#ce0831","#ffffff","#ce0831","#003d84","#003d84","#ce0831","#ce0831","#ffffff","#ffffff","#ce0831","#ce0831","#003d84","#003d84","#003d84","#ce0831","#ce0831","#ce0829","#ce0831","#ce0831"]
+  ]
+}

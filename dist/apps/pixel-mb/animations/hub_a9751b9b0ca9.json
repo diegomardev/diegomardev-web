@@ -1,0 +1,14 @@
+{
+  "name": "argflag",
+  "source": "https://awtrix.de/icons/argflag",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 100,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#ffffff","#ffffff","#ffffff","#cece3a","#f7f721","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#f7f721","#cece3a","#ffffff","#ffffff","#ffffff","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"],
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#ffffff","#ffffff","#ffffff","#cece3a","#f7f721","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#f7f721","#cece3a","#ffffff","#ffffff","#ffffff","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"],
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#ffffff","#ffffff","#ffffff","#f7f721","#d6d710","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#d6d710","#f7f721","#ffffff","#ffffff","#ffffff","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#3ae7ef","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"],
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#ffffff","#ffffff","#ffffff","#cece3a","#f7f721","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#f7f721","#cece3a","#ffffff","#ffffff","#ffffff","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#3ae7ef","#10c2d6","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

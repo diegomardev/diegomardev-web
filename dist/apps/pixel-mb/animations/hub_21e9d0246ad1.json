@@ -1,0 +1,11 @@
+{
+  "name": "cake_candles",
+  "source": "https://awtrix.de/icons/cake-candles",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffef00","#000000","#ffef00","#000000","#ffef00","#000000","#000000","#000000","#ffffff","#000000","#ffffff","#000000","#ffffff","#000000","#000000","#000000","#ffffff","#ff0029","#ffffff","#ff0029","#ffffff","#000000","#000000","#ffae00","#ffae00","#ffae00","#ffae00","#ffae00","#ffae00","#ffae00","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffae00","#ffae00","#ffae00","#ffae00","#ffae00","#ffae00","#ffae00","#000000","#ffae00","#ffae00","#ffae00","#ffae00","#ffae00","#ffae00","#ffae00"]
+  ]
+}

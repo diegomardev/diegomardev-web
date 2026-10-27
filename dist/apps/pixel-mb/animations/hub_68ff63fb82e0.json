@@ -1,0 +1,11 @@
+{
+  "name": "download",
+  "source": "https://awtrix.de/icons/download",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#ffffff","#ffffff","#ffffff","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#ffffff","#f7ba29","#f7ba29","#f7ba29","#ffffff","#ffffff","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#ffffff","#ffffff","#f7ba29","#f7ba29","#f7ba29","#ffffff","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#ffffff","#ffffff","#ffffff","#f7ba29","#f7ba29","#f7ba29","#f7ba29","#ffffff","#ffffff"]
+  ]
+}

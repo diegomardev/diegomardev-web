@@ -1,0 +1,12 @@
+{
+  "name": "baby_3",
+  "source": "https://awtrix.de/icons/baby-3",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 1000,
+  "frames": [
+    ["#000000","#000000","#ffef00","#ffeb84","#ffef00","#ffef00","#000000","#000000","#000000","#fff331","#ffd700","#fff331","#ffd700","#fff331","#fff331","#000000","#000000","#ffbe6b","#ffca84","#ffd700","#ffca84","#ffca84","#ffbe6b","#000000","#ffbe6b","#ffbe6b","#422400","#ffbe6b","#ffca84","#422400","#ffbe6b","#ffbe6b","#ffca84","#ffbe6b","#ffbe6b","#ffbe6b","#ffbe6b","#ffbe6b","#ffbe6b","#ffbe6b","#000000","#ffca84","#ffbe6b","#0082de","#006dbd","#ffbe6b","#ffbe6b","#000000","#000000","#ffbe6b","#ffbe6b","#009aff","#009aff","#ffbe6b","#ffbe6b","#000000","#000000","#000000","#ffbe6b","#ffca84","#ffca84","#ffbe6b","#000000","#000000"],
+    ["#000000","#000000","#ffef00","#ffeb84","#ffef00","#ffef00","#000000","#000000","#000000","#fff331","#ffd700","#fff331","#ffd700","#fff331","#fff331","#000000","#000000","#ffbe6b","#ffca84","#ffd700","#ffca84","#ffca84","#ffbe6b","#000000","#ffbe6b","#ffbe6b","#422400","#ffbe6b","#ffca84","#422400","#ffbe6b","#ffbe6b","#ffca84","#ffbe6b","#ffbe6b","#ffbe6b","#ffbe6b","#ffbe6b","#ffbe6b","#ffbe6b","#000000","#ffca84","#ffbe6b","#009aff","#009aff","#ffbe6b","#ffbe6b","#000000","#000000","#ffbe6b","#ffbe6b","#0082de","#0082de","#ffbe6b","#ffbe6b","#000000","#000000","#000000","#ffbe6b","#ffca84","#ffca84","#ffbe6b","#000000","#000000"]
+  ]
+}

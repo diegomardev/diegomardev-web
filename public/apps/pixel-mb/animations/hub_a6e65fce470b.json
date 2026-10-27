@@ -1,0 +1,11 @@
+{
+  "name": "potion",
+  "source": "https://awtrix.de/icons/potion",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#d6d7d6","#000000","#000000","#d6d7d6","#000000","#000000","#000000","#000000","#ffffff","#000000","#000000","#ffffff","#000000","#000000","#000000","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#000000","#ffffff","#73ff6b","#73ff6b","#63ff5a","#73ff6b","#73ff6b","#73ff6b","#ffffff","#d6d7d6","#08ff00","#08ff00","#08ff00","#08ff00","#08ff00","#08ff00","#d6d7d6","#000000","#d6d7d6","#08e300","#08e300","#08e300","#08e300","#d6d7d6","#000000","#000000","#000000","#d6d7d6","#d6d7d6","#d6d7d6","#d6d7d6","#000000","#000000"]
+  ]
+}

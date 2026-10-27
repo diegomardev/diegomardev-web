@@ -1,0 +1,11 @@
+{
+  "name": "martin",
+  "source": "https://awtrix.de/icons/martin",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#632d63","#ffffff","#633163","#ffffff","#632d63","#ffffff","#ffffff","#ffffff","#ffffff","#633163","#ffffff","#632d63","#ffffff","#ffffff","#ffffff","#ffffff","#632d63","#ffffff","#633163","#633163","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#633163","#ffffff","#633163","#ffffff","#ffffff","#ffffff","#ffffff","#633163","#ffffff","#633163","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#633163","#ffffff","#632d63","#ffffff","#ffffff","#ffffff","#ffffff","#633163","#ffffff","#633163","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#633163","#ffffff","#633163","#ffffff","#ffffff"]
+  ]
+}

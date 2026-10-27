@@ -1,0 +1,11 @@
+{
+  "name": "moon1",
+  "source": "https://awtrix.de/icons/moon1",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#cecece","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#cecece","#ffffff","#cecece","#000000","#000000","#cecece","#000000","#cecece","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#000000","#cecece","#ffffff","#ffffff","#cecece","#000000","#000000","#000000","#cecece","#000000","#cecece","#ffffff","#ffffff","#ffffff","#ffffff","#cecece","#000000","#000000","#000000","#cecece","#cecece","#cecece","#cecece","#000000","#000000"]
+  ]
+}

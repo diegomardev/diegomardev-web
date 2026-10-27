@@ -1,0 +1,11 @@
+{
+  "name": "ambilight",
+  "source": "https://awtrix.de/icons/ambilight",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#f70008","#f70010","#f78a19","#f78a19","#ffff10","#ffff10","#8cff08","#8cff08","#f70008","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#21aa08","#ff00ff","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#21aa08","#ff00ff","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#4affff","#9400ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#42ffff","#9400ff","#9400ff","#4231ff","#ffffff","#ffffff","#4235ff","#4231ff","#4affff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"]
+  ]
+}

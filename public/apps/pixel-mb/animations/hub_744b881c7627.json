@@ -1,0 +1,11 @@
+{
+  "name": "bmw2",
+  "source": "https://awtrix.de/icons/bmw2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#b5b2b5","#b5b2b5","#b5b2b5","#b5b2b5","#000000","#000000","#000000","#b5b2b5","#2961a5","#2961a5","#ffffff","#ffffff","#b5b2b5","#000000","#b5b2b5","#2961a5","#2961a5","#2961a5","#ffffff","#ffffff","#ffffff","#b5b2b5","#b5b2b5","#2961a5","#2961a5","#2961a5","#ffffff","#ffffff","#ffffff","#b5b2b5","#b5b2b5","#ffffff","#ffffff","#ffffff","#2961a5","#2961a5","#2961a5","#b5b2b5","#b5b2b5","#ffffff","#ffffff","#ffffff","#2961a5","#2961a5","#2961a5","#b5b2b5","#000000","#b5b2b5","#ffffff","#ffffff","#2961a5","#2961a5","#b5b2b5","#000000","#000000","#000000","#b5b2b5","#b5b2b5","#b5b2b5","#b5b2b5","#000000","#000000"]
+  ]
+}

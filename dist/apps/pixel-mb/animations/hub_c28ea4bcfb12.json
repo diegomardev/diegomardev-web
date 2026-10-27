@@ -1,0 +1,11 @@
+{
+  "name": "ripple",
+  "source": "https://awtrix.de/icons/ripple-2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#eff7ff","#addbef","#e6f3ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#6bbee6","#008ace","#4aa6d6","#ffffff","#ffffff","#ceebf7","#a5dbf7","#ffffff","#6bbade","#0082bd","#429ed6","#ffffff","#e6f7ff","#29aade","#0096d6","#63b6de","#5aaed6","#94c6e6","#e6f3f7","#ffffff","#eff7ff","#29a6de","#088ece","#73bae6","#5aa6d6","#84bad6","#deebf7","#ffffff","#ffffff","#d6ebf7","#b5dbef","#ffffff","#5aa2ce","#0069a5","#3a86b5","#fffbff","#ffffff","#ffffff","#ffffff","#ffffff","#6baace","#00619c","#4a8eb5","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#f7f7ff","#b5d2e6","#eff3f7","#ffffff"]
+  ]
+}

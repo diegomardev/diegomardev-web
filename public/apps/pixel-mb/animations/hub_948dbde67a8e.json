@@ -1,0 +1,11 @@
+{
+  "name": "medical",
+  "source": "https://awtrix.de/icons/medical",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#525d63","#525d63","#ffffff","#ffffff","#ffffff","#ffffff","#525d63","#525d63","#525d63","#ffffff","#ffffff","#c51c10","#c51c10","#ffffff","#ffffff","#525d63","#ffffff","#ffffff","#ffffff","#c51c10","#c51c10","#ffffff","#ffffff","#ffffff","#ffffff","#c51c10","#c51c10","#c51c10","#c51c10","#c51c10","#c51c10","#ffffff","#ffffff","#c51c10","#c51c10","#c51c10","#c51c10","#c51c10","#c51c10","#ffffff","#ffffff","#ffffff","#ffffff","#c51c10","#c51c10","#ffffff","#ffffff","#ffffff","#525d63","#ffffff","#ffffff","#c51c10","#c51c10","#ffffff","#ffffff","#525d63","#525d63","#525d63","#ffffff","#ffffff","#ffffff","#ffffff","#525d63","#525d63"]
+  ]
+}

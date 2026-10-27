@@ -1,0 +1,12 @@
+{
+  "name": "attentionwarning",
+  "source": "https://awtrix.de/icons/attentionwarning",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 1000,
+  "frames": [
+    ["#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#ffffff","#ffffff","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#ffffff","#ffffff","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#ffffff","#ffffff","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#ffffff","#ffffff","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#ffffff","#ffffff","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010","#f70010"],
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#f70010","#f70010","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#f70010","#f70010","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#f70010","#f70010","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#f70010","#f70010","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#f70010","#f70010","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

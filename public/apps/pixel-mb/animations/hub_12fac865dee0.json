@@ -1,0 +1,11 @@
+{
+  "name": "Diagonal color bands",
+  "source": "https://awtrix.de/icons/diagonal-color-bands",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#f7f7f7","#4aeb10","#4aeb10","#4aeb10","#de1063","#de1063","#de1063","#ffffff","#ffffff","#f7f7f7","#4aeb10","#4aeb10","#4aeb10","#de1063","#de1063","#ffffff","#ffffff","#ffffff","#f7f7f7","#4aeb10","#4aeb10","#4aeb10","#de1063","#8c24b5","#ffffff","#ffffff","#ffffff","#f7f7f7","#4aeb10","#4aeb10","#4aeb10","#8c24b5","#8c24b5","#8c24b5","#ffffff","#ffffff","#f7f7f7","#4aeb10","#4aeb10","#8c24b5","#8c24b5","#8c24b5","#8c24b5","#ffffff","#ffffff","#f7f7f7","#f7f7f7","#8c24b5","#8c24b5","#8c24b5","#8c24b5","#8c24b5","#ffffff","#ffffff","#f7f7f7","#8c24b5","#8c24b5","#8c24b5","#8c24b5","#8c24b5","#8c24b5","#8c24b5","#ffffff"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Mini Pouring Rain",
+  "source": "https://awtrix.de/icons/mini-pouring-rain",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 3,
+  "height": 5,
+  "frameMs": 20,
+  "frames": [
+    ["#425563","#425563","#425563","#425563","#425563","#425563","#1065ff","#000000","#1065ff","#000000","#1065ff","#000000","#1065ff","#000000","#1065ff"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "playstation",
+  "source": "https://awtrix.de/icons/playstation",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#2135b5","#2135b5","#2135b5","#2135b5","#2135b5","#2135b5","#2135b5","#2135b5","#ffffff","#ffffff","#ffffff","#2135b5","#2135b5","#2135b5","#ffffff","#ffffff","#2131b5","#2135b5","#2135b5","#ffffff","#2135b5","#ffffff","#2135b5","#2135b5","#2135b5","#ffffff","#ffffff","#2135b5","#2135b5","#ffffff","#2135b5","#2135b5","#ffffff","#2135b5","#2135b5","#2135b5","#2135b5","#ffffff","#2135b5","#2131b5","#ffffff","#2135b5","#2135b5","#ffffff","#ffffff","#2135b5","#2135b5","#2135b5","#2135b5","#2135b5","#2135b5","#2135b5","#2135b5","#2135b5","#2135b5","#2135b5","#2135b5","#2135b5","#2135b5","#2135b5","#2135b5","#2135b5","#2135b5","#2135b5"]
+  ]
+}

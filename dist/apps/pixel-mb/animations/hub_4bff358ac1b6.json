@@ -1,0 +1,11 @@
+{
+  "name": "bambu",
+  "source": "https://awtrix.de/icons/bambu",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#219e3a","#219e3a","#219e3a","#ffffff","#219e3a","#219e3a","#219e3a","#000000","#219e3a","#219e3a","#219e3a","#ffffff","#219e3a","#219e3a","#219e3a","#000000","#219e3a","#219e3a","#219e3a","#ffffff","#ffffff","#219e3a","#219e3a","#000000","#219e3a","#219e3a","#219e3a","#ffffff","#219e3a","#ffffff","#ffffff","#000000","#219e3a","#219e3a","#ffffff","#ffffff","#219e3a","#219e3a","#219e3a","#000000","#ffffff","#ffffff","#219e3a","#ffffff","#219e3a","#219e3a","#219e3a","#000000","#219e3a","#219e3a","#219e3a","#ffffff","#219e3a","#219e3a","#219e3a","#000000","#219e3a","#219e3a","#219e3a","#ffffff","#219e3a","#219e3a","#219e3a","#000000"]
+  ]
+}

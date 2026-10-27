@@ -1,0 +1,13 @@
+{
+  "name": "gundam",
+  "source": "https://awtrix.de/icons/gundam",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 133,
+  "frames": [
+    ["#efca8c","#efca8c","#000000","#bd616b","#bd616b","#000000","#efca8c","#efca8c","#000000","#efca8c","#efca8c","#bd616b","#bd616b","#efca8c","#efca8c","#000000","#000000","#ffffff","#efca8c","#bd616b","#bd616b","#efca8c","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#293542","#a5be8c","#293542","#293542","#a5be8c","#293542","#ffffff","#ffffff","#ffffff","#c5babd","#c5babd","#c5babd","#c5babd","#ffffff","#ffffff","#ffffff","#ffffff","#c5babd","#bd616b","#bd616b","#c5babd","#ffffff","#ffffff","#000000","#ffffff","#000000","#bd5563","#bd5563","#000000","#ffffff","#000000"],
+    ["#efca8c","#efca8c","#000000","#bd616b","#bd616b","#000000","#efca8c","#efca8c","#000000","#efca8c","#efca8c","#bd616b","#bd616b","#efca8c","#efca8c","#000000","#000000","#ffffff","#efca8c","#bd616b","#bd616b","#efca8c","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#293542","#a5be8c","#293542","#293542","#a5be8c","#293542","#ffffff","#ffffff","#ffffff","#c5babd","#c5babd","#c5babd","#c5babd","#ffffff","#ffffff","#ffffff","#ffffff","#c5babd","#bd616b","#bd616b","#c5babd","#ffffff","#ffffff","#000000","#ffffff","#000000","#bd5563","#bd5563","#000000","#ffffff","#000000"],
+    ["#efca8c","#efca8c","#000000","#bd616b","#bd616b","#000000","#efca8c","#efca8c","#000000","#efca8c","#efca8c","#bd616b","#bd616b","#efca8c","#efca8c","#000000","#000000","#ffffff","#efca8c","#bd616b","#bd616b","#efca8c","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#293542","#293542","#293542","#293542","#293542","#293542","#ffffff","#ffffff","#ffffff","#c5babd","#c5babd","#c5babd","#c5babd","#ffffff","#ffffff","#ffffff","#ffffff","#c5babd","#bd616b","#bd616b","#c5babd","#ffffff","#ffffff","#000000","#ffffff","#000000","#bd5563","#bd5563","#000000","#ffffff","#000000"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Mini Sunny",
+  "source": "https://awtrix.de/icons/mini-sunny",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 3,
+  "height": 5,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#ff6d00","#ff6d00","#ff6d00","#ff6d00","#ff6d00","#ff6d00","#ff6d00","#ff6d00","#ff6d00","#000000","#000000","#000000"]
+  ]
+}

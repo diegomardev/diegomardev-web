@@ -1,0 +1,11 @@
+{
+  "name": "alexaecho",
+  "source": "https://awtrix.de/icons/alexaecho",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#00ffff","#00ffff","#00ffff","#00ffff","#000000","#000000","#000000","#00ffff","#ffffff","#ffffff","#ffffff","#ffffff","#00ffff","#000000","#00ffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#00ffff","#00ffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#00ffff","#00ffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#00ffff","#00ffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#00ffff","#000000","#00ffff","#ffffff","#ffffff","#00ffff","#00ffff","#00ffff","#000000","#000000","#000000","#00ffff","#ffffff","#00ffff","#00ffff","#000000","#000000"]
+  ]
+}

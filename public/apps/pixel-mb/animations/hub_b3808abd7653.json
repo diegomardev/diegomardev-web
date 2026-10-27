@@ -1,0 +1,11 @@
+{
+  "name": "Twitch logo",
+  "source": "https://awtrix.de/icons/twitch-logo",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#310094","#310094","#310094","#310094","#310094","#310094","#310094","#310094","#310094","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#310094","#310094","#ffffff","#ffffff","#310094","#ffffff","#310094","#ffffff","#310094","#310094","#ffffff","#ffffff","#310094","#ffffff","#310094","#ffffff","#310094","#310094","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#310094","#310094","#310094","#ffffff","#ffffff","#310094","#310094","#310094","#000000","#000000","#310094","#ffffff","#310094","#000000","#000000","#000000","#000000","#000000","#310094","#310094","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

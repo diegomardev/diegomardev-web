@@ -1,0 +1,11 @@
+{
+  "name": "twitch",
+  "source": "https://awtrix.de/icons/twitch",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#6341a5","#6341a5","#6341a5","#6341a5","#6341a5","#6341a5","#6341a5","#6341a5","#633da5","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#6341a5","#6341a5","#ffffff","#ffffff","#6341a5","#ffffff","#6341a5","#ffffff","#633da5","#6341a5","#ffffff","#ffffff","#6341a5","#ffffff","#633da5","#ffffff","#6341a5","#633da5","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#6341a5","#6341a5","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#6341a5","#6341a5","#6341a5","#6341a5","#ffffff","#6341a5","#6341a5","#6341a5","#000000","#000000","#000000","#000000","#6341a5","#000000","#000000","#000000","#000000"]
+  ]
+}

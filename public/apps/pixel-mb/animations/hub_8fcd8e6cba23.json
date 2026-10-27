@@ -1,0 +1,11 @@
+{
+  "name": "China",
+  "source": "https://awtrix.de/icons/china-2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ffdb00","#ff0000","#ff0000","#ffd700","#ff0000","#ff0000","#ff0000","#ffd700","#ffdb00","#ffd700","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ffdb00","#ff0000","#ff0000","#ffd700","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ffd700","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ffdb00","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000"]
+  ]
+}

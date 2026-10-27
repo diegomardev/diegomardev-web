@@ -1,0 +1,11 @@
+{
+  "name": "crown",
+  "source": "https://awtrix.de/icons/crown",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffce19","#000000","#000000","#ffce19","#ffce19","#000000","#000000","#ffce19","#ffce19","#ffce19","#000000","#ffce19","#ffce19","#000000","#ffce19","#ffce19","#ffce19","#ffce19","#ffce19","#ffce19","#ffce19","#ffce19","#ffce19","#ffce19","#ffce19","#004df7","#ffce19","#0051f7","#0051f7","#ffce19","#004df7","#ffce19","#ffce10","#ffce19","#ffce19","#0051f7","#0051f7","#ffce19","#ffce19","#ffce10","#000000","#ffce19","#ffce19","#ffce19","#ffce19","#ffce19","#ffce19","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

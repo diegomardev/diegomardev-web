@@ -1,0 +1,11 @@
+{
+  "name": "kabel1",
+  "source": "https://awtrix.de/icons/kabel1",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ff4900","#ff4d00","#ff4d00","#ff4d00","#ff4d00","#ff4900","#ffffff","#ffffff","#ff4d00","#ff4900","#ff4900","#ff4d00","#ff4900","#ffffff","#ffffff","#ffffff","#ff4d00","#ff4d00","#ff4900","#ff4d00","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ff4900","#ff4d00","#ff4900","#ff4d00","#ff4900","#ffffff","#ffffff","#ffffff","#ffffff","#ff4d00","#ff4d00","#ff4d00","#ffffff","#ffffff","#ffffff","#ff4900","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ff4d00","#ff4d00","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ff4d00","#ff4d00","#ff4900","#ff4d00","#ff4d00","#ff4d00","#ff4900","#ff4d00","#ff4d00"]
+  ]
+}

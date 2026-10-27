@@ -1,0 +1,11 @@
+{
+  "name": "Coal",
+  "source": "https://awtrix.de/icons/coal",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#5a5d5a","#5a595a","#4a4d4a","#4a4d4a","#5a5d5a","#5a5d5a","#5a5d5a","#5a5d5a","#5a5d5a","#000000","#5a5d5a","#5a5d5a","#4a4d4a","#000000","#000000","#5a5d5a","#5a5d5a","#5a5d5a","#000000","#4a4d4a","#5a5d5a","#4a4d4a","#4a4d4a","#5a5d5a","#5a5d5a","#000000","#000000","#000000","#5a5d5a","#5a5d5a","#5a5d5a","#5a5d5a","#5a5d5a","#5a5d5a","#5a5d5a","#4a4d4a","#5a5d5a","#4a4d4a","#5a5d5a","#5a5d5a","#5a5d5a","#000000","#000000","#5a5d5a","#4a4d4a","#000000","#4a4d4a","#5a5d5a","#5a5d5a","#5a5d5a","#4a4d4a","#5a5d5a","#000000","#000000","#000000","#5a5d5a","#5a5d5a","#5a595a","#5a5d5a","#5a5d5a","#5a5d5a","#5a595a","#5a595a","#5a5d5a"]
+  ]
+}

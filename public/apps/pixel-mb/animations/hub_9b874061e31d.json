@@ -1,0 +1,11 @@
+{
+  "name": "cp_logo",
+  "source": "https://awtrix.de/icons/cp-logo",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#eff7f7","#eff7ef","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#e6efef","#63ae6b","#eff7e6","#f7fbf7","#d6e7d6","#eff7e6","#ffffff","#ffffff","#52a67b","#42a23a","#fffbf7","#fffbff","#84be9c","#299231","#a5d284","#c5dfd6","#007931","#73ba5a","#ffffff","#ffffff","#ffffff","#6bb294","#198629","#21923a","#108a21","#bddfa5","#ffffff","#ffffff","#ffffff","#ffffff","#8cbea5","#218a3a","#6bb263","#add2b5","#ffffff","#ffffff","#ffffff","#e6efe6","#d6ebde","#deebd6","#ffffff","#ffffff","#ffffff","#ffffff","#fffbff","#deefe6","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

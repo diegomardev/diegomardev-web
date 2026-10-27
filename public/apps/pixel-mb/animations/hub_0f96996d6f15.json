@@ -1,0 +1,11 @@
+{
+  "name": "birthdaycakestatic",
+  "source": "https://awtrix.de/icons/birthdaycakestatic",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#ffca00","#000000","#ffca00","#000000","#ffca00","#000000","#000000","#000000","#c500ff","#000000","#c500ff","#000000","#c500ff","#000000","#000000","#000000","#c500ff","#ffffff","#c500ff","#ffffff","#c500ff","#000000","#000000","#ffffff","#c500ff","#ffffff","#c500ff","#ffffff","#c500ff","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ff0000","#ffffff","#ff0000","#ffffff","#ff0000","#ffffff","#ff0000","#000000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#000000","#000000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#000000","#000000"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "sheep",
+  "source": "https://awtrix.de/icons/sheep",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#de0000","#ffffff","#ffffff","#de0000","#ffffff","#ffffff","#ffffff","#de0000","#ffffff","#ffffff","#ffffff","#ffffff","#de0000","#ffffff","#de0000","#e65d19","#ffffff","#e65d19","#e65d19","#ffffff","#e65d19","#de0000","#ffffff","#de0000","#de0000","#e65d19","#e65d19","#de0000","#de0000","#ffffff","#ffffff","#de0000","#f7d700","#de0000","#de0000","#f7d700","#de0000","#ffffff","#ffffff","#de0000","#de0000","#de0000","#de0000","#de0000","#de0000","#ffffff","#ffffff","#e65d19","#de0000","#940400","#940400","#de0000","#e65d19","#ffffff","#ffffff","#ffffff","#de0000","#de0000","#de0000","#de0000","#ffffff","#ffffff"]
+  ]
+}

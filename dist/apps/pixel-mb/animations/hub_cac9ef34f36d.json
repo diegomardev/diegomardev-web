@@ -1,0 +1,11 @@
+{
+  "name": "What is this number",
+  "source": "https://awtrix.de/icons/what-is-this-number",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#0024ff","#0024ff","#0024ff","#0024ff","#0024ff","#0024ff","#0024ff","#0024ff","#0024ff","#00ffef","#0024ff","#0024ff","#0024ff","#0024ff","#0024ff","#0024ff","#0024ff","#00ffef","#0024ff","#00ffef","#00ffef","#00ffef","#00ffef","#0024ff","#0024ff","#00ffef","#0024ff","#00ffef","#0024ff","#0024ff","#00ffef","#0024ff","#0024ff","#00ffef","#0024ff","#00ffef","#00ffef","#0024ff","#00ffef","#0024ff","#0024ff","#00ffef","#0024ff","#0008ff","#0024ff","#0024ff","#00ffef","#0024ff","#0024ff","#00ffef","#00ffef","#00ffef","#00ffef","#00ffef","#00ffef","#0024ff","#0024ff","#0024ff","#0024ff","#0024ff","#0024ff","#0024ff","#0024ff","#0024ff"]
+  ]
+}

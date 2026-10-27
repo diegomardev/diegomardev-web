@@ -1,0 +1,11 @@
+{
+  "name": "julies",
+  "source": "https://awtrix.de/icons/julies",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ff7900","#ff7900","#ff7900","#ff7900","#ff7900","#ff7900","#ff7900","#d6c629","#ff7900","#19b600","#ff7900","#ff7900","#ff7900","#ff7900","#19b600","#ff7900","#19b600","#19b600","#19b600","#ff7900","#ff7900","#19b600","#10b600","#19b600","#ff7900","#3a1400","#ff7900","#ff7900","#ff7900","#ff7900","#3a1400","#ff7900","#ff7900","#3a1400","#ff7900","#ff7900","#ff7900","#ff7900","#3a1400","#ff7900","#fff773","#3a1400","#ffef63","#fff363","#ffef63","#ffef63","#3a1400","#fff773","#fff773","#fff773","#fff773","#ffef63","#ffef63","#ffef63","#ffef63","#fff773","#fff773","#fff773","#fff773","#ffef63","#fff773","#fff773","#fff773","#fff773"]
+  ]
+}

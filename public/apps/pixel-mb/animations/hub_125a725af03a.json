@@ -1,0 +1,11 @@
+{
+  "name": "LastFM",
+  "source": "https://awtrix.de/icons/lastfm",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ff0410","#f70008","#ff0019","#f70019","#ef0019","#f70019","#f70019","#ff0019","#ef0010","#ef0419","#e60419","#de0819","#e61429","#de0419","#e60019","#ef0019","#de0c21","#d61021","#ffffff","#ad1821","#ad2029","#ffffff","#ffffff","#d61021","#ce0821","#ffffff","#ad2429","#ffffff","#9c2d31","#ffffff","#bd2029","#bd1021","#ce1831","#ffffff","#a51c29","#a52d31","#ffffff","#a52029","#ffffff","#bd1829","#ce0821","#ce1429","#ffffff","#ffffff","#bd2029","#ffffff","#ffffff","#c51021","#ef0419","#ef0c21","#e60419","#ef0c29","#e60019","#e60019","#e60819","#e60819","#f70010","#ff0019","#ff0019","#ff0019","#ff0019","#ff0019","#f70019","#f70019"]
+  ]
+}

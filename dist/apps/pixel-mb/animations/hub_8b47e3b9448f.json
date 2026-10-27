@@ -1,0 +1,11 @@
+{
+  "name": "dogecoin",
+  "source": "https://awtrix.de/icons/dogecoin",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#9c6100","#9c6100","#9c6100","#9c6100","#9c6100","#9c6100","#9c6100","#9c6100","#9c6100","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#9c6100","#9c6100","#9c6100","#ffffff","#9c6100","#9c6100","#9c6100","#ffffff","#ffffff","#9c6100","#9c6100","#ffffff","#9c6100","#9c6100","#9c6100","#9c6100","#ffffff","#9c6100","#ffffff","#ffffff","#ffffff","#ffffff","#9c6100","#9c6100","#ffffff","#9c6100","#9c6100","#ffffff","#9c6100","#9c6100","#9c6100","#ffffff","#ffffff","#9c6100","#9c6100","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#9c6100","#9c6100","#9c6100","#9c6100","#9c6100","#9c6100","#9c6100","#9c6100","#9c6100","#9c6100"]
+  ]
+}

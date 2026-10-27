@@ -1,0 +1,11 @@
+{
+  "name": "cake",
+  "source": "https://awtrix.de/icons/cake",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#f71852","#ffa2bd","#f71852","#ffa2bd","#000000","#000000","#000000","#ffa2bd","#ffa2bd","#ffa2bd","#f71452","#ffa2bd","#ffa2bd","#000000","#000000","#f71852","#ffa2bd","#f71852","#f71852","#ff7dad","#f71852","#000000","#ffa2bd","#ffa2bd","#f71852","#ffa2bd","#ffa2bd","#f71852","#ffa2bd","#ffa2bd","#f71452","#f71852","#f71852","#f71452","#f71852","#f71852","#f71852","#f71852","#000000","#ffffff","#ffb2b5","#ffffff","#ff9a9c","#ffffff","#e64d42","#000000","#080400","#ffe7ce","#ffe763","#ffe7ce","#ffce63","#ffe7ce","#ce8231","#080800","#000400","#ffe7ce","#ffe763","#ffe7ce","#ffce63","#ffe7ce","#ce8231","#080400"]
+  ]
+}

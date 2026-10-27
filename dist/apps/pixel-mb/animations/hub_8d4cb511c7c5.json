@@ -1,0 +1,11 @@
+{
+  "name": "bb-breast",
+  "source": "https://awtrix.de/icons/bb-breast",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#000000","#000000","#000000","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#000000","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#ce6d52","#ce6d52","#f7aa6b","#f7aa6b","#f7aa6b","#000000","#f7aa6b","#f7aa6b","#ce6d52","#ce6d52","#f7aa6b","#f7aa6b","#000000","#000000","#000000","#f7aa6b","#f7aa6b","#f7aa6b","#f7aa6b","#000000","#000000"]
+  ]
+}

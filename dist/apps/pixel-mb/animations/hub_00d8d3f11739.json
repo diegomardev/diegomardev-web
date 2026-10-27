@@ -1,0 +1,11 @@
+{
+  "name": "mail",
+  "source": "https://awtrix.de/icons/mail",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#9c0000","#ce3131","#ffffff","#ffffff","#ffffff","#ffffff","#ce3131","#9c0000","#ce3131","#9c0000","#ce3131","#ffffff","#ffffff","#ce3131","#9c0000","#ce3131","#ce3131","#ffffff","#9c0000","#ce3129","#ce3129","#9c0000","#ffffff","#ce3131","#ce3131","#ffffff","#ffffff","#9c0000","#9c0000","#ffffff","#ffffff","#ce3131","#ce3131","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ce3131","#ce3131","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ce3131","#9c0000","#e6e7e6","#e6e7e6","#e6e7e6","#e6e7e6","#e6e7e6","#e6e7e6","#9c0000"]
+  ]
+}

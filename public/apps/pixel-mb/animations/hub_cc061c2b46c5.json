@@ -1,0 +1,11 @@
+{
+  "name": "boise_state",
+  "source": "https://awtrix.de/icons/boise-state",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#0055ff","#0055ff","#0055ff","#0055ff","#0055ff","#0055ff","#0055ff","#0055ff","#0055ff","#ff6500","#ff6500","#ff6500","#ff6500","#ff6500","#ff6500","#ffffff","#0055ff","#0055ff","#ff6500","#ffffff","#ffffff","#ffffff","#ff6500","#ff6500","#0055ff","#0055ff","#ff6500","#ffffff","#ffffff","#ffffff","#ff6500","#0055ff","#0055ff","#0055ff","#ff6500","#ff6500","#ff6500","#ff6500","#ff6500","#0055ff","#0055ff","#0055ff","#ff6500","#0055ff","#0055ff","#0055ff","#ff6500","#0055ff","#0055ff","#ff6500","#ff6500","#0055ff","#0055ff","#0055ff","#ff6500","#0055ff","#0055ff","#ff6500","#ff6500","#ff6500","#ff6500","#ff6500","#ff6500","#0055ff"]
+  ]
+}

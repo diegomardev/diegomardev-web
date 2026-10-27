@@ -1,0 +1,11 @@
+{
+  "name": "batman_comic",
+  "source": "https://awtrix.de/icons/batman-comic",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#634da5","#6b4dad","#000000","#6b4dad","#6b4dad","#000000","#6b4dad","#634da5","#634da5","#6b4dad","#000000","#000000","#000000","#000000","#634da5","#6b4dad","#6b4dad","#6b55b5","#000000","#f7f7f7","#000808","#f7f7f7","#6b4dad","#6b4dad","#000000","#634da5","#000000","#000000","#000000","#000000","#634da5","#6b55ad","#000000","#634da5","#000000","#dec2c5","#dec2c5","#000000","#6345a5","#634da5","#6b4dad","#000000","#e6c2c5","#192010","#192010","#dec2c5","#6345a5","#634da5","#634da5","#634dad","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#634dad","#634da5","#634da5","#6b51ad","#000000","#634dad","#634dad","#000000","#6b51ad","#634da5"]
+  ]
+}

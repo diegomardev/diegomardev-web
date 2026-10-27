@@ -1,0 +1,11 @@
+{
+  "name": "blueheart",
+  "source": "https://awtrix.de/icons/blueheart",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#8cd2e6","#8cd2de","#000000","#8cd2de","#8cd2de","#000000","#000000","#8cd2de","#8cd2de","#8cd2de","#8cd2de","#ffffff","#ffffff","#8cd2e6","#000000","#8cd2de","#8cd2de","#8cd2de","#8cd2de","#8cd2de","#ffffff","#8cd2de","#000000","#8cd2de","#8cd2de","#8cd2de","#8cd2de","#8cd2de","#8cd2de","#8cd2de","#000000","#000000","#8cd2de","#8cd2de","#8cd2de","#8cd2de","#8cd2de","#000000","#000000","#000000","#000000","#8cd2de","#8cd2de","#8cd2de","#000000","#000000","#000000","#000000","#000000","#000000","#8cd2e6","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

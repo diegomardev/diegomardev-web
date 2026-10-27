@@ -1,0 +1,11 @@
+{
+  "name": "aliexpress",
+  "source": "https://awtrix.de/icons/aliexpress",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#ffa200","#ffa200","#ffa200","#ffa200","#ffa200","#ffa200","#000000","#ffa200","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ffa200","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ffffff","#ff0000","#ff0000","#ff0000","#ff0000","#ffffff","#ff0000","#ff0000","#ffffff","#ff0000","#ff0000","#ff0000","#ff0000","#ffffff","#ff0000","#ff0000","#ff0000","#ffffff","#ffffff","#ffffff","#ffffff","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000"]
+  ]
+}

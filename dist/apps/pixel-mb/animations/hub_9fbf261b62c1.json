@@ -1,0 +1,11 @@
+{
+  "name": "microsoft",
+  "source": "https://awtrix.de/icons/microsoft",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#f75110","#f75110","#f75110","#f75110","#7bba00","#7bba00","#7bba00","#7bba00","#f75110","#f75110","#f75110","#f75110","#7bba00","#7bba00","#7bba00","#7bba00","#f75108","#f75110","#f75110","#f75110","#7bba00","#7bba00","#7bba00","#7bba00","#f75110","#f75110","#f75110","#f75108","#7bba00","#7bba00","#7bba00","#7bba00","#00a2f7","#00a2f7","#00a2f7","#00a2ff","#ffba00","#ffba00","#ffba00","#ffba00","#00a2f7","#00a2f7","#00a2f7","#00a2f7","#ffba00","#ffba00","#ffba00","#ffba00","#00a2f7","#00a2f7","#00a2f7","#00a2f7","#ffba00","#ffba00","#ffba00","#ffba00","#00a2f7","#00a2f7","#00a2f7","#00a2f7","#ffba00","#ffba00","#ffba00","#ffba00"]
+  ]
+}

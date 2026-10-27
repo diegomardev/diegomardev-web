@@ -1,0 +1,11 @@
+{
+  "name": "mosque_maghrib",
+  "source": "https://awtrix.de/icons/mosque-maghrib",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffaa00","#ffaa00","#ffaa00","#ffaa00","#ffaa00","#ffaa00","#ffaa00","#ffaa00","#ffaa00","#ffaa00","#c5cec5","#ffaa00","#ffaa00","#ffaa00","#ffaa00","#ffaa00","#ffbe4a","#ffbe4a","#c5cec5","#ffbe4a","#ffbe4a","#ffbe4a","#ffbe4a","#ffbe4a","#ffbe4a","#c5cec5","#c5cec5","#ffbe4a","#ffbe4a","#ffbe4a","#ffbe4a","#ffbe4a","#f7ca84","#c5cec5","#c5cec5","#f7ca84","#f7ca84","#ffffff","#f7ca84","#f7ca84","#f7ca84","#c5cec5","#c5cec5","#f7ca84","#ffffff","#ffffff","#ffffff","#f7ca84","#ffe7bd","#c5cec5","#c5cec5","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffe7bd","#c5cec5","#c5cec5","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

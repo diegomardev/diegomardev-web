@@ -1,0 +1,11 @@
+{
+  "name": "tokomon",
+  "source": "https://awtrix.de/icons/tokomon",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#f7eff7","#f7eff7","#f7eff7","#f7eff7","#000000","#000000","#f7eff7","#f7efff","#f7eff7","#000000","#f7eff7","#f7eff7","#f7eff7","#000000","#f7eff7","#f7eff7","#f7eff7","#f7eff7","#f7eff7","#f7eff7","#f7eff7","#f7eff7","#000000","#000000","#000000","#000000","#f7efff","#f7eff7","#f7eff7","#f7eff7","#000000","#000000","#000000","#000000","#f7eff7","#f7eff7","#f7eff7","#f7eff7","#000000","#000000","#000000","#000000","#f7eff7","#f7eff7","#f7eff7","#f7eff7","#f7eff7","#f7eff7","#f7eff7","#f7eff7","#f7eff7","#f7eff7","#f7eff7","#000000","#000000","#000000","#f7eff7","#f7f3f7","#f7eff7","#f7eff7","#000000","#000000"]
+  ]
+}

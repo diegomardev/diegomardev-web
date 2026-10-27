@@ -1,0 +1,11 @@
+{
+  "name": "redcalendar16",
+  "source": "https://awtrix.de/icons/redcalendar16",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#7b7d7b","#ff0000","#ff0000","#7b7d7b","#ff0000","#ff0000","#7b7d7b","#ff0000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#000000","#081410","#081410","#ffffff","#000000","#000000","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#000000","#000000","#000000","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#000000","#ffffff","#000000","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#000000","#ffffff","#000000","#ffffff","#000000","#000000","#000000","#ffffff","#000000","#000000","#000000","#ffffff"]
+  ]
+}

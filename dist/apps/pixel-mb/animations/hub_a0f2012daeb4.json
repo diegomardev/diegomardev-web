@@ -1,0 +1,12 @@
+{
+  "name": "kuai",
+  "source": "https://awtrix.de/icons/kuai",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 100,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"],
+    ["#00ffde","#ff0000","#00ffde","#00ffde","#ff0000","#00ffde","#00ffde","#00ffde","#00ffde","#ff0000","#00ffde","#ff0000","#ff0000","#ff0000","#ff0000","#00ffde","#ff0000","#ff0000","#00ffde","#00ffde","#ff0000","#00ffde","#ff0000","#00ffde","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#00ffde","#ff0000","#ff0000","#00ffde","#00ffde","#00ffde","#ff0000","#00ffde","#ff0000","#ff0000","#ff0000","#ff0000","#00ffde","#00ffde","#ff0000","#00ffde","#ff0000","#00ffde","#00ffde","#ff0000","#ff0000","#00ffde","#ff0000","#ff0000","#00ffde","#00ffde","#00ffde","#00ffde","#ff0000"]
+  ]
+}

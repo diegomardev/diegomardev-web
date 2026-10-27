@@ -1,0 +1,11 @@
+{
+  "name": "worldoftanks",
+  "source": "https://awtrix.de/icons/worldoftanks",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#192419","#cecece","#cecece","#cecece","#cecece","#cecece","#cecece","#192421","#192421","#212021","#191c19","#cecece","#cecece","#212021","#191c19","#212021","#212021","#cecece","#212021","#cecece","#cecece","#212021","#ceced6","#212021","#212021","#cecece","#212021","#cecece","#cecece","#212021","#cecece","#211c19","#212021","#cecece","#212021","#cecece","#cecece","#212021","#cecece","#212021","#212010","#cecece","#212021","#cecece","#ceced6","#212021","#cecece","#212019","#212019","#212021","#cecece","#cecece","#cecece","#cecece","#211c19","#192019","#212019","#212021","#101810","#cecece","#cecece","#212019","#212021","#211c19"]
+  ]
+}

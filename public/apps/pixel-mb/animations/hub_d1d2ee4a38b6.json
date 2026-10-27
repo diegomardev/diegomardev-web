@@ -1,0 +1,11 @@
+{
+  "name": "windows_closed",
+  "source": "https://awtrix.de/icons/windows-closed",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#de7500","#de7500","#de7500","#de7500","#de7500","#de7500","#de7500","#de7500","#de7500","#9cffff","#9cffff","#de7500","#de7500","#9cffff","#9cffff","#de7500","#de7500","#9cffff","#9cffff","#de7500","#de7500","#9cffff","#9cffff","#de7500","#de7500","#9cffff","#9cffff","#de7500","#de7500","#9cffff","#9cffff","#de7500","#de7500","#9cffff","#9cffff","#de7500","#de7500","#9cffff","#9cffff","#de7500","#de7500","#9cffff","#9cffff","#de7500","#de7500","#9cffff","#9cffff","#de7500","#de7500","#9cffff","#9cffff","#de7500","#de7500","#9cffff","#9cffff","#de7500","#de7500","#de7500","#de7500","#de7500","#de7500","#de7500","#de7500","#de7500"]
+  ]
+}

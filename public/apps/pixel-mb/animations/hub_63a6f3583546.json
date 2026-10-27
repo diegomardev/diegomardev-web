@@ -1,0 +1,11 @@
+{
+  "name": "bier",
+  "source": "https://awtrix.de/icons/bier",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#f7f3c5","#ffffff","#f7f3c5","#fff3c5","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#f7f3c5","#ffffff","#ffffff","#000000","#000000","#000000","#ffc631","#ffff10","#ffffff","#ad7d00","#000000","#000000","#000000","#000000","#ffc631","#ffff10","#f7ae00","#ad7d00","#d6ffde","#d6ffde","#000000","#000000","#ffc631","#ffef19","#ffae00","#ad7d00","#000000","#effff7","#000000","#000000","#f7ae00","#ffdf10","#f7ae00","#946900","#000000","#ffffff","#000000","#000000","#d69600","#efc600","#d69600","#946900","#d6ffde","#000000","#000000","#000000","#effff7","#effff7","#d6ffde","#d6ffde","#000000","#000000"]
+  ]
+}

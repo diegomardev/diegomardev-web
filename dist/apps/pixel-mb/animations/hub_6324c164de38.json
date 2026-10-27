@@ -1,0 +1,11 @@
+{
+  "name": "Meerschweinchen1",
+  "source": "https://awtrix.de/icons/meerschweinchen1",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#8ccef7","#8ccef7","#8ccef7","#8ccef7","#8ccef7","#8ccef7","#8ccef7","#8ccef7","#8ccef7","#8ccef7","#cecece","#cecece","#cecece","#cecece","#cecece","#8ccef7","#8ccef7","#73756b","#73756b","#cecece","#cecece","#cecece","#cecece","#cecece","#8ccef7","#73756b","#000000","#ffffff","#cecece","#000000","#ffffff","#cecece","#8ccef7","#cecece","#000000","#000000","#cecece","#000000","#000000","#cecece","#8ccef7","#cecece","#cecece","#cecece","#cecece","#cecece","#cecece","#cecece","#7bff00","#7bff00","#73756b","#cecece","#cecece","#cecece","#73756b","#7bff00","#7bff00","#7bff00","#7bff00","#7bff00","#7bff00","#7bff00","#7bff00","#7bff00"]
+  ]
+}

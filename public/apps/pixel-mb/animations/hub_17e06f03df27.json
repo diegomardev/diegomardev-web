@@ -1,0 +1,11 @@
+{
+  "name": "sonnewolken",
+  "source": "https://awtrix.de/icons/sonnewolken",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffff4a","#000000","#000000","#000000","#000000","#ffff4a","#000000","#000000","#000000","#ffff4a","#ffff4a","#ffff4a","#b5b2b5","#b5b2b5","#000000","#000000","#ffff4a","#ffff4a","#b5b2b5","#b5b2b5","#ffffff","#ffffff","#b5b2b5","#000000","#ffff4a","#b5b2b5","#ffffff","#ffffff","#ffffff","#ffffff","#b5b2b5","#000000","#b5b2b5","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#b5b2b5","#000000","#b5b2b5","#b5b2b5","#b5b2b5","#b5b2b5","#b5b2b5","#b5b2b5","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

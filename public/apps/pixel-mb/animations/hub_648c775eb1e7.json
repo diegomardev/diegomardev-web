@@ -1,0 +1,11 @@
+{
+  "name": "Domoticz",
+  "source": "https://awtrix.de/icons/domoticz",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#198ec5","#198ec5","#198ec5","#198ec5","#000000","#000000","#000000","#198ec5","#198ec5","#198ec5","#198ec5","#198ec5","#198ec5","#000000","#198ec5","#198ec5","#ffffff","#ffffff","#ffffff","#198ec5","#198ec5","#198ec5","#198ec5","#198ec5","#198ec5","#ffffff","#198ec5","#ffffff","#198ec5","#198ec5","#198ec5","#198ec5","#198ec5","#ffffff","#198ec5","#ffffff","#198ec5","#198ec5","#198ec5","#198ec5","#ffffff","#ffffff","#ffffff","#198ec5","#198ec5","#198ec5","#000000","#198ec5","#198ec5","#198ec5","#198ec5","#198ec5","#198ec5","#000000","#000000","#000000","#198ec5","#198ec5","#198ec5","#198ec5","#000000","#000000"]
+  ]
+}

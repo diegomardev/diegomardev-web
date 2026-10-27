@@ -1,0 +1,11 @@
+{
+  "name": "tatort",
+  "source": "https://awtrix.de/icons/tatort",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#21287b","#ffffff","#21287b","#ffffff","#ffffff","#21287b","#ffffff","#21287b","#ffffff","#21287b","#21287b","#ffffff","#ffffff","#21287b","#21287b","#ffffff","#21287b","#21287b","#ffffff","#ffffff","#ffffff","#ffffff","#21287b","#21287b","#ffffff","#ffffff","#ffffff","#21287b","#21287b","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#21287b","#21287b","#ffffff","#ffffff","#ffffff","#21287b","#21287b","#ffffff","#ffffff","#ffffff","#ffffff","#21287b","#21287b","#ffffff","#21287b","#21287b","#ffffff","#ffffff","#21287b","#21287b","#ffffff","#21287b","#ffffff","#21287b","#ffffff","#ffffff","#21287b","#ffffff","#21287b"]
+  ]
+}

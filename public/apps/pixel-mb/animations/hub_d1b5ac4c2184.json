@@ -1,0 +1,11 @@
+{
+  "name": "rewe",
+  "source": "https://awtrix.de/icons/rewe",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#efbac5","#e6929c","#e6929c","#e6969c","#efb6bd","#ffefef","#ffffff","#ffffff","#de394a","#ce0008","#ce0010","#ce0008","#ce0008","#d62d3a","#f7d2d6","#ffffff","#de3952","#ce0008","#de616b","#efb2b5","#d61429","#ce0008","#e66973","#ffffff","#de3d52","#ce0008","#de4d5a","#e68a94","#d60c19","#ce0010","#ef9aa5","#ffffff","#de3d52","#ce0010","#ce0419","#ce0008","#ce0010","#e6929c","#ffffff","#ffffff","#de3d52","#ce0008","#de555a","#d62831","#ce0008","#e66d7b","#ffffff","#ffffff","#de394a","#ce0000","#e67984","#efaeb5","#ce0410","#ce0008","#e67984","#ffffff","#efa2a5","#ef6973","#f7c2c5","#ffffff","#ef969c","#ef6973","#ef7d84"]
+  ]
+}

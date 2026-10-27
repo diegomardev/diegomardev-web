@@ -1,0 +1,11 @@
+{
+  "name": "word",
+  "source": "https://awtrix.de/icons/word",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#4a92de","#4a92de","#4a92de","#4a92de","#4a92de","#4a92de","#4a92de","#000000","#4a92de","#ffffff","#4a92de","#4a92de","#4a92de","#ffffff","#4a92de","#000000","#4a92de","#ffffff","#4a92de","#ffffff","#4a92de","#ffffff","#4a92de","#000000","#4a92de","#ffffff","#4a92de","#ffffff","#4a92de","#ffffff","#4a92de","#000000","#4a92de","#ffffff","#4a92de","#ffffff","#4a92de","#ffffff","#4a92de","#000000","#4a92de","#ffffff","#4a92de","#ffffff","#4a92de","#ffffff","#4a92de","#000000","#4a92de","#4a92de","#ffffff","#4a92de","#ffffff","#4a92de","#4a92de","#000000","#4a92de","#4a92de","#4a92de","#4a92de","#4a92de","#4a92de","#4a92de","#000000"]
+  ]
+}

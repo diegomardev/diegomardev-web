@@ -1,0 +1,11 @@
+{
+  "name": "housecolorful",
+  "source": "https://awtrix.de/icons/housecolorful",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ce3131","#000000","#ce3131","#ce3131","#ce3131","#ce3131","#000000","#000000","#ce3131","#ce3131","#ce3131","#ce3131","#ce3131","#ce3131","#ce3131","#000000","#ce2d31","#ce3131","#ce3131","#ce3131","#ce3131","#ce3131","#ce3131","#ce3131","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#9c2d00","#9c3100","#ffffff","#ffffff","#9c3100","#9c3100","#ffffff","#ffffff","#9c3100","#9c3100","#ffffff","#ffffff","#9c3100","#9c3100","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#9c3100","#9c3100","#ffffff"]
+  ]
+}

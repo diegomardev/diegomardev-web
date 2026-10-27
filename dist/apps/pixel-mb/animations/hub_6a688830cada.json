@@ -1,0 +1,11 @@
+{
+  "name": "mario_head",
+  "source": "https://awtrix.de/icons/mario-head",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#000000","#000000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#945119","#944d19","#945119","#ffaa63","#ffaa63","#000000","#ffaa63","#000000","#ffaa63","#944d19","#ffaa63","#ffaa63","#ffaa63","#000000","#ffaa63","#ffaa63","#ffaa63","#945119","#945119","#ffaa63","#ffaa63","#ffaa63","#945119","#ffaa63","#945110","#ffaa63","#ffaa63","#ffaa63","#ffaa63","#945119","#944d19","#945119","#ffaa63","#ffaa63","#ffaa63","#ffaa63","#ffaa63","#ffaa63","#ffaa63","#000000","#ff0000","#2928ff","#ff0000","#ff0000","#ff0000","#000000","#000000","#000000"]
+  ]
+}

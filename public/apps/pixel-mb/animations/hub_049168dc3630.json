@@ -1,0 +1,11 @@
+{
+  "name": "scot_square",
+  "source": "https://awtrix.de/icons/scot-square",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#5279d6","#5279d6","#5279d6","#5279d6","#5279d6","#5279d6","#ffffff","#5279d6","#ffffff","#5279d6","#5279d6","#5279d6","#5279d6","#ffffff","#5279d6","#5279d6","#5279d6","#ffffff","#5279d6","#5279d6","#ffffff","#5279d6","#5279d6","#5279d6","#5279d6","#5279d6","#ffffff","#ffffff","#5279d6","#5279d6","#5279d6","#5279d6","#5279d6","#5279d6","#ffffff","#ffffff","#5279d6","#5279d6","#5279d6","#5279d6","#5279d6","#ffffff","#5279d6","#5279d6","#ffffff","#5279d6","#5279d6","#5279d6","#ffffff","#5279d6","#5279d6","#5279d6","#5279d6","#ffffff","#5279d6","#ffffff","#5279d6","#5279d6","#5279d6","#5279d6","#5279d6","#5279d6","#ffffff"]
+  ]
+}

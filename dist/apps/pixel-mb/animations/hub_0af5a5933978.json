@@ -1,0 +1,11 @@
+{
+  "name": "dongjiaapp",
+  "source": "https://awtrix.de/icons/dongjiaapp",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#f74542","#f74542","#f74542","#f74542","#f74542","#f74542","#f74542","#f7453a","#ffffff","#ffffff","#ffffff","#f74542","#f74542","#f74142","#f74542","#f74542","#ffffff","#f7453a","#f74542","#ffffff","#f74542","#f74542","#f74542","#f74542","#ffffff","#f74542","#f74542","#ffffff","#f74542","#f74542","#ffffff","#f74542","#ffffff","#f74542","#f74542","#ffffff","#f74542","#ffffff","#ffffff","#ffffff","#ffffff","#f74542","#f74542","#ffffff","#f74542","#f74542","#ffffff","#f74542","#ffffff","#ffffff","#ffffff","#f74542","#f74542","#f7413a","#f74542","#f74542","#f74542","#f74542","#f7413a","#f74542","#f74542","#f74542","#f74542","#f7413a"]
+  ]
+}

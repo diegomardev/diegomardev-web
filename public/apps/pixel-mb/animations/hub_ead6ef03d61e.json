@@ -1,0 +1,11 @@
+{
+  "name": "ghost",
+  "source": "https://awtrix.de/icons/ghost",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#ceced6","#fff7ef","#fff3ef","#fff3f7","#fff7ef","#ceced6","#000000","#cecad6","#fff3ef","#ffefe6","#fff3ef","#fff3ef","#ffefe6","#fff3ef","#cecad6","#fff3ef","#000000","#fff3ef","#fff3ef","#fff3ef","#fff3ef","#000000","#fff3f7","#fff3ef","#000000","#fff3ef","#fff3ef","#fff3ef","#fff3ef","#000000","#fff3ef","#ffefe6","#fff3ef","#fff3ef","#fff3ef","#fff3ef","#fff3ef","#fff3f7","#fff3ef","#fff3f7","#fff3ef","#000000","#000000","#000000","#000000","#fff3ef","#fff3ef","#fff3ef","#ffefe6","#fff3ef","#fff3ef","#fff3ef","#fff3ef","#ffefe6","#fff3ef","#fff3ef","#fff3ef","#000000","#fff3ef","#fff3ef","#000000","#fff3ef","#fff3ef"]
+  ]
+}

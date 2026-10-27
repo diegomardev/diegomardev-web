@@ -1,0 +1,11 @@
+{
+  "name": "lonelyisland",
+  "source": "https://awtrix.de/icons/lonelyisland",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#00d7ff","#00d7ff","#319a31","#00d7ff","#319a31","#00d7ff","#00d7ff","#00d7ff","#00d7ff","#299a31","#299a31","#319a31","#319a31","#319a31","#00d7ff","#00d7ff","#00d7ff","#319a31","#00d7ff","#9c4d00","#00d7ff","#319a31","#00d7ff","#00d7ff","#00d7ff","#00d7ff","#00d7ff","#9c4d00","#00d7ff","#00d7ff","#00d7ff","#00d7ff","#00d7ff","#00d7ff","#00d7ff","#9c4d00","#00d7ff","#00d7ff","#00d7ff","#00d7ff","#0000ff","#ffff00","#ffff00","#ffff00","#ffff00","#ffff00","#ffff00","#0000ff","#0000ff","#0000ff","#ffff00","#ffff00","#ffff00","#ffff00","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff"]
+  ]
+}

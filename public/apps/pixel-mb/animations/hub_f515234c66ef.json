@@ -1,0 +1,11 @@
+{
+  "name": "longbridge",
+  "source": "https://awtrix.de/icons/longbridge",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#eff308","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#eff308","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#eff308","#000000","#000000","#000000","#000000","#ff0000","#000000","#ffffff","#eff308","#000000","#000000","#000000","#000000","#ff0000","#000000","#ffffff","#eff308","#000000","#000000","#000000","#ffffff","#ff0000","#000000","#ffffff","#eff308","#000000","#000000","#006dff","#ffffff","#ff0000","#000000","#ffffff","#eff308","#ff0000","#ffffff","#006dff","#ffffff","#ff0000","#000000","#ffffff","#eff308","#ff0000","#ffffff","#0069ff","#ffffff","#ff0000","#000000"]
+  ]
+}

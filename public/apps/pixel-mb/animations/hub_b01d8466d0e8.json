@@ -1,0 +1,11 @@
+{
+  "name": "dent",
+  "source": "https://awtrix.de/icons/dent",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#ffffff","#efefef","#000000","#dedfde","#cecece","#000000","#000000","#ffffff","#ffffff","#ffffff","#efefef","#efefef","#dedfde","#adaead","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#efefef","#dedfde","#adaead","#000000","#efefef","#ffffff","#ffffff","#ffffff","#efefef","#bdbabd","#adaead","#000000","#000000","#ffffff","#ffffff","#dedfde","#cecece","#bdbabd","#5a5d5a","#000000","#000000","#efefef","#efefef","#000000","#cecece","#bdbabd","#000000","#000000","#000000","#000000","#efefef","#000000","#cecece","#bdbabd","#000000","#000000","#000000","#000000","#efefef","#000000","#dedfde","#000000","#000000","#000000"]
+  ]
+}

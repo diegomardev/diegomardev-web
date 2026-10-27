@@ -1,0 +1,11 @@
+{
+  "name": "simon",
+  "source": "https://awtrix.de/icons/simon",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#00ff00","#00ff00","#00ff00","#00ff00","#ff0000","#ff0000","#ff0000","#ff0000","#00ff00","#00ff00","#00ff00","#00ff00","#ff0000","#ff0000","#ff0000","#ff0000","#00ff00","#00ff00","#00ff00","#00ff00","#ff0000","#ff0000","#ff0000","#ff0000","#00ff00","#00ff00","#00ff00","#00ff00","#ff0000","#ff0000","#ff0000","#ff0000","#0000ff","#0000ff","#0000ff","#0000ff","#ffff00","#ffff00","#ffff00","#ffff00","#0000ff","#0000ff","#0000ff","#0000ff","#ffff00","#ffff00","#ffff00","#ffff00","#0000ff","#0000ff","#0000ff","#0000ff","#ffff00","#ffff00","#ffff00","#ffff00","#0000ff","#0000ff","#0000ff","#0000ff","#ffff00","#ffff00","#ffff00","#ffff00"]
+  ]
+}

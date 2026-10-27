@@ -1,0 +1,11 @@
+{
+  "name": "fcbayern",
+  "source": "https://awtrix.de/icons/fcbayern",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#ef0842","#ef0842","#ef0842","#ef0842","#000000","#000000","#000000","#ef0842","#ef0842","#ffffff","#2969bd","#ef0842","#ef0842","#000000","#ef0842","#ef0442","#ffffff","#2969bd","#ffffff","#2969bd","#ef0842","#ef0842","#ef0842","#ffffff","#2969bd","#ffffff","#2169bd","#ffffff","#2969bd","#ef0842","#ef0842","#2969bd","#ffffff","#2169bd","#ffffff","#2969bd","#ffffff","#ef0842","#ef0842","#ef0842","#2969bd","#ffffff","#2969bd","#ffffff","#ef0442","#ef0842","#000000","#ef0842","#ef0842","#2969bd","#ffffff","#ef0842","#ef0842","#000000","#000000","#000000","#ef0842","#ef0842","#ef0842","#ef0842","#000000","#000000"]
+  ]
+}

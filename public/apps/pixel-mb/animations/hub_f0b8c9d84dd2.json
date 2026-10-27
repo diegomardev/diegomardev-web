@@ -1,0 +1,11 @@
+{
+  "name": "pig",
+  "source": "https://awtrix.de/icons/pig",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#deaee6","#deaee6","#deaee6","#deaee6","#deaee6","#deaee6","#deaee6","#deaee6","#ffffff","#ffffff","#deaee6","#deaee6","#deaee6","#deaee6","#ffffff","#ffffff","#ffffff","#101010","#deaee6","#deaee6","#deaee6","#deaee6","#101010","#ffffff","#deaee6","#c5a2a5","#c5a2a5","#c5a2a5","#c5a2a5","#c5a2a5","#c5a2a5","#deaee6","#deaee6","#c5a2a5","#8c8a8c","#c5a2a5","#c5a2a5","#8c8a8c","#c5a2a5","#deaee6","#deaee6","#c5a2a5","#c5a2a5","#c5a2a5","#c5a2a5","#c5a2a5","#c5a2a5","#deaee6","#deaee6","#080c08","#deaee6","#deaee6","#deaee6","#deaee6","#080c08","#deaee6","#deaee6","#deaee6","#101010","#101010","#101010","#101010","#deaee6","#deaee6"]
+  ]
+}

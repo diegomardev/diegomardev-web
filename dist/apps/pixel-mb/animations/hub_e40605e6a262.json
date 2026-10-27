@@ -1,0 +1,11 @@
+{
+  "name": "btc",
+  "source": "https://awtrix.de/icons/btc",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#ff9200","#ff9200","#ffffff","#ff9200","#ff9200","#ff8e00","#000000","#ff9200","#ff9200","#ffffff","#ffffff","#ffffff","#ff9200","#ff9200","#ff9200","#ff9200","#ff8e00","#ffffff","#ff9200","#ff9200","#ffffff","#ff9200","#ff9200","#ff9200","#ff9200","#ffffff","#ffffff","#ffffff","#ff9200","#ff9200","#ff8e00","#ff9200","#ff9200","#ffffff","#ff9200","#ff9200","#ffffff","#ff9200","#ff8e00","#ff8e00","#ff9200","#ffffff","#ff9200","#ff9200","#ffffff","#ff9200","#ff9200","#ff9200","#ff9200","#ffffff","#ffffff","#ffffff","#ffffff","#ff9200","#ff9200","#000000","#ff9200","#ff9200","#ffffff","#ff9200","#ff9200","#ff9200","#000000"]
+  ]
+}

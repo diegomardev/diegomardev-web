@@ -1,0 +1,11 @@
+{
+  "name": "rss3",
+  "source": "https://awtrix.de/icons/rss3",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ff9200","#ff9200","#ff9200","#ff9200","#ff9200","#ff9200","#ff9200","#ff9200","#ff9200","#ffffff","#ffffff","#ffffff","#ffffff","#ff9200","#ff9200","#ff9200","#ff9200","#ff9200","#ff9200","#ff9200","#ff9200","#ffffff","#ff9200","#ff9200","#ff9200","#ffffff","#ffffff","#ffffff","#ff9200","#ff9200","#ffffff","#ff9200","#ff9200","#ff9200","#ff9200","#ff9200","#ffffff","#ff9200","#ffffff","#ff9200","#ff9200","#ffffff","#ffffff","#ff9200","#ffffff","#ff9200","#ffffff","#ff9200","#ff9200","#ffffff","#ffffff","#ff9200","#ffffff","#ff9200","#ffffff","#ff9200","#ff9200","#ff9200","#ff9200","#ff9200","#ff9200","#ff9200","#ff9200","#ff9200"]
+  ]
+}

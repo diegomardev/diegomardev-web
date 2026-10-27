@@ -1,0 +1,11 @@
+{
+  "name": "light_100%",
+  "source": "https://awtrix.de/icons/light-100",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#000000","#000000","#000000","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#000000","#000000","#ffff4a","#ffff4a","#ffff9c","#ffff9c","#ffff4a","#ffff4a","#000000","#000000","#ffff4a","#ffff9c","#ffff4a","#ffff4a","#ffff9c","#ffff4a","#000000","#000000","#000000","#ffff4a","#ffff9c","#ffff9c","#ffff4a","#000000","#000000","#000000","#000000","#ffff4a","#ffff9c","#ffff9c","#ffff4a","#000000","#000000","#000000","#000000","#b54d10","#b54d10","#b54d10","#b54d10","#000000","#000000","#000000","#000000","#000000","#b54d10","#b54d10","#000000","#000000","#000000"]
+  ]
+}

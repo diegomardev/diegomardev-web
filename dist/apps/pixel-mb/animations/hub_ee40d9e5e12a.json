@@ -1,0 +1,13 @@
+{
+  "name": "Pool Temperatur",
+  "source": "https://awtrix.de/icons/pool-temperatur",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 330,
+  "frames": [
+    ["#000000","#000000","#4affff","#4affff","#000000","#ffffff","#000000","#000000","#000000","#4affff","#21aeff","#000000","#ffffff","#000000","#ffffff","#000000","#21aeff","#4abeff","#4abeff","#000000","#ffffff","#f70821","#ffffff","#000000","#4abeff","#4235ff","#4abeff","#000000","#ffffff","#f70821","#ffffff","#000000","#4235ff","#0800f7","#4abeff","#21aeff","#ffffff","#f70821","#ffffff","#4abeff","#0800f7","#4235ff","#4abeff","#ffffff","#f70821","#f70821","#f70821","#ffffff","#4235ff","#4235ff","#4abeff","#ffffff","#f70821","#f70821","#f70821","#ffffff","#0800f7","#4235ff","#4235ff","#4abeff","#ffffff","#ffffff","#ffffff","#21aeff"],
+    ["#000000","#000000","#4affff","#4affff","#000000","#ffffff","#000000","#000000","#000000","#4affff","#21aeff","#000000","#ffffff","#000000","#ffffff","#000000","#21aeff","#4abeff","#4abeff","#000000","#ffffff","#f70821","#ffffff","#000000","#4abeff","#0800f7","#4abeff","#000000","#ffffff","#f70821","#ffffff","#000000","#4235ff","#4235ff","#4abeff","#21aeff","#ffffff","#f70821","#ffffff","#21aeff","#0800f7","#4235ff","#4abeff","#ffffff","#f70821","#f70821","#f70821","#ffffff","#4235ff","#4235ff","#4abeff","#ffffff","#f70821","#f70821","#f70821","#ffffff","#4235ff","#4235ff","#0800f7","#21aeff","#ffffff","#ffffff","#ffffff","#4abeff"],
+    ["#000000","#000000","#4affff","#4affff","#000000","#ffffff","#000000","#000000","#000000","#4affff","#21aeff","#000000","#ffffff","#000000","#ffffff","#000000","#21aeff","#4abeff","#4abeff","#000000","#ffffff","#f70821","#ffffff","#000000","#4abeff","#4235ff","#21aeff","#000000","#ffffff","#f70821","#ffffff","#000000","#4235ff","#0800f7","#4abeff","#4abeff","#ffffff","#f70821","#ffffff","#21aeff","#4235ff","#4235ff","#21aeff","#ffffff","#f70821","#f70821","#f70821","#ffffff","#0800f7","#4235ff","#4abeff","#ffffff","#f70821","#f70821","#f70821","#ffffff","#4235ff","#0800f7","#4235ff","#4abeff","#ffffff","#ffffff","#ffffff","#4abeff"]
+  ]
+}

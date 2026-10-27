@@ -1,0 +1,11 @@
+{
+  "name": "sans",
+  "source": "https://awtrix.de/icons/sans",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#000000","#3ac2ff","#ffffff","#000000","#3abeff","#ffffff","#000000","#ffffff","#000000","#000000","#ffffff","#000000","#000000","#ffffff","#000000","#ffffff","#bdbebd","#ffffff","#000000","#ffffff","#bdbebd","#ffffff","#3ac2ff","#000000","#ffffff","#bdbebd","#bdbebd","#bdbebd","#ffffff","#3abeff","#3abeff","#000000","#3abeff","#ffffff","#3abeff","#3abeff","#3abeff","#3abeff","#3abeff","#ffa2c5","#ffa2c5","#000000","#3abeff","#ffa2c5","#ffa2c5","#3abeff","#000000"]
+  ]
+}

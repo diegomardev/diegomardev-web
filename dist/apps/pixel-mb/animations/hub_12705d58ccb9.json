@@ -1,0 +1,11 @@
+{
+  "name": "calendar31",
+  "source": "https://awtrix.de/icons/calendar31",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#317def","#317def","#317def","#317def","#317def","#317def","#317def","#0855c5","#317def","#d6d2ce","#d6d2ce","#d6d2ce","#d6d2ce","#d6d2ce","#d6d2ce","#efeb10","#317def","#d6d2ce","#080c08","#080c08","#d6d2ce","#080c08","#d6d2ce","#efeb10","#317def","#d6d2ce","#d6d2ce","#080c08","#d6d2ce","#080c08","#d6d2ce","#efeb10","#317def","#d6d2ce","#080c08","#080c08","#d6d2ce","#080c08","#d6d2ce","#efeb10","#317def","#d6d2ce","#d6d2ce","#080c08","#d6d2ce","#080c08","#d6d2ce","#efeb10","#317def","#d6d2ce","#080c08","#080c08","#d6d2ce","#080c08","#d6d2ce","#efeb10","#087121","#21d742","#21d742","#21d742","#21d742","#21d742","#21d742","#d61808"]
+  ]
+}

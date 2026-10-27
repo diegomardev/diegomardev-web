@@ -1,0 +1,11 @@
+{
+  "name": "homey",
+  "source": "https://awtrix.de/icons/homey",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#ffffff","#fffbff","#f7f7f7","#fffbff","#000000","#000000","#000000","#ffffff","#fffbff","#f7f7f7","#f7f3ff","#efefef","#f7f3f7","#000000","#ffffff","#fffbff","#fffbff","#fffbff","#f7f7ff","#efefef","#e6e7e6","#efefef","#ffefef","#f7fbff","#fffbff","#f7f7ff","#f7f3f7","#f7efef","#efe7e6","#d6ced6","#ff3500","#ffae29","#f7f7d6","#eff7d6","#d6f3d6","#ceefe6","#ada2ff","#ff04d6","#fffbff","#efebd6","#fff300","#5aff00","#08ff84","#19dfff","#b5d2de","#efefef","#000000","#f7f3f7","#dedfe6","#dedfe6","#ded7de","#d6cad6","#efe7e6","#000000","#000000","#000000","#d6d2d6","#d6d7d6","#d6d7d6","#cecece","#000000","#000000"]
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "dishwasher",
+  "source": "https://awtrix.de/icons/dishwasher",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 200,
+  "frames": [
+    ["#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#737173","#fff700","#ff0000","#737173","#737173","#ffffff","#000000","#ffffff","#0079bd","#000000","#000000","#000000","#0079bd","#ffffff","#000000","#ffffff","#000000","#000000","#0079bd","#000000","#0079bd","#ffffff","#000000","#ffffff","#000000","#ffffff","#0079bd","#ffffff","#000000","#ffffff","#000000","#ffffff","#0079bd","#ffffff","#000000","#ffffff","#000000","#ffffff","#000000","#ffffff","#0079bd","#ffffff","#000000","#ffffff","#0079bd","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"],
+    ["#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#737173","#fff700","#ff0000","#737173","#737173","#ffffff","#000000","#ffffff","#0079bd","#000000","#000000","#000000","#000000","#ffffff","#000000","#ffffff","#0079bd","#000000","#000000","#000000","#0079bd","#ffffff","#000000","#ffffff","#000000","#ffffff","#0079bd","#ffffff","#0079bd","#ffffff","#000000","#ffffff","#000000","#ffffff","#0079bd","#ffffff","#000000","#ffffff","#000000","#ffffff","#0079bd","#ffffff","#000000","#ffffff","#000000","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"],
+    ["#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#737173","#fff700","#ff0000","#737173","#737173","#ffffff","#000000","#ffffff","#000000","#000000","#0079bd","#000000","#000000","#ffffff","#000000","#ffffff","#0079bd","#000000","#000000","#000000","#000000","#ffffff","#000000","#ffffff","#0079bd","#ffffff","#000000","#ffffff","#0079bd","#ffffff","#000000","#ffffff","#000000","#ffffff","#0079bd","#ffffff","#0079bd","#ffffff","#000000","#ffffff","#000000","#ffffff","#0079bd","#ffffff","#000000","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"],
+    ["#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#737173","#fff700","#ff0000","#737173","#737173","#ffffff","#000000","#ffffff","#000000","#000000","#0079bd","#000000","#0079bd","#ffffff","#000000","#ffffff","#000000","#000000","#0079bd","#000000","#000000","#ffffff","#000000","#ffffff","#0079bd","#ffffff","#000000","#ffffff","#000000","#ffffff","#000000","#ffffff","#0079bd","#ffffff","#000000","#ffffff","#0079bd","#ffffff","#000000","#ffffff","#000000","#ffffff","#0079bd","#ffffff","#0079bd","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

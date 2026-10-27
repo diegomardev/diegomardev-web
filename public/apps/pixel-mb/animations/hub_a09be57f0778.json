@@ -1,0 +1,11 @@
+{
+  "name": "happy_sun",
+  "source": "https://awtrix.de/icons/happy-sun",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffff4a","#ffff42","#000000","#000000","#ffff4a","#000000","#000000","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff42","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#000000","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#000000","#000000","#000000","#ffff4a","#ffff4a","#ffffff","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffffff","#ffffff","#ffffff","#ffff4a","#ffff4a","#ffff42","#ffff4a","#ffffff","#ffffff"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "bilibili",
+  "source": "https://awtrix.de/icons/bilibili",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#7bd2ff","#7bd2ff","#7bd2ff","#7bd2ff","#7bd2ff","#7bd2ff","#000000","#7bd2ff","#7bd2ff","#7bd2ff","#ffffff","#7bd2ff","#7bd2ff","#7bd2ff","#7bd2ff","#7bd2ff","#7bd2ff","#7bd2ff","#ffffff","#ffffff","#7bd2ff","#7bd2ff","#7bd2ff","#7bd2ff","#7bd2ff","#7bd2ff","#ffffff","#ffffff","#7bd2ff","#7bd2ff","#7bd2ff","#7bd2ff","#7bd2ff","#7bd2ff","#ffffff","#7bd2ff","#7bd2ff","#7bd2ff","#7bd2ff","#000000","#7bd2ff","#7bd2ff","#7bd2ff","#7bd2ff","#7bd2ff","#7bd2ff","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

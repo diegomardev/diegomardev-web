@@ -1,0 +1,11 @@
+{
+  "name": "wechat",
+  "source": "https://awtrix.de/icons/wechat",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#19d719","#19d719","#19d719","#19d719","#19d719","#19d719","#19d719","#19d719","#19d719","#19d719","#19d719","#19d719","#10db19","#19d719","#10d710","#19d710","#ffffff","#ffffff","#ffffff","#ffffff","#19d719","#19d719","#19db19","#19d719","#ffffff","#19d719","#ffffff","#19db19","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#19d719","#ffffff","#19d719","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#19d719","#19d719","#19d719","#19d719","#19d719","#19d710","#ffffff","#19d719","#10d710","#19d719","#10db19","#19d719","#10d710","#19d710","#19d719"]
+  ]
+}

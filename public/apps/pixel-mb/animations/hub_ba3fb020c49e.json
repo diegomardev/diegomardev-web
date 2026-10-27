@@ -1,0 +1,11 @@
+{
+  "name": "humidity",
+  "source": "https://awtrix.de/icons/humidity",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#0000ff","#0000ff","#000000","#000000","#000000","#000000","#000000","#0000ff","#0000ff","#0000ff","#0000ff","#000000","#000000","#000000","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#000000","#0000ff","#ffffff","#ffffff","#0000ff","#0000ff","#ffffff","#0000ff","#0000ff","#0000ff","#ffffff","#ffffff","#0000ff","#ffffff","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#ffffff","#0000ff","#ffffff","#ffffff","#0000ff","#0000ff","#0000ff","#ffffff","#0000ff","#0000ff","#ffffff","#ffffff","#0000ff","#000000","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#000000"]
+  ]
+}

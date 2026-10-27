@@ -1,0 +1,12 @@
+{
+  "name": "TelegramAnimation",
+  "source": "https://awtrix.de/icons/telegramanimation",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 2000,
+  "frames": [
+    ["#000000","#ffffff","#0079ad","#0079ad","#0079ad","#0079ad","#0079ad","#ffffff","#ffffff","#0079ad","#0079ad","#0079ad","#0079ad","#0079ad","#0079ad","#0079ad","#ffffff","#0079ad","#0079ad","#0079ad","#ffffff","#9ce3ff","#0079ad","#0079ad","#ffffff","#0079ad","#ffffff","#ffffff","#9ce3ff","#ffffff","#0079ad","#0079ad","#ffffff","#0079ad","#0079ad","#0079ad","#ffffff","#ffffff","#0079ad","#0079ad","#ffffff","#0079ad","#0079ad","#0079ad","#0079ad","#0079ad","#0079ad","#0079ad","#ffffff","#0079ad","#0079ad","#0079ad","#0079ad","#0079ad","#0079ad","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"],
+    ["#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#ffffff","#0079ad","#0079ad","#0079ad","#0079ad","#0079ad","#ffffff","#000000","#0079ad","#0079ad","#0079ad","#0079ad","#0079ad","#0079ad","#0079ad","#ffffff","#0079ad","#0079ad","#0079ad","#ffffff","#9ce3ff","#0079ad","#0079ad","#ffffff","#0079ad","#ffffff","#ffffff","#9ce3ff","#ffffff","#0079ad","#0079ad","#ffffff","#0079ad","#0079ad","#0079ad","#ffffff","#ffffff","#0079ad","#0079ad","#ffffff","#0079ad","#0079ad","#0079ad","#0079ad","#0079ad","#0079ad","#0079ad","#ffffff","#0079ad","#0079ad","#0079ad","#0079ad","#0079ad","#0079ad","#ffffff","#000000"]
+  ]
+}

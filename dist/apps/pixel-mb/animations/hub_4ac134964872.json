@@ -1,0 +1,11 @@
+{
+  "name": "snowman",
+  "source": "https://awtrix.de/icons/snowman",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#e64d4a","#e64d4a","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#10006b","#ffffff","#ffffff","#10006b","#000000","#000000","#000000","#000000","#ffffff","#4a4d4a","#4a4d4a","#ffffff","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#b58219","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#b58219","#b58219","#b58219","#ffffff","#ffffff","#ffffff","#ffffff","#b58219","#b58219","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"]
+  ]
+}

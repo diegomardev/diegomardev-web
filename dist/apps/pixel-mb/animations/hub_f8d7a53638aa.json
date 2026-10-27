@@ -1,0 +1,11 @@
+{
+  "name": "serce",
+  "source": "https://awtrix.de/icons/serce",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#cec2c5","#ffffff","#cec2c5","#ffffff","#ffffff","#cec2c5","#ffffff","#cec2c5","#ffffff","#de2021","#de2021","#cec2c5","#cec2c5","#de2021","#de2021","#ffffff","#ff4142","#ff4142","#ff696b","#de2021","#de2021","#ff696b","#ff4142","#ff4142","#de2021","#ff696b","#ff696b","#ff696b","#ff696b","#ff696b","#ff696b","#de2021","#ff4142","#ff696b","#ff696b","#ff696b","#ff696b","#ff696b","#ff696b","#ff4142","#cec2c5","#ff4142","#ff696b","#ff696b","#ff696b","#ff696b","#ff4142","#cec2c5","#ffffff","#cec2c5","#de2021","#ff696b","#ff696b","#de2021","#cec2c5","#ffffff","#cec2c5","#ffffff","#cec2c5","#ff4142","#ff4142","#cec2c5","#ffffff","#cec2c5"]
+  ]
+}

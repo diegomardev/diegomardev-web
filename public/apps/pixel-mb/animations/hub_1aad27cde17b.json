@@ -1,0 +1,11 @@
+{
+  "name": "Garage Arrow down",
+  "source": "https://awtrix.de/icons/garage-arrow-up",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#5a5d5a","#5a5d5a","#5a5d5a","#5a5d5a","#5a5d5a","#5a5d5a","#ffffff","#ffffff","#5a5d5a","#5a5d5a","#10ba00","#10ba00","#5a5d5a","#5a5d5a","#ffffff","#ffffff","#5a5d5a","#5a5d5a","#10ba00","#10ba00","#5a5d5a","#5a5d5a","#ffffff","#ffffff","#5a5d5a","#5a5d5a","#10ba00","#10ba00","#5a5d5a","#5a5d5a","#ffffff","#ffffff","#10ba00","#10ba00","#10ba00","#10ba00","#10ba00","#10ba00","#ffffff","#ffffff","#5a5d5a","#10ba00","#10ba00","#10ba00","#10ba00","#5a5d5a","#ffffff","#ffffff","#5a5d5a","#5a5d5a","#10ba00","#10ba00","#5a5d5a","#5a5d5a","#ffffff"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "youbi_thu_moku",
+  "source": "https://awtrix.de/icons/youbi-thu-moku",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 7,
+  "height": 7,
+  "frameMs": 20,
+  "frames": [
+    ["#089a08","#089a08","#089a08","#ffffff","#089a08","#089a08","#089a08","#089a08","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#089a08","#089a08","#089a08","#089a08","#ffffff","#089a08","#089a08","#089a08","#089a08","#089a08","#ffffff","#ffffff","#ffffff","#089a08","#089a08","#089a08","#089a08","#ffffff","#ffffff","#ffffff","#089a08","#089a08","#089a08","#ffffff","#089a08","#ffffff","#089a08","#ffffff","#089a08","#089a08","#089a08","#089a08","#ffffff","#089a08","#089a08","#089a08"]
+  ]
+}

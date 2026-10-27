@@ -1,0 +1,11 @@
+{
+  "name": "mi_logo",
+  "source": "https://awtrix.de/icons/mi-logo",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ff6521","#ff6529","#ff6529","#ff6529","#ff6529","#ff6529","#ff6529","#ff6529","#ff6529","#ff6529","#ff6529","#ff6529","#ff6529","#ff6529","#ff6529","#ff6529","#ff6529","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ff6529","#ffffff","#ff6529","#ffffff","#ff6529","#ff6529","#ff6529","#ffffff","#ff6529","#ffffff","#ff6529","#ffffff","#ff6529","#ffffff","#ff6529","#ffffff","#ff6129","#ffffff","#ff6529","#ffffff","#ff6529","#ffffff","#ff6529","#ffffff","#ff6529","#ffffff","#ff6529","#ff6529","#ff6129","#ff6529","#ff6529","#ff6529","#ff6521","#ff6529","#ff6529","#ff6529","#ff6529","#ff6529","#ff6529","#ff6529","#ff6529","#ff6529"]
+  ]
+}

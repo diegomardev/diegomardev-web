@@ -1,0 +1,11 @@
+{
+  "name": "notebook",
+  "source": "https://awtrix.de/icons/notebook",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#3abe29","#3abe29","#3abe29","#3abe29","#3abe29","#3abe29","#b5b2b5","#848284","#848284","#3abe21","#ffffff","#ffffff","#3abe29","#3abe29","#b5b2b5","#000000","#3abe29","#3abe29","#3abe21","#3abe29","#3abe29","#3abe29","#b5b2b5","#848284","#848284","#3abe29","#ffffff","#ffffff","#ffffff","#3abe29","#b5b2b5","#000000","#3abe29","#3abe29","#3abe29","#3abe29","#3abe29","#3abe29","#b5b2b5","#848284","#848284","#3abe29","#ffffff","#ffffff","#ffffff","#ffffff","#b5b2b5","#000000","#3abe29","#3abe29","#3abe29","#3abe29","#3abe29","#3abe29","#b5b2b5","#000000","#b5b2b5","#b5b2b5","#b5b2b5","#b5b2b5","#b5b2b5","#b5b2b5","#b5b2b5"]
+  ]
+}

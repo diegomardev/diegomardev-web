@@ -1,0 +1,11 @@
+{
+  "name": "tvtestimage",
+  "source": "https://awtrix.de/icons/tvtestimage",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffff10","#4affff","#8cff08","#ff00ff","#f70008","#4235ff","#424542","#ffffff","#ffff10","#4affff","#8cff08","#ff00ff","#f70008","#4235ff","#424542","#ffffff","#ffff10","#4affff","#8cff08","#ff00ff","#f70008","#4235ff","#424542","#ffffff","#ffff10","#4affff","#8cff08","#ff00ff","#f70008","#4235ff","#424542","#ffffff","#ffff10","#4affff","#8cff08","#ff00ff","#f70008","#4235ff","#424542","#ffffff","#ffff10","#4affff","#8cff08","#ff00ff","#f70008","#4235ff","#424542","#ffffff","#ffff10","#4affff","#8cff08","#ff00ff","#f70008","#4235ff","#424542","#ffffff","#ffff10","#4affff","#8cff08","#ff00ff","#f70008","#4235ff","#424542"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "waschmaschine",
+  "source": "https://awtrix.de/icons/waschmaschine",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#cecece","#cecece","#cecece","#cecece","#cecece","#cecece","#000000","#000000","#ceced6","#cecece","#f70008","#cecece","#8cff00","#cecece","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#ffffff","#cecece","#848684","#848684","#cecece","#ffffff","#000000","#000000","#ffffff","#848684","#000000","#000000","#848684","#ffffff","#000000","#000000","#ffffff","#848684","#4abeff","#4abeff","#848684","#ffffff","#000000","#000000","#ffffff","#cecece","#848684","#848684","#cecece","#ffffff","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"]
+  ]
+}

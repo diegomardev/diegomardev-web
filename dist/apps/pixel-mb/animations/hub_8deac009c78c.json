@@ -1,0 +1,11 @@
+{
+  "name": "sonic_face",
+  "source": "https://awtrix.de/icons/sonic-face",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#ffd29c","#6b6dff","#6b6dff","#6b6dff","#6b6dff","#ffd29c","#000000","#3a39d6","#dedfde","#3a39d6","#6b6dff","#6b6dff","#3a39d6","#dedfde","#3a39d6","#dedfde","#ffffff","#000000","#3a39d6","#3a39d6","#000000","#ffffff","#dedfde","#ffffff","#ffffff","#000000","#2928a5","#2928a5","#000000","#ffffff","#ffffff","#dedfde","#ffffff","#000000","#cecece","#cecece","#000000","#ffffff","#dedfde","#000000","#ffd29c","#ffd29c","#000000","#000000","#ffd29c","#ffd29c","#000000","#000000","#ffd29c","#ffd29c","#ffd29c","#ffd29c","#ffd29c","#ffd29c","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

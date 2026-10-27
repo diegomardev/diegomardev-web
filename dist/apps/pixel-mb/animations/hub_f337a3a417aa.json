@@ -1,0 +1,11 @@
+{
+  "name": "schneemann",
+  "source": "https://awtrix.de/icons/schneemann",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#f70c08","#f70c08","#f70c08","#000000","#000000","#000000","#000000","#f70c08","#f70c08","#f70c08","#f70c08","#f70c08","#000000","#000000","#000000","#ffffff","#080000","#ffffff","#080000","#ffffff","#000000","#000000","#000000","#10f308","#ffffff","#efa208","#ffffff","#ffffff","#000000","#000000","#ffffff","#10f308","#10f308","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#10f308","#10f308","#10f308","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "part_time_daily",
+  "source": "https://awtrix.de/icons/part-time-daily",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#9ccece","#b5e7e6","#b5e7e6","#b5e7e6","#9ccece","#9ccece","#9ccece","#9ccece","#9ccece","#b5e7e6","#ff8284","#b5e7e6","#9ccece","#9ccece","#9ccece","#9ccece","#9ccece","#b5e7e6","#ff8284","#b5e7e6","#9ccece","#9ccece","#9ccece","#9ccece","#9ccece","#b5e7e6","#ff7d84","#b5e7e6","#9ccece","#9ccece","#9ccece","#9ccece","#9ccece","#b5e7e6","#ff8284","#b5e7e6","#9ccece","#9ccece","#9ccece","#9ccece","#b5e7e6","#ff8284","#ff8284","#ff8284","#b5e7e6","#9ccece","#9ccece","#9ccece","#b5e7e6","#ff8284","#ff8284","#ff8284","#b5e7e6","#9ccece","#9ccece","#9ccece","#9ccece","#b5e7e6","#b5e7e6","#b5e7e6","#9ccece","#9ccece","#9ccece","#9ccece"]
+  ]
+}

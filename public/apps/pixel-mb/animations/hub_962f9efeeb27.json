@@ -1,0 +1,11 @@
+{
+  "name": "dartagnan_icone",
+  "source": "https://awtrix.de/icons/dartagnan-icone",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#ffffff","#ffffff","#0000ff","#0000ff","#ffffff","#ffffff","#0000ff","#0000ff","#ffffff","#ffffff","#0000ff","#ffffff","#0000ff","#0000ff","#ffffff","#0000ff","#ffffff","#ffffff","#0000ff","#ffffff","#0000ff","#0000ff","#ffffff","#0000ff","#ffffff","#ffffff","#0000ff","#0000ff","#ffffff","#ffffff","#0000ff","#0000ff","#ffffff","#ffffff","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

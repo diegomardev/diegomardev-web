@@ -1,0 +1,11 @@
+{
+  "name": "wild",
+  "source": "https://awtrix.de/icons/wild",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#fff7f7","#fff7f7","#f70000","#fff7f7","#fff7f7","#f70000","#fff7f7","#fff7f7","#fff7f7","#fff7f7","#f70000","#fff7f7","#fff7f7","#f70000","#fff7f7","#fff7f7","#f70000","#fff7f7","#f70000","#fff7f7","#fff7f7","#f70000","#fff7f7","#f70000","#f70000","#fff7f7","#f70000","#f70000","#f70000","#f70000","#fff7f7","#f70000","#f70000","#fff7f7","#f70000","#f70000","#f70000","#f70000","#fff7f7","#f70000","#f70000","#fff7f7","#f70000","#fff7f7","#fff7f7","#f70000","#fff7f7","#f70000","#fff7f7","#f70000","#f70000","#fff7f7","#fff7f7","#f70000","#f70000","#fff7f7","#fff7f7","#fff7f7","#f70000","#fff7f7","#fff7f7","#f70000","#fff7f7","#fff7f7"]
+  ]
+}

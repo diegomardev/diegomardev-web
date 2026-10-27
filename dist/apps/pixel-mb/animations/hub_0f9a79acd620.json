@@ -1,0 +1,11 @@
+{
+  "name": "philippines",
+  "source": "https://awtrix.de/icons/philippines",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffff00","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#ffff00","#ffffff","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#ffffff","#ffffff","#ffffff","#0000ff","#0000ff","#0000ff","#0000ff","#0000ff","#ffff00","#ffff00","#ffffff","#ffff00","#0000ff","#0000ff","#0000ff","#0000ff","#ffff00","#ffff00","#ffffff","#ffff00","#ff0000","#ff0000","#ff0000","#ff0000","#ffffff","#ffffff","#ffffff","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ffff00","#ffffff","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ffff00","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000"]
+  ]
+}

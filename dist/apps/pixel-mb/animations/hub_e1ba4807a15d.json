@@ -1,0 +1,11 @@
+{
+  "name": "discord",
+  "source": "https://awtrix.de/icons/discord",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#94a2d6","#ffffff","#ffffff","#94a2d6","#ffffff","#ffffff","#ffffff","#94a2d6","#94a2d6","#94a2d6","#94a2d6","#94a2d6","#94a2d6","#ffffff","#ffffff","#94a2d6","#94a2d6","#94a2d6","#94a2d6","#94a2d6","#94a2d6","#ffffff","#94a2d6","#94a2d6","#ffffff","#94a2d6","#94a2d6","#ffffff","#94a2d6","#94a2d6","#94a2d6","#ffffff","#94a2d6","#94a2d6","#94a2d6","#94a2d6","#ffffff","#94a2d6","#ffffff","#ffffff","#94a2d6","#ffffff","#ffffff","#94a2d6","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"]
+  ]
+}

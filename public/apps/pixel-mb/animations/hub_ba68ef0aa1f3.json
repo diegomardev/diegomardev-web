@@ -1,0 +1,12 @@
+{
+  "name": "Sunbattery_unloading75",
+  "source": "https://awtrix.de/icons/sunbattery-unloading75",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 400,
+  "frames": [
+    ["#ffd700","#000000","#ffd700","#000000","#ffd700","#000000","#000000","#000000","#000000","#ffd700","#ffd700","#ffd700","#000000","#ffffff","#ffffff","#000000","#ffd700","#ffd700","#ffd700","#ffd700","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffd700","#ffd700","#ffd700","#ffffff","#000000","#000000","#ffffff","#ffd700","#000000","#ffd700","#000000","#ffffff","#10ff00","#10ff00","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#10ff00","#10ff00","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#10ff00","#10ff00","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff"],
+    ["#ffd700","#000000","#ffd700","#000000","#ffd700","#000000","#000000","#000000","#000000","#ffd700","#ffd700","#ffd700","#000000","#ffffff","#ffffff","#000000","#ffd700","#ffd700","#ffd700","#ffd700","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffd700","#ffd700","#ffd700","#ffffff","#000000","#000000","#ffffff","#ffd700","#000000","#ffd700","#000000","#ffffff","#ffeb00","#ffeb00","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#10ff00","#10ff00","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#10ff00","#10ff00","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

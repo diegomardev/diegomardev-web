@@ -1,0 +1,11 @@
+{
+  "name": "waffle",
+  "source": "https://awtrix.de/icons/waffle",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ef9e00","#ffff19","#ffff21","#ffff21","#ffff21","#ffff21","#ffff21","#ef9e00","#ffff21","#ef9e00","#ef9e00","#ffff29","#ef9e00","#ef9e00","#ffff21","#ef9e00","#ffff21","#ef9e00","#a54931","#ffff19","#ef9e00","#a5493a","#ffff21","#ef9a00","#ffff21","#ffff19","#ffff21","#ffff21","#ffff29","#ffff21","#ffff29","#ffff21","#ffff21","#ef9e00","#ef9e00","#ffff29","#ef9e00","#ef9e00","#ffff19","#ef9e00","#ffff21","#ef9e00","#ad5131","#ffff21","#ef9e00","#ad553a","#ffff21","#ef9e00","#ffff21","#ffff21","#ffff21","#ffff21","#ffff21","#ffff21","#ffff21","#ffff21","#ffff21","#ef9e00","#ef9e00","#ffff29","#ef9e00","#ef9e00","#ffff21","#ef9e00"]
+  ]
+}

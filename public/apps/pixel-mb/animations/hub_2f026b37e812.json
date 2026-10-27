@@ -1,0 +1,11 @@
+{
+  "name": "House",
+  "source": "https://awtrix.de/icons/house-2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#f70000","#f70000","#f70000","#f70000","#000000","#000000","#000000","#f70000","#f70000","#f70000","#f70000","#f70000","#f70000","#000000","#f70000","#f70000","#f70000","#f70000","#f70000","#f70000","#f70000","#f70000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#3a1800","#3a1800","#ffffff","#ffffff","#3a1800","#3a1800","#ffffff","#ffffff","#3a1800","#3a1800","#ffffff","#ffffff","#3a1800","#3a1800","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#3a1800","#3a1800","#ffffff"]
+  ]
+}

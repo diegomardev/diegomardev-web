@@ -1,0 +1,11 @@
+{
+  "name": "cal",
+  "source": "https://awtrix.de/icons/cal",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#bdb6b5","#bdb6b5","#ffffff","#bdb6b5","#bdb6b5","#ffffff","#bdb6b5","#bdb6b5","#316df7","#316df7","#316df7","#316df7","#316dff","#316df7","#316df7","#316df7","#316df7","#316df7","#316df7","#316df7","#ffffff","#316df7","#316df7","#316df7","#316df7","#316df7","#316df7","#ffffff","#ffffff","#316df7","#316df7","#316df7","#316df7","#316df7","#316df7","#316df7","#ffffff","#316df7","#316df7","#316df7","#6b9af7","#6b9af7","#6b9af7","#6b9af7","#ffffff","#6b9af7","#6b9af7","#6b9af7","#6b9af7","#6b9af7","#6b9af7","#ffffff","#ffffff","#ffffff","#6b9af7","#6b9af7","#6b9af7","#6b9aff","#6b9af7","#6b9af7","#6b9af7","#6b9af7","#6b9af7","#6b9af7"]
+  ]
+}

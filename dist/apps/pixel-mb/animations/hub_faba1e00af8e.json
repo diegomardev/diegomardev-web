@@ -1,0 +1,11 @@
+{
+  "name": "excel",
+  "source": "https://awtrix.de/icons/excel",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#08c200","#08c200","#08c200","#08c200","#08c200","#08c200","#08c200","#000000","#08c200","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#08c200","#000000","#08c200","#ffffff","#08c200","#08c200","#08c200","#08c200","#08c200","#000000","#08c200","#ffffff","#ffffff","#ffffff","#ffffff","#08c200","#08c200","#000000","#08c200","#ffffff","#08c200","#00c200","#08c200","#08c200","#08c200","#000000","#00c200","#ffffff","#00c200","#08c200","#00c200","#08c200","#08c200","#000000","#08c200","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#08c200","#000000","#08c200","#08c200","#08c200","#08c200","#08c200","#08c200","#08c200","#000000"]
+  ]
+}

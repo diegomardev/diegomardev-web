@@ -1,0 +1,11 @@
+{
+  "name": "bluetooth",
+  "source": "https://awtrix.de/icons/bluetooth",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#0010ff","#0014ff","#ffffff","#0014ff","#0014ff","#000000","#000000","#0014ff","#0014ff","#0014ff","#ffffff","#ffffff","#0014ff","#0014ff","#000000","#0014ff","#ffffff","#0014ff","#ffffff","#0010ff","#ffffff","#0014ff","#000000","#0014ff","#0014ff","#ffffff","#ffffff","#ffffff","#0014ff","#0014ff","#000000","#0014ff","#0014ff","#ffffff","#ffffff","#ffffff","#0014ff","#0014ff","#000000","#0014ff","#ffffff","#0014ff","#ffffff","#0010ff","#ffffff","#0014ff","#000000","#0014ff","#0014ff","#0014ff","#ffffff","#ffffff","#0014ff","#0014ff","#000000","#000000","#0010ff","#0014ff","#ffffff","#0014ff","#0014ff","#000000","#000000"]
+  ]
+}

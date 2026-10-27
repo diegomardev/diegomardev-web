@@ -1,0 +1,11 @@
+{
+  "name": "Gmail",
+  "source": "https://awtrix.de/icons/gmail-2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ff0000","#ff0000","#ffffff","#ffffff","#ffffff","#ffffff","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ffffff","#ffffff","#ff0000","#ff0000","#ff0000","#ff0000","#ffffff","#ff0000","#ff0000","#ff0000","#ff0000","#ffffff","#ff0000","#ff0000","#ffffff","#ffffff","#ff0000","#ff0000","#ffffff","#ffffff","#ff0000","#ff0000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ff0000","#ff0000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ff0000","#ff0000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ff0000","#ff0000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ff0000"]
+  ]
+}

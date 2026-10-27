@@ -1,0 +1,11 @@
+{
+  "name": "xxcv",
+  "source": "https://awtrix.de/icons/xxcv",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#7b9ece","#7ba2de","#8caee6","#7ba2de","#7ba2d6","#7ba6d6","#7ba2d6","#7b9ece","#738ebd","#84aede","#84b2e6","#84aed6","#8ca2d6","#94b6e6","#7baad6","#84a6d6","#a5bade","#9cbad6","#9cbae6","#dea273","#9cb6de","#94bad6","#94aece","#9cb2d6","#adbace","#adc2ce","#e6a67b","#e69652","#a5c2d6","#ced7de","#adbace","#a5bece","#6b4529","#73513a","#ce8a4a","#de8a4a","#9c7952","#4a2d21","#191419","#081008","#73513a","#634129","#ffd294","#ffca84","#633d31","#291819","#191410","#101010","#73514a","#de9652","#efb273","#f7be7b","#e68e4a","#efb673","#421c00","#100c10","#291c10","#292029","#211408","#422d21","#292010","#bd9673","#211419","#100400"]
+  ]
+}

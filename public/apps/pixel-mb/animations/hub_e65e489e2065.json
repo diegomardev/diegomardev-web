@@ -1,0 +1,11 @@
+{
+  "name": "gotify",
+  "source": "https://awtrix.de/icons/gotify",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#00f3ff","#00f3ff","#00f3ff","#00f3ff","#000000","#000000","#000000","#00f3ff","#00f3ff","#00f3ff","#ffffff","#00f3ff","#00f3ff","#000000","#000000","#00f3ff","#00f3ff","#ffffff","#ffffff","#ffffff","#00f3ff","#00f3ff","#000000","#00f3ff","#00f3ff","#ffffff","#000000","#ffffff","#00f3ff","#ffae00","#000000","#00f3ff","#00f3ff","#00f3ff","#ffffff","#00f3ff","#00f3ff","#00f3ff","#ffffff","#00f3ff","#00f3ff","#00f3ff","#00f3ff","#00f3ff","#ffffff","#ffffff","#ffffff","#00f3ff","#00f3ff","#ffae00","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#00f3ff","#00f3ff","#00f3ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

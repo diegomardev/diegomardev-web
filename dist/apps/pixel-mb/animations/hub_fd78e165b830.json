@@ -1,0 +1,11 @@
+{
+  "name": "baby_2",
+  "source": "https://awtrix.de/icons/baby-2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#efdf5a","#ceb200","#ceb200","#efdf5a","#000000","#000000","#000000","#efdf5a","#ceb200","#dec200","#ceb200","#dec200","#efc652","#000000","#000000","#ffb28c","#efb2a5","#efce00","#efb2a5","#efb2a5","#ffb28c","#000000","#ffbe9c","#ffb28c","#292400","#ffb28c","#efb2a5","#292400","#ffb28c","#ffbe9c","#ffbe9c","#ffbe9c","#ffb28c","#ffb28c","#ffb28c","#ffb28c","#ffbe9c","#ffbe9c","#000000","#ffbe9c","#ffb28c","#7bb2ff","#7bb2ff","#ffb28c","#ffbe9c","#000000","#000000","#ffbe9c","#ffbe9c","#4aa2ef","#4aa2ef","#ffbe9c","#ffbe9c","#000000","#000000","#000000","#ffbe9c","#efb2a5","#efb2a5","#ffbe9c","#000000","#000000"]
+  ]
+}

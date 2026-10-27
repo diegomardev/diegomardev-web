@@ -1,0 +1,11 @@
+{
+  "name": "sat1",
+  "source": "https://awtrix.de/icons/sat1",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#ff698c","#ff698c","#ff1c52","#ff82a5","#000000","#000000","#000000","#10b2ff","#ff698c","#ff1c52","#ff82a5","#ff82a5","#f74573","#000000","#19b2ff","#ff698c","#ff1c52","#ff82a5","#ff82a5","#ff4573","#ffd242","#ffd242","#10b2ff","#ff698c","#ff1c52","#ff82a5","#f74573","#ffd242","#ffd242","#f7ba00","#d6ffa5","#19b2ff","#ff82a5","#f74573","#ffd242","#ffd242","#f7ba00","#f7d77b","#c5fb84","#c5fb84","#f74573","#f7ba00","#f7ba00","#f7ba00","#f7d77b","#f7d77b","#000000","#94ff52","#63ff00","#fff319","#f7d77b","#f7d77b","#fff319","#000000","#000000","#000000","#63ff00","#fff773","#fff719","#fff319","#000000","#000000"]
+  ]
+}

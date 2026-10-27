@@ -1,0 +1,11 @@
+{
+  "name": "i3s",
+  "source": "https://awtrix.de/icons/i3s",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#0069ad","#0069ad","#d6d7d6","#d6d7d6","#d6d7d6","#d6d7d6","#000000","#000000","#0069ad","#0069ad","#d6d7d6","#d6d7d6","#ffffff","#d6d7d6","#000000","#0069ad","#0065ad","#0069ad","#d6d7d6","#d6d7d6","#d6d7d6","#d6d7d6","#000000","#0069ad","#0069ad","#d6d7d6","#d6d7d6","#ffffff","#d6d7d6","#d6d7d6","#0069ad","#0069ad","#0069ad","#d6d7d6","#d6d7d6","#ffffff","#d6d7d6","#d6d7d6","#0065ad","#0069ad","#d6d7d6","#d6d7d6","#ffffff","#d6d7d6","#d6d7d6","#000000","#0069ad","#0069ad","#d6d7d6","#d6d7d6","#ffffff","#d6d7d6","#d6d7d6","#000000","#0069ad","#0069ad","#d6d7d6","#d6d7d6","#d6d7d6","#d6d7d6","#000000","#000000"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "meshtastic",
+  "source": "https://awtrix.de/icons/meshtastic",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#7bfb84","#7bfb84","#7bfb84","#7bfb84","#7bfb84","#7bfb84","#7bfb84","#7bfb84","#7bfb84","#7bfb84","#313531","#7bfb84","#7bfb84","#313531","#7bfb84","#7bfb84","#7bfb84","#7bfb84","#313531","#7bfb84","#7bfb84","#313531","#7bfb84","#7bfb84","#7bfb84","#313531","#7bfb84","#7bfb84","#313531","#7bfb84","#313531","#7bfb84","#7bfb84","#313531","#7bfb84","#7bfb84","#313531","#7bfb84","#313531","#7bfb84","#313531","#7bfb84","#7bfb84","#313531","#7bfb84","#7bfb84","#7bfb84","#313531","#313531","#7bfb84","#7bfb84","#313531","#7bfb84","#7bfb84","#7bfb84","#313531","#7bfb84","#7bfb84","#7bfb84","#7bfb84","#7bfb84","#7bfb84","#7bfb84","#7bfb84"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "monero",
+  "source": "https://awtrix.de/icons/monero",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffdfce","#ff965a","#ff965a","#ffdfce","#ffffff","#ffffff","#ffffff","#ffb68c","#ff6100","#ff6100","#ff6100","#ff6100","#ffb68c","#ffffff","#ffdfce","#ff8631","#ff8631","#ff6100","#ff6100","#ff8631","#ff8631","#ffdfce","#ff924a","#ff924a","#fff3ef","#ff8229","#ff8229","#fff3e6","#ff924a","#ff9252","#ff9652","#ff9a52","#bdc2c5","#e6cec5","#e6cec5","#bdc2c5","#ff9a52","#ff965a","#fff7f7","#decec5","#8c8a8c","#5a6163","#5a6163","#8c8a8c","#decec5","#fff7f7","#ffffff","#adaeb5","#4a4d4a","#424142","#424142","#4a4d4a","#adaeb5","#ffffff","#ffffff","#ffffff","#dedbde","#848684","#848684","#dedbde","#ffffff","#ffffff"]
+  ]
+}

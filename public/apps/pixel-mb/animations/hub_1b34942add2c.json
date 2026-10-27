@@ -1,0 +1,11 @@
+{
+  "name": "toad",
+  "source": "https://awtrix.de/icons/toad",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#ffffff","#ffffff","#9c0000","#9c0000","#9c0000","#9c0000","#000000","#ffffff","#ffffff","#ffffff","#9c0000","#9c0000","#9c0000","#9c0000","#ffffff","#9c0000","#9c0000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#9c0000","#9c0000","#9c0000","#ffffff","#ffe7ce","#ffe7ce","#ffe7ce","#ffe7ce","#9c0000","#ffffff","#ffffff","#ffe7ce","#ffe7ce","#000000","#ffe7ce","#000000","#b5ceff","#000000","#000000","#ffe7ce","#ffe7ce","#ffe7ce","#ffe7ce","#ffe7ce","#000000","#ffe7ce","#1996ff","#1996ff","#ffffff","#ffffff","#ffffff","#10006b","#9c4d00","#000000","#9c4900","#9c4d00","#000000","#000000","#522d00","#522800","#000000"]
+  ]
+}

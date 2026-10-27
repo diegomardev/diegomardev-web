@@ -1,0 +1,11 @@
+{
+  "name": "fortnite",
+  "source": "https://awtrix.de/icons/fortnite",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#313131","#313131","#ffffff","#ffffff","#ffffff","#ffffff","#313131","#313131","#7b04b5","#7b04b5","#ffffff","#ffffff","#ffffff","#ffffff","#7b04b5","#7b04b5","#7b04b5","#7b04b5","#ffffff","#ffffff","#7b04b5","#7b04b5","#7b04b5","#7b04b5","#7b04b5","#7b04b5","#ffffff","#ffffff","#ffffff","#7b04b5","#7b04b5","#7b04b5","#7b04b5","#7b04b5","#ffffff","#ffffff","#ffffff","#7b04b5","#7b04b5","#7b04b5","#7b04b5","#7b04b5","#ffffff","#ffffff","#7b04b5","#7b04b5","#7b04b5","#7b04b5","#7b04b5","#7b04b5","#ffffff","#ffffff","#7b00b5","#7b04b5","#7b04b5","#7b04b5","#313129","#313131","#ffffff","#ffffff","#313131","#313131","#293129","#313131"]
+  ]
+}

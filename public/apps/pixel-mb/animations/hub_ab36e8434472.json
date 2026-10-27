@@ -1,0 +1,11 @@
+{
+  "name": "beach",
+  "source": "https://awtrix.de/icons/beach",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#7bc6ff","#7bc6ff","#7bc6ff","#7bc6ff","#7bc6ff","#7bc6ff","#7bc6ff","#fffb6b","#7bc6ff","#7bc6ff","#7bc6ff","#7bc6ff","#7bc6ff","#7bc6ff","#7bc6ff","#7bc6ff","#3a51ff","#b5e7ff","#7ba6ff","#7ba6ff","#3a51ff","#3151ff","#3a51ff","#3a51ff","#3a51ff","#3a51ff","#b5e7ff","#b5e7ff","#7ba6ff","#7ba6ff","#7ba6ff","#3a4dff","#7ba6ff","#7ba6ff","#3a51ff","#3a51ff","#b5e7ff","#b5e7ff","#b5e7ff","#7ba6ff","#b5e7ff","#b5e7ff","#7ba6ff","#7ba6ff","#7ba6ff","#7ba6ff","#3a51ff","#b5e7ff","#ffebb5","#ffebb5","#b5e7ff","#b5e7ff","#b5e7ff","#b5e7ff","#7ba6ff","#3a51ff","#ffebb5","#ffebb5","#ffebb5","#ffebb5","#ffebb5","#ffebb5","#b5e7ff","#7ba6ff"]
+  ]
+}

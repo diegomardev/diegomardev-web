@@ -1,0 +1,11 @@
+{
+  "name": "olympic",
+  "source": "https://awtrix.de/icons/olympic",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#0069b5","#0069b5","#191808","#191810","#de2d19","#de2d19","#ffffff","#ffffff","#0069b5","#efaa08","#191810","#009242","#de2d19","#de2d19","#ffffff","#ffffff","#ffffff","#efaa08","#efaa08","#009242","#00923a","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

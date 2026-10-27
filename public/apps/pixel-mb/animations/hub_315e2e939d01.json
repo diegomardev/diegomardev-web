@@ -1,0 +1,11 @@
+{
+  "name": "woman",
+  "source": "https://awtrix.de/icons/woman-2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#bd925a","#bd925a","#bd925a","#bd925a","#000000","#000000","#000000","#bd925a","#bd925a","#bd925a","#bd925a","#f7eb8c","#bd925a","#000000","#000000","#bd925a","#bd925a","#bd925a","#f7eb8c","#f7eb8c","#bd925a","#bd925a","#000000","#bd925a","#bd925a","#000000","#f7eb8c","#000000","#f7eb8c","#bd925a","#000000","#bd925a","#f7eb8c","#f7eb8c","#f7eb8c","#f7eb8c","#f7eb8c","#000000","#000000","#bd925a","#f7eb8c","#f7eb8c","#f70010","#f7eb8c","#f7eb8c","#000000","#000000","#000000","#845921","#f7eb8c","#f7eb8c","#f7eb8c","#000000","#000000","#000000","#5aba8c","#5aba8c","#5aba8c","#5aba8c","#5aba8c","#5aba8c","#5aba8c"]
+  ]
+}

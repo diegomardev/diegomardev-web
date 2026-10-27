@@ -1,0 +1,11 @@
+{
+  "name": "letter_1",
+  "source": "https://awtrix.de/icons/letter-1",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#e6b24a","#e6b24a","#e6b24a","#e6b24a","#e6b24a","#e6b24a","#e6b24a","#e6b24a","#e6b24a","#f7f3f7","#f7f3f7","#f7f3f7","#f7f3f7","#f7f3f7","#f7f3f7","#e6b24a","#e6b24a","#ffce63","#f7f3f7","#f7f3f7","#f7f3f7","#f7f3f7","#ffce63","#e6b24a","#e6b24a","#e6b24a","#ffce63","#ffce63","#ffce63","#ffce63","#e6b24a","#e6b24a","#e6b24a","#f7f3f7","#f7f3f7","#e6b24a","#e6b24a","#f7f3f7","#f7f3f7","#e6b24a","#e6b24a","#f7f3f7","#f7f3f7","#f7f3f7","#f7f3f7","#f7f3f7","#f7f3f7","#e6b24a","#e6b24a","#f7f3f7","#f7f3f7","#f7f3f7","#f7f3f7","#f7f3f7","#f7f3f7","#e6b24a","#e6b24a","#e6b24a","#e6b24a","#e6b24a","#e6b24a","#e6b24a","#e6b24a","#e6b24a"]
+  ]
+}

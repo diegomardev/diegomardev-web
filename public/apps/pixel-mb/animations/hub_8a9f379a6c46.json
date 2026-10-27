@@ -1,0 +1,12 @@
+{
+  "name": "kuainew",
+  "source": "https://awtrix.de/icons/kuainew",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 100,
+  "frames": [
+    ["#ffffff","#ff0000","#ffffff","#ffffff","#ff0000","#ffffff","#ffffff","#ffffff","#ffffff","#ff0000","#ffffff","#ff0000","#ff0000","#ff0000","#ff0000","#ffffff","#ff0000","#ff0000","#ffffff","#ffffff","#ff0000","#ffffff","#ff0000","#ffffff","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ffffff","#ff0000","#ff0000","#ffffff","#ffffff","#ffffff","#ff0000","#ffffff","#ff0000","#ff0000","#ff0000","#ff0000","#ffffff","#ffffff","#ff0000","#ffffff","#ff0000","#ffffff","#ffffff","#ff0000","#ff0000","#ffffff","#ff0000","#ff0000","#ffffff","#ffffff","#ffffff","#ffffff","#ff0000"],
+    ["#00ffde","#ff0000","#00ffde","#00ffde","#ff0000","#00ffde","#00ffde","#00ffde","#00ffde","#ff0000","#00ffde","#ff0000","#ff0000","#ff0000","#ff0000","#00ffde","#ff0000","#ff0000","#00ffde","#00ffde","#ff0000","#00ffde","#ff0000","#00ffde","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#ff0000","#00ffde","#ff0000","#ff0000","#00ffde","#00ffde","#00ffde","#ff0000","#00ffde","#ff0000","#ff0000","#ff0000","#ff0000","#00ffde","#00ffde","#ff0000","#00ffde","#ff0000","#00ffde","#00ffde","#ff0000","#ff0000","#00ffde","#ff0000","#ff0000","#00ffde","#00ffde","#00ffde","#00ffde","#ff0000"]
+  ]
+}

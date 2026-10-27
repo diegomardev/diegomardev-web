@@ -1,0 +1,11 @@
+{
+  "name": "ccp",
+  "source": "https://awtrix.de/icons/ccp",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ef1821","#ef1821","#ffff00","#ffff00","#ffff00","#ffff00","#ef1821","#ef1821","#ef1821","#ef1821","#ef1821","#ffff00","#ef1821","#ef1821","#ffff00","#ef1821","#ef1821","#ef1821","#ffff00","#ffff00","#ffff00","#ef1821","#ffff00","#ffff00","#ef1821","#ffff00","#ffff00","#ffff00","#ef1c19","#ef1821","#ef1821","#ffff00","#ef1819","#ffff00","#ffff00","#ef1821","#ffff00","#ef1821","#ef1821","#ffff00","#ffff00","#ef1821","#ef1821","#ef1821","#ef1821","#ffff00","#f71821","#ffff00","#ef1c21","#ffff00","#ef1821","#ef1821","#ef1821","#ffff00","#ffff00","#ef1821","#ffff00","#ef1821","#ffff00","#ffff00","#ffff00","#ef1821","#f71821","#ffff00"]
+  ]
+}

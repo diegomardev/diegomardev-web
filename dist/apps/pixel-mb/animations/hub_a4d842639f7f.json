@@ -1,0 +1,11 @@
+{
+  "name": "payback",
+  "source": "https://awtrix.de/icons/payback",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#0045ad","#0045ad","#0045ad","#0045ad","#0045ad","#0045ad","#0045ad","#0045ad","#ffffff","#ffffff","#ffffff","#0045ad","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#0045ad","#ffffff","#0045ad","#ffffff","#0045ad","#0045ad","#ffffff","#ffffff","#ffffff","#ffffff","#0045ad","#ffffff","#0045ad","#0045ad","#ffffff","#0045ad","#0041ad","#0045ad","#0041ad","#ffffff","#ffffff","#ffffff","#ffffff","#0045ad","#0045ad","#0045ad","#0045ad","#ffffff","#0045ad","#0045ad","#0045ad","#0045ad","#0045ad","#0045ad","#0045ad","#ffffff","#0045ad","#0045ad","#0045ad","#0045ad","#0045ad","#0041ad","#0045ad","#0045ad","#0045ad","#0045ad","#0045ad"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "hylianshield",
+  "source": "https://awtrix.de/icons/hylianshield",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#d6d2d6","#d6d2d6","#d6d2d6","#d6d2d6","#000000","#000000","#000000","#d6d2d6","#1035bd","#bdbabd","#bdbabd","#1035bd","#d6d2d6","#000000","#d6d2d6","#1035bd","#bdbabd","#ffbe00","#ffbe00","#bdbabd","#1035bd","#d6d2d6","#d6d2d6","#1035bd","#d60000","#1035bd","#1035bd","#d60000","#1035bd","#d6d2d6","#d6d2d6","#1035bd","#1035bd","#d60000","#d60000","#1035bd","#1035bd","#d6d2d6","#bdbabd","#d6d2d6","#1035bd","#d60000","#d60000","#1035bd","#d6d2d6","#bdbabd","#000000","#bdbabd","#d6d2d6","#1035bd","#1035bd","#d6d2d6","#bdbabd","#000000","#000000","#000000","#000000","#d6d2d6","#d6d2d6","#000000","#000000","#000000"]
+  ]
+}

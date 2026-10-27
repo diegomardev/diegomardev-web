@@ -1,0 +1,11 @@
+{
+  "name": "dinotec",
+  "source": "https://awtrix.de/icons/dinotec",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffe300","#ffe300","#ffe300","#ffffff","#ffffff","#ffe300","#ffe300","#ffe300","#ffe300","#ffe300","#ffffff","#ffe300","#ffe300","#ffe300","#ffe300","#ffe300","#ffe300","#ffffff","#ffe300","#ffe300","#ffe300","#ffe300","#ffffff","#ffe300","#ffffff","#ffe300","#ffe300","#ffffff","#ffffff","#ffe300","#ffe300","#ffffff","#ffffff","#ffe300","#ffe300","#ffffff","#ffffff","#ffe300","#ffe300","#ffffff","#ffe300","#ffffff","#ffe300","#ffe300","#ffe300","#ffe300","#ffffff","#ffe300","#ffe300","#ffe300","#ffffff","#ffe300","#ffe300","#ffffff","#ffe300","#ffe300","#ffe300","#ffe300","#ffe300","#ffffff","#ffffff","#ffe300","#ffe300","#ffe300"]
+  ]
+}

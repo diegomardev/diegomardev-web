@@ -1,0 +1,11 @@
+{
+  "name": "boy",
+  "source": "https://awtrix.de/icons/boy",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#f7f3f7","#c5863a","#c5863a","#9c4d29","#9c5129","#9c5129","#9c5129","#efebef","#c5863a","#c5863a","#ad6942","#ad6942","#ad6942","#9c5129","#9c5129","#9c5129","#c5863a","#c5863a","#ad6942","#c5863a","#ad6942","#ad6942","#9c5129","#9c5129","#c58231","#ad6942","#ffd2bd","#ad6942","#ffdfce","#ad6942","#ffdfce","#9c5129","#c58631","#ffd2bd","#000000","#ffdfce","#ffdfce","#000000","#ffd2bd","#efa284","#ffdfce","#ffdfce","#ffdfce","#ffd2bd","#ffdfce","#ffdfce","#ffd2bd","#f7a284","#ffdfce","#ffd2bd","#ffb2b5","#ffdfce","#ffdfce","#ffb2b5","#ffd2bd","#efa284","#fffbff","#ffd2bd","#ffd2bd","#ffd2bd","#efa284","#efa284","#efa284","#fffbff"]
+  ]
+}

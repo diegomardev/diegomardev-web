@@ -1,0 +1,11 @@
+{
+  "name": "doge",
+  "source": "https://awtrix.de/icons/doge",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#f79608","#f79608","#f79608","#f79608","#f79608","#f79608","#f79600","#f79608","#f79608","#f79608","#ffffff","#ffffff","#ffffff","#f79608","#f79608","#f79608","#f79608","#f79608","#ffffff","#f79608","#f79608","#ffffff","#f79608","#f79608","#f79608","#ffffff","#ffffff","#ffffff","#f79608","#f79608","#ffffff","#f79608","#f79608","#ffffff","#ffffff","#ffffff","#f79608","#f79608","#ffffff","#f79608","#f79608","#f79608","#ffffff","#f79608","#f79608","#ffffff","#f79608","#f79608","#f79608","#f79608","#ffffff","#ffffff","#ffffff","#f79608","#f79608","#f79608","#f79608","#f79608","#f79608","#f79608","#f79608","#f79608","#f79600","#f79608"]
+  ]
+}

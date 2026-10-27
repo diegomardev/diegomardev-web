@@ -1,0 +1,11 @@
+{
+  "name": "train",
+  "source": "https://awtrix.de/icons/train",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#001884","#001884","#ffffff","#ffffff","#ffffff","#ffffff","#001884","#001884","#001884","#ffffff","#001884","#001884","#001884","#001884","#ffffff","#001884","#001884","#ffffff","#001884","#001884","#001884","#001884","#ffffff","#001884","#001884","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#001884","#001884","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#001884","#001884","#ffffff","#001884","#ffffff","#ffffff","#001884","#ffffff","#001884","#001884","#001884","#ffffff","#ffffff","#ffffff","#ffffff","#001884","#001884","#001884","#ffffff","#001884","#001884","#001884","#001884","#ffffff","#001884"]
+  ]
+}

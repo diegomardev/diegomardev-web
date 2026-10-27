@@ -1,0 +1,11 @@
+{
+  "name": "garageclosed",
+  "source": "https://awtrix.de/icons/garageclosed",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#4a4d4a","#4a4d4a","#4a4d4a","#4a4d4a","#4a4d4a","#4a4d4a","#ffffff","#ffffff","#4a4d4a","#4a4d4a","#4a4d4a","#4a4d4a","#4a4d4a","#4a4d4a","#ffffff","#ffffff","#848284","#848284","#848284","#848284","#848284","#848284","#ffffff","#ffffff","#848284","#848284","#848284","#848284","#848284","#848284","#ffffff","#ffffff","#9c9a9c","#9c9a9c","#9c9a9c","#9c9a9c","#9c9a9c","#9c9a9c","#ffffff","#ffffff","#b5b2b5","#b5b2b5","#b5b2b5","#b5b2b5","#b5b2b5","#b5b2b5","#ffffff"]
+  ]
+}

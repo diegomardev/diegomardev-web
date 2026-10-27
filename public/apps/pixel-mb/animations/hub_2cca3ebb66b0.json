@@ -1,0 +1,11 @@
+{
+  "name": "sonnig",
+  "source": "https://awtrix.de/icons/sonnig",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#ffffce","#ffffce","#000000","#000000","#000000","#000000","#ffce9c","#000000","#ffff4a","#ffff4a","#000000","#ffce9c","#000000","#000000","#000000","#ffff9c","#ffff4a","#ffff4a","#ffff9c","#000000","#000000","#ffffce","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffffce","#ffffce","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffffce","#000000","#000000","#ffff9c","#ffff4a","#ffff4a","#ffff9c","#000000","#000000","#000000","#ffce9c","#000000","#ffff4a","#ffff4a","#000000","#ffce9c","#000000","#000000","#000000","#000000","#ffffce","#ffffce","#000000","#000000","#000000"]
+  ]
+}

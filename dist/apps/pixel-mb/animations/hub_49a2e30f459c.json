@@ -1,0 +1,12 @@
+{
+  "name": "Xiao Mi",
+  "source": "https://awtrix.de/icons/xiao-mi",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 2000,
+  "frames": [
+    ["#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ffffff","#ffffff","#ffffff","#ffffff","#ff6900","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ff6900","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900"],
+    ["#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ffffff","#ffffff","#ffffff","#ffffff","#ff6900","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ff6900","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ffffff","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900","#ff6900"]
+  ]
+}

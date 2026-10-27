@@ -1,0 +1,11 @@
+{
+  "name": "volumio",
+  "source": "https://awtrix.de/icons/volumio",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#4a4542","#4a4942","#4a4942","#4a4942","#ffffff","#ffffff","#ffffff","#4a4542","#4abe84","#ffffff","#ffffff","#ffffff","#4a4942","#ffffff","#ffffff","#4a4942","#ffffff","#4ac284","#ffffff","#ffffff","#4a4942","#ffffff","#ffffff","#4a4942","#ffffff","#ffffff","#ffffff","#ffffff","#4a4942","#ffffff","#ffffff","#4a4942","#ffffff","#ffffff","#ffffff","#ffffff","#4a4942","#ffffff","#ffffff","#ffffff","#4a4942","#4a4542","#4a4942","#4a4942","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

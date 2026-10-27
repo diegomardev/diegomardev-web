@@ -1,0 +1,13 @@
+{
+  "name": "volras",
+  "source": "https://awtrix.de/icons/volras",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 100,
+  "frames": [
+    ["#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#000800","#fffbff","#000800","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#000800","#fffbff","#000800","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#000800","#fffbff","#000800","#318a19","#318a19","#318a19","#fffbff","#fffbff","#fffbff","#000800","#fffbff","#318a19","#fffbff","#318a19","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#318a19","#318a19","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#318a19","#fffbff","#318a19","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff"],
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#fffbff","#000000","#fffbff","#000000","#000000","#000000","#000000","#000000","#fffbff","#000000","#fffbff","#000000","#000000","#000000","#000000","#000000","#fffbff","#000000","#fffbff","#318a19","#318a19","#318a19","#000000","#000000","#000000","#fffbff","#000000","#318a19","#000000","#318a19","#000000","#000000","#000000","#000000","#000000","#318a19","#318a19","#000000","#000000","#000000","#000000","#000000","#000000","#318a19","#000000","#318a19","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"],
+    ["#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#318a19","#fffbff","#318a19","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#318a19","#fffbff","#318a19","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#318a19","#fffbff","#318a19","#000800","#000800","#000800","#fffbff","#fffbff","#fffbff","#318a19","#fffbff","#000800","#fffbff","#000800","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#000800","#000800","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#000800","#fffbff","#000800","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff"]
+  ]
+}

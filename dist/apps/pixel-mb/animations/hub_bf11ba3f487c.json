@@ -1,0 +1,11 @@
+{
+  "name": "wikipedia",
+  "source": "https://awtrix.de/icons/wikipedia",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#fffbff","#f7f7f7","#ffffff","#f7f7f7","#fffbff","#ffffff","#fffbff","#fffbff","#848684","#000000","#efefef","#212021","#424142","#ffffff","#4a4d4a","#8c8e8c","#f7f7f7","#292829","#fffbff","#b5b6b5","#7b7d7b","#ffffff","#9c9e9c","#f7f3f7","#ffffff","#4a4d4a","#9c9a9c","#bdbabd","#000000","#ffffff","#5a595a","#ffffff","#ffffff","#adaaad","#000c08","#737573","#423d3a","#9c9e9c","#9c9a9c","#ffffff","#ffffff","#ffffff","#000000","#6b6d6b","#7b7d7b","#081408","#f7f7f7","#ffffff","#ffffff","#ffffff","#292829","#ffffff","#ffffff","#000808","#ffffff","#ffffff","#ffffff","#ffffff","#f7f7f7","#ffffff","#ffffff","#f7f7f7","#ffffff","#ffffff"]
+  ]
+}

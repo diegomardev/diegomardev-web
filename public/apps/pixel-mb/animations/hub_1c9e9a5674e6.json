@@ -1,0 +1,11 @@
+{
+  "name": "wasserstand_voll",
+  "source": "https://awtrix.de/icons/wasserstand-voll",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#adaead","#adaead","#000000","#000000","#000000","#000000","#adaead","#adaead","#000000","#adaead","#42b6f7","#42b6f7","#42b6f7","#42b6f7","#adaead","#000000","#000000","#adaead","#42b6f7","#42b6f7","#42b6f7","#42b6f7","#adaead","#000000","#000000","#adaead","#42b6f7","#42b6f7","#42b6f7","#42b6f7","#adaead","#000000","#000000","#adaead","#42b6f7","#42b6f7","#42b6f7","#42b6f7","#adaead","#000000","#000000","#adaead","#42b6f7","#42b6f7","#42b6f7","#42b6f7","#adaead","#000000","#000000","#adaead","#3ab6f7","#42b6f7","#42b6f7","#3ab6f7","#adaead","#000000","#000000","#adaead","#adaead","#adaead","#adaead","#adaead","#adaead","#000000"]
+  ]
+}

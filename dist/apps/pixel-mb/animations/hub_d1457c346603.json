@@ -1,0 +1,11 @@
+{
+  "name": "calendarsmallv5",
+  "source": "https://awtrix.de/icons/calendarsmallv5",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#ffffff","#000000","#ffffff","#000000","#000000","#000000","#000000","#ffe300","#ffffff","#ffe300","#ffffff","#ffe300","#000000","#000000","#000000","#ffe300","#ffe300","#ffe300","#ffe300","#ffe300","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#ffffff","#ffe300","#ffffff","#ffe300","#ffffff","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

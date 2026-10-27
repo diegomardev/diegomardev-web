@@ -1,0 +1,11 @@
+{
+  "name": "simpsonhomer",
+  "source": "https://awtrix.de/icons/simpsonhomer",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#31a6ff","#ffff52","#ffff52","#ffff52","#ffff52","#ffff52","#ffff52","#31a6ff","#31a6ff","#ffff4a","#ffff52","#ffff4a","#ffff52","#ffff52","#ffff4a","#31a6ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffff52","#212019","#31a6ff","#212019","#ffffff","#212019","#ffffff","#ffffff","#ffff52","#ffff52","#211c19","#ffff52","#ffff52","#ffff52","#ffff52","#ffff52","#ffff52","#ffff52","#ffff52","#31a6ff","#ce8a3a","#ce863a","#ce8a3a","#ce8a3a","#ffff52","#ffff52","#31a6ff","#ce8a3a","#ce8a3a","#ce8a3a","#ce8a3a","#ce8a3a","#9c6110","#ffff52","#31a6ff","#31a6ff","#9c6119","#9c6119","#9c6119","#9c6119","#9c6119","#ffff52","#31a6ff"]
+  ]
+}

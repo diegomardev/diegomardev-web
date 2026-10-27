@@ -1,0 +1,11 @@
+{
+  "name": "unicorn",
+  "source": "https://awtrix.de/icons/unicorn",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#00ff4a","#000000","#000000","#d600ff","#000000","#000000","#00ff4a","#00ff4a","#00ff4a","#000000","#d600ff","#000000","#000000","#00ff4a","#00ff4a","#ce69ef","#ce69ef","#ce69ef","#000000","#000000","#00ff4a","#00ff4a","#ce69ef","#ce69ef","#ce69ef","#000000","#ce69ef","#000000","#00ff4a","#ce69ef","#ce69ef","#ce69ef","#ce69ef","#ce69ef","#ce69ef","#000000","#ce69ef","#ce69ef","#ce69ef","#ce69ef","#ce69ef","#ce69ef","#ce69ef","#ce69ef","#ce69ef","#ce69ef","#ce69ef","#ce69ef","#000000","#000000","#ce69ef","#ce69ef","#ce69ef","#ce69ef","#ce69ef","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

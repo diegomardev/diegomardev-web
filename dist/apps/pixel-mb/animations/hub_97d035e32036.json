@@ -1,0 +1,11 @@
+{
+  "name": "message1",
+  "source": "https://awtrix.de/icons/message1",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#31e73a","#31e73a","#31e73a","#31e73a","#31e73a","#31e73a","#31e73a","#31e73a","#31e73a","#31e73a","#ffffff","#ffffff","#ffffff","#ffffff","#31e73a","#31eb3a","#31e731","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#31e73a","#31e73a","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#31e73a","#31e73a","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#31e73a","#31e73a","#31e73a","#ffffff","#ffffff","#ffffff","#ffffff","#31e73a","#31e73a","#31e73a","#ffffff","#ffffff","#31e73a","#31e73a","#31e73a","#31e73a","#31e73a","#31e73a","#31e73a","#31e73a","#31e73a","#31e731","#31e73a","#31e73a","#31e73a"]
+  ]
+}

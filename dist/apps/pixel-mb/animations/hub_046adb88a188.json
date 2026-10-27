@@ -1,0 +1,11 @@
+{
+  "name": "mqtt",
+  "source": "https://awtrix.de/icons/mqtt",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#731473","#731473","#731473","#731473","#731073","#731473","#731473","#731073","#731473","#731473","#731473","#fffbff","#fffbff","#731473","#731073","#731473","#731473","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#731473","#731473","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#731473","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#731473","#731073","#fffbff","#fffbff","#fffbff","#fffbff","#fffbff","#731473","#731473","#731473","#731473","#731073","#731073","#731473","#731473","#731473","#731473","#731473","#731473","#731473","#731473","#731073","#731473","#731473","#731073"]
+  ]
+}

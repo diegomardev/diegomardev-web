@@ -1,0 +1,11 @@
+{
+  "name": "letter_2",
+  "source": "https://awtrix.de/icons/letter-2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffce63","#ffce63","#ffce63","#ffce63","#ffce63","#ffce63","#ffce63","#ffce63","#ffce63","#ffce63","#f7f3f7","#f7f3f7","#f7f3f7","#f7f3f7","#ffce63","#ffce63","#ffce63","#ffce63","#ffce63","#ffce63","#ffce63","#ffce63","#ffce63","#ffce63","#ffce63","#f7f3f7","#f7f3f7","#ffce63","#ffce63","#f7f3f7","#f7f3f7","#ffce63","#ffce63","#f7f3f7","#f7f3f7","#f7f3f7","#f7f3f7","#f7f3f7","#f7f3f7","#ffce63","#ffce63","#ffce63","#ffce63","#ffce63","#ffce63","#ffce63","#ffce63","#ffce63","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

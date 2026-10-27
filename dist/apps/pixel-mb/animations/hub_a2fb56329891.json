@@ -1,0 +1,11 @@
+{
+  "name": "weatherappGRO",
+  "source": "https://awtrix.de/icons/weatherappgro",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#fffb00","#fffb00","#000000","#000000","#000000","#000000","#000000","#fffb00","#fffb00","#fffb00","#fffb00","#000000","#000000","#ffffff","#ffffff","#fffb5a","#fffb00","#fffb00","#fffb00","#000000","#ffffff","#dedbde","#dedbde","#dedbde","#fffb5a","#fffb5a","#000000","#ffffff","#dedbde","#dedbde","#dedbde","#dedbde","#dedbde","#dedbde","#ffffff","#ffffff","#dedbde","#dedbde","#dedbde","#dedbde","#dedbde","#dedbde","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

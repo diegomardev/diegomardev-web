@@ -1,0 +1,11 @@
+{
+  "name": "Meerschweinchen2",
+  "source": "https://awtrix.de/icons/meerschweinchen2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#00f7ff","#00f7ff","#00f7ff","#00f7ff","#00f7ff","#00f7ff","#00f7ff","#00f7ff","#00f7ff","#948a8c","#948a8c","#948a8c","#948a8c","#948a8c","#948a8c","#948a8c","#00f7ff","#948a8c","#efe3e6","#000000","#948a8c","#efe3e6","#000000","#948a8c","#00f7ff","#948a8c","#000000","#000000","#948a8c","#000000","#000000","#948a8c","#00f7ff","#948a8c","#948a8c","#948a8c","#948a8c","#948a8c","#948a8c","#948a8c","#00f7ff","#948a8c","#948a8c","#948a8c","#7b1010","#948a8c","#948a8c","#948a8c","#00f7ff","#948a8c","#948a8c","#948a8c","#948a8c","#948a8c","#948a8c","#948a8c","#21c200","#21c200","#21c200","#21c200","#21c200","#21c200","#21c200","#21c200"]
+  ]
+}

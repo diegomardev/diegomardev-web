@@ -1,0 +1,11 @@
+{
+  "name": "dsotm",
+  "source": "https://awtrix.de/icons/dsotm",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#ffffff","#ff0000","#ff0000","#ff0000","#000000","#000000","#000000","#000000","#ffffff","#ff5900","#ff5900","#ff5900","#ff0000","#ff0000","#000000","#000000","#000000","#ffffff","#fff700","#fff700","#ff5900","#ff5900","#ff0000","#000000","#000000","#ffffff","#19ff00","#19ff00","#fff700","#fff700","#ff5900","#000000","#000000","#000000","#ffffff","#008eff","#19ff00","#19ff00","#fff700","#000000","#000000","#000000","#ffffff","#ff00e6","#008eff","#008eff","#19ff00","#000000","#000000","#000000","#000000","#ffffff","#ff00e6","#ff00e6","#008eff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#ff00e6"]
+  ]
+}

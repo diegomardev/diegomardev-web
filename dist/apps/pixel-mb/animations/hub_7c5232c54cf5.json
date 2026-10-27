@@ -1,0 +1,11 @@
+{
+  "name": "kirby",
+  "source": "https://awtrix.de/icons/kirby",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffbad6","#ffbad6","#ffbad6","#ffbad6","#000000","#000000","#000000","#ffbad6","#ffbad6","#ffbad6","#ffbad6","#ffbad6","#ffbad6","#000000","#000000","#f78eb5","#ffbad6","#000000","#ffbad6","#000000","#ffbad6","#000000","#f78eb5","#ffbad6","#ffbad6","#19207b","#ffbad6","#19207b","#ffbad6","#f78eb5","#f78eb5","#f78eb5","#f76194","#ffbad6","#ffbad6","#ffbad6","#f76194","#f78eb5","#000000","#c5185a","#f78eb5","#f78eb5","#ffbad6","#ffbad6","#c5145a","#000000","#000000","#c51452","#c5185a","#c5185a","#000000","#ad1452","#c5185a","#000000"]
+  ]
+}

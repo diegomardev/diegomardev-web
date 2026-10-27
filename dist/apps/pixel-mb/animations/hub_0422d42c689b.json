@@ -1,0 +1,11 @@
+{
+  "name": "birthday",
+  "source": "https://awtrix.de/icons/birthday",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ff55ff","#000000","#52aaff","#000000","#52ffad","#000000","#adff52","#000000","#000000","#ad55ff","#000000","#52ffff","#000000","#52ff52","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffaa52","#000000","#ffaa52","#000000","#ffaa52","#000000","#000000","#000000","#ffffff","#000000","#ffffff","#000000","#ffffff","#000000","#000000","#ff00ff","#ff00ff","#ff00ff","#ff00ff","#ff00ff","#ff00ff","#ff00ff","#000000","#ff55ff","#ff55ff","#ff55ff","#ff55ff","#ff55ff","#ff55ff","#ff55ff","#000000","#ff55ff","#ff55ff","#ff55ff","#ff55ff","#ff55ff","#ff55ff","#ff55ff","#000000"]
+  ]
+}

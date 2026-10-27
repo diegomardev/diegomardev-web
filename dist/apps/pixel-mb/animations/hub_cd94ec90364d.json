@@ -1,0 +1,11 @@
+{
+  "name": "timer",
+  "source": "https://awtrix.de/icons/timer",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#cecece","#cecece","#cecece","#cecece","#cecece","#000000","#000000","#000000","#cecece","#ceffff","#ceffff","#ceffff","#cecece","#000000","#000000","#000000","#cecece","#ceffff","#ceffff","#ceffff","#cecece","#000000","#000000","#000000","#000000","#cecece","#ceffff","#cecece","#000000","#000000","#000000","#000000","#000000","#000000","#cecece","#000000","#000000","#000000","#000000","#000000","#000000","#cecece","#000000","#cecece","#000000","#000000","#000000","#000000","#cecece","#000000","#000000","#000000","#ceced6","#000000","#000000","#000000","#cecece","#cecece","#cecece","#cecece","#cecece","#000000","#000000"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "powerpoint",
+  "source": "https://awtrix.de/icons/powerpoint",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ff4500","#ff4500","#ff4500","#ff4500","#ff4500","#ff4500","#ff4500","#000000","#ff4500","#ffffff","#ffffff","#ffffff","#ffffff","#ff4500","#ff4500","#000000","#ff4500","#ffffff","#ff4500","#ff4500","#ff4500","#ffffff","#ff4500","#000000","#ff4100","#ffffff","#ff4100","#ff4100","#ff4500","#ffffff","#ff4100","#000000","#ff4500","#ffffff","#ffffff","#ffffff","#ffffff","#ff4500","#ff4100","#000000","#ff4500","#ffffff","#ff4500","#ff4500","#ff4100","#ff4500","#ff4500","#000000","#ff4500","#ffffff","#ff4500","#ff4500","#ff4500","#ff4500","#ff4500","#000000","#ff4500","#ff4500","#ff4500","#ff4500","#ff4500","#ff4500","#ff4500","#000000"]
+  ]
+}

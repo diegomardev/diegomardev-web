@@ -1,0 +1,12 @@
+{
+  "name": "twitch2",
+  "source": "https://awtrix.de/icons/twitch2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 1000,
+  "frames": [
+    ["#000000","#9400ff","#9400ff","#9400ff","#9400ff","#9400ff","#9400ff","#9400ff","#9400ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#9400ff","#9400ff","#ffffff","#ffffff","#9400ff","#ffffff","#9400ff","#ffffff","#9400ff","#9400ff","#ffffff","#ffffff","#9400ff","#ffffff","#9400ff","#ffffff","#9400ff","#9400ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#9400ff","#9400ff","#9400ff","#ffffff","#ffffff","#9400ff","#9400ff","#9400ff","#9400ff","#000000","#9400ff","#ffffff","#9400ff","#000000","#000000","#000000","#000000","#000000","#9400ff","#9400ff","#000000","#000000","#000000","#000000","#000000"],
+    ["#000000","#9400ff","#9400ff","#9400ff","#9400ff","#9400ff","#9400ff","#9400ff","#9400ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#9400ff","#9400ff","#ffffff","#9400ff","#ffffff","#9400ff","#ffffff","#ffffff","#9400ff","#9400ff","#ffffff","#9400ff","#ffffff","#9400ff","#ffffff","#ffffff","#9400ff","#9400ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#9400ff","#9400ff","#9400ff","#ffffff","#ffffff","#9400ff","#9400ff","#9400ff","#9400ff","#000000","#9400ff","#ffffff","#9400ff","#000000","#000000","#000000","#000000","#000000","#9400ff","#9400ff","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

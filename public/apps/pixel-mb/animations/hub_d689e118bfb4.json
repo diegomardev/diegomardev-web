@@ -1,0 +1,11 @@
+{
+  "name": "soccerball",
+  "source": "https://awtrix.de/icons/soccerball",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#f7f7f7","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#efefef","#ffffff","#000000","#000000","#ffffff","#ffffff","#000000","#dedfde","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#000000","#000000","#ffffff","#ffffff","#000000","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#9c9a9c","#000000","#000000","#ffffff","#ffffff","#000000","#000000","#efefef","#000000","#949294","#000000","#ffffff","#ffffff","#000000","#bdbebd","#000000","#000000","#000000","#848284","#8c8e8c","#adaead","#b5b6b5","#000000","#000000"]
+  ]
+}

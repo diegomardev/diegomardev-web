@@ -1,0 +1,11 @@
+{
+  "name": "pizza",
+  "source": "https://awtrix.de/icons/pizza",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#ffce6b","#ffce6b","#ffce6b","#ffce6b","#000000","#000000","#000000","#ffce6b","#fffbbd","#216910","#fffbbd","#ffffbd","#ffce6b","#000000","#ffce6b","#fffbbd","#e63100","#e63500","#fffbbd","#ef3108","#fffbbd","#ffce6b","#ffce6b","#fffbc5","#e63108","#216910","#fffbbd","#fffbbd","#ef3108","#ffce6b","#ffce6b","#216910","#fffbbd","#fffbbd","#ffffbd","#216910","#fffbbd","#ffce6b","#ffce6b","#fffbbd","#196510","#fffbbd","#fffbbd","#e63508","#fffbbd","#ffce6b","#000000","#ffce6b","#fffbbd","#fffbc5","#e63108","#fffbbd","#ffce6b","#000000","#000000","#000000","#ffce6b","#ffce6b","#ffce6b","#ffce6b","#000000","#000000"]
+  ]
+}

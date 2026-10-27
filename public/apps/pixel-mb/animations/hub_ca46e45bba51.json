@@ -1,0 +1,13 @@
+{
+  "name": "journey1",
+  "source": "https://awtrix.de/icons/journey1",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 500,
+  "frames": [
+    ["#9cc29c","#b5dfbd","#b5dfb5","#bddfbd","#c5e3c5","#bddbbd","#b5dfbd","#b5dfbd","#cee3ce","#add2ad","#add7b5","#d6efde","#c5e3c5","#bde3bd","#c5e3bd","#c5e3c5","#b5dfbd","#b5dbbd","#eff7f7","#bddbc5","#b5dbbd","#bde7c5","#b58e7b","#bdbe9c","#def7e6","#eff7ef","#d6b6ad","#ceceb5","#b58a63","#ceefd6","#ad6552","#c5caad","#f7ffff","#fffff7","#debeb5","#f7ffff","#bd928c","#944d4a","#a50808","#e6cece","#ffffff","#f7f7f7","#fffbff","#ffffff","#c5966b","#9c1810","#943108","#e6cace","#f7f7ef","#f7efef","#fff7f7","#fff7f7","#fff3ef","#ffebe6","#f7cabd","#ffc6b5","#e6d2ce","#f7e7e6","#ffdfd6","#ffd7c5","#ffcab5","#ffbea5","#ffb69c","#ffae94"],
+    ["#a5ca9c","#a5ca9c","#a5ca9c","#a5ca9c","#a5ca9c","#a5ca9c","#a5caa5","#a5ce9c","#d69e84","#bdd7b5","#bdd7b5","#dee7de","#c5d7bd","#c5d7b5","#c5dbbd","#c5d7bd","#ce866b","#ce866b","#d6967b","#ceaa9c","#a55531","#e6ebe6","#e6ebe6","#efefe6","#ce826b","#ce866b","#ce866b","#6b1c00","#bd4d21","#deba9c","#d69a84","#945529","#ce826b","#ce826b","#ce826b","#ce826b","#a53910","#843510","#ded7ce","#d6a28c","#ce7d63","#d68673","#ce866b","#d68673","#9c3108","#8c2408","#debead","#d6a28c","#ce7d63","#d68a73","#ce866b","#ce866b","#de7942","#bd5d19","#d6a294","#ce866b","#ce826b","#ce866b","#ce866b","#ce826b","#ce826b","#ce866b","#d68e73","#ce866b"],
+    ["#94be8c","#9cc69c","#8cbe8c","#8cbe8c","#8cbe8c","#9cc294","#94be8c","#94be8c","#9cc694","#9cc294","#9cc294","#94ba8c","#94ba84","#9cc68c","#b59e63","#adb684","#b5c69c","#b5cea5","#adcea5","#9ca67b","#9ca67b","#adcea5","#b5cea5","#b5cea5","#d6ae94","#cebea5","#ceceb5","#cedbc5","#cedfc5","#cedfc5","#cedfc5","#ceceb5","#ce967b","#ce9e84","#d6a28c","#deb6a5","#e6cec5","#e6cabd","#d6b6a5","#d6a694","#d69e84","#b56d3a","#ce7d3a","#ce9273","#d6a28c","#d69a84","#ce8e73","#ce8e73","#ce8e73","#c58263","#ce8a63","#ce8e73","#ce8e73","#ce8e73","#ce8e73","#ce8e73","#ce8e73","#ce8a6b","#ce8a73","#ce8a73","#ce8a73","#ce8a73","#ce8a73","#ce8a73"]
+  ]
+}

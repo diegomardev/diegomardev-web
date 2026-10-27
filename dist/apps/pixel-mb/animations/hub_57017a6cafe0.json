@@ -1,0 +1,11 @@
+{
+  "name": "gd icon",
+  "source": "https://awtrix.de/icons/gd-icon",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#00ffbd","#00ffbd","#fff700","#fff700","#00ffbd","#00ffbd","#fff700","#fff700","#00ffbd","#00ffbd","#fff700","#fff700","#00ffbd","#00ffbd","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#00ffbd","#00ffbd","#00ffbd","#00ffbd","#00ffbd","#00ffbd","#fff700","#fff700","#00ffbd","#00ffbd","#00ffbd","#00ffbd","#00ffbd","#00ffbd","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700","#fff700"]
+  ]
+}

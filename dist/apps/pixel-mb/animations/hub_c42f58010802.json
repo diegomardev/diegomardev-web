@@ -1,0 +1,11 @@
+{
+  "name": "chile",
+  "source": "https://awtrix.de/icons/chile",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#0814b5","#0814b5","#0010b5","#0814b5","#ffffff","#ffffff","#ffffff","#ffffff","#0814b5","#ffffff","#ffffff","#0814b5","#ffffff","#ffffff","#ffffff","#ffffff","#0814b5","#ffffff","#ffffff","#0814b5","#ffffff","#ffffff","#ffffff","#ffffff","#0814b5","#0814b5","#0814b5","#0814b5","#ffffff","#ffffff","#ffffff","#ffffff","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808","#ff0808"]
+  ]
+}

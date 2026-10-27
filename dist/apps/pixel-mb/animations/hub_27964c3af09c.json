@@ -1,0 +1,11 @@
+{
+  "name": "swiggyicon",
+  "source": "https://awtrix.de/icons/swiggyicon",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ff8e31","#ff8e31","#d66931","#ffffff","#ffffff","#d66931","#ff8e31","#ff8e31","#ff8a29","#de6931","#ffffff","#ffffff","#d66931","#ffffff","#d66931","#ff8a29","#d66931","#d66931","#ffffff","#ffffff","#d66931","#d66931","#d66931","#d66931","#d66931","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ff8229","#d66931","#d66931","#d66931","#d66931","#ffffff","#ffffff","#d66931","#ff8229","#ff8229","#ffffff","#ffffff","#d66931","#ffffff","#ffffff","#ff8229","#ff7d29","#ff7d29","#d66931","#ffffff","#ffffff","#ffffff","#ff7d29","#ff7d29","#ff7929","#ff7929","#d66931","#d66931","#ffffff","#d66931","#ff7929","#ff7921"]
+  ]
+}

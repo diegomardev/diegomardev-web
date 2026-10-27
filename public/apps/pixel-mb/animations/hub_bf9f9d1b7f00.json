@@ -1,0 +1,11 @@
+{
+  "name": "pushover",
+  "source": "https://awtrix.de/icons/pushover",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#31a6f7","#31a6f7","#31a6f7","#31a6f7","#000000","#000000","#000000","#31a6f7","#31a6f7","#ffffff","#ffffff","#ffffff","#31a6f7","#000000","#31a6f7","#31a6f7","#ffffff","#29a6f7","#ffffff","#31a6f7","#ffffff","#31a6f7","#31a6ff","#31a6f7","#29a6f7","#ffffff","#31a6f7","#31a6f7","#ffffff","#31a6f7","#31a6f7","#31a6f7","#31a6f7","#ffffff","#ffffff","#ffffff","#31a6f7","#31a6f7","#31a6f7","#31a6f7","#ffffff","#ffffff","#31a6ff","#31a6f7","#31a6f7","#31a6f7","#000000","#31a6f7","#ffffff","#31a6f7","#31a6f7","#31a6f7","#31a6f7","#000000","#000000","#000000","#31a6f7","#31a6f7","#31a6f7","#31a6f7","#000000","#000000"]
+  ]
+}

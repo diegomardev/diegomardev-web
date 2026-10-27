@@ -1,0 +1,11 @@
+{
+  "name": "battery_20_vert",
+  "source": "https://awtrix.de/icons/battery-20-vert",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 3,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#ff0000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"]
+  ]
+}

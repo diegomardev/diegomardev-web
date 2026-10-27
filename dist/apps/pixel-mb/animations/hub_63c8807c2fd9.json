@@ -1,0 +1,11 @@
+{
+  "name": "netherlands",
+  "source": "https://awtrix.de/icons/netherlands",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ef0000","#ef0000","#ef0000","#ef0000","#ef0000","#ef0000","#ef0000","#ef0000","#ef0000","#ef0000","#ef0000","#ef0000","#ef0000","#ef0000","#ef0000","#ef0000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#192def","#192def","#192def","#192def","#192def","#192def","#192def","#192def","#192def","#192def","#192def","#192def","#192def","#192def","#192def","#192def","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

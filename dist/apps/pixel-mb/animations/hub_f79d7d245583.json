@@ -1,0 +1,11 @@
+{
+  "name": "sand",
+  "source": "https://awtrix.de/icons/sand",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#00aeef","#00aaf7","#00a6f7","#00a2f7","#000000","#000000","#000000","#00aeef","#00aeff","#00a6f7","#00a2f7","#009ef7","#009af7","#000000","#00aeef","#00aaf7","#ffffff","#ffffff","#ffffff","#ffffff","#0096f7","#0096ff","#00aaf7","#00a6f7","#ffffff","#ffffff","#009af7","#0096ff","#0092ff","#0092ff","#00a6f7","#00a2f7","#009ef7","#009af7","#ffffff","#ffffff","#008eff","#008eff","#00a2f7","#009ef7","#ffffff","#ffffff","#ffffff","#ffffff","#008aff","#0086ff","#000000","#009af7","#0096ff","#0092ff","#008eff","#008aff","#0086ff","#000000","#000000","#000000","#0092ff","#008eff","#008aff","#0086ff","#000000","#000000"]
+  ]
+}

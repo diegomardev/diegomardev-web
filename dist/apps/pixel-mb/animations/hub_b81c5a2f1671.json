@@ -1,0 +1,12 @@
+{
+  "name": "fernseh_tv",
+  "source": "https://awtrix.de/icons/fernseh-tv",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 100,
+  "frames": [
+    ["#000000","#000000","#ffffff","#000000","#ffffff","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#000000","#000000","#000000","#000000","#000000","#ffffff","#000000","#ffffff","#000000","#000000","#000000","#000000","#000000","#ffffff","#000000","#ffffff","#000000","#000000","#000000","#000000","#000000","#ffffff","#000000","#ffffff","#000000","#000000","#000000","#000000","#000000","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"],
+    ["#000000","#000000","#ffffff","#000000","#ffffff","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#9cb2ff","#000000","#9cb2ff","#000000","#9cb2ff","#ffffff","#000000","#ffffff","#000000","#9cb2ff","#000000","#9cb2ff","#000000","#ffffff","#000000","#ffffff","#000000","#9cb2ff","#000000","#9cb2ff","#000000","#ffffff","#000000","#ffffff","#9cb2ff","#000000","#9cb2ff","#000000","#9cb2ff","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"]
+  ]
+}

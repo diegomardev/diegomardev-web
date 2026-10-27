@@ -1,0 +1,11 @@
+{
+  "name": "Mini Snowy",
+  "source": "https://awtrix.de/icons/mini-snowy",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 3,
+  "height": 5,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#425563","#425563","#425563","#425563","#425563","#425563","#000000","#ffffff","#000000","#ffffff","#000000","#ffffff"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "kal",
+  "source": "https://awtrix.de/icons/kal",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#9c9a9c","#9c9a9c","#ffffff","#9c9a9c","#9c9a9c","#ffffff","#9c9a9c","#9c9a9c","#3161ce","#3161ce","#3161ce","#3161ce","#3161ce","#3161ce","#3161ce","#3161ce","#3161ce","#ffffff","#ffffff","#ffffff","#3161ce","#ffffff","#ffffff","#3161ce","#3161ce","#3161ce","#3161ce","#ffffff","#3161ce","#3161ce","#ffffff","#3161ce","#2961ce","#2961ce","#ffffff","#ffffff","#3161d6","#3161ce","#ffffff","#3161ce","#4286ef","#4286ef","#4286ef","#ffffff","#4286ef","#3a86ef","#ffffff","#4286ef","#4286ef","#ffffff","#ffffff","#ffffff","#3a86ef","#3a86ef","#ffffff","#4286ef","#4286ef","#4286ef","#4286ef","#4286ef","#4286ef","#4286ef","#4286f7","#4286ef"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "mosque_ishaa",
+  "source": "https://awtrix.de/icons/mosque-ishaa",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#0010ad","#0010ad","#0010ad","#0010ad","#0010ad","#0010ad","#0010ad","#0010ad","#0010ad","#0010ad","#c5cec5","#0010ad","#0010ad","#0010ad","#0010ad","#0010ad","#0018bd","#0018bd","#c5cec5","#0018bd","#0018bd","#0018bd","#0018bd","#0018bd","#0018bd","#c5cec5","#c5cec5","#0018bd","#0018bd","#0018bd","#0018bd","#0018bd","#0810bd","#c5cec5","#c5cec5","#0810bd","#0810bd","#ffffff","#0810bd","#0810bd","#0810bd","#c5cec5","#c5cec5","#0810bd","#ffffff","#ffffff","#ffffff","#0810bd","#0018bd","#c5cec5","#c5cec5","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#0018bd","#c5cec5","#c5cec5","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

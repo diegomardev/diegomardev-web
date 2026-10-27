@@ -1,0 +1,11 @@
+{
+  "name": "xbox",
+  "source": "https://awtrix.de/icons/xbox",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#efe7ef","#ceced6","#cecece","#efe7ef","#000000","#000000","#000000","#3aff00","#3aff00","#ced2ce","#ced2ce","#3aff00","#3aff00","#000000","#efebef","#cecace","#3aff00","#3aff00","#3aff00","#3aff00","#b5b2b5","#efebef","#cecece","#d6d2d6","#ceced6","#3aff00","#3aff00","#d6dbd6","#9c9a9c","#cecece","#d6d2d6","#a59ea5","#3aff00","#c5e7c5","#bdebc5","#3aff00","#949294","#cecece","#efebef","#3aff00","#3aff00","#bdbebd","#b5b6b5","#3aff00","#3aff00","#efebef","#000000","#3aff00","#b5beb5","#adaaad","#adaaad","#b5beb5","#3aff00","#000000","#000000","#000000","#efebef","#d6d2d6","#d6d2d6","#efebef","#000000","#000000"]
+  ]
+}

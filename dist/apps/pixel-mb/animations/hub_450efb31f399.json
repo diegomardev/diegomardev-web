@@ -1,0 +1,11 @@
+{
+  "name": "neteasemusic",
+  "source": "https://awtrix.de/icons/neteasemusic",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#de3531","#de3529","#ffffff","#ffffff","#ffffff","#de3531","#de3131","#de3531","#de3529","#de3129","#ffffff","#de3531","#ffffff","#de3531","#de3531","#de3531","#ffffff","#de3531","#ffffff","#de3531","#de3531","#de3531","#de3129","#de3131","#ffffff","#de3531","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#de3531","#ffffff","#de3531","#ffffff","#de3531","#ffffff","#de3531","#ffffff","#de3531","#ffffff","#de3131","#ffffff","#ffffff","#ffffff","#de3131","#ffffff","#de3531","#ffffff","#de3131","#de3529","#de3531","#de3531","#de3131","#ffffff","#de3531","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#de3131"]
+  ]
+}

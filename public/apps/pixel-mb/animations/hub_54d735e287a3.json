@@ -1,0 +1,11 @@
+{
+  "name": "bewi",
+  "source": "https://awtrix.de/icons/bewi",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#319ace","#319ace","#319ace","#319ace","#319ace","#319ace","#319ace","#319ace","#319ace","#319ace","#ffffff","#319ace","#319ace","#319ad6","#319ace","#319ace","#319ace","#319ace","#ffffff","#319ace","#319ace","#319ad6","#319ace","#319ace","#319ad6","#319ace","#ffffff","#ffffff","#ffffff","#ffffff","#319ad6","#319ace","#319ace","#319ace","#ffffff","#319ace","#319ace","#ffffff","#319ace","#319ace","#319ace","#319ace","#ffffff","#319ace","#319ace","#ffffff","#319ace","#319ace","#319ace","#319ace","#ffffff","#ffffff","#ffffff","#ffffff","#319ace","#319ace","#319ace","#319ace","#319ace","#319ace","#319ace","#319ace","#319ace","#319ace"]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "scepticdoge",
+  "source": "https://awtrix.de/icons/scepticdoge",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 1350,
+  "frames": [
+    ["#000000","#ff8a08","#7b4d19","#212829","#212429","#ff8a08","#7b4d19","#212421","#000000","#ff8a08","#ff8a08","#ff8a08","#ff8a08","#ff8a08","#7b4d19","#212021","#ff8a08","#ff8a08","#ff8a08","#ff8a08","#ff8a08","#ff8a08","#ff8a08","#000000","#f7eb8c","#ffffff","#000000","#ff8a08","#ffffff","#000000","#ff8a08","#ff8a08","#f7eb8c","#f7eb8c","#ff8a08","#ff8a08","#ff8a08","#f7eb8c","#f7eb8c","#ff8a08","#f7eb8c","#f7eb8c","#000000","#000000","#f7eb8c","#efe78c","#f7eb8c","#f7eb8c","#f7eb8c","#f7eb8c","#313131","#313131","#f7eb8c","#f7eb8c","#f7eb8c","#f7eb8c","#000000","#f7eb8c","#f7eb8c","#f7eb8c","#f7eb8c","#f7eb8c","#f7eb8c","#f7eb8c"],
+    ["#000000","#ff8a08","#7b4d19","#212829","#212429","#ff8a08","#7b4d19","#212421","#000000","#ff8a08","#ff8a08","#ff8a08","#ff8a08","#ff8a08","#7b4d19","#212021","#ff8a08","#ff8a08","#ff8a08","#ff8a08","#ff8a08","#ff8a08","#ff8a08","#000000","#f7eb8c","#000000","#ffffff","#ff8a08","#000000","#ffffff","#ff8a08","#ff8a08","#f7eb8c","#f7eb8c","#ff8a08","#ff8a08","#ff8a08","#f7eb8c","#f7eb8c","#ff8a08","#f7eb8c","#f7eb8c","#000000","#000000","#f7eb8c","#efe78c","#f7eb8c","#f7eb8c","#f7eb8c","#f7eb8c","#313131","#313131","#f7eb8c","#f7eb8c","#f7eb8c","#f7eb8c","#000000","#f7eb8c","#f7eb8c","#f7eb8c","#f7eb8c","#f7eb8c","#f7eb8c","#f7eb8c"]
+  ]
+}

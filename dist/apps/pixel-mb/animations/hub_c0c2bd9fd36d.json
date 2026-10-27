@@ -1,0 +1,11 @@
+{
+  "name": "xrk",
+  "source": "https://awtrix.de/icons/xrk",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#e6db94","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#e6ffa5","#f7fba5","#fff3a5","#d6a68c","#ffffff","#ffffff","#ffffff","#ffffff","#e6ffad","#efdfad","#f7b2a5","#e66194","#943163","#ffffff","#ffffff","#ffffff","#bdebde","#decec5","#f7ebff","#f755a5","#ffffff","#ffffff","#ffffff","#ffffff","#a5dff7","#dec6e6","#f7cae6","#f76dad","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#e6aade","#ef96d6","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#94a2de","#efa2ce","#7361c5","#ffffff","#ffffff","#ffffff","#ffffff","#5261ad","#6b6db5","#94a2de","#7b7dbd","#ffffff","#ffffff","#ffffff"]
+  ]
+}

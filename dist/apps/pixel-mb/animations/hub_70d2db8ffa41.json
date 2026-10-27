@@ -1,0 +1,11 @@
+{
+  "name": "solar_2",
+  "source": "https://awtrix.de/icons/solar-2",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffff00","#ffff00","#ffff00","#000000","#ffff00","#000000","#000000","#000000","#ffff00","#ffff00","#ffff00","#000000","#000000","#000000","#000000","#000000","#ffff00","#ffff00","#f7eb8c","#000000","#ffff00","#000000","#000000","#cecece","#000000","#000000","#000000","#000000","#000000","#000000","#ceced6","#cecece","#ffff00","#000000","#ffff00","#000000","#000000","#cecece","#cecece","#cecece","#000000","#000000","#000000","#000000","#cecece","#cecece","#000000","#cecece","#000000","#000000","#000000","#000000","#000000","#cecece","#d6cece","#cecece","#000000","#000000","#000000","#000000","#000000","#cecece","#cecece","#cecece"]
+  ]
+}

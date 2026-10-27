@@ -1,0 +1,11 @@
+{
+  "name": "fcunion",
+  "source": "https://awtrix.de/icons/fcunion",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#e60410","#ffffff","#e60410","#e60410","#e60410","#e60410","#ffffff","#ffffff","#e60410","#ffffff","#e60008","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#e60410","#ffffff","#e60410","#e60410","#ffffff","#e60408","#e60410","#ffffff","#e60010","#ffffff","#e60410","#ffffff","#e60008","#ffdf00","#ffdf00","#ffdf00","#e60410","#e60410","#e60008","#ffffff","#e60410","#ffdf00","#ffdf00","#ffdf00","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#e60410","#e60010","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

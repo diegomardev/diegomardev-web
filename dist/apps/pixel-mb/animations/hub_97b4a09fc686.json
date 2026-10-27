@@ -1,0 +1,11 @@
+{
+  "name": "rain_snow",
+  "source": "https://awtrix.de/icons/rain-snow",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#cecece","#ffffff","#000000","#000000","#ffffff","#ffffff","#000000","#cecece","#ffffff","#ffffff","#cecece","#cecece","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#cecece","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#0092ff","#000000","#000000","#ffffff","#000000","#000000","#0092ff","#ffffff","#000000","#000000","#0092ff","#000000","#000000","#ffffff","#000000","#000000","#000000","#ffffff","#000000","#000000","#0092ff","#000000","#000000"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Coinbase",
+  "source": "https://awtrix.de/icons/coinbase",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#5249ff","#5249ff","#5249ff","#4235ff","#4235ff","#4235ff","#000000","#5249ff","#5249ff","#5249ff","#ffffff","#ffffff","#4235ff","#4235ff","#4235ff","#5249ff","#5249ff","#ffffff","#3a35ff","#4235ff","#ffffff","#4235ff","#3124ff","#5249ff","#5249ff","#ffffff","#4235ff","#4235ff","#4235ff","#4235ff","#3124ff","#5249ff","#4235ff","#ffffff","#4235ff","#4235ff","#4235ff","#4235ff","#1000de","#5249ff","#3a35ff","#ffffff","#4235ff","#4235ff","#ffffff","#4235ff","#1004de","#5249ff","#4235ff","#4235ff","#ffffff","#ffffff","#4235ff","#3124ff","#1000de","#000000","#4235ff","#4235ff","#4235ff","#4235ff","#3124ff","#1004de","#000000"]
+  ]
+}

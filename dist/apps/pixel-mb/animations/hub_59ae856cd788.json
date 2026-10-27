@@ -1,0 +1,11 @@
+{
+  "name": "japan",
+  "source": "https://awtrix.de/icons/japan",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#bd0021","#bd0021","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#bd0021","#bd0021","#bd0021","#bd0021","#ffffff","#ffffff","#ffffff","#ffffff","#bd0021","#bd0021","#bd0021","#bd0021","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#bd0021","#bd0021","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

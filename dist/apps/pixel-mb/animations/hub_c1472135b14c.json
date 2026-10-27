@@ -1,0 +1,11 @@
+{
+  "name": "controller",
+  "source": "https://awtrix.de/icons/controller",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#9c9a9c","#ffffff","#ffffff","#ffffff","#ffffff","#ffff00","#ffffff","#9c9a9c","#9c9a9c","#9c9a9c","#000000","#000000","#849aff","#ffffff","#ff0000","#ffffff","#9c9a9c","#ffffff","#000000","#000000","#ffffff","#08ff00","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff"]
+  ]
+}

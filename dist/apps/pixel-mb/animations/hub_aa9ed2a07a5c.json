@@ -1,0 +1,11 @@
+{
+  "name": "1live",
+  "source": "https://awtrix.de/icons/1live",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ffffff","#ffffff","#ffffff","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ffffff","#ffffff","#ffffff","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ffffff","#ffffff","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ffffff","#ffffff","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ffffff","#ffffff","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ffffff","#ffffff","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce","#ff00ce"]
+  ]
+}

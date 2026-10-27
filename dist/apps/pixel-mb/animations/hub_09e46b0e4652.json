@@ -1,0 +1,11 @@
+{
+  "name": "pug",
+  "source": "https://awtrix.de/icons/pug",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#e6e7e6","#e6e7e6","#e6e7e6","#e6e7e6","#e6e7e6","#e6e7e6","#e6e7e6","#e6e7e6","#000000","#000000","#ffc28c","#ffc28c","#ffc28c","#000000","#000000","#e6e7e6","#000000","#ffc68c","#ffc28c","#ffc28c","#ffc28c","#ffc28c","#000000","#e6e7e6","#e6e7e6","#ffc28c","#000000","#ffc28c","#000000","#ffc28c","#e6e7ef","#e6e7e6","#e6e7e6","#ffc28c","#ffc68c","#000000","#ffc28c","#ffc28c","#e6e7e6","#e6e7e6","#e6e7e6","#e6e7e6","#000000","#f71010","#000000","#e6e7e6","#e6e7e6","#efe7e6","#e6e7e6","#e6e7e6","#e6e7e6","#e6e7e6","#e6e7e6","#e6e7e6","#e6e7e6","#e6e7e6","#efe7e6","#e6e7e6","#e6e7e6","#e6e7e6","#e6e7e6","#e6e7e6","#e6e7e6","#e6e7e6"]
+  ]
+}

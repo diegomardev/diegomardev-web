@@ -1,0 +1,11 @@
+{
+  "name": "santa-1",
+  "source": "https://awtrix.de/icons/santa-1",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#f71c00","#f71c00","#f71c00","#f71c00","#000000","#000000","#000000","#f71c00","#f71c00","#f71c00","#f71c00","#f71c00","#f71c00","#000000","#e60031","#f71c00","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#f71c00","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#efebef","#ff9e00","#000000","#ff9e00","#000000","#ff9e00","#ff9e00","#ffffff","#ffffff","#ff9e00","#efebef","#efebef","#efebef","#ff9e00","#000000","#000000","#000000","#efebef","#efebef","#de0029","#efebef","#efebef","#000000","#000000","#f71c00","#f71c00","#efebef","#efebef","#efebef","#f71c00","#f71c00"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "dwd",
+  "source": "https://awtrix.de/icons/dwd",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#314d9c","#314d9c","#31499c","#ffffff","#ffffff","#ffffff","#31499c","#314d9c","#314d9c","#314d9c","#ffffff","#314d9c","#314d9c","#314d9c","#ffffff","#314d9c","#314d9c","#ffffff","#31499c","#ffffff","#ffffff","#314d9c","#314d9c","#ffffff","#314d9c","#ffffff","#31499c","#ffffff","#31499c","#ffffff","#314d9c","#ffffff","#314d9c","#314d9c","#ffffff","#314d9c","#314d9c","#ffffff","#31499c","#ffffff","#ffffff","#314d9c","#31499c","#ffffff","#ffffff","#314d9c","#314d9c","#ffffff","#31499c","#ffffff","#314d9c","#314d9c","#314d9c","#314d9c","#ffffff","#31499c","#314d9c","#314d9c","#ffffff","#ffffff","#ffffff","#ffffff","#314d9c","#314d9c"]
+  ]
+}

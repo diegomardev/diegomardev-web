@@ -1,0 +1,11 @@
+{
+  "name": "chkck",
+  "source": "https://awtrix.de/icons/chkck",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#ffffff","#ffffff","#000000","#000000","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#fff300","#ffffff","#ffffff","#000000","#000000","#ffffff","#ffffff","#fff300","#fff300","#fff300","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#000000","#ffffff"]
+  ]
+}

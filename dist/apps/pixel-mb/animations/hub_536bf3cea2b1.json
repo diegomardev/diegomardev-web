@@ -1,0 +1,11 @@
+{
+  "name": "solar_cloud",
+  "source": "https://awtrix.de/icons/solar-cloud",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#848684","#848684","#ffffff","#cecece","#000000","#000000","#000000","#000000","#848684","#cecece","#ffffff","#cecece","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#cecece","#000000","#000000","#000000","#cecece","#ffffff","#ffffff","#cecece","#000000","#000000","#000000","#cecece","#cecece","#000000","#000000","#000000","#000000","#000000","#cecece","#cecece","#cecece","#000000","#000000","#000000","#000000","#cecece","#cecece","#000000","#cecece","#000000","#000000","#000000","#000000","#000000","#cecece","#cecece","#cecece","#000000","#000000","#000000","#000000","#000000","#cecece","#cecece","#ceced6"]
+  ]
+}

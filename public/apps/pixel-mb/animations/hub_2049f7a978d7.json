@@ -1,0 +1,11 @@
+{
+  "name": "windowlocked",
+  "source": "https://awtrix.de/icons/windowlocked",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#9ccece","#9ccece","#ffffff","#9ccece","#9ccece","#ffffff","#000000","#ffffff","#9ccece","#9ccece","#ffffff","#9ccece","#9ccece","#ffffff","#000000","#ffffff","#9ccece","#9ccece","#ffffff","#b5ceff","#9ccece","#ffffff","#000000","#ffffff","#b5ceff","#9ccece","#ffffff","#fff3f7","#9ccece","#ffffff","#000000","#ffffff","#b5ceff","#b5ceff","#4aca4a","#9ccece","#9ccece","#ffffff","#000000","#4aca4a","#b5ceff","#4aca4a","#ffffff","#9ccece","#9ccece","#ffffff","#000000","#ffffff","#4aca4a","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000"]
+  ]
+}

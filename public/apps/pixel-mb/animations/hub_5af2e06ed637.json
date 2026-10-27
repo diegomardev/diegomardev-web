@@ -1,0 +1,11 @@
+{
+  "name": "bat-stable-40",
+  "source": "https://awtrix.de/icons/bat-stable-40",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#000000","#000000","#000000","#ffffff","#000000","#000000","#000000","#ffffff","#000000","#000000","#000000","#ffffff","#000000","#000000","#000000","#ffffff","#000000","#000000","#000000","#ffffff","#000000","#000000","#000000","#ffffff","#ffef5a","#ffef5a","#ffef5a","#ffffff","#000000","#000000","#000000","#ffffff","#ffca29","#ffca29","#ffca29","#ffffff","#000000","#000000","#000000","#ffffff","#ffa621","#ffa621","#ffa621","#ffffff","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000"]
+  ]
+}

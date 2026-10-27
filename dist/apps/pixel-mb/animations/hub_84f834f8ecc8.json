@@ -1,0 +1,11 @@
+{
+  "name": "wechat_pay",
+  "source": "https://awtrix.de/icons/wechat-pay",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#19fb29","#19fb29","#10fb29","#19ff29","#000000","#000000","#000000","#19fb29","#19fb29","#19fb29","#19fb29","#19fb29","#ffffff","#000000","#19fb29","#19fb29","#10fb29","#19fb29","#19ff29","#ffffff","#ffffff","#19ff29","#19fb29","#ffffff","#ffffff","#19fb29","#ffffff","#ffffff","#19ff29","#19fb29","#19fb29","#19fb29","#ffffff","#ffffff","#ffffff","#19ff29","#19fb29","#19fb29","#000000","#19fb29","#19ff29","#ffffff","#19fb29","#19fb29","#19fb29","#000000","#000000","#19fb29","#10fb29","#19fb29","#19fb29","#19fb29","#000000","#000000","#19fb29","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

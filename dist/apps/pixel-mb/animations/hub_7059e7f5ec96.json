@@ -1,0 +1,11 @@
+{
+  "name": "sonne",
+  "source": "https://awtrix.de/icons/sonne",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffff4a","#000000","#000000","#ffff4a","#000000","#000000","#ffff4a","#000000","#000000","#ffff42","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#000000","#000000","#000000","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#000000","#000000","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#000000","#000000","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#000000","#000000","#000000","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#ffff4a","#000000","#000000","#ffff4a","#000000","#000000","#ffff4a","#000000","#000000","#ffff4a","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "israelflag",
+  "source": "https://awtrix.de/icons/israelflag",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#0008ff","#0008ff","#0008ff","#0008ff","#0008ff","#0008ff","#0008ff","#0008ff","#ffffff","#ffffff","#ffffff","#0008ff","#0008ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#0008ff","#ffffff","#ffffff","#0008ff","#ffffff","#ffffff","#ffffff","#ffffff","#0008ff","#ffffff","#ffffff","#0008ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#0008ff","#0008ff","#ffffff","#ffffff","#ffffff","#0008ff","#0008ff","#0008ff","#0008ff","#0008ff","#0008ff","#0008ff","#0008ff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"]
+  ]
+}

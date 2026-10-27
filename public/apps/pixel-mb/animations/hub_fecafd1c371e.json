@@ -1,0 +1,11 @@
+{
+  "name": "bb-body",
+  "source": "https://awtrix.de/icons/bb-body",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#efebef","#efebef","#000000","#000000","#efebef","#efebef","#000000","#efebef","#efebef","#efebef","#efebef","#efebef","#efebef","#efebef","#efebef","#efebef","#efebef","#efebef","#efebef","#efebef","#efebef","#efebef","#efebef","#000000","#efebef","#efebef","#efebef","#efebef","#efebef","#efebef","#000000","#000000","#efebef","#efebef","#efebef","#efebef","#efebef","#efebef","#000000","#000000","#efebef","#efebef","#efebef","#efebef","#efebef","#efebef","#000000","#000000","#000000","#efebef","#efebef","#efebef","#efebef","#000000","#000000","#000000","#000000","#000000","#7bbeff","#7bbeff","#000000","#000000","#000000"]
+  ]
+}

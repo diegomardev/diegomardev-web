@@ -1,0 +1,11 @@
+{
+  "name": "arcraiders",
+  "source": "https://awtrix.de/icons/arcraiders",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#00ffef","#00ffef","#00ff4a","#00ff4a","#fff700","#fff700","#ff0000","#ff0000","#00ffef","#00ffef","#00ff4a","#00ff4a","#fff700","#fff700","#ff0000","#ff0000","#00ffef","#00ffef","#00ff4a","#00ff4a","#fff700","#fff700","#ff0000","#ff0000","#00ffef","#00ffef","#00ff4a","#00ff4a","#fff700","#fff700","#ff0000","#ff0000","#00ffef","#00ffef","#00ff4a","#00ff4a","#fff700","#fff700","#ff0000","#ff0000","#00ffef","#00ffef","#00ff4a","#00ff4a","#fff700","#fff700","#ff0000","#ff0000","#00ffef","#00ffef","#00ff4a","#00ff4a","#fff700","#fff700","#ff0000","#ff0000","#00ffef","#00ffef","#00ff4a","#00ff4a","#fff700","#fff700","#ff0000","#ff0000"]
+  ]
+}

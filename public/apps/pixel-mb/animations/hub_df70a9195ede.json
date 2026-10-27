@@ -1,0 +1,11 @@
+{
+  "name": "temp-hum",
+  "source": "https://awtrix.de/icons/temp-hum",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#fffbff","#000000","#000000","#000000","#94b2f7","#000000","#000000","#fffbff","#fffbff","#fffbff","#000000","#94b2f7","#94b2f7","#000000","#000000","#fffbff","#000000","#fffbff","#000000","#94b2f7","#2971f7","#3a7df7","#000000","#ffffff","#ff0000","#ffffff","#2971f7","#2971f7","#2971f7","#085dff","#000000","#ffffff","#ff0000","#ffffff","#3a7df7","#3a7df7","#085dff","#94b2f7","#ffffff","#ff0000","#ff0000","#ff0000","#ffffff","#94b2f7","#94b2f7","#000000","#ffffff","#ff0000","#ff0000","#ff0000","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000"]
+  ]
+}

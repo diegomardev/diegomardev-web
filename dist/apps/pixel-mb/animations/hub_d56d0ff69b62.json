@@ -1,0 +1,11 @@
+{
+  "name": "england",
+  "source": "https://awtrix.de/icons/england",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#ffffff","#ce1429","#ce1429","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ce1429","#ce1429","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ce1429","#ce1429","#ffffff","#ffffff","#ffffff","#ce1429","#ce1429","#ce1429","#ce1429","#ce1429","#ce1429","#ce1429","#ce1429","#ce1429","#ce1429","#ce1429","#ce1429","#ce1429","#ce1429","#ce1429","#ce1429","#ffffff","#ffffff","#ffffff","#ce1429","#ce1429","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ce1429","#ce1429","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ce1429","#ce1429","#ffffff","#ffffff","#ffffff"]
+  ]
+}

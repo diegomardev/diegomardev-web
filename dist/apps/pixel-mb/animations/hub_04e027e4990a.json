@@ -1,0 +1,11 @@
+{
+  "name": "bus",
+  "source": "https://awtrix.de/icons/bus",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#f7696b","#f7696b","#f7696b","#f7696b","#f7696b","#f7696b","#000000","#000000","#f7696b","#f7696b","#f7696b","#f7696b","#f7696b","#f7696b","#000000","#000000","#b5d2ff","#b5d2ff","#b5d2ff","#b5d2ff","#b5d2ff","#b5d2ff","#000000","#000000","#b5d2ff","#b5d2ff","#b5d2ff","#b5d2ff","#b5d2ff","#b5d2ff","#000000","#000000","#f7696b","#f7696b","#f7696b","#f7696b","#f7696b","#f7696b","#000000","#000000","#f7696b","#ffffff","#f7696b","#f7696b","#ffffff","#f7696b","#000000","#000000","#f7696b","#f7696b","#f7696b","#f7696b","#f7696b","#f7696b","#000000","#000000","#adaead","#adaead","#000000","#000000","#adaead","#adaead","#000000"]
+  ]
+}

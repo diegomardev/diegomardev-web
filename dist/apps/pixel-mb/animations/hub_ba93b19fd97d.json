@@ -1,0 +1,12 @@
+{
+  "name": "HomeAssistant7x7",
+  "source": "https://awtrix.de/icons/homeassistant7x7",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 1000,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#00dfff","#000000","#000000","#000000","#000000","#000000","#000000","#00dfff","#00dfff","#00dfff","#000000","#000000","#000000","#000000","#00dfff","#00dfff","#ffffff","#00dfff","#00dfff","#000000","#000000","#00dfff","#00dfff","#00dfff","#cefbff","#00dfff","#00dfff","#00dfff","#000000","#00dfff","#00dfff","#00dfff","#cefbff","#00dfff","#ffffff","#00dfff","#000000","#00dfff","#ffffff","#00dfff","#cefbff","#cefbff","#00dfff","#00dfff","#000000","#00dfff","#00dfff","#cefbff","#cefbff","#00dfff","#00dfff","#00dfff","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"],
+    ["#000000","#000000","#000000","#000000","#ffffff","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#00dfff","#ffffff","#ffffff","#000000","#000000","#ffffff","#ffffff","#ffffff","#8cf3ff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#8cf3ff","#ffffff","#00dfff","#ffffff","#000000","#ffffff","#00dfff","#ffffff","#8cf3ff","#8cf3ff","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#8cf3ff","#8cf3ff","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000"]
+  ]
+}

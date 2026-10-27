@@ -1,0 +1,11 @@
+{
+  "name": "minecraft_face",
+  "source": "https://awtrix.de/icons/minecraft-face",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ceaa52","#42453a","#080c10","#deaa4a","#deb65a","#31353a","#101810","#cea652","#42453a","#8cebad","#42c26b","#100408","#312d29","#8cf3ad","#3ab663","#101810","#081010","#42c26b","#31a25a","#000000","#000000","#42ca73","#319652","#000800","#e6b65a","#191410","#000008","#ffce73","#ffdbbd","#000000","#191010","#efd2b5","#deb65a","#f7f3ff","#213d31","#f7dbbd","#f7dbbd","#193d3a","#f7f3f7","#efd2bd","#f7d2bd","#f7d2b5","#ffd7bd","#efd2bd","#f7d2b5","#f7d7bd","#f7d2b5","#f7d2b5","#f7d2b5","#f7d2b5","#f7d2b5","#efd2b5","#efd2b5","#f7d2b5","#f7d2b5","#f7d2b5","#f7d2b5","#f7d2b5","#f7d7bd","#b5926b","#b58e6b","#ffd7bd","#f7d2b5","#f7d2b5"]
+  ]
+}

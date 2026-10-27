@@ -1,0 +1,11 @@
+{
+  "name": "presearch",
+  "source": "https://awtrix.de/icons/presearch",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#0861de","#0861de","#0861de","#0861de","#0861de","#0861de","#0861de","#0861de","#0861de","#1061de","#ffffff","#ffffff","#ffffff","#0861de","#0861de","#1061de","#0861de","#0861de","#ffffff","#0861de","#0861de","#ffffff","#0861de","#0861de","#0861de","#0861de","#ffffff","#0861de","#0861de","#ffffff","#0861de","#0861de","#0861de","#0861de","#ffffff","#ffffff","#ffffff","#0861de","#0861de","#0861de","#0861de","#0861de","#ffffff","#0861de","#0861de","#0861de","#0861de","#0861de","#0861de","#0861de","#ffffff","#0861de","#ffffff","#ffffff","#ffffff","#0861de","#0861de","#0861de","#0861de","#0861de","#0861de","#0861de","#1061de","#0861de"]
+  ]
+}

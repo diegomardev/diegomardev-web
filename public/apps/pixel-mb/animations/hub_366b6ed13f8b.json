@@ -1,0 +1,11 @@
+{
+  "name": "qq_classic",
+  "source": "https://awtrix.de/icons/qq-classic",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#ffffff","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#000000","#080808","#a5a6a5","#9c9a9c","#000c08","#000000","#ffffff","#ffffff","#000000","#734d00","#9c7510","#9c7508","#734d00","#000000","#ffffff","#ff1829","#840808","#4a0008","#732808","#732808","#4a0008","#840808","#ff1829","#3a0408","#7b1819","#ef2029","#f7454a","#f75963","#f77173","#7b1819","#3a0408","#000000","#192019","#f7515a","#ffc6c5","#ffffff","#ffffff","#212021","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#000c08","#000000","#ffffff","#ffb219","#846931","#a5a29c","#a5a29c","#846931","#ffb200","#ffffff"]
+  ]
+}

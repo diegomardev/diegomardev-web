@@ -1,0 +1,11 @@
+{
+  "name": "fitbit",
+  "source": "https://awtrix.de/icons/fitbit",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#000000","#000000","#3afbde","#3afbde","#000000","#000000","#000000","#000000","#000000","#3afbde","#3afbde","#3afbde","#f7f7f7","#000000","#000000","#000000","#3afbde","#3afbde","#3afbde","#3afbde","#f7f7f7","#f7f7f7","#000000","#f7f7f7","#f7f7f7","#f7f7f7","#f7f7f7","#f7f7f7","#f7f7f7","#f7f7f7","#f7f7f7","#f7f7f7","#f7f7f7","#f7f7f7","#f7f7f7","#f7f7f7","#f7f7f7","#f7f7f7","#f7f7f7","#000000","#3afbde","#3afbde","#3afbde","#3afbde","#f7f7f7","#f7f7f7","#000000","#000000","#000000","#3afbde","#3afbde","#3afbde","#f7f7f7","#000000","#000000","#000000","#000000","#000000","#3afbde","#3afbde","#000000","#000000","#000000"]
+  ]
+}

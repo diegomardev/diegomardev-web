@@ -1,0 +1,11 @@
+{
+  "name": "Kemonito",
+  "source": "https://awtrix.de/icons/kemonito",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#00c2ff","#ffff00","#ffff00","#ffff00","#ffff00","#ffff00","#ffff00","#00c2ff","#00c2ff","#ffff00","#000000","#ffff00","#ffff00","#000000","#ffff00","#00c2ff","#00c2ff","#ffff00","#ffff00","#ffff00","#ffff00","#ffff00","#ffff00","#00c2ff","#00c2ff","#ffff00","#ffff00","#000000","#000000","#ffff00","#ffff00","#00c2ff","#00c2ff","#ffff00","#ffff00","#f7fb00","#f7fb00","#ffff00","#ffff00","#00c2ff","#00c2ff","#635d08","#ffef00","#ffff00","#ffff00","#ffef00","#635d08","#00c2ff","#00c2ff","#ffff00","#635d08","#635d08","#635d08","#635d08","#ffff00","#00c2ff"]
+  ]
+}

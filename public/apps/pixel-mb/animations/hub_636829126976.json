@@ -1,0 +1,14 @@
+{
+  "name": "washing_the_mop",
+  "source": "https://awtrix.de/icons/washing-the-mop",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 200,
+  "frames": [
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#004dff","#adaaad","#004dff","#000000","#004dff","#000000","#adaaad","#000000","#004dff","#000000","#004dff","#000000","#004dff","#000000","#004dff","#000000"],
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#000000","#adaaad","#000000","#004dff","#000000","#004dff","#adaaad","#004dff","#000000","#004dff","#000000","#004dff","#000000","#004dff","#000000","#004dff"],
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#004dff","#adaaad","#004dff","#000000","#004dff","#000000","#adaaad","#000000","#004dff","#000000","#004dff","#000000","#004dff","#000000","#004dff","#000000"],
+    ["#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#000000","#adaaad","#000000","#004dff","#000000","#004dff","#adaaad","#004dff","#000000","#004dff","#000000","#004dff","#000000","#004dff","#000000","#004dff"]
+  ]
+}

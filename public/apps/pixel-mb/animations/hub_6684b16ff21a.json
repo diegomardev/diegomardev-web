@@ -1,0 +1,11 @@
+{
+  "name": "stue",
+  "source": "https://awtrix.de/icons/stue",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#000000","#ffffff","#4a79ef","#4a79ef","#ffffff","#4a79ef","#4a79ef","#ffffff","#000000","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#000000","#3a8ebd","#3a8ebd","#296994","#3a8ebd","#3a8ebd","#3a8ebd","#000000","#ffffff","#3a8ebd","#296994","#296994","#3a8ebd","#296994","#296994","#ffffff","#ffffff","#3a8ebd","#3a8ebd","#3a8ebd","#3a8ebd","#3a8ebd","#3a8ebd","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#000000","#ffffff","#000000","#000000","#000000","#000000","#ffffff","#000000"]
+  ]
+}

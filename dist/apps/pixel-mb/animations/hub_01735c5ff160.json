@@ -1,0 +1,11 @@
+{
+  "name": "porto",
+  "source": "https://awtrix.de/icons/porto",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#00693a","#00693a","#00693a","#de2819","#de2819","#de2819","#de2819","#de2819","#00693a","#00693a","#00693a","#de2819","#de2819","#de2819","#de2819","#de2819","#00693a","#00693a","#ffeb00","#ffeb00","#de2819","#de2819","#de2819","#de2819","#00693a","#ffeb00","#ffffff","#ffffff","#ffeb00","#de2819","#de2819","#de2819","#00693a","#ffeb00","#ffffff","#ffffff","#ffeb00","#de2819","#de2819","#de2819","#00693a","#00693a","#ffeb00","#ffeb00","#de2819","#de2819","#de2819","#de2819","#00693a","#00693a","#00693a","#de2819","#de2819","#de2819","#de2819","#de2819","#00693a","#00693a","#00693a","#de2819","#de2819","#de2819","#de2819","#de2819"]
+  ]
+}

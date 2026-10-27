@@ -1,0 +1,11 @@
+{
+  "name": "skull",
+  "source": "https://awtrix.de/icons/skull",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#212021","#192021","#192421","#192421","#192421","#192421","#192421","#192421","#212021","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#212021","#212021","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#212021","#212021","#212021","#212021","#ffffff","#211c21","#212010","#ffffff","#212019","#192021","#424542","#192021","#ffffff","#424542","#212021","#ffffff","#212021","#212021","#ffffff","#ffffff","#211c19","#ffffff","#ffffff","#ffffff","#211c19","#212021","#efefef","#efefef","#efefef","#efefef","#efefef","#adaead","#211c19","#191c10","#211c19","#212019","#212019","#101c19","#191c19","#101819","#101c19"]
+  ]
+}

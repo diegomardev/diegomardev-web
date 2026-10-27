@@ -1,0 +1,11 @@
+{
+  "name": "instagram",
+  "source": "https://awtrix.de/icons/instagram",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 20,
+  "frames": [
+    ["#3151ef","#3151ef","#5269ef","#5269ef","#5269ef","#b54def","#b551ef","#ce59e6","#5a71f7","#5a71f7","#ffffff","#ffffff","#ffffff","#ffffff","#ce59e6","#ce59e6","#b551ef","#ffffff","#ce59e6","#ce59e6","#ff5def","#ffffff","#ffffff","#ce59ef","#ce59e6","#ffffff","#ff5def","#ffffff","#ffffff","#ff5def","#ffffff","#ff5def","#ff617b","#ffffff","#ff617b","#ffffff","#ffffff","#ff5def","#ffffff","#ff5df7","#ff8e52","#ffffff","#ff8e52","#ff8e52","#ff8e52","#ff617b","#ffffff","#ff5df7","#ffa252","#ffce6b","#ffffff","#ffffff","#ffffff","#ffffff","#ff617b","#ff619c","#ffce6b","#ffce94","#ffce94","#ffc684","#ffa252","#ff8e52","#ff7521","#ff619c"]
+  ]
+}

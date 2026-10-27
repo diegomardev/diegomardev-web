@@ -1,0 +1,12 @@
+{
+  "name": "front_door_lock",
+  "source": "https://awtrix.de/icons/front-door-lock",
+  "note": "Convertida desde la vista pública, no desde el original",
+  "width": 8,
+  "height": 8,
+  "frameMs": 200,
+  "frames": [
+    ["#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#000000","#000000","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#000000","#000000","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#000000","#000000","#737173","#737173","#737173","#737173","#737173","#737173","#000000","#000000","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#000000","#000000","#adaaad","#adaaad","#737173","#737173","#737173","#737173","#737173","#737173","#adaaad","#adaaad","#737173","#737173","#737173","#737173","#737173","#737173","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#000000","#000000"],
+    ["#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#000000","#000000","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#000000","#000000","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#000000","#000000","#737173","#737173","#737173","#737173","#737173","#737173","#737173","#737173","#adaaad","#adaaad","#adaaad","#adaaad","#737173","#737173","#737173","#737173","#adaaad","#adaaad","#737173","#737173","#737173","#737173","#737173","#000000","#adaaad","#adaaad","#adaaad","#737173","#737173","#adaaad","#000000","#000000","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#adaaad","#000000","#000000"]
+  ]
+}
